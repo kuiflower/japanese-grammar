@@ -1,0 +1,50 @@
+---
+description: 最严数据架构：每级唯一 grammar.json，出题模版分离，禁止叠加层
+alwaysApply: true
+---
+
+# 数据与出题架构（最严标准）
+
+## 唯一数据源
+
+每级别**只有一个**运行时数据库，直接编辑 JSON，禁止旁路：
+
+| 级别 | 唯一文件 |
+|------|----------|
+| PRE-N3 | `src/data/levels/pre-n3/grammar.json` |
+| N2 | `src/data/levels/n2/grammar.json` |
+| N3 | `src/data/levels/n3/grammar.json` |
+
+**背单词**（每级两套题库；非并列板块）：
+
+| 题库 | 级别 | 唯一文件 |
+|------|------|----------|
+| 频出单词 | N5～N1 | `src/data/levels/{n5\|n4\|n3\|n2\|n1}/vocabulary.json` |
+| 全套单词 | N5～N1 | `src/data/levels/{n5\|n4\|n3\|n2\|n1}/vocabulary-full.json` |
+
+字段约定（语法）：`meaning` 释义 · `usage` 用法 · `notes` 辨析 · `examples` 例句
+
+字段约定（单词）：`word` · `reading` · `pos` · `meaning` · `example` · 动词可选 `transitivity` / `pair`
+
+频出与全套共用同一出题模版（复合题：读音 → 释义 → 填空），进度/错题按 `exam` / `full` 分题库存储。
+
+## 出题模版
+
+- 语法：`src/data/quiz/generateQuestions.ts` → `src/data/quiz/index.ts`
+- 单词：`src/data/vocab-quiz/generateQuestions.ts` → `src/data/vocab-quiz/index.ts`
+- 按 level 调库：`src/data/levels/index.ts`
+- 新增题型**只改模版**，从 `GrammarEntry` / `VocabularyEntry` 读字段
+
+## 禁止事项
+
+- ❌ 不新增 `entries.mjs`、`refinements`、`usage-standard`、`build-*.mjs` 等叠加修正文件
+- ❌ 不把修正写在脚本里再覆盖 JSON；**直接改对应 `grammar.json`**
+- ❌ 不为某级别另建 CSV/第二数据源（N2 与 PRE-N3/N3 同等，只维护 `n2/grammar.json`）
+- ❌ `usage` 不得复读 `meaning`（如「部分肯定：既然…」）；用法题考点须含接续等信息
+- ❌ 不新增 `scripts/` 下的数据管线、导入、校验脚本（非项目核心结构）
+
+## 修改语法内容时
+
+1. 打开该级别唯一的 `grammar.json`
+2. 改 `meaning` / `usage` / `notes` / `examples`
+3. `npm run build` 验证编译通过

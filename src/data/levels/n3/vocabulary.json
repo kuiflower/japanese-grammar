@@ -1,0 +1,1631 @@
+[
+  {
+    "id": "n3-vocab-0001",
+    "index": 1,
+    "level": "N3",
+    "word": "翌日",
+    "reading": "よくじつ",
+    "pos": "名词",
+    "meaning": "次日",
+    "example": {
+      "japanese": "翌日は早く出かける。",
+      "chinese": "第二天早点出门。"
+    }
+  },
+  {
+    "id": "n3-vocab-0002",
+    "index": 2,
+    "level": "N3",
+    "word": "定休日",
+    "reading": "ていきゅうび",
+    "pos": "名词",
+    "meaning": "(定期)休息日",
+    "example": {
+      "japanese": "今日は定休日だ。",
+      "chinese": "今天是定休日。"
+    }
+  },
+  {
+    "id": "n3-vocab-0003",
+    "index": 3,
+    "level": "N3",
+    "word": "前日",
+    "reading": "ぜんじつ",
+    "pos": "名词",
+    "meaning": "前一天",
+    "example": {
+      "japanese": "前日に準備した。",
+      "chinese": "前一天准备好了。"
+    }
+  },
+  {
+    "id": "n3-vocab-0004",
+    "index": 4,
+    "level": "N3",
+    "word": "以降",
+    "reading": "いこう",
+    "pos": "名词",
+    "meaning": "之后",
+    "example": {
+      "japanese": "明日以降は暇だ。",
+      "chinese": "明天以后有空。"
+    }
+  },
+  {
+    "id": "n3-vocab-0005",
+    "index": 5,
+    "level": "N3",
+    "word": "支店",
+    "reading": "してん",
+    "pos": "名词",
+    "meaning": "分店",
+    "example": {
+      "japanese": "最寄りの支店へ行く。",
+      "chinese": "去最近的支行。"
+    }
+  },
+  {
+    "id": "n3-vocab-0006",
+    "index": 6,
+    "level": "N3",
+    "word": "体操",
+    "reading": "たいそう",
+    "pos": "名词",
+    "meaning": "体操",
+    "example": {
+      "japanese": "朝、体操をする。",
+      "chinese": "早上做体操。"
+    }
+  },
+  {
+    "id": "n3-vocab-0007",
+    "index": 7,
+    "level": "N3",
+    "word": "肩",
+    "reading": "かた",
+    "pos": "名词",
+    "meaning": "肩",
+    "example": {
+      "japanese": "肩がこる。",
+      "chinese": "肩膀酸痛。"
+    }
+  },
+  {
+    "id": "n3-vocab-0008",
+    "index": 8,
+    "level": "N3",
+    "word": "広告",
+    "reading": "こうこく",
+    "pos": "名词",
+    "meaning": "广告",
+    "example": {
+      "japanese": "広告を見た。",
+      "chinese": "看了广告。"
+    }
+  },
+  {
+    "id": "n3-vocab-0009",
+    "index": 9,
+    "level": "N3",
+    "word": "クリーニング",
+    "reading": "クリーニング",
+    "pos": "名词",
+    "meaning": "干洗",
+    "example": {
+      "japanese": "クリーニングに出す。",
+      "chinese": "送去干洗。"
+    }
+  },
+  {
+    "id": "n3-vocab-0010",
+    "index": 10,
+    "level": "N3",
+    "word": "ワンピース",
+    "reading": "ワンピース",
+    "pos": "名词",
+    "meaning": "连衣裙",
+    "example": {
+      "japanese": "ワンピースを買った。",
+      "chinese": "买了连衣裙。"
+    }
+  },
+  {
+    "id": "n3-vocab-0011",
+    "index": 11,
+    "level": "N3",
+    "word": "セミナー",
+    "reading": "セミナー",
+    "pos": "名词",
+    "meaning": "研讨会",
+    "example": {
+      "japanese": "セミナーに参加する。",
+      "chinese": "参加研讨会。"
+    }
+  },
+  {
+    "id": "n3-vocab-0012",
+    "index": 12,
+    "level": "N3",
+    "word": "メンバー",
+    "reading": "メンバー",
+    "pos": "名词",
+    "meaning": "成员",
+    "example": {
+      "japanese": "チームのメンバーだ。",
+      "chinese": "是团队成员。"
+    }
+  },
+  {
+    "id": "n3-vocab-0013",
+    "index": 13,
+    "level": "N3",
+    "word": "サンプル",
+    "reading": "サンプル",
+    "pos": "名词",
+    "meaning": "样本",
+    "example": {
+      "japanese": "サンプルをもらった。",
+      "chinese": "拿到了样品。"
+    }
+  },
+  {
+    "id": "n3-vocab-0014",
+    "index": 14,
+    "level": "N3",
+    "word": "アンケート",
+    "reading": "アンケート",
+    "pos": "名词",
+    "meaning": "问卷调查",
+    "example": {
+      "japanese": "アンケートに答える。",
+      "chinese": "填写问卷。"
+    }
+  },
+  {
+    "id": "n3-vocab-0015",
+    "index": 15,
+    "level": "N3",
+    "word": "効く",
+    "reading": "きく",
+    "pos": "动词（五段・自动词）",
+    "meaning": "见效；起作用",
+    "example": {
+      "japanese": "この薬はよく効く。",
+      "chinese": "这药很有效。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n3-vocab-0016",
+    "index": 16,
+    "level": "N3",
+    "word": "加える",
+    "reading": "くわえる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "添加",
+    "example": {
+      "japanese": "塩を加える。",
+      "chinese": "加盐。"
+    },
+    "transitivity": "他动词",
+    "pair": "加わる"
+  },
+  {
+    "id": "n3-vocab-0017",
+    "index": 17,
+    "level": "N3",
+    "word": "改善",
+    "reading": "かいぜん",
+    "pos": "名词・サ变动词",
+    "meaning": "改善",
+    "example": {
+      "japanese": "生活を改善する。",
+      "chinese": "改善生活。"
+    }
+  },
+  {
+    "id": "n3-vocab-0018",
+    "index": 18,
+    "level": "N3",
+    "word": "控える",
+    "reading": "ひかえる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "控制",
+    "example": {
+      "japanese": "甘いものを控える。",
+      "chinese": "少吃甜食。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n3-vocab-0019",
+    "index": 19,
+    "level": "N3",
+    "word": "揃う",
+    "reading": "そろう",
+    "pos": "动词（五段・自动词）",
+    "meaning": "齐全",
+    "example": {
+      "japanese": "料理がテーブルに揃う。",
+      "chinese": "菜摆满了桌子。"
+    },
+    "transitivity": "自动词",
+    "pair": "揃える"
+  },
+  {
+    "id": "n3-vocab-0020",
+    "index": 20,
+    "level": "N3",
+    "word": "夜更かし",
+    "reading": "よふかし",
+    "pos": "名词・サ变动词",
+    "meaning": "熬夜",
+    "example": {
+      "japanese": "夜更かしをした。",
+      "chinese": "熬夜了。"
+    }
+  },
+  {
+    "id": "n3-vocab-0021",
+    "index": 21,
+    "level": "N3",
+    "word": "叫ぶ",
+    "reading": "さけぶ",
+    "pos": "动词（五段・他动词）",
+    "meaning": "呼喊",
+    "example": {
+      "japanese": "大声で叫ぶ。",
+      "chinese": "大声喊。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n3-vocab-0022",
+    "index": 22,
+    "level": "N3",
+    "word": "絞る",
+    "reading": "しぼる",
+    "pos": "动词（五段・他动词）",
+    "meaning": "拧",
+    "example": {
+      "japanese": "タオルを絞る。",
+      "chinese": "拧毛巾。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n3-vocab-0023",
+    "index": 23,
+    "level": "N3",
+    "word": "出勤",
+    "reading": "しゅっきん",
+    "pos": "名词・サ变动词",
+    "meaning": "上班",
+    "example": {
+      "japanese": "毎日八時に出勤する。",
+      "chinese": "每天八点上班。"
+    }
+  },
+  {
+    "id": "n3-vocab-0024",
+    "index": 24,
+    "level": "N3",
+    "word": "追いつく",
+    "reading": "おいつく",
+    "pos": "动词（五段・自动词）",
+    "meaning": "追上",
+    "example": {
+      "japanese": "先頭集団に追いつく。",
+      "chinese": "追上领先集团。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n3-vocab-0025",
+    "index": 25,
+    "level": "N3",
+    "word": "縮小",
+    "reading": "しゅくしょう",
+    "pos": "名词・サ变动词",
+    "meaning": "缩小",
+    "example": {
+      "japanese": "規模を縮小する。",
+      "chinese": "缩小规模。"
+    }
+  },
+  {
+    "id": "n3-vocab-0026",
+    "index": 26,
+    "level": "N3",
+    "word": "破る",
+    "reading": "やぶる",
+    "pos": "动词（五段・他动词）",
+    "meaning": "撕破；违背（约定）",
+    "example": {
+      "japanese": "約束を破る。",
+      "chinese": "违背约定。"
+    },
+    "transitivity": "他动词",
+    "pair": "破れる"
+  },
+  {
+    "id": "n3-vocab-0027",
+    "index": 27,
+    "level": "N3",
+    "word": "預ける",
+    "reading": "あずける",
+    "pos": "动词（一段・他动词）",
+    "meaning": "寄存",
+    "example": {
+      "japanese": "荷物を預ける。",
+      "chinese": "寄存行李。"
+    },
+    "transitivity": "他动词",
+    "pair": "預かる"
+  },
+  {
+    "id": "n3-vocab-0028",
+    "index": 28,
+    "level": "N3",
+    "word": "働く",
+    "reading": "はたらく",
+    "pos": "动词（五段・自动词）",
+    "meaning": "工作",
+    "example": {
+      "japanese": "会社で働く。",
+      "chinese": "在公司工作。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n3-vocab-0029",
+    "index": 29,
+    "level": "N3",
+    "word": "貧しい",
+    "reading": "まずしい",
+    "pos": "い形容词",
+    "meaning": "贫穷",
+    "example": {
+      "japanese": "貧しい家に生まれた。",
+      "chinese": "出生在穷人家。"
+    }
+  },
+  {
+    "id": "n3-vocab-0030",
+    "index": 30,
+    "level": "N3",
+    "word": "建築",
+    "reading": "けんちく",
+    "pos": "名词・サ变动词",
+    "meaning": "建筑",
+    "example": {
+      "japanese": "家を建築する。",
+      "chinese": "建造房屋。"
+    }
+  },
+  {
+    "id": "n3-vocab-0031",
+    "index": 31,
+    "level": "N3",
+    "word": "包む",
+    "reading": "つつむ",
+    "pos": "动词（五段・他动词）",
+    "meaning": "包",
+    "example": {
+      "japanese": "プレゼントを包む。",
+      "chinese": "包装礼物。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n3-vocab-0032",
+    "index": 32,
+    "level": "N3",
+    "word": "延期",
+    "reading": "えんき",
+    "pos": "名词・サ变动词",
+    "meaning": "延期",
+    "example": {
+      "japanese": "会議を延期する。",
+      "chinese": "会议延期。"
+    }
+  },
+  {
+    "id": "n3-vocab-0033",
+    "index": 33,
+    "level": "N3",
+    "word": "囲む",
+    "reading": "かこむ",
+    "pos": "动词（五段・他动词）",
+    "meaning": "围",
+    "example": {
+      "japanese": "テーブルを囲む。",
+      "chinese": "围坐在桌旁。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n3-vocab-0034",
+    "index": 34,
+    "level": "N3",
+    "word": "疑う",
+    "reading": "うたがう",
+    "pos": "动词（五段・他动词）",
+    "meaning": "怀疑",
+    "example": {
+      "japanese": "彼を疑う。",
+      "chinese": "怀疑他。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n3-vocab-0035",
+    "index": 35,
+    "level": "N3",
+    "word": "折る",
+    "reading": "おる",
+    "pos": "动词（五段・他动词）",
+    "meaning": "折",
+    "example": {
+      "japanese": "紙を折る。",
+      "chinese": "折纸。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n3-vocab-0036",
+    "index": 36,
+    "level": "N3",
+    "word": "右折",
+    "reading": "うせつ",
+    "pos": "名词・サ变动词",
+    "meaning": "右转弯",
+    "example": {
+      "japanese": "次の角で右折する。",
+      "chinese": "下个路口右转。"
+    }
+  },
+  {
+    "id": "n3-vocab-0037",
+    "index": 37,
+    "level": "N3",
+    "word": "左折",
+    "reading": "させつ",
+    "pos": "名词・サ变动词",
+    "meaning": "左转弯",
+    "example": {
+      "japanese": "ここで左折できない。",
+      "chinese": "这里不能左转。"
+    }
+  },
+  {
+    "id": "n3-vocab-0038",
+    "index": 38,
+    "level": "N3",
+    "word": "答える",
+    "reading": "こたえる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "回答",
+    "example": {
+      "japanese": "質問に答える。",
+      "chinese": "回答问题。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n3-vocab-0039",
+    "index": 39,
+    "level": "N3",
+    "word": "商売",
+    "reading": "しょうばい",
+    "pos": "名词",
+    "meaning": "买卖",
+    "example": {
+      "japanese": "商売が繁盛している。",
+      "chinese": "生意很兴旺。"
+    }
+  },
+  {
+    "id": "n3-vocab-0040",
+    "index": 40,
+    "level": "N3",
+    "word": "試す",
+    "reading": "ためす",
+    "pos": "动词（五段・他动词）",
+    "meaning": "尝试",
+    "example": {
+      "japanese": "新しい方法を試す。",
+      "chinese": "尝试新方法。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n3-vocab-0041",
+    "index": 41,
+    "level": "N3",
+    "word": "我慢",
+    "reading": "がまん",
+    "pos": "名词・サ变动词",
+    "meaning": "忍耐",
+    "example": {
+      "japanese": "もう我慢できない。",
+      "chinese": "再也忍不住了。"
+    }
+  },
+  {
+    "id": "n3-vocab-0042",
+    "index": 42,
+    "level": "N3",
+    "word": "慌てる",
+    "reading": "あわてる",
+    "pos": "动词（一段・自动词）",
+    "meaning": "慌张",
+    "example": {
+      "japanese": "彼はすぐ慌てる。",
+      "chinese": "他马上就会慌。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n3-vocab-0043",
+    "index": 43,
+    "level": "N3",
+    "word": "下車",
+    "reading": "げしゃ",
+    "pos": "名词・サ变动词",
+    "meaning": "下车",
+    "example": {
+      "japanese": "次の駅で下車する。",
+      "chinese": "下一站下车。"
+    }
+  },
+  {
+    "id": "n3-vocab-0044",
+    "index": 44,
+    "level": "N3",
+    "word": "捕まえる",
+    "reading": "つかまえる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "抓住",
+    "example": {
+      "japanese": "泥棒を捕まえる。",
+      "chinese": "抓住小偷。"
+    },
+    "transitivity": "他动词",
+    "pair": "捕まる"
+  },
+  {
+    "id": "n3-vocab-0045",
+    "index": 45,
+    "level": "N3",
+    "word": "ぐっすり",
+    "reading": "ぐっすり",
+    "pos": "副词",
+    "meaning": "熟睡",
+    "example": {
+      "japanese": "ぐっすり眠れた。",
+      "chinese": "睡得很香。"
+    }
+  },
+  {
+    "id": "n3-vocab-0046",
+    "index": 46,
+    "level": "N3",
+    "word": "うっかり",
+    "reading": "うっかり",
+    "pos": "副词",
+    "meaning": "马虎",
+    "example": {
+      "japanese": "うっかり忘れた。",
+      "chinese": "不小心忘了。"
+    }
+  },
+  {
+    "id": "n3-vocab-0047",
+    "index": 47,
+    "level": "N3",
+    "word": "しっかり",
+    "reading": "しっかり",
+    "pos": "副词",
+    "meaning": "牢牢地",
+    "example": {
+      "japanese": "しっかり勉強する。",
+      "chinese": "认真学习。"
+    }
+  },
+  {
+    "id": "n3-vocab-0048",
+    "index": 48,
+    "level": "N3",
+    "word": "そっくり",
+    "reading": "そっくり",
+    "pos": "副词",
+    "meaning": "一模一样地",
+    "example": {
+      "japanese": "父にそっくりだ。",
+      "chinese": "和父亲一模一样。"
+    }
+  },
+  {
+    "id": "n3-vocab-0049",
+    "index": 49,
+    "level": "N3",
+    "word": "すっかり",
+    "reading": "すっかり",
+    "pos": "副词",
+    "meaning": "完全彻底地",
+    "example": {
+      "japanese": "すっかり春になった。",
+      "chinese": "完全入春了。"
+    }
+  },
+  {
+    "id": "n3-vocab-0050",
+    "index": 50,
+    "level": "N3",
+    "word": "壊す",
+    "reading": "こわす",
+    "pos": "动词（五段・他动词）",
+    "meaning": "弄坏",
+    "example": {
+      "japanese": "おもちゃを壊す。",
+      "chinese": "弄坏玩具。"
+    },
+    "transitivity": "他动词",
+    "pair": "壊れる"
+  },
+  {
+    "id": "n3-vocab-0051",
+    "index": 51,
+    "level": "N3",
+    "word": "残す",
+    "reading": "のこす",
+    "pos": "动词（五段・他动词）",
+    "meaning": "留下",
+    "example": {
+      "japanese": "ご飯を残す。",
+      "chinese": "剩饭。"
+    },
+    "transitivity": "他动词",
+    "pair": "残る"
+  },
+  {
+    "id": "n3-vocab-0052",
+    "index": 52,
+    "level": "N3",
+    "word": "謝る",
+    "reading": "あやまる",
+    "pos": "动词（五段・他动词）",
+    "meaning": "道歉",
+    "example": {
+      "japanese": "ちゃんと謝る。",
+      "chinese": "好好道歉。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n3-vocab-0053",
+    "index": 53,
+    "level": "N3",
+    "word": "納得",
+    "reading": "なっとく",
+    "pos": "名词・サ变动词",
+    "meaning": "理解",
+    "example": {
+      "japanese": "納得できない。",
+      "chinese": "无法理解。"
+    }
+  },
+  {
+    "id": "n3-vocab-0054",
+    "index": 54,
+    "level": "N3",
+    "word": "振り込む",
+    "reading": "ふりこむ",
+    "pos": "动词（五段・他动词）",
+    "meaning": "转账",
+    "example": {
+      "japanese": "口座に振り込む。",
+      "chinese": "汇入账户。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n3-vocab-0055",
+    "index": 55,
+    "level": "N3",
+    "word": "詰める",
+    "reading": "つめる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "塞满",
+    "example": {
+      "japanese": "箱に詰める。",
+      "chinese": "装进箱子里。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n3-vocab-0056",
+    "index": 56,
+    "level": "N3",
+    "word": "調べる",
+    "reading": "しらべる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "调查",
+    "example": {
+      "japanese": "辞書で調べる。",
+      "chinese": "查字典。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n3-vocab-0057",
+    "index": 57,
+    "level": "N3",
+    "word": "吠える",
+    "reading": "ほえる",
+    "pos": "动词（一段・自动词）",
+    "meaning": "（狗等）叫",
+    "example": {
+      "japanese": "犬が吠える。",
+      "chinese": "狗在叫。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n3-vocab-0058",
+    "index": 58,
+    "level": "N3",
+    "word": "騒ぐ",
+    "reading": "さわぐ",
+    "pos": "动词（五段・自动词）",
+    "meaning": "吵闹",
+    "example": {
+      "japanese": "隣の部屋が騒ぐ。",
+      "chinese": "隔壁房间很吵。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n3-vocab-0059",
+    "index": 59,
+    "level": "N3",
+    "word": "回す",
+    "reading": "まわす",
+    "pos": "动词（五段・他动词）",
+    "meaning": "转动",
+    "example": {
+      "japanese": "ハンドルを回す。",
+      "chinese": "转动方向盘。"
+    },
+    "transitivity": "他动词",
+    "pair": "回る"
+  },
+  {
+    "id": "n3-vocab-0060",
+    "index": 60,
+    "level": "N3",
+    "word": "喋る",
+    "reading": "しゃべる",
+    "pos": "动词（五段・自动词）",
+    "meaning": "说话",
+    "example": {
+      "japanese": "友達と喋る。",
+      "chinese": "和朋友聊天。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n3-vocab-0061",
+    "index": 61,
+    "level": "N3",
+    "word": "結ぶ",
+    "reading": "むすぶ",
+    "pos": "动词（五段・他动词）",
+    "meaning": "系",
+    "example": {
+      "japanese": "靴ひもを結ぶ。",
+      "chinese": "系鞋带。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n3-vocab-0062",
+    "index": 62,
+    "level": "N3",
+    "word": "響く",
+    "reading": "ひびく",
+    "pos": "动词（五段・自动词）",
+    "meaning": "响亮",
+    "example": {
+      "japanese": "音楽が響く。",
+      "chinese": "音乐回响。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n3-vocab-0063",
+    "index": 63,
+    "level": "N3",
+    "word": "減少",
+    "reading": "げんしょう",
+    "pos": "名词・サ变动词",
+    "meaning": "减少",
+    "example": {
+      "japanese": "人口が減少する。",
+      "chinese": "人口减少。"
+    }
+  },
+  {
+    "id": "n3-vocab-0064",
+    "index": 64,
+    "level": "N3",
+    "word": "届ける",
+    "reading": "とどける",
+    "pos": "动词（一段・他动词）",
+    "meaning": "送到",
+    "example": {
+      "japanese": "手紙を届ける。",
+      "chinese": "送信。"
+    },
+    "transitivity": "他动词",
+    "pair": "届く"
+  },
+  {
+    "id": "n3-vocab-0065",
+    "index": 65,
+    "level": "N3",
+    "word": "届く",
+    "reading": "とどく",
+    "pos": "动词（五段・自动词）",
+    "meaning": "送达",
+    "example": {
+      "japanese": "荷物が届く。",
+      "chinese": "包裹送到。"
+    },
+    "transitivity": "自动词",
+    "pair": "届ける"
+  },
+  {
+    "id": "n3-vocab-0066",
+    "index": 66,
+    "level": "N3",
+    "word": "落ち着く",
+    "reading": "おちつく",
+    "pos": "动词（五段・自动词）",
+    "meaning": "镇静",
+    "example": {
+      "japanese": "ここに座って落ち着く。",
+      "chinese": "坐在这里冷静一下。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n3-vocab-0067",
+    "index": 67,
+    "level": "N3",
+    "word": "積極的",
+    "reading": "せっきょくてき",
+    "pos": "な形容词",
+    "meaning": "积极的",
+    "example": {
+      "japanese": "積極的に参加する。",
+      "chinese": "积极参加。"
+    }
+  },
+  {
+    "id": "n3-vocab-0068",
+    "index": 68,
+    "level": "N3",
+    "word": "消極的",
+    "reading": "しょうきょくてき",
+    "pos": "な形容词",
+    "meaning": "消极的",
+    "example": {
+      "japanese": "消極的な態度だ。",
+      "chinese": "态度消极。"
+    }
+  },
+  {
+    "id": "n3-vocab-0069",
+    "index": 69,
+    "level": "N3",
+    "word": "浅い",
+    "reading": "あさい",
+    "pos": "い形容词",
+    "meaning": "浅",
+    "example": {
+      "japanese": "川が浅い。",
+      "chinese": "河水很浅。"
+    }
+  },
+  {
+    "id": "n3-vocab-0070",
+    "index": 70,
+    "level": "N3",
+    "word": "得意",
+    "reading": "とくい",
+    "pos": "な形容词",
+    "meaning": "得意",
+    "example": {
+      "japanese": "料理が得意だ。",
+      "chinese": "擅长做饭。"
+    }
+  },
+  {
+    "id": "n3-vocab-0071",
+    "index": 71,
+    "level": "N3",
+    "word": "身近",
+    "reading": "みぢか",
+    "pos": "な形容词",
+    "meaning": "身边",
+    "example": {
+      "japanese": "身近な問題だ。",
+      "chinese": "是身边的问题。"
+    }
+  },
+  {
+    "id": "n3-vocab-0072",
+    "index": 72,
+    "level": "N3",
+    "word": "複雑",
+    "reading": "ふくざつ",
+    "pos": "な形容词",
+    "meaning": "复杂",
+    "example": {
+      "japanese": "話が複雑だ。",
+      "chinese": "情况很复杂。"
+    }
+  },
+  {
+    "id": "n3-vocab-0073",
+    "index": 73,
+    "level": "N3",
+    "word": "自動的",
+    "reading": "じどうてき",
+    "pos": "な形容词",
+    "meaning": "自动的",
+    "example": {
+      "japanese": "自動的に止まる。",
+      "chinese": "自动停止。"
+    }
+  },
+  {
+    "id": "n3-vocab-0074",
+    "index": 74,
+    "level": "N3",
+    "word": "眩しい",
+    "reading": "まぶしい",
+    "pos": "い形容词",
+    "meaning": "耀眼",
+    "example": {
+      "japanese": "太陽が眩しい。",
+      "chinese": "太阳很刺眼。"
+    }
+  },
+  {
+    "id": "n3-vocab-0075",
+    "index": 75,
+    "level": "N3",
+    "word": "苦い",
+    "reading": "にがい",
+    "pos": "い形容词",
+    "meaning": "苦的",
+    "example": {
+      "japanese": "薬が苦い。",
+      "chinese": "药很苦。"
+    }
+  },
+  {
+    "id": "n3-vocab-0076",
+    "index": 76,
+    "level": "N3",
+    "word": "苦しい",
+    "reading": "くるしい",
+    "pos": "い形容词",
+    "meaning": "痛苦",
+    "example": {
+      "japanese": "息が苦しい。",
+      "chinese": "呼吸困难。"
+    }
+  },
+  {
+    "id": "n3-vocab-0077",
+    "index": 77,
+    "level": "N3",
+    "word": "緩い",
+    "reading": "ゆるい",
+    "pos": "い形容词",
+    "meaning": "宽松",
+    "example": {
+      "japanese": "締め付けが緩い。",
+      "chinese": "绑得松。"
+    }
+  },
+  {
+    "id": "n3-vocab-0078",
+    "index": 78,
+    "level": "N3",
+    "word": "寂しい",
+    "reading": "さびしい",
+    "pos": "い形容词",
+    "meaning": "寂寞",
+    "example": {
+      "japanese": "一人で寂しい。",
+      "chinese": "一个人很寂寞。"
+    }
+  },
+  {
+    "id": "n3-vocab-0079",
+    "index": 79,
+    "level": "N3",
+    "word": "退屈",
+    "reading": "たいくつ",
+    "pos": "な形容词",
+    "meaning": "无聊",
+    "example": {
+      "japanese": "授業は退屈だ。",
+      "chinese": "上课很无聊。"
+    }
+  },
+  {
+    "id": "n3-vocab-0080",
+    "index": 80,
+    "level": "N3",
+    "word": "多少",
+    "reading": "たしょう",
+    "pos": "副词",
+    "meaning": "多少",
+    "example": {
+      "japanese": "多少なりとも役に立つ。",
+      "chinese": "多少有点用。"
+    }
+  },
+  {
+    "id": "n3-vocab-0081",
+    "index": 81,
+    "level": "N3",
+    "word": "盛ん",
+    "reading": "さかん",
+    "pos": "な形容词",
+    "meaning": "旺盛",
+    "example": {
+      "japanese": "この地域は農業が盛んだ。",
+      "chinese": "这一带农业发达。"
+    }
+  },
+  {
+    "id": "n3-vocab-0082",
+    "index": 82,
+    "level": "N3",
+    "word": "怪しい",
+    "reading": "あやしい",
+    "pos": "い形容词",
+    "meaning": "可疑",
+    "example": {
+      "japanese": "怪しい人がいる。",
+      "chinese": "有可疑的人。"
+    }
+  },
+  {
+    "id": "n3-vocab-0083",
+    "index": 83,
+    "level": "N3",
+    "word": "重要",
+    "reading": "じゅうよう",
+    "pos": "な形容词",
+    "meaning": "重要",
+    "example": {
+      "japanese": "重要な会議だ。",
+      "chinese": "是重要的会议。"
+    }
+  },
+  {
+    "id": "n3-vocab-0084",
+    "index": 84,
+    "level": "N3",
+    "word": "簡単",
+    "reading": "かんたん",
+    "pos": "な形容词",
+    "meaning": "简单",
+    "example": {
+      "japanese": "この問題は簡単だ。",
+      "chinese": "这道题很简单。"
+    }
+  },
+  {
+    "id": "n3-vocab-0085",
+    "index": 85,
+    "level": "N3",
+    "word": "危険",
+    "reading": "きけん",
+    "pos": "な形容词",
+    "meaning": "危险",
+    "example": {
+      "japanese": "ここは危険だ。",
+      "chinese": "这里危险。"
+    }
+  },
+  {
+    "id": "n3-vocab-0086",
+    "index": 86,
+    "level": "N3",
+    "word": "上品",
+    "reading": "じょうひん",
+    "pos": "な形容词",
+    "meaning": "高雅",
+    "example": {
+      "japanese": "上品な話し方だ。",
+      "chinese": "说话很文雅。"
+    }
+  },
+  {
+    "id": "n3-vocab-0087",
+    "index": 87,
+    "level": "N3",
+    "word": "汚い",
+    "reading": "きたない",
+    "pos": "い形容词",
+    "meaning": "脏",
+    "example": {
+      "japanese": "部屋が汚い。",
+      "chinese": "房间很脏。"
+    }
+  },
+  {
+    "id": "n3-vocab-0088",
+    "index": 88,
+    "level": "N3",
+    "word": "清潔",
+    "reading": "せいけつ",
+    "pos": "な形容词",
+    "meaning": "清洁",
+    "example": {
+      "japanese": "清潔なトイレだ。",
+      "chinese": "厕所很干净。"
+    }
+  },
+  {
+    "id": "n3-vocab-0089",
+    "index": 89,
+    "level": "N3",
+    "word": "狭い",
+    "reading": "せまい",
+    "pos": "い形容词",
+    "meaning": "狭窄",
+    "example": {
+      "japanese": "道が狭い。",
+      "chinese": "路很窄。"
+    }
+  },
+  {
+    "id": "n3-vocab-0090",
+    "index": 90,
+    "level": "N3",
+    "word": "憎らしい",
+    "reading": "にくらしい",
+    "pos": "い形容词",
+    "meaning": "可憎",
+    "example": {
+      "japanese": "憎らしい虫だ。",
+      "chinese": "讨厌的虫子。"
+    }
+  },
+  {
+    "id": "n3-vocab-0091",
+    "index": 91,
+    "level": "N3",
+    "word": "単純",
+    "reading": "たんじゅん",
+    "pos": "な形容词",
+    "meaning": "单纯",
+    "example": {
+      "japanese": "単純な仕事だ。",
+      "chinese": "工作很简单。"
+    }
+  },
+  {
+    "id": "n3-vocab-0092",
+    "index": 92,
+    "level": "N3",
+    "word": "だらしない",
+    "reading": "だらしない",
+    "pos": "い形容词",
+    "meaning": "散漫",
+    "example": {
+      "japanese": "だらしない格好だ。",
+      "chinese": "穿着邋遢。"
+    }
+  },
+  {
+    "id": "n3-vocab-0093",
+    "index": 93,
+    "level": "N3",
+    "word": "明るい",
+    "reading": "あかるい",
+    "pos": "い形容词",
+    "meaning": "明亮",
+    "example": {
+      "japanese": "部屋が明るい。",
+      "chinese": "房间很亮。"
+    }
+  },
+  {
+    "id": "n3-vocab-0094",
+    "index": 94,
+    "level": "N3",
+    "word": "不安",
+    "reading": "ふあん",
+    "pos": "な形容词",
+    "meaning": "不放心",
+    "example": {
+      "japanese": "試験が不安だ。",
+      "chinese": "担心考试。"
+    }
+  },
+  {
+    "id": "n3-vocab-0095",
+    "index": 95,
+    "level": "N3",
+    "word": "惜しい",
+    "reading": "おしい",
+    "pos": "い形容词",
+    "meaning": "可惜",
+    "example": {
+      "japanese": "惜しいことをした。",
+      "chinese": "做了可惜的事。"
+    }
+  },
+  {
+    "id": "n3-vocab-0096",
+    "index": 96,
+    "level": "N3",
+    "word": "健康",
+    "reading": "けんこう",
+    "pos": "名词・な形容词",
+    "meaning": "健康",
+    "example": {
+      "japanese": "健康に気をつける。",
+      "chinese": "注意健康。"
+    }
+  },
+  {
+    "id": "n3-vocab-0097",
+    "index": 97,
+    "level": "N3",
+    "word": "危ない",
+    "reading": "あぶない",
+    "pos": "い形容词",
+    "meaning": "危险",
+    "example": {
+      "japanese": "危ないから入るな。",
+      "chinese": "危险别进去。"
+    }
+  },
+  {
+    "id": "n3-vocab-0098",
+    "index": 98,
+    "level": "N3",
+    "word": "普通",
+    "reading": "ふつう",
+    "pos": "な形容词",
+    "meaning": "普通",
+    "example": {
+      "japanese": "普通の日だ。",
+      "chinese": "是普通的一天。"
+    }
+  },
+  {
+    "id": "n3-vocab-0099",
+    "index": 99,
+    "level": "N3",
+    "word": "正直",
+    "reading": "しょうじき",
+    "pos": "な形容词",
+    "meaning": "老实",
+    "example": {
+      "japanese": "正直に話す。",
+      "chinese": "老实说清楚。"
+    }
+  },
+  {
+    "id": "n3-vocab-0100",
+    "index": 100,
+    "level": "N3",
+    "word": "悲しい",
+    "reading": "かなしい",
+    "pos": "い形容词",
+    "meaning": "悲伤",
+    "example": {
+      "japanese": "悲しい知らせだ。",
+      "chinese": "是悲伤的消息。"
+    }
+  },
+  {
+    "id": "n3-vocab-0101",
+    "index": 101,
+    "level": "N3",
+    "word": "軽い",
+    "reading": "かるい",
+    "pos": "い形容词",
+    "meaning": "轻",
+    "example": {
+      "japanese": "荷物が軽い。",
+      "chinese": "行李很轻。"
+    }
+  },
+  {
+    "id": "n3-vocab-0102",
+    "index": 102,
+    "level": "N3",
+    "word": "次第に",
+    "reading": "しだいに",
+    "pos": "副词",
+    "meaning": "逐渐",
+    "example": {
+      "japanese": "次第に暖かくなる。",
+      "chinese": "渐渐变暖。"
+    }
+  },
+  {
+    "id": "n3-vocab-0103",
+    "index": 103,
+    "level": "N3",
+    "word": "大事",
+    "reading": "だいじ",
+    "pos": "な形容词",
+    "meaning": "重要",
+    "example": {
+      "japanese": "大事な人だ。",
+      "chinese": "是重要的人。"
+    }
+  },
+  {
+    "id": "n3-vocab-0104",
+    "index": 104,
+    "level": "N3",
+    "word": "大切",
+    "reading": "たいせつ",
+    "pos": "な形容词",
+    "meaning": "重要",
+    "example": {
+      "japanese": "大切に使う。",
+      "chinese": "珍惜使用。"
+    }
+  },
+  {
+    "id": "n3-vocab-0105",
+    "index": 105,
+    "level": "N3",
+    "word": "血圧",
+    "reading": "けつあつ",
+    "pos": "名词",
+    "meaning": "血压",
+    "example": {
+      "japanese": "血圧を測る。",
+      "chinese": "量血压。"
+    }
+  },
+  {
+    "id": "n3-vocab-0106",
+    "index": 106,
+    "level": "N3",
+    "word": "脇",
+    "reading": "わき",
+    "pos": "名词",
+    "meaning": "腋下",
+    "example": {
+      "japanese": "脇に置いてある。",
+      "chinese": "放在旁边。"
+    }
+  },
+  {
+    "id": "n3-vocab-0107",
+    "index": 107,
+    "level": "N3",
+    "word": "改札",
+    "reading": "かいさつ",
+    "pos": "名词",
+    "meaning": "检票",
+    "example": {
+      "japanese": "改札を通る。",
+      "chinese": "过检票口。"
+    }
+  },
+  {
+    "id": "n3-vocab-0108",
+    "index": 108,
+    "level": "N3",
+    "word": "台所",
+    "reading": "だいどころ",
+    "pos": "名词",
+    "meaning": "厨房",
+    "example": {
+      "japanese": "台所で料理する。",
+      "chinese": "在厨房做饭。"
+    }
+  },
+  {
+    "id": "n3-vocab-0109",
+    "index": 109,
+    "level": "N3",
+    "word": "偶然",
+    "reading": "ぐうぜん",
+    "pos": "名词・副词",
+    "meaning": "偶然",
+    "example": {
+      "japanese": "偶然会った。",
+      "chinese": "偶然遇到了。"
+    }
+  },
+  {
+    "id": "n3-vocab-0110",
+    "index": 110,
+    "level": "N3",
+    "word": "形",
+    "reading": "かたち",
+    "pos": "名词",
+    "meaning": "形状",
+    "example": {
+      "japanese": "形が変わった。",
+      "chinese": "形状变了。"
+    }
+  },
+  {
+    "id": "n3-vocab-0111",
+    "index": 111,
+    "level": "N3",
+    "word": "手段",
+    "reading": "しゅだん",
+    "pos": "名词",
+    "meaning": "手段",
+    "example": {
+      "japanese": "連絡の手段がある。",
+      "chinese": "有联系方式。"
+    }
+  },
+  {
+    "id": "n3-vocab-0112",
+    "index": 112,
+    "level": "N3",
+    "word": "実物",
+    "reading": "じつぶつ",
+    "pos": "名词",
+    "meaning": "实物",
+    "example": {
+      "japanese": "実物を見たい。",
+      "chinese": "想看实物。"
+    }
+  },
+  {
+    "id": "n3-vocab-0113",
+    "index": 113,
+    "level": "N3",
+    "word": "油",
+    "reading": "あぶら",
+    "pos": "名词",
+    "meaning": "油",
+    "example": {
+      "japanese": "油を入れる。",
+      "chinese": "放油。"
+    }
+  },
+  {
+    "id": "n3-vocab-0114",
+    "index": 114,
+    "level": "N3",
+    "word": "知識",
+    "reading": "ちしき",
+    "pos": "名词",
+    "meaning": "知识",
+    "example": {
+      "japanese": "知識を増やす。",
+      "chinese": "增加知识。"
+    }
+  },
+  {
+    "id": "n3-vocab-0115",
+    "index": 115,
+    "level": "N3",
+    "word": "休日",
+    "reading": "きゅうじつ",
+    "pos": "名词",
+    "meaning": "休日",
+    "example": {
+      "japanese": "休日は家にいる。",
+      "chinese": "假日在家。"
+    }
+  },
+  {
+    "id": "n3-vocab-0116",
+    "index": 116,
+    "level": "N3",
+    "word": "中古",
+    "reading": "ちゅうこ",
+    "pos": "名词",
+    "meaning": "二手",
+    "example": {
+      "japanese": "中古の車を買う。",
+      "chinese": "买二手车。"
+    }
+  },
+  {
+    "id": "n3-vocab-0117",
+    "index": 117,
+    "level": "N3",
+    "word": "表",
+    "reading": "おもて",
+    "pos": "名词",
+    "meaning": "表面",
+    "example": {
+      "japanese": "箱の表に書いてある。",
+      "chinese": "写在箱子表面上。"
+    }
+  },
+  {
+    "id": "n3-vocab-0118",
+    "index": 118,
+    "level": "N3",
+    "word": "肌",
+    "reading": "はだ",
+    "pos": "名词",
+    "meaning": "皮肤",
+    "example": {
+      "japanese": "肌が乾燥する。",
+      "chinese": "皮肤变干燥。"
+    }
+  },
+  {
+    "id": "n3-vocab-0119",
+    "index": 119,
+    "level": "N3",
+    "word": "合図",
+    "reading": "あいず",
+    "pos": "名词",
+    "meaning": "信号",
+    "example": {
+      "japanese": "合図を待つ。",
+      "chinese": "等待信号。"
+    }
+  },
+  {
+    "id": "n3-vocab-0120",
+    "index": 120,
+    "level": "N3",
+    "word": "夫婦",
+    "reading": "ふうふ",
+    "pos": "名词",
+    "meaning": "夫妻",
+    "example": {
+      "japanese": "夫婦で旅行する。",
+      "chinese": "夫妻一起旅行。"
+    }
+  },
+  {
+    "id": "n3-vocab-0121",
+    "index": 121,
+    "level": "N3",
+    "word": "伝言",
+    "reading": "でんごん",
+    "pos": "名词",
+    "meaning": "留言",
+    "example": {
+      "japanese": "伝言を残す。",
+      "chinese": "留言。"
+    }
+  },
+  {
+    "id": "n3-vocab-0122",
+    "index": 122,
+    "level": "N3",
+    "word": "直接",
+    "reading": "ちょくせつ",
+    "pos": "な形容词・副词",
+    "meaning": "直接",
+    "example": {
+      "japanese": "直接会って話す。",
+      "chinese": "直接见面谈。"
+    }
+  }
+]
