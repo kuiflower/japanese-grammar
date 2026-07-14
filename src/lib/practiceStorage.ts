@@ -34,7 +34,7 @@ export interface WrongQuestionRecord {
 
 export const HOME_ROUND_GROUPS: { round: QuizRound; label: string }[] = [
   { round: 'all', label: '全部题型' },
-  { round: 'round1', label: '第一轮' },
+  { round: 'round1', label: '第一轮 · 意思与用法' },
   { round: 'round2', label: '第二轮 · 例句运用' },
   { round: 'enhanced', label: '第二轮 · 增强' },
 ]
