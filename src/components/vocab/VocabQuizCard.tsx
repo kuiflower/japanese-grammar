@@ -88,6 +88,8 @@ export default function VocabQuizCard({
     (initialAnswers?.length ?? 0) >= question.steps.length,
   )
   const feedbackRef = useRef<HTMLDivElement>(null)
+  const step3Ref = useRef<HTMLElement>(null)
+  const shouldScrollToStep3 = useRef(false)
   const shouldScrollToFeedback = useRef(false)
 
   useEffect(() => {
@@ -98,10 +100,25 @@ export default function VocabQuizCard({
   }, [question.id, questionIndex, initialAnswers])
 
   useEffect(() => {
+    if (activeStep !== 2 || !shouldScrollToStep3.current) return
+    shouldScrollToStep3.current = false
+    const id = window.requestAnimationFrame(() => {
+      step3Ref.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    })
+    return () => window.cancelAnimationFrame(id)
+  }, [activeStep, question.id])
+
+  useEffect(() => {
     if (!finished || !shouldScrollToFeedback.current) return
     shouldScrollToFeedback.current = false
     const id = window.requestAnimationFrame(() => {
-      feedbackRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' })
+      const el = feedbackRef.current
+      if (!el) return
+      // 与文法题一致：留出底部余量，避免按钮被手机浏览器底栏挡住
+      const bottomGap = 112
+      const absoluteBottom = el.getBoundingClientRect().bottom + window.scrollY
+      const top = Math.max(0, absoluteBottom - window.innerHeight + bottomGap)
+      window.scrollTo({ top, behavior: 'smooth' })
     })
     return () => window.cancelAnimationFrame(id)
   }, [finished, question.id])
@@ -126,7 +143,11 @@ export default function VocabQuizCard({
     setAnswers(nextAnswers)
 
     if (stepIndex < question.steps.length - 1) {
-      setActiveStep(stepIndex + 1)
+      const nextStep = stepIndex + 1
+      if (nextStep === question.steps.length - 1) {
+        shouldScrollToStep3.current = true
+      }
+      setActiveStep(nextStep)
       return
     }
 
@@ -185,6 +206,7 @@ export default function VocabQuizCard({
           return (
             <section
               key={step.type}
+              ref={stepIndex === 2 ? step3Ref : undefined}
               className={`vocab-quiz-step${unlocked ? '' : ' vocab-quiz-step-locked'}${
                 stepAnswer ? (stepAnswer.correct ? ' vocab-quiz-step-ok' : ' vocab-quiz-step-ng') : ''
               }`}

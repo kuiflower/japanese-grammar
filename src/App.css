@@ -637,6 +637,8 @@
   border-radius: 10px;
   padding: 0.65rem 0.55rem 0.45rem;
   background: var(--color-surface);
+  scroll-margin-top: 4.5rem;
+  scroll-margin-bottom: 5.5rem;
 }
 
 .vocab-quiz-step-locked {
