@@ -93,7 +93,13 @@ export default function QuizCard({
     if (!answered || !shouldScrollToFeedback.current) return
     shouldScrollToFeedback.current = false
     const id = window.requestAnimationFrame(() => {
-      feedbackRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' })
+      const el = feedbackRef.current
+      if (!el) return
+      // 文法解析较长；留出底部余量，避免「下一题」被手机浏览器底栏挡住
+      const bottomGap = 112
+      const absoluteBottom = el.getBoundingClientRect().bottom + window.scrollY
+      const top = Math.max(0, absoluteBottom - window.innerHeight + bottomGap)
+      window.scrollTo({ top, behavior: 'smooth' })
     })
     return () => window.cancelAnimationFrame(id)
   }, [answered, question.id])

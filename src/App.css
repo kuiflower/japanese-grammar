@@ -934,6 +934,7 @@
 
 .page.quiz-session {
   margin-top: -0.35rem;
+  padding-bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px));
 }
 
 .back-link:hover {
