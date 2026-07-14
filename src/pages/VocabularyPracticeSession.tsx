@@ -200,7 +200,7 @@ export default function VocabularyPracticeSession({
           )}
           {mode === 'wrong' && (
             <p className="quiz-result-pct">
-              本轮复习答对 {correctCount} 题，已从错题库移除
+              本轮真正记住了 {correctCount} 个单词
             </p>
           )}
           <div className="quiz-result-actions">
