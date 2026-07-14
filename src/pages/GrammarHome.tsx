@@ -99,7 +99,7 @@ export default function GrammarHome() {
     <div className="page home">
       <section className="hero hero-compact">
         <p className="hero-label">日本語文法</p>
-        <h1>语法练习中心</h1>
+        <h1>语法练习</h1>
         <div className="hero-actions">
           <Link to="/practice" className="btn btn-primary">
             开始新练习

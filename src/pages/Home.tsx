@@ -31,9 +31,7 @@ export default function Home() {
   return (
     <div className="page learning-hub">
       <section className="hero learning-hub-hero">
-        <h1 className="hero-label" lang="ja">
-          日本語学習
-        </h1>
+        <h1 className="hero-label">日本語JLPT备考专项</h1>
       </section>
 
       <div className="learning-hub-grid">

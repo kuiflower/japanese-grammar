@@ -104,7 +104,7 @@ export default function VocabularyHome() {
     <div className="page home">
       <section className="hero hero-compact">
         <p className="hero-label">日本語単語</p>
-        <h1>单词练习中心</h1>
+        <h1>单词练习</h1>
         <div className="hero-actions">
           <Link to="/vocab-practice" className="btn btn-primary">
             开始新练习

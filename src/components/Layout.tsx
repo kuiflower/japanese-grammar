@@ -91,7 +91,7 @@ function getFooterText(pathname: string, search: string): string {
       return `东东单词 · ${trackLabel} · 单词库`
     }
     if (pathname === '/vocab-practice') return '东东单词 · 单词练习'
-    if (pathname === VOCABULARY_HOME_PATH) return '东东单词 · 单词练习中心'
+    if (pathname === VOCABULARY_HOME_PATH) return '东东单词 · 单词练习'
     return '东东单词 · 背单词'
   }
 
@@ -113,7 +113,7 @@ function getFooterText(pathname: string, search: string): string {
 
   if (pathname.startsWith('/grammar')) return '东东文法 · 语法库'
   if (pathname === '/practice') return '东东文法 · 语法练习'
-  if (pathname === GRAMMAR_HOME_PATH) return '东东文法 · 语法练习中心'
+  if (pathname === GRAMMAR_HOME_PATH) return '东东文法 · 语法练习'
   return `东东文法 · ${LEVEL_LABELS['PRE-N3']} / ${LEVEL_LABELS.N2} / ${LEVEL_LABELS.N3} 选择题练习`
 }
 
@@ -136,9 +136,9 @@ export default function Layout({ children }: LayoutProps) {
       : section === 'vocabulary'
         ? '背单词'
         : '学文法'
-  /** Logo 回本板块练习中心；右上角回总入口再换板块 */
+  /** Logo 回本板块练习页；右上角回总入口再换板块 */
   const logoTitle =
-    section === 'hub' ? '学习入口' : section === 'vocabulary' ? '单词练习中心' : '语法练习中心'
+    section === 'hub' ? '学习入口' : section === 'vocabulary' ? '单词练习' : '语法练习'
   const switchLabel = section === 'vocabulary' ? '换文法' : '换单词'
   const switchTitle =
     section === 'vocabulary' ? '回主页，可切换到文法' : '回主页，可切换到单词'

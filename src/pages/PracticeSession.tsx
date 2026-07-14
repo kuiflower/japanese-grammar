@@ -174,7 +174,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
             : '该模式下还没有题目，请换其他模式。'}
         </p>
         <Link to={backLink} className="btn btn-primary">
-          {mode === 'wrong' ? '返回首页' : '返回练习中心'}
+          {mode === 'wrong' ? '返回首页' : '返回练习'}
         </Link>
       </div>
     )

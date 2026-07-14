@@ -139,7 +139,7 @@ export default function VocabularyPracticeSession({
     wrongTrailPos >= wrongTrail.length - 1 &&
     poolIndex >= questions.length - 1
   const backLink = mode === 'wrong' ? '/learn/vocabulary' : '/vocab-practice'
-  const backLabel = mode === 'wrong' ? '← 练习中心' : '← 返回'
+  const backLabel = mode === 'wrong' ? '← 练习' : '← 返回'
 
   if (!level || !VOCAB_LEVELS.includes(level)) {
     return (
