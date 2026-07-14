@@ -44,13 +44,13 @@ export const VOCAB_LEVEL_LABELS: Record<VocabLevel, string> = {
 
 /** 同等级两套题库：频出 / 全套 */
 export const VOCAB_TRACK_LABELS: Record<VocabTrack, string> = {
-  exam: '频出单词',
-  full: '全套单词',
+  exam: '频出単語',
+  full: '全套単語',
 }
 
 export const VOCAB_TRACK_SHORT_LABELS: Record<VocabTrack, string> = {
-  exam: '频出单词',
-  full: '全套单词',
+  exam: '频出単語',
+  full: '全套単語',
 }
 
 export const VOCAB_TRACK_DESCS: Record<VocabTrack, string> = {

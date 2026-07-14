@@ -125,7 +125,7 @@ export default function VocabularyList() {
   return (
     <div className="page vocabulary-list">
       <div className="page-header">
-        <h1>单词库</h1>
+        <h1>単語库</h1>
         <p>
           {VOCAB_TRACK_LABELS[track]} · {filtered.length} 词
         </p>

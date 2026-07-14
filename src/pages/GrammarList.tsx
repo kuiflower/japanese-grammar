@@ -99,7 +99,7 @@ export default function GrammarList() {
   return (
     <div className="page grammar-list">
       <div className="page-header">
-        <h1>语法库</h1>
+        <h1>文法库</h1>
         <p>共 {filtered.length} 条</p>
       </div>
 

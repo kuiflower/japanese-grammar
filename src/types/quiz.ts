@@ -32,14 +32,19 @@ export const QUESTION_TYPE_LABELS: Record<QuizQuestionType, string> = {
   meaning: '中文意思',
   usage: '用法要点',
   'sentence-pick': '选正确例句',
-  'fill-blank': '语法挖空',
+  'fill-blank': '文法挖空',
   'error-detect': '改错辨析',
 }
 
 export const LEVEL_LABELS: Record<JlptLevel, string> = {
-  'PRE-N3': '步入N3前',
+  'PRE-N3': 'PRE-N3',
   N2: 'N2',
   N3: 'N3',
+}
+
+/** 练习列表等标题（徽章仍用 LEVEL_LABELS，不含「文法」） */
+export function grammarLevelTitle(level: JlptLevel): string {
+  return level === 'PRE-N3' ? 'PRE-N3文法' : `${LEVEL_LABELS[level]} 文法`
 }
 
 export const ROUND_LABELS: Record<QuizRound, string> = {

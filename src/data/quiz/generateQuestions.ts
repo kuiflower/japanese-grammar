@@ -659,7 +659,7 @@ function createFillBlankQuestion(
     grammarPattern: entry.pattern,
     type: 'fill-blank',
     round: 'enhanced',
-    typeLabel: '语法挖空',
+    typeLabel: '文法挖空',
     prompt: `「${entry.pattern}」${hint}填空：\n${blanked}`,
     options: shuffled.options,
     correctOptionId: shuffled.correctId,

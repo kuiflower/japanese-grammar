@@ -18,16 +18,7 @@ const categoryMap: Record<string, GrammarCategory> = {
   状态: 'verbs',
   固定句式: 'expressions',
   时序: 'conjunctions',
-  第1課: 'expressions',
-  第2課: 'expressions',
-  第3課: 'expressions',
-  第4課: 'expressions',
-  第5課: 'expressions',
-  第6課: 'expressions',
-  第7課: 'expressions',
-  第8課: 'expressions',
-  第9課: 'expressions',
-  第10課: 'expressions',
+  表达: 'expressions',
 }
 
 function toGrammarPoint(entry: GrammarEntry): GrammarPoint {

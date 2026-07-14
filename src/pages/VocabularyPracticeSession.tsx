@@ -167,7 +167,7 @@ export default function VocabularyPracticeSession({
         <p>
           {mode === 'wrong'
             ? '该等级没有需要复习的错题。'
-            : '该等级词库筹备中，请先导入单词数据。'}
+            : '该等级词库筹备中，请先导入単語数据。'}
         </p>
         <Link to={backLink} className="btn btn-primary">
           {backLabel}
@@ -187,7 +187,7 @@ export default function VocabularyPracticeSession({
         <div className="quiz-result-card">
           <p className="quiz-result-label">
             {VOCAB_TRACK_LABELS[track]} · {VOCAB_LEVEL_LABELS[level]}
-            {mode === 'wrong' ? ' · 错题复习' : ' · 单词练习'}
+            {mode === 'wrong' ? ' · 错题复习' : ' · 単語练习'}
           </p>
           <h1>{mode === 'wrong' ? '错题复习完成' : '练习完成'}</h1>
           {mode === 'practice' && (
@@ -200,7 +200,7 @@ export default function VocabularyPracticeSession({
           )}
           {mode === 'wrong' && (
             <p className="quiz-result-pct">
-              本轮真正记住了 {correctCount} 个单词
+              本轮真正记住了 {correctCount} 个単語
             </p>
           )}
           <div className="quiz-result-actions">

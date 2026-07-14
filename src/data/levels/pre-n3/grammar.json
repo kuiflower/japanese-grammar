@@ -5,7 +5,7 @@
     "level": "PRE-N3",
     "pattern": "N1といえば、N2だ",
     "meaning": "提起……的典型代表是……",
-    "category": "第1課",
+    "category": "表达",
     "usage": "接名词1+といえば、名词2+だ；说起N1，典型代表就是N2。",
     "examples": [
       {
@@ -24,7 +24,7 @@
     "level": "PRE-N3",
     "pattern": "〜も（数量强调）",
     "meaning": "多达……；竟有……（强调数量之多）",
-    "category": "第1課",
+    "category": "表达",
     "usage": "接数量词+も；强调数量之多，常含出乎意料的语气。",
     "examples": [
       {
@@ -43,7 +43,7 @@
     "level": "PRE-N3",
     "pattern": "Nは〜こと、〜ことだ",
     "meaning": "……的原因是……、……（列举多个原因）",
-    "category": "第1課",
+    "category": "表达",
     "usage": "接普通形+ことだ，可并列多个；列举造成主语N的原因或理由。",
     "examples": [
       {
@@ -62,7 +62,7 @@
     "level": "PRE-N3",
     "pattern": "Vマス形＋始める／終わる",
     "meaning": "开始……／做完……",
-    "category": "第1課",
+    "category": "表达",
     "usage": "接ます形词干+始める：动作开始。接ます形词干+終わる：动作做完、结束。",
     "notes": "二者均接动词ます形词干，表开始与结束。",
     "examples": [
@@ -82,7 +82,7 @@
     "level": "PRE-N3",
     "pattern": "〜のでしょうか",
     "meaning": "礼貌地询问感到有疑问的事",
-    "category": "第2課",
+    "category": "表达",
     "usage": "接普通形/な形+な/名词だ→な+のでしょうか；委婉提出疑问。",
     "examples": [
       {
@@ -101,7 +101,7 @@
     "level": "PRE-N3",
     "pattern": "V（よう）としても、Vない",
     "meaning": "虽然努力去……，但没能……",
-    "category": "第2課",
+    "category": "表达",
     "usage": "接意向形+としても+否定形；努力想做某事却未能实现。",
     "examples": [
       {
@@ -120,7 +120,7 @@
     "level": "PRE-N3",
     "pattern": "〜のは〜だ",
     "meaning": "……的是……（强调后项）",
-    "category": "第2課",
+    "category": "表达",
     "usage": "接普通形+のは+（强调部分）+だ/ことだ；强调说明重点在后项。",
     "examples": [
       {
@@ -143,7 +143,7 @@
     "level": "PRE-N3",
     "pattern": "V（普通形）ようなN",
     "meaning": "像……那样的N（举例说明）",
-    "category": "第3課",
+    "category": "表达",
     "usage": "接普通形+ような+名词；用具体例子说明某类事物。",
     "examples": [
       {
@@ -162,7 +162,7 @@
     "level": "PRE-N3",
     "pattern": "Nばかり・Vてばかりいる",
     "meaning": "尽是……；老是……",
-    "category": "第3課",
+    "category": "表达",
     "usage": "接名词+ばかり；或接て形+ばかりいる；尽是…，老做同一件事（常含负面）。",
     "examples": [
       {
@@ -181,7 +181,7 @@
     "level": "PRE-N3",
     "pattern": "Nを欲しがる・Vたがる・Vたがらない",
     "meaning": "第三人称的想要／不愿意",
-    "category": "第3課",
+    "category": "表达",
     "usage": "接名词+を欲しがる；接ます形+たがる/たがらない；表第三人称的愿望或不愿。",
     "examples": [
       {
@@ -200,7 +200,7 @@
     "level": "PRE-N3",
     "pattern": "ついVてしまう",
     "meaning": "不由得……；一不小心就……",
-    "category": "第3課",
+    "category": "表达",
     "usage": "接つい+て形+しまう；不由自主或不知不觉地做某事（常含后悔）。",
     "examples": [
       {
@@ -219,7 +219,7 @@
     "level": "PRE-N3",
     "pattern": "〜（の）は〜からだ",
     "meaning": "……是因为……",
-    "category": "第3課",
+    "category": "表达",
     "usage": "接普通形+のは+……+からだ；说明前项的原因。",
     "examples": [
       {
@@ -242,7 +242,7 @@
     "level": "PRE-N3",
     "pattern": "Nのようだ・Nのように・N1のようなN2",
     "meaning": "像……一样（比喻／比拟）",
-    "category": "第3課",
+    "category": "表达",
     "usage": "接名词/な形+ようだ（比喻判断）；+ように（修饰动词形容词）；+ようなN2（像…那样的名词）。",
     "notes": "与みたいだ（更口语）相对。",
     "examples": [
@@ -266,7 +266,7 @@
     "level": "PRE-N3",
     "pattern": "Vていく・Vてきた",
     "meaning": "……下去／……过来（变化趋势）",
-    "category": "第4課",
+    "category": "表达",
     "usage": "接てきた：从过去延续至今的变化。接ていく：从现在向将来延续的变化。",
     "notes": "てくる/ていく还可表物理方向（来/去），第10課另条。",
     "examples": [
@@ -286,7 +286,7 @@
     "level": "PRE-N3",
     "pattern": "表／グラフで見ると、〜ことがわかる",
     "meaning": "从图表可以看出……",
-    "category": "第4課",
+    "category": "表达",
     "usage": "接表/グラフで見ると+普通形+ことがわかる；从数据或图表得出结论。",
     "examples": [
       {
@@ -305,7 +305,7 @@
     "level": "PRE-N3",
     "pattern": "XはYほど〜ない",
     "meaning": "X不如Y那么……",
-    "category": "第4課",
+    "category": "表达",
     "usage": "接X+は+Y+ほど+否定形；表示程度不及比较对象Y。",
     "examples": [
       {
@@ -324,7 +324,7 @@
     "level": "PRE-N3",
     "pattern": "A／Na＋さ（名词化）",
     "meaning": "……程度；……性（形容词名词化）",
-    "category": "第5課",
+    "category": "表达",
     "usage": "い形容词去い+さ；な形容词词干+さ；将性质名词化。",
     "examples": [
       {
@@ -343,7 +343,7 @@
     "level": "PRE-N3",
     "pattern": "連用中止",
     "meaning": "用连用形连接句子（书面）",
-    "category": "第5課",
+    "category": "表达",
     "usage": "接动词ます形词干、い形容词く形等连接前后句；多用于书面。",
     "examples": [
       {
@@ -362,7 +362,7 @@
     "level": "PRE-N3",
     "pattern": "〜ものだ（一般常识）",
     "meaning": "理应……；本来就是……",
-    "category": "第5課",
+    "category": "表达",
     "usage": "接普通形+ものだ；说明一般道理、理所当然的情况，或感慨。",
     "notes": "回忆过去习惯用たものだ；与ことだ（强调结论）不同。",
     "examples": [
@@ -382,7 +382,7 @@
     "level": "PRE-N3",
     "pattern": "〜ということだ（传闻）",
     "meaning": "听说……（转述）",
-    "category": "第5課",
+    "category": "表达",
     "usage": "接普通形+ということだ；转述听来的信息，书面、正式。",
     "notes": "极口语用って；不确定用とか。",
     "examples": [
@@ -402,7 +402,7 @@
     "level": "PRE-N3",
     "pattern": "〜まま",
     "meaning": "保持……的状态",
-    "category": "第6課",
+    "category": "表达",
     "usage": "接た形/ない形、な形+な、名词+の+まま；保持原状态不变地持续。",
     "examples": [
       {
@@ -425,7 +425,7 @@
     "level": "PRE-N3",
     "pattern": "Nによって（受身の行為者）",
     "meaning": "由……（被动句中的施动者）",
-    "category": "第6課",
+    "category": "表达",
     "usage": "接名词+によって；创作类被动句中标示施事（由谁做的）。",
     "notes": "另可表手段、原因或因人而异（第8/10課）。",
     "examples": [
@@ -445,7 +445,7 @@
     "level": "PRE-N3",
     "pattern": "〜ために（原因・理由）",
     "meaning": "因为……（原因）",
-    "category": "第6課",
+    "category": "表达",
     "usage": "接普通形/な形な/名词の+ため（に）；表示原因或理由。",
     "examples": [
       {
@@ -464,7 +464,7 @@
     "level": "PRE-N3",
     "pattern": "Vったものだ",
     "meaning": "以前常常……；曾经……",
-    "category": "第7課",
+    "category": "表达",
     "usage": "接动词た形+ものだ；回忆过去经常做的事或过去的习惯。",
     "examples": [
       {
@@ -483,7 +483,7 @@
     "level": "PRE-N3",
     "pattern": "〜として",
     "meaning": "作为……",
-    "category": "第7課",
+    "category": "表达",
     "usage": "接名词+として；明确表示立场、身份、资格或种类。",
     "examples": [
       {
@@ -502,7 +502,7 @@
     "level": "PRE-N3",
     "pattern": "〜といっても",
     "meaning": "虽说……，但……",
-    "category": "第7課",
+    "category": "表达",
     "usage": "接普通形/な形/名词だ+といっても；实际与字面印象有差距。",
     "examples": [
       {
@@ -521,7 +521,7 @@
     "level": "PRE-N3",
     "pattern": "V1よりV2ほうが〜",
     "meaning": "比起V1，V2更……",
-    "category": "第7課",
+    "category": "表达",
     "usage": "接V1辞书形+より+V2辞书形+ほうが；比较两者，强调后者更…",
     "examples": [
       {
@@ -540,7 +540,7 @@
     "level": "PRE-N3",
     "pattern": "〜なら（条件）",
     "meaning": "如果是……的话",
-    "category": "第7課",
+    "category": "表达",
     "usage": "接名词/普通形/た形+なら；以对方或自己提到的情况为前提给建议或判断。",
     "examples": [
       {
@@ -559,7 +559,7 @@
     "level": "PRE-N3",
     "pattern": "Vて欲しい・Vないで欲しい",
     "meaning": "希望……／希望不要……",
-    "category": "第7課",
+    "category": "表达",
     "usage": "接て形+欲しい；或接ない形+で欲しい；向他人提出要求或希望。",
     "examples": [
       {
@@ -578,7 +578,7 @@
     "level": "PRE-N3",
     "pattern": "〜あいだ・〜あいだに",
     "meaning": "在……期间／在……期间里（发生了……）",
-    "category": "第8課",
+    "category": "表达",
     "usage": "接辞书形/ない形/た形+あいだ：期间内持续或反复。+あいだに：期间内某一时刻发生一次。",
     "notes": "与 N3「間/間に」同逻辑，あいだ为平假名书写。",
     "examples": [
@@ -602,7 +602,7 @@
     "level": "PRE-N3",
     "pattern": "〜わけではない",
     "meaning": "并非……；不一定……",
-    "category": "第8課",
+    "category": "表达",
     "usage": "接普通形/名词+わけではない；部分否定，常与「全部」「いつも」等连用。",
     "examples": [
       {
@@ -621,7 +621,7 @@
     "level": "PRE-N3",
     "pattern": "Vる／Vないことがある",
     "meaning": "有时会……；偶尔不……",
-    "category": "第8課",
+    "category": "表达",
     "usage": "接辞书形/ない形+ことがある；偶尔发生或不常发生。",
     "examples": [
       {
@@ -640,7 +640,7 @@
     "level": "PRE-N3",
     "pattern": "V1るまで、V2",
     "meaning": "直到V1，一直V2",
-    "category": "第8課",
+    "category": "表达",
     "usage": "接V1辞书形+まで、V2；在V1实现之前，V2的状态或动作一直持续。",
     "examples": [
       {
@@ -659,7 +659,7 @@
     "level": "PRE-N3",
     "pattern": "Nによって（状況により）",
     "meaning": "因……而异；根据……而不同",
-    "category": "第8課",
+    "category": "表达",
     "usage": "接名词+によって；因对象或情况不同，结果、方式随之不同。",
     "notes": "取决于条件用次第で；被动施事用によって（第6課）。",
     "examples": [
@@ -679,7 +679,7 @@
     "level": "PRE-N3",
     "pattern": "〜にともなって",
     "meaning": "随着……；伴随……",
-    "category": "第9課",
+    "category": "表达",
     "usage": "接辞书形/名词+にともなって；伴随前项变化，后项也变化。",
     "examples": [
       {
@@ -698,7 +698,7 @@
     "level": "PRE-N3",
     "pattern": "つまり・一方（接続詞）",
     "meaning": "也就是说……／另一方面……",
-    "category": "第9課",
+    "category": "表达",
     "usage": "句首つまり：归纳前文、换言说明。句首一方：引出另一方面作对比，书面常用。",
     "notes": "一方（は）还可接名词表「一方面…」。",
     "examples": [
@@ -718,7 +718,7 @@
     "level": "PRE-N3",
     "pattern": "Na／Nである",
     "meaning": "是……（书面判断）",
-    "category": "第9課",
+    "category": "表达",
     "usage": "接な形容词/名词+である；书面正式的判断表达。",
     "examples": [
       {
@@ -737,7 +737,7 @@
     "level": "PRE-N3",
     "pattern": "使役受身",
     "meaning": "被迫做……",
-    "category": "第9課",
+    "category": "表达",
     "usage": "接动词させられる；被迫做某事，含不情愿（使役被动）。",
     "examples": [
       {
@@ -760,7 +760,7 @@
     "level": "PRE-N3",
     "pattern": "〜て欲しいものだ",
     "meaning": "希望……（一般期望）",
-    "category": "第9課",
+    "category": "表达",
     "usage": "接て形+欲しいものだ；表达对社会或他人的一般性期望。",
     "examples": [
       {
@@ -779,7 +779,7 @@
     "level": "PRE-N3",
     "pattern": "Nによって（手段・方法）",
     "meaning": "通过……；借助……",
-    "category": "第10課",
+    "category": "表达",
     "usage": "接名词+によって；书面语表手段、方法，「通过…、借助…」。",
     "notes": "原因、因人而异等另有用法。",
     "examples": [
@@ -799,7 +799,7 @@
     "level": "PRE-N3",
     "pattern": "Vる／Nの代わりに",
     "meaning": "代替……；不……而……",
-    "category": "第10課",
+    "category": "表达",
     "usage": "接辞书形/名词の+代わりに；表示替代关系。",
     "examples": [
       {
@@ -818,7 +818,7 @@
     "level": "PRE-N3",
     "pattern": "Vてくる・Vていく（方向）",
     "meaning": "……过来／……过去",
-    "category": "第10課",
+    "category": "表达",
     "usage": "接てくる：向说话人方向移动或变化靠近。接ていく：远离说话人方向移动或延续。",
     "notes": "てきた/ていく还可表时间趋势（第4課）。",
     "examples": [
@@ -838,7 +838,7 @@
     "level": "PRE-N3",
     "pattern": "Vるべきだ",
     "meaning": "应该……；理应……",
-    "category": "第10課",
+    "category": "表达",
     "usage": "接辞书形+べきだ；表示社会一般认为应当做的事。",
     "examples": [
       {
@@ -857,7 +857,7 @@
     "level": "PRE-N3",
     "pattern": "Vずに",
     "meaning": "不……而……",
-    "category": "第10課",
+    "category": "表达",
     "usage": "接ない形词干+ずに（する→せずに）；与ないで同义，书面语。",
     "examples": [
       {

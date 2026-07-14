@@ -27,13 +27,13 @@ const VALID_ROUNDS: QuizRound[] = ['all', 'round1', 'round2', 'enhanced']
 const grammarNavItems = [
   { path: GRAMMAR_HOME_PATH, label: '首页' },
   { path: '/practice', label: '练习' },
-  { path: '/grammar', label: '语法库' },
+  { path: '/grammar', label: '文法库' },
 ]
 
 const vocabularyNavItems = [
   { path: VOCABULARY_HOME_PATH, label: '首页' },
   { path: '/vocab-practice', label: '练习' },
-  { path: '/vocabulary/exam', label: '单词库' },
+  { path: '/vocabulary/exam', label: '単語库' },
 ]
 
 function detectVocabTrack(pathname: string) {
@@ -84,15 +84,15 @@ function getFooterText(pathname: string, search: string): string {
 
     if (level && trackLabel) {
       return wrong
-        ? `东东单词 · ${trackLabel} · ${VOCAB_LEVEL_LABELS[level]} · 错题复习`
-        : `东东单词 · ${trackLabel} · ${VOCAB_LEVEL_LABELS[level]} · 单词练习`
+        ? `东东単語 · ${trackLabel} · ${VOCAB_LEVEL_LABELS[level]} · 错题复习`
+        : `东东単語 · ${trackLabel} · ${VOCAB_LEVEL_LABELS[level]} · 単語练习`
     }
     if (pathname.startsWith('/vocabulary/') && trackLabel) {
-      return `东东单词 · ${trackLabel} · 单词库`
+      return `东东単語 · ${trackLabel} · 単語库`
     }
-    if (pathname === '/vocab-practice') return '东东单词 · 单词练习'
-    if (pathname === VOCABULARY_HOME_PATH) return '东东单词 · 单词练习'
-    return '东东单词 · 背单词'
+    if (pathname === '/vocab-practice') return '东东単語 · 単語练习'
+    if (pathname === VOCABULARY_HOME_PATH) return '东东単語 · 単語练习'
+    return '东东単語 · 背単語'
   }
 
   const roundParam = new URLSearchParams(search).get('round')
@@ -111,9 +111,9 @@ function getFooterText(pathname: string, search: string): string {
     return wrongMatch ? `东东文法 · ${title} · 错题复习` : `东东文法 · ${title}`
   }
 
-  if (pathname.startsWith('/grammar')) return '东东文法 · 语法库'
-  if (pathname === '/practice') return '东东文法 · 语法练习'
-  if (pathname === GRAMMAR_HOME_PATH) return '东东文法 · 语法练习'
+  if (pathname.startsWith('/grammar')) return '东东文法 · 文法库'
+  if (pathname === '/practice') return '东东文法 · 文法练习'
+  if (pathname === GRAMMAR_HOME_PATH) return '东东文法 · 文法练习'
   return `东东文法 · ${LEVEL_LABELS['PRE-N3']} / ${LEVEL_LABELS.N2} / ${LEVEL_LABELS.N3} 选择题练习`
 }
 
@@ -129,19 +129,19 @@ export default function Layout({ children }: LayoutProps) {
         ? GRAMMAR_HOME_PATH
         : '/'
   const logoJa =
-    section === 'hub' ? '东东日语' : section === 'vocabulary' ? '东东单词' : '东东文法'
+    section === 'hub' ? '东东日语' : section === 'vocabulary' ? '东东単語' : '东东文法'
   const logoText =
     section === 'hub'
       ? '学习平台'
       : section === 'vocabulary'
-        ? '背单词'
+        ? '背単語'
         : '学文法'
   /** Logo 回本板块练习页；右上角回总入口再换板块 */
   const logoTitle =
-    section === 'hub' ? '学习入口' : section === 'vocabulary' ? '单词练习' : '语法练习'
-  const switchLabel = section === 'vocabulary' ? '换文法' : '换单词'
+    section === 'hub' ? '学习入口' : section === 'vocabulary' ? '単語练习' : '文法练习'
+  const switchLabel = section === 'vocabulary' ? '换文法' : '换単語'
   const switchTitle =
-    section === 'vocabulary' ? '回主页，可切换到文法' : '回主页，可切换到单词'
+    section === 'vocabulary' ? '回主页，可切换到文法' : '回主页，可切换到単語'
 
   const navItems =
     section === 'vocabulary'

@@ -204,7 +204,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
           )}
           {mode === 'wrong' && (
             <p className="quiz-result-pct">
-              本轮真正学会了 {correctCount} 道语法题
+              本轮真正学会了 {correctCount} 道文法题
             </p>
           )}
           <div className="quiz-result-actions">

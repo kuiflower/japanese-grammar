@@ -20,7 +20,7 @@ const entries: {
   {
     to: VOCABULARY_HOME_PATH,
     ja: '単語',
-    title: '背单词',
+    title: '背単語',
     desc: '读音、意思、填空连过三关，适合考前突击或系统刷词。覆盖 N5～N1。',
     tone: 'vocabulary' as const,
     status: 'ready' as const,
@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <div className="page learning-hub">
       <section className="hero learning-hub-hero">
-        <h1 className="hero-label">日本語JLPT备考专项</h1>
+        <h1 className="hero-label">日本語JLPT备考训练</h1>
       </section>
 
       <div className="learning-hub-grid">
