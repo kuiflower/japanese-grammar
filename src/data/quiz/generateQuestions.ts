@@ -63,16 +63,6 @@ function normalizePattern(pattern: string): string {
   return pattern.replace(/[〜～\s（）()【】]/g, '').trim()
 }
 
-function hasDuplicatePattern(
-  entry: GrammarEntry,
-  all: GrammarEntry[],
-): boolean {
-  const key = normalizePattern(entry.pattern)
-  return all.some(
-    (o) => o.id !== entry.id && normalizePattern(o.pattern) === key,
-  )
-}
-
 /** 选项展示字数区间（中文/标点计 1 字） */
 const QUIZ_OPTION_MIN_LEN = 10
 const QUIZ_OPTION_MAX_LEN = 36
@@ -286,6 +276,7 @@ function pickUsageDistractors(
   entry: GrammarEntry,
   all: GrammarEntry[],
   correct: string,
+  hookCache: Map<string, string | null>,
 ): string[] {
   return pickOthers(
     all,
@@ -293,13 +284,13 @@ function pickUsageDistractors(
     hashSeed(entry.id + '-u'),
     (o) => {
       if (o.id === entry.id) return true
-      const hook = usageHook(o, all)
+      const hook = hookCache.get(o.id) ?? null
       if (!hook || hook === correct) return true
       if (isUsageRedundantWithMeaning(o.meaning, hook)) return true
       return false
     },
   )
-    .map((o) => usageHook(o, all)!)
+    .map((o) => hookCache.get(o.id)!)
     .filter(Boolean)
 }
 
@@ -333,10 +324,7 @@ function excludedSiblingExampleSentences(
 }
 
 function sentencePickCategoryHint(entry: GrammarEntry): string {
-  if (entry.category && (/^第\d+課$/.test(entry.category) || entry.level === 'N3')) {
-    return `（${entry.category}）`
-  }
-  return ''
+  return entry.category ? `（${entry.category}）` : ''
 }
 
 function isMisleadingSentenceDistractor(pattern: string, sentence: string): boolean {
@@ -419,11 +407,12 @@ function createUsageQuestion(
   entry: GrammarEntry,
   all: GrammarEntry[],
   level: JlptLevel,
+  hookCache: Map<string, string | null>,
 ): QuizQuestion | null {
-  const hook = usageHook(entry, all)
+  const hook = hookCache.get(entry.id) ?? null
   if (!hook) return null
 
-  const distractors = pickUsageDistractors(entry, all, hook)
+  const distractors = pickUsageDistractors(entry, all, hook, hookCache)
   if (distractors.length < 3) return null
 
   const optionTexts = harmonizeQuizOptionTexts([hook, ...distractors])
@@ -487,9 +476,7 @@ function createSentencePickQuestion(
   )
   if (distractors.length < 3) return null
 
-  const dup = hasDuplicatePattern(entry, all)
-  const lessonHint = sentencePickCategoryHint(entry)
-  const categoryHint = lessonHint || (dup && entry.category ? `（${entry.category}）` : '')
+  const categoryHint = sentencePickCategoryHint(entry)
   const prompt = `以下哪句是你的讲义中「${entry.pattern}」${categoryHint}的例句？`
 
   const options = [
@@ -613,10 +600,40 @@ function grammarSpanPool(all: GrammarEntry[], excludeId: string): string[] {
   return [...spans]
 }
 
+/** 按词条预计算 span，生成增强题时复用，避免每题扫全库 */
+function buildEntrySpanLists(all: GrammarEntry[]): Map<string, string[]> {
+  const byEntry = new Map<string, string[]>()
+  for (const e of all) {
+    const local = new Set<string>()
+    for (const frag of extractGrammarFragments(e.pattern)) {
+      if (frag.length >= 3) local.add(frag)
+    }
+    for (const ex of validExamples(e)) {
+      const span = findBlankSpan(e, ex.japanese)
+      if (span) local.add(span)
+    }
+    byEntry.set(e.id, [...local])
+  }
+  return byEntry
+}
+
+function spanPoolFromLists(
+  lists: Map<string, string[]>,
+  excludeId: string,
+): string[] {
+  const spans = new Set<string>()
+  for (const [id, local] of lists) {
+    if (id === excludeId) continue
+    for (const s of local) spans.add(s)
+  }
+  return [...spans]
+}
+
 function createFillBlankQuestion(
   entry: GrammarEntry,
   all: GrammarEntry[],
   level: JlptLevel,
+  spanLists?: Map<string, string[]>,
 ): QuizQuestion | null {
   const examples = validExamples(entry)
   if (examples.length === 0) return null
@@ -634,7 +651,9 @@ function createFillBlankQuestion(
   if (!target || !span) return null
 
   const blanked = target.japanese.replace(span, '（　　）')
-  const pool = grammarSpanPool(all, entry.id)
+  const pool = spanLists
+    ? spanPoolFromLists(spanLists, entry.id)
+    : grammarSpanPool(all, entry.id)
   const distractors = pickOthers(
     pool,
     3,
@@ -671,6 +690,7 @@ function createErrorDetectQuestion(
   entry: GrammarEntry,
   all: GrammarEntry[],
   level: JlptLevel,
+  spanLists?: Map<string, string[]>,
 ): QuizQuestion | null {
   const examples = validExamples(entry)
   if (examples.length === 0) return null
@@ -679,7 +699,9 @@ function createErrorDetectQuestion(
   const span = findBlankSpan(entry, ex.japanese)
   if (!span) return null
 
-  const pool = grammarSpanPool(all, entry.id)
+  const pool = spanLists
+    ? spanPoolFromLists(spanLists, entry.id)
+    : grammarSpanPool(all, entry.id)
   const wrongSpans = pickOthers(
     pool,
     3,
@@ -721,17 +743,23 @@ export function generateQuestionsFromGrammar(
   entries: GrammarEntry[],
   level: JlptLevel,
 ): QuizQuestion[] {
+  const spanLists = buildEntrySpanLists(entries)
+  const hookCache = new Map<string, string | null>()
+  for (const entry of entries) {
+    hookCache.set(entry.id, usageHook(entry, entries))
+  }
+
   const questions: QuizQuestion[] = []
   for (const entry of entries) {
     const m = createMeaningQuestion(entry, entries, level)
     if (m) questions.push(m)
-    const u = createUsageQuestion(entry, entries, level)
+    const u = createUsageQuestion(entry, entries, level, hookCache)
     if (u) questions.push(u)
     const s = createSentencePickQuestion(entry, entries, level)
     if (s) questions.push(s)
-    const f = createFillBlankQuestion(entry, entries, level)
+    const f = createFillBlankQuestion(entry, entries, level, spanLists)
     if (f) questions.push(f)
-    const e = createErrorDetectQuestion(entry, entries, level)
+    const e = createErrorDetectQuestion(entry, entries, level, spanLists)
     if (e) questions.push(e)
   }
   return questions

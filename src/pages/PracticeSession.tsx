@@ -40,6 +40,18 @@ interface AnswerRecord {
   correct: boolean
 }
 
+function answersFromLog(
+  log: Map<string, AnswerRecord>,
+): Record<string, AnswerRecord> {
+  return Object.fromEntries(log.entries())
+}
+
+function logFromAnswers(
+  answers?: Record<string, AnswerRecord>,
+): Map<string, AnswerRecord> {
+  return new Map(Object.entries(answers ?? {}))
+}
+
 interface PracticeSessionProps {
   mode?: 'practice' | 'wrong'
 }
@@ -96,36 +108,51 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
     }
 
     const filtered = filterQuestions(getQuestionsByLevel(level), round)
+    const cp = resume && !fresh ? getCheckpoint(level, round) : null
 
-    if (resume && !fresh) {
-      const cp = getCheckpoint(level, round)
+    let sessionQuestions: QuizQuestion[]
+    let startIndex = 0
+    let startCorrect = 0
+
+    if (round === 'round1') {
+      // 各级统一：第一轮始终用模版生成序（意思→用法→下一词条），不洗牌
+      sessionQuestions = filtered
       if (cp) {
-        const restored = resolveQuestionsByIds(cp.questionIds, level)
-        if (restored.length > 0) {
-          setQuestions(restored)
-          setIndex(cp.currentIndex)
-          setCorrectCount(cp.correctCount)
-          correctCountRef.current = cp.correctCount
-          setReady(true)
-          return
-        }
+        const currentId = cp.questionIds[cp.currentIndex]
+        const found = currentId
+          ? filtered.findIndex((q) => q.id === currentId)
+          : -1
+        startIndex = found >= 0 ? found : 0
+        startCorrect = cp.correctCount
+        answerLogRef.current = logFromAnswers(cp.answers)
       }
+    } else if (cp) {
+      const restored = resolveQuestionsByIds(cp.questionIds, level)
+      if (restored.length > 0) {
+        sessionQuestions = restored
+        startIndex = cp.currentIndex
+        startCorrect = cp.correctCount
+        answerLogRef.current = logFromAnswers(cp.answers)
+      } else {
+        sessionQuestions = shuffleQuestions(filtered)
+      }
+    } else {
+      sessionQuestions = shuffleQuestions(filtered)
     }
 
-    const shouldKeepOriginalOrder = level === 'N3' && round === 'round1'
-    const shuffled = shouldKeepOriginalOrder ? filtered : shuffleQuestions(filtered)
     saveCheckpoint({
       level,
       round,
-      questionIds: shuffled.map((q) => q.id),
-      currentIndex: 0,
-      correctCount: 0,
+      questionIds: sessionQuestions.map((q) => q.id),
+      currentIndex: startIndex,
+      correctCount: startCorrect,
+      answers: answersFromLog(answerLogRef.current),
       updatedAt: Date.now(),
     })
-    setQuestions(shuffled)
-    setIndex(0)
-    setCorrectCount(0)
-    correctCountRef.current = 0
+    setQuestions(sessionQuestions)
+    setIndex(startIndex)
+    setCorrectCount(startCorrect)
+    correctCountRef.current = startCorrect
     setReady(true)
   }, [sessionKey, level, mode, round, fresh, resume, retryKey])
 
@@ -277,6 +304,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
             questionIds: questions.map((q) => q.id),
             currentIndex: prevIndex,
             correctCount: correctCountRef.current,
+            answers: answersFromLog(answerLogRef.current),
             updatedAt: Date.now(),
           })
           const prevQuestion = questions[prevIndex]
@@ -288,7 +316,11 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
         }}
         onAnswer={(correct, selectedId) => {
           lastAnswerCorrect.current = correct
+          const previous = answerLogRef.current.get(current.id)
           answerLogRef.current.set(current.id, { selectedId, correct })
+          // 同题已答过（含「上一题」回来再看）时不重复计分
+          if (previous) return
+
           if (mode === 'practice') {
             if (correct) {
               correctCountRef.current += 1
@@ -296,6 +328,15 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
             } else {
               addWrongQuestion(current.id, level)
             }
+            saveCheckpoint({
+              level,
+              round,
+              questionIds: questions.map((q) => q.id),
+              currentIndex: index,
+              correctCount: correctCountRef.current,
+              answers: answersFromLog(answerLogRef.current),
+              updatedAt: Date.now(),
+            })
           } else if (correct) {
             correctCountRef.current += 1
             setCorrectCount(correctCountRef.current)
@@ -376,6 +417,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
               questionIds: questions.map((q) => q.id),
               currentIndex: nextIndex,
               correctCount: correctCountRef.current,
+              answers: answersFromLog(answerLogRef.current),
               updatedAt: Date.now(),
             })
             setIndex(nextIndex)

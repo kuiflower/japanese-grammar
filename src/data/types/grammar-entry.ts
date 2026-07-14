@@ -12,10 +12,11 @@ export interface GrammarEntry {
   level: GrammarLevel
   pattern: string
   meaning: string
-  category?: string
-  /** 接续 / 语境 / 限制（用法题考点） */
-  usage?: string
-  /** 与近义语法的辨析（展示用，不出题） */
+  /** 与 N3 同类标签：因果 / 时序 / 固定句式 等 */
+  category: string
+  /** 接续 / 语境 / 限制（用法题考点；第一轮用法题依赖此字段） */
+  usage: string
+  /** 与近义语法的辨析（展示用，不出题；可缺省） */
   notes?: string
   examples: GrammarExample[]
 }

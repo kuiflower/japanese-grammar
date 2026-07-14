@@ -11,6 +11,8 @@ export interface PracticeCheckpoint {
   /** 下一题在 questionIds 中的下标 */
   currentIndex: number
   correctCount: number
+  /** 已答记录：续做时恢复，避免返回重答重复计分 */
+  answers?: Record<string, { selectedId: string; correct: boolean }>
   updatedAt: number
 }
 
