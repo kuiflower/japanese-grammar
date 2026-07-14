@@ -54,8 +54,8 @@ export const VOCAB_TRACK_SHORT_LABELS: Record<VocabTrack, string> = {
 }
 
 export const VOCAB_TRACK_DESCS: Record<VocabTrack, string> = {
-  exam: '考试高频精简词表，优先突破常考词',
-  full: '该等级完整词库，系统覆盖巩固',
+  exam: '考试里反复出现的高频词，先背这些提分更快',
+  full: '该等级完整词表，适合系统扫一遍、查漏补缺',
 }
 
 export const VOCAB_STEP_LABELS: Record<VocabQuizStepType, string> = {

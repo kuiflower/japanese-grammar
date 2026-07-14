@@ -6,6 +6,7 @@ import type { VocabularyEntry } from '@/data/types/vocabulary-entry'
 import {
   VOCAB_LEVELS,
   VOCAB_LEVEL_LABELS,
+  VOCAB_TRACK_DESCS,
   VOCAB_TRACK_LABELS,
   VOCAB_TRACK_SHORT_LABELS,
   VOCAB_TRACKS,
@@ -13,6 +14,17 @@ import {
   vocabTrackToPath,
   type VocabLevel,
 } from '@/types/vocab-quiz'
+
+/** 列表右侧短词性：保留括号配对，避免「动词（一段」缺右括号 */
+function shortPosLabel(pos: string): string {
+  const withParen = pos.match(/^(.+?[（(])([^・）)]+)/)
+  if (withParen) {
+    const open = withParen[1]
+    const close = open.includes('（') ? '）' : ')'
+    return `${open}${withParen[2]}${close}`
+  }
+  return pos.split('・')[0] ?? pos
+}
 
 function VocabRow({
   entry,
@@ -42,20 +54,24 @@ function VocabRow({
         onClick={onToggle}
         aria-expanded={expanded}
       >
-        <span className="grammar-expand-icon" aria-hidden>
-          {expanded ? '−' : '+'}
+        <span className="grammar-row-lead">
+          <span className="grammar-expand-icon" aria-hidden>
+            {expanded ? '−' : '+'}
+          </span>
+          <span className="badge badge-level">{entry.level}</span>
         </span>
-        <span className="badge badge-level">{entry.level}</span>
         <div className="grammar-row-main">
-          <h3>
-            <span lang="ja">{entry.word}</span>
-            <span className="grammar-ja" lang="ja">
-              {entry.reading}
-            </span>
-          </h3>
+          <div className="grammar-row-topline">
+            <h3>
+              <span lang="ja">{entry.word}</span>
+              <span className="grammar-ja" lang="ja">
+                {entry.reading}
+              </span>
+            </h3>
+            <span className="grammar-category">{shortPosLabel(entry.pos)}</span>
+          </div>
           <p>{entry.meaning}</p>
         </div>
-        <span className="grammar-category">{entry.pos.split('・')[0]}</span>
       </button>
       {expanded && (
         <div className="grammar-row-detail">
@@ -111,11 +127,12 @@ export default function VocabularyList() {
       <div className="page-header">
         <h1>单词库</h1>
         <p>
-          {VOCAB_TRACK_LABELS[track]} · 共 {filtered.length} 个单词 · 点击条目展开详情
+          {VOCAB_TRACK_LABELS[track]} · {filtered.length} 词
         </p>
+        <p className="page-header-note">{VOCAB_TRACK_DESCS[track]}</p>
       </div>
 
-      <div className="filter-bar">
+      <div className="filter-bar track-filter-bar">
         {VOCAB_TRACKS.map((t) => (
           <button
             key={t}

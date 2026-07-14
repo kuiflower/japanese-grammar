@@ -91,11 +91,6 @@ export default function GrammarHome() {
     setTick(version)
   }, [version])
 
-  const hasAnyRecord = LEVELS.some((level) =>
-    HOME_ROUND_GROUPS.some(({ round }) => {
-      return getCheckpoint(level, round) || getSessionSummary(level, round)
-    }),
-  )
   const hasAnyWrong = LEVELS.some((level) =>
     HOME_ROUND_GROUPS.some(({ round }) => countWrongForRound(level, round) > 0),
   )
@@ -105,9 +100,6 @@ export default function GrammarHome() {
       <section className="hero hero-compact">
         <p className="hero-label">日本語文法</p>
         <h1>语法练习中心</h1>
-        <p className="hero-desc">
-          按等级练意思、用法和例句；中途退出下次还能接着练，错过的题会集中复习。
-        </p>
         <div className="hero-actions">
           <Link to="/practice" className="btn btn-primary">
             开始新练习
@@ -121,9 +113,6 @@ export default function GrammarHome() {
       <section className="section">
         <div className="section-header">
           <h2>上次答题记录</h2>
-          {!hasAnyRecord && (
-            <span className="section-hint">这里会显示你各等级上次练到哪里</span>
-          )}
         </div>
         <div className="memory-panel">
           {HOME_ROUND_GROUPS.map(({ round }) => (
@@ -145,9 +134,6 @@ export default function GrammarHome() {
       <section className="section">
         <div className="section-header">
           <h2>错题记录</h2>
-          {!hasAnyWrong && (
-            <span className="section-hint">错过的语法题会出现在这里，方便回炉</span>
-          )}
         </div>
         <div className="memory-panel memory-panel-wrong">
           {HOME_ROUND_GROUPS.map(({ round, label }) => {
@@ -175,7 +161,7 @@ export default function GrammarHome() {
             )
           })}
           {!hasAnyWrong && (
-            <p className="memory-empty">还没有错题，加油！</p>
+            <p className="memory-empty">暂无错题</p>
           )}
         </div>
       </section>

@@ -143,7 +143,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
     wrongTrailPos >= wrongTrail.length - 1 &&
     poolIndex >= questions.length - 1
   const backLink = mode === 'wrong' ? '/' : '/practice'
-  const backLabel = mode === 'wrong' ? '← 首页' : '← 练习中心'
+  const backLabel = mode === 'wrong' ? '← 首页' : '← 返回'
 
   if (!level || !VALID_LEVELS.includes(level)) {
     return (
@@ -221,7 +221,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
               </Link>
             )}
             <Link to={backLink} className="btn btn-secondary">
-              {mode === 'wrong' ? '回首页' : '换模式'}
+              {mode === 'wrong' ? '回首页' : '返回练习'}
             </Link>
           </div>
         </div>
@@ -246,12 +246,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
         {backLabel}
       </Link>
       {mode === 'wrong' && (
-        <p className="session-mode-hint">
-          错题回炉 · 真正答对再进下一题；若是蒙对，点「猜对」先跳过但仍会留下
-        </p>
-      )}
-      {mode === 'practice' && resume && (
-        <p className="session-mode-hint">接着上次没做完的语法题继续</p>
+        <p className="session-mode-hint">答对移除 · 蒙对点「猜对」暂留</p>
       )}
       <QuizCard
         key={`${current.id}@${displayIndex}`}

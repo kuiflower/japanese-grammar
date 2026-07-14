@@ -22,4 +22,5 @@ export function getAllGrammarEntries(): GrammarEntry[] {
 
 export function getGrammarEntryById(id: string): GrammarEntry | undefined {
   return getAllGrammarEntries().find((e) => e.id === id)
+  
 }

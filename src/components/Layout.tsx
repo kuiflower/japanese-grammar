@@ -84,15 +84,15 @@ function getFooterText(pathname: string, search: string): string {
 
     if (level && trackLabel) {
       return wrong
-        ? `东东日语 · ${trackLabel} · ${VOCAB_LEVEL_LABELS[level]} · 错题复习`
-        : `东东日语 · ${trackLabel} · ${VOCAB_LEVEL_LABELS[level]} · 单词练习`
+        ? `东东单词 · ${trackLabel} · ${VOCAB_LEVEL_LABELS[level]} · 错题复习`
+        : `东东单词 · ${trackLabel} · ${VOCAB_LEVEL_LABELS[level]} · 单词练习`
     }
     if (pathname.startsWith('/vocabulary/') && trackLabel) {
-      return `东东日语 · ${trackLabel} · 单词库`
+      return `东东单词 · ${trackLabel} · 单词库`
     }
-    if (pathname === '/vocab-practice') return '东东日语 · 单词练习'
-    if (pathname === VOCABULARY_HOME_PATH) return '东东日语 · 单词练习中心'
-    return '东东日语 · 背单词'
+    if (pathname === '/vocab-practice') return '东东单词 · 单词练习'
+    if (pathname === VOCABULARY_HOME_PATH) return '东东单词 · 单词练习中心'
+    return '东东单词 · 背单词'
   }
 
   const roundParam = new URLSearchParams(search).get('round')
@@ -128,13 +128,20 @@ export default function Layout({ children }: LayoutProps) {
       : section === 'grammar'
         ? GRAMMAR_HOME_PATH
         : '/'
-  const logoJa = section === 'hub' ? '东东日语' : section === 'vocabulary' ? '东东日语' : '东东文法'
+  const logoJa =
+    section === 'hub' ? '东东日语' : section === 'vocabulary' ? '东东单词' : '东东文法'
   const logoText =
     section === 'hub'
       ? '学习平台'
       : section === 'vocabulary'
         ? '背单词'
         : '学文法'
+  /** Logo 回本板块练习中心；右上角回总入口再换板块 */
+  const logoTitle =
+    section === 'hub' ? '学习入口' : section === 'vocabulary' ? '单词练习中心' : '语法练习中心'
+  const switchLabel = section === 'vocabulary' ? '换文法' : '换单词'
+  const switchTitle =
+    section === 'vocabulary' ? '回主页，可切换到文法' : '回主页，可切换到单词'
 
   const navItems =
     section === 'vocabulary'
@@ -147,7 +154,7 @@ export default function Layout({ children }: LayoutProps) {
     <div className="app">
       <header className="header">
         <div className="header-inner">
-          <Link to={logoHref} className="logo">
+          <Link to={logoHref} className="logo" title={logoTitle}>
             <span className="logo-ja">{logoJa}</span>
             <span className="logo-text">{logoText}</span>
           </Link>
@@ -164,8 +171,8 @@ export default function Layout({ children }: LayoutProps) {
               </Link>
             ))}
             {section !== 'hub' && (
-              <Link to="/" className="nav-link nav-link-switch">
-                切换板块
+              <Link to="/" className="nav-link nav-link-switch" title={switchTitle}>
+                {switchLabel}
               </Link>
             )}
           </nav>

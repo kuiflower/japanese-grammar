@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import type { VocabCompositeQuestion, VocabQuizOption } from '@/types/vocab-quiz'
 
 export interface VocabStepAnswer {
@@ -87,6 +87,8 @@ export default function VocabQuizCard({
   const [finished, setFinished] = useState(
     (initialAnswers?.length ?? 0) >= question.steps.length,
   )
+  const feedbackRef = useRef<HTMLDivElement>(null)
+  const shouldScrollToFeedback = useRef(false)
 
   useEffect(() => {
     const init = initialAnswers ?? []
@@ -94,6 +96,15 @@ export default function VocabQuizCard({
     setActiveStep(init.length >= question.steps.length ? 2 : init.length)
     setFinished(init.length >= question.steps.length)
   }, [question.id, questionIndex, initialAnswers])
+
+  useEffect(() => {
+    if (!finished || !shouldScrollToFeedback.current) return
+    shouldScrollToFeedback.current = false
+    const id = window.requestAnimationFrame(() => {
+      feedbackRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' })
+    })
+    return () => window.cancelAnimationFrame(id)
+  }, [finished, question.id])
 
   const allCorrect = useMemo(
     () => answers.length === question.steps.length && answers.every((a) => a.correct),
@@ -119,6 +130,7 @@ export default function VocabQuizCard({
       return
     }
 
+    shouldScrollToFeedback.current = true
     setFinished(true)
     const overall = nextAnswers.every((a) => a.correct)
     onAnswer(overall, nextAnswers)
@@ -139,15 +151,12 @@ export default function VocabQuizCard({
       <header className="quiz-card-header">
         <div className="quiz-meta">
           <span className="badge badge-level">{question.level}</span>
-          <span className="quiz-grammar-tag vocab-word-tag" lang="ja">
-            {question.word}
-          </span>
           <span className="quiz-type-badge">复合题</span>
         </div>
         <div className="quiz-header-actions">
           {canGoPrevious && onPrevious && (
             <button type="button" className="quiz-prev-btn" onClick={onPrevious}>
-              ← 回到上一题
+              上一题
             </button>
           )}
           <p className="quiz-counter">
@@ -171,6 +180,7 @@ export default function VocabQuizCard({
           const stepAnswer = getStepAnswer(stepIndex)
           const locked = finished || stepAnswer !== null
           const unlocked = stepIndex <= activeStep || stepAnswer !== null
+          const correctText = step.options.find((o) => o.id === step.correctOptionId)?.text
 
           return (
             <section
@@ -181,9 +191,14 @@ export default function VocabQuizCard({
             >
               <h3 className="vocab-quiz-step-title">
                 <span className="vocab-quiz-step-num">{stepIndex + 1}</span>
-                {step.typeLabel}
+                <span className="vocab-quiz-step-label">{step.typeLabel}</span>
+                {stepAnswer && !stepAnswer.correct && locked && (
+                  <span className="vocab-quiz-step-answer">
+                    正确 {step.correctOptionId.toUpperCase()} {correctText}
+                  </span>
+                )}
               </h3>
-              <p className="vocab-quiz-step-prompt">{step.prompt}</p>
+              {step.prompt ? <p className="vocab-quiz-step-prompt">{step.prompt}</p> : null}
               {unlocked ? (
                 <StepOptions
                   options={step.options}
@@ -195,15 +210,6 @@ export default function VocabQuizCard({
               ) : (
                 <p className="vocab-quiz-step-hint">请先完成上一步</p>
               )}
-              {stepAnswer && !stepAnswer.correct && locked && (
-                <p className="vocab-quiz-step-feedback">
-                  正确答案：
-                  <strong>
-                    {step.correctOptionId.toUpperCase()}{' '}
-                    {step.options.find((o) => o.id === step.correctOptionId)?.text}
-                  </strong>
-                </p>
-              )}
             </section>
           )
         })}
@@ -211,6 +217,7 @@ export default function VocabQuizCard({
 
       {finished && (
         <div
+          ref={feedbackRef}
           className={`quiz-feedback ${allCorrect ? 'quiz-feedback-correct' : 'quiz-feedback-wrong'}`}
           role="status"
         >

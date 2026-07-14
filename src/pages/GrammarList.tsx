@@ -35,18 +35,24 @@ function GrammarRow({
         onClick={onToggle}
         aria-expanded={expanded}
       >
-        <span className="grammar-expand-icon" aria-hidden>
-          {expanded ? '−' : '+'}
+        <span className="grammar-row-lead">
+          <span className="grammar-expand-icon" aria-hidden>
+            {expanded ? '−' : '+'}
+          </span>
+          <span className="badge badge-level">{point.level}</span>
         </span>
-        <span className="badge badge-level">{point.level}</span>
         <div className="grammar-row-main">
-          <h3>
-            {point.title}
-            <span className="grammar-ja">{point.titleJa}</span>
-          </h3>
+          <div className="grammar-row-topline">
+            <h3>
+              {point.title}
+              {point.titleJa && point.titleJa !== point.title ? (
+                <span className="grammar-ja">{point.titleJa}</span>
+              ) : null}
+            </h3>
+            <span className="grammar-category">{categoryLabels[point.category]}</span>
+          </div>
           <p>{point.summary}</p>
         </div>
-        <span className="grammar-category">{categoryLabels[point.category]}</span>
       </button>
       {expanded && (
         <div className="grammar-row-detail">
@@ -94,7 +100,7 @@ export default function GrammarList() {
     <div className="page grammar-list">
       <div className="page-header">
         <h1>语法库</h1>
-        <p>共 {filtered.length} 个语法点 · 点击条目展开详情</p>
+        <p>共 {filtered.length} 条</p>
       </div>
 
       <div className="filter-bar">

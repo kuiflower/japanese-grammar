@@ -15,28 +15,10 @@ export default function VocabularyPractice() {
     <div className="page practice-hub">
       <header className="page-header">
         <h1>单词练习</h1>
-        <p>选好等级和词表；每个词要过三关：读音、释义、例句填空。</p>
+        <p className="page-header-note">
+          频出：考试高频词先突击 · 全套：整级词表系统过
+        </p>
       </header>
-
-      <div className="practice-flow-hint">
-        <div className="flow-step">
-          <span className="flow-num">1</span>
-          <div>
-            <strong>频出单词</strong>
-            <p>考试高频精简词表</p>
-          </div>
-        </div>
-        <div className="flow-arrow" aria-hidden>
-          →
-        </div>
-        <div className="flow-step">
-          <span className="flow-num">2</span>
-          <div>
-            <strong>全套单词</strong>
-            <p>该等级完整词库</p>
-          </div>
-        </div>
-      </div>
 
       {VOCAB_LEVELS.map((level) => (
         <section key={level} className="practice-level-section">

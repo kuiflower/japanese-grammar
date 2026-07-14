@@ -13,7 +13,7 @@ const entries: {
     to: GRAMMAR_HOME_PATH,
     ja: '文法',
     title: '学文法',
-    desc: '先看语法库，再练意思、用法、例句；PRE-N3 / N3 / N2 分级可选。',
+    desc: '理清接续与近义辨析，做题时更快认出考点。现含 PRE-N3 / N3 / N2。',
     tone: 'grammar' as const,
     status: 'ready' as const,
   },
@@ -21,7 +21,7 @@ const entries: {
     to: VOCABULARY_HOME_PATH,
     ja: '単語',
     title: '背单词',
-    desc: '每词三步：读音 → 释义 → 填空；按等级选频出速记或全套巩固。',
+    desc: '读音、意思、填空连过三关，适合考前突击或系统刷词。覆盖 N5～N1。',
     tone: 'vocabulary' as const,
     status: 'ready' as const,
   },
@@ -31,9 +31,9 @@ export default function Home() {
   return (
     <div className="page learning-hub">
       <section className="hero learning-hub-hero">
-        <p className="hero-label">日本語学習</p>
-        <h1>选择学习板块</h1>
-        <p className="hero-desc">挑一块开始：语法练用法，单词练形音义。</p>
+        <h1 className="hero-label" lang="ja">
+          日本語学習
+        </h1>
       </section>
 
       <div className="learning-hub-grid">

@@ -119,7 +119,7 @@ function buildStep(
     return {
       type,
       typeLabel: VOCAB_STEP_LABELS[type],
-      prompt: '选择正确的读音',
+      prompt: '',
       options,
       correctOptionId: findCorrectId(options, correct),
     }
@@ -131,7 +131,7 @@ function buildStep(
     return {
       type,
       typeLabel: VOCAB_STEP_LABELS[type],
-      prompt: '选择正确的中文意思',
+      prompt: '',
       options,
       correctOptionId: findCorrectId(options, correct),
     }

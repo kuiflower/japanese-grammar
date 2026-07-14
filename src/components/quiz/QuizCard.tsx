@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import type { QuizOption, QuizQuestion } from '@/types/quiz'
 import { QUESTION_TYPE_LABELS } from '@/types/quiz'
 
@@ -79,6 +79,8 @@ export default function QuizCard({
   isLast,
 }: QuizCardProps) {
   const [selectedId, setSelectedId] = useState<string | null>(initialSelectedId)
+  const feedbackRef = useRef<HTMLDivElement>(null)
+  const shouldScrollToFeedback = useRef(false)
 
   useEffect(() => {
     setSelectedId(initialSelectedId ?? null)
@@ -87,6 +89,15 @@ export default function QuizCard({
   const answered = selectedId !== null
   const isCorrect = selectedId === question.correctOptionId
 
+  useEffect(() => {
+    if (!answered || !shouldScrollToFeedback.current) return
+    shouldScrollToFeedback.current = false
+    const id = window.requestAnimationFrame(() => {
+      feedbackRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' })
+    })
+    return () => window.cancelAnimationFrame(id)
+  }, [answered, question.id])
+
   const correctOption = useMemo(
     () => question.options.find((o) => o.id === question.correctOptionId),
     [question],
@@ -94,6 +105,7 @@ export default function QuizCard({
 
   function handleSelect(option: QuizOption) {
     if (answered) return
+    shouldScrollToFeedback.current = true
     setSelectedId(option.id)
     onAnswer(option.id === question.correctOptionId, option.id)
   }
@@ -129,7 +141,7 @@ export default function QuizCard({
               className="quiz-prev-btn"
               onClick={onPrevious}
             >
-              ← 回到上一题
+              上一题
             </button>
           )}
           <p className="quiz-counter">
@@ -174,6 +186,7 @@ export default function QuizCard({
 
       {answered && (
         <div
+          ref={feedbackRef}
           className={`quiz-feedback ${isCorrect ? 'quiz-feedback-correct' : 'quiz-feedback-wrong'}`}
           role="status"
         >

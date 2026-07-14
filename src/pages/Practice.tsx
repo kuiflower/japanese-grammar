@@ -20,21 +20,21 @@ const levels: { level: JlptLevel; title: string }[] = [
 
 const rounds: { round: QuizRound; desc: string; recommended?: boolean }[] = [
   {
-    round: 'all',
-    desc: '第一轮（意思+用法）+ 第二轮（例句）+ 增强题，推荐完整练习',
+    round: 'round1',
+    desc: '意思 + 用法',
     recommended: true,
   },
   {
-    round: 'round1',
-    desc: '每条语法：中文意思 + 用法判断',
-  },
-  {
     round: 'round2',
-    desc: '选正确例句（核心题型，优先巩固运用）',
+    desc: '选例句',
   },
   {
     round: 'enhanced',
-    desc: '语法挖空 + 改错辨析',
+    desc: '挖空 + 改错',
+  },
+  {
+    round: 'all',
+    desc: '意思 · 用法 · 例句 · 挖空改错',
   },
 ]
 
@@ -43,28 +43,7 @@ export default function Practice() {
     <div className="page practice-hub">
       <header className="page-header">
         <h1>语法练习</h1>
-        <p>选好等级和模式后开练；选完立刻看对错与解析。</p>
       </header>
-
-      <div className="practice-flow-hint">
-        <div className="flow-step">
-          <span className="flow-num">1</span>
-          <div>
-            <strong>看语法 → 懂意思和用途</strong>
-            <p>第一轮：中文意思 + 用法判断</p>
-          </div>
-        </div>
-        <div className="flow-arrow" aria-hidden>
-          →
-        </div>
-        <div className="flow-step">
-          <span className="flow-num">2</span>
-          <div>
-            <strong>用例句 → 巩固会用</strong>
-            <p>第二轮：选正确例句（优先）+ 挖空/改错</p>
-          </div>
-        </div>
-      </div>
 
       {levels.map(({ level, title }) => {
         const stats = getQuizHubStats(level)

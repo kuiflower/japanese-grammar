@@ -139,7 +139,7 @@ export default function VocabularyPracticeSession({
     wrongTrailPos >= wrongTrail.length - 1 &&
     poolIndex >= questions.length - 1
   const backLink = mode === 'wrong' ? '/learn/vocabulary' : '/vocab-practice'
-  const backLabel = mode === 'wrong' ? '← 练习中心' : '← 练习'
+  const backLabel = mode === 'wrong' ? '← 练习中心' : '← 返回'
 
   if (!level || !VOCAB_LEVELS.includes(level)) {
     return (
@@ -242,12 +242,7 @@ export default function VocabularyPracticeSession({
         {backLabel}
       </Link>
       {mode === 'wrong' && (
-        <p className="session-mode-hint">
-          错词回炉 · 读音、释义、填空都过关再进下一词；蒙对可点「猜对」暂留
-        </p>
-      )}
-      {mode === 'practice' && resume && (
-        <p className="session-mode-hint">接着上次没背完的单词继续</p>
+        <p className="session-mode-hint">三关全对才移除 · 蒙对点「猜对」暂留</p>
       )}
       <VocabQuizCard
         key={`${current.id}@${displayIndex}`}
