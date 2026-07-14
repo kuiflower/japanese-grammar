@@ -243,11 +243,11 @@ export default function VocabularyPracticeSession({
       </Link>
       {mode === 'wrong' && (
         <p className="session-mode-hint">
-          错题复习 · 三步全对点「下一题」移出错题库；「猜对」保留在错题库
+          错词回炉 · 读音、释义、填空都过关再进下一词；蒙对可点「猜对」暂留
         </p>
       )}
       {mode === 'practice' && resume && (
-        <p className="session-mode-hint">已从上次进度继续</p>
+        <p className="session-mode-hint">接着上次没背完的单词继续</p>
       )}
       <VocabQuizCard
         key={`${current.id}@${displayIndex}`}

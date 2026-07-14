@@ -15,7 +15,7 @@ export default function VocabularyPractice() {
     <div className="page practice-hub">
       <header className="page-header">
         <h1>单词练习</h1>
-        <p>选择等级与题库。每词一题：选读音 → 选释义 → 例句填空，三步全对才算通过。</p>
+        <p>选好等级和词表；每个词要过三关：读音、释义、例句填空。</p>
       </header>
 
       <div className="practice-flow-hint">

@@ -247,11 +247,11 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
       </Link>
       {mode === 'wrong' && (
         <p className="session-mode-hint">
-          错题复习 · 答对点「下一题」移出错题库；「猜对」表示蒙对，进入下一题但保留本题
+          错题回炉 · 真正答对再进下一题；若是蒙对，点「猜对」先跳过但仍会留下
         </p>
       )}
       {mode === 'practice' && resume && (
-        <p className="session-mode-hint">已从上次进度继续</p>
+        <p className="session-mode-hint">接着上次没做完的语法题继续</p>
       )}
       <QuizCard
         key={`${current.id}@${displayIndex}`}

@@ -106,7 +106,7 @@ export default function GrammarHome() {
         <p className="hero-label">日本語文法</p>
         <h1>语法练习中心</h1>
         <p className="hero-desc">
-          做题进度与错题自动保存在本机浏览器，下次打开可接着做；错题复习答对后立即移出错题库。
+          按等级练意思、用法和例句；中途退出下次还能接着练，错过的题会集中复习。
         </p>
         <div className="hero-actions">
           <Link to="/practice" className="btn btn-primary">
@@ -122,7 +122,7 @@ export default function GrammarHome() {
         <div className="section-header">
           <h2>上次答题记录</h2>
           {!hasAnyRecord && (
-            <span className="section-hint">按等级与题型分类，做完或中途退出都会记录</span>
+            <span className="section-hint">这里会显示你各等级上次练到哪里</span>
           )}
         </div>
         <div className="memory-panel">
@@ -146,7 +146,7 @@ export default function GrammarHome() {
         <div className="section-header">
           <h2>错题记录</h2>
           {!hasAnyWrong && (
-            <span className="section-hint">答错的题会自动收录到错题库</span>
+            <span className="section-hint">错过的语法题会出现在这里，方便回炉</span>
           )}
         </div>
         <div className="memory-panel memory-panel-wrong">

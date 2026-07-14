@@ -43,7 +43,7 @@ export default function Practice() {
     <div className="page practice-hub">
       <header className="page-header">
         <h1>语法练习</h1>
-        <p>选择等级与模式。点击选项后立即显示正确答案与解析。</p>
+        <p>选好等级和模式后开练；选完立刻看对错与解析。</p>
       </header>
 
       <div className="practice-flow-hint">

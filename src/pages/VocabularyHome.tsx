@@ -111,7 +111,7 @@ export default function VocabularyHome() {
         <p className="hero-label">日本語単語</p>
         <h1>单词练习中心</h1>
         <p className="hero-desc">
-          每个等级有两套题库：频出单词与全套单词。进度与错题按题库分开保存在本机。
+          先攻考试常考词，再刷整级词表；读音、意思、例句逐步过关。
         </p>
         <div className="hero-actions">
           <Link to="/vocab-practice" className="btn btn-primary">
@@ -127,7 +127,7 @@ export default function VocabularyHome() {
         <div className="section-header">
           <h2>上次答题记录</h2>
           {!hasAnyRecord && (
-            <span className="section-hint">按题库与等级分类，做完或中途退出都会记录</span>
+            <span className="section-hint">这里会显示你各题库上次练到哪里</span>
           )}
         </div>
         <div className="memory-panel">
@@ -152,7 +152,7 @@ export default function VocabularyHome() {
         <div className="section-header">
           <h2>错题记录</h2>
           {!hasAnyWrong && (
-            <span className="section-hint">任一步选错，整题收录到对应题库的错题库</span>
+            <span className="section-hint">读音、释义或填空任一错过，整词会留在这里</span>
           )}
         </div>
         <div className="memory-panel memory-panel-wrong">
