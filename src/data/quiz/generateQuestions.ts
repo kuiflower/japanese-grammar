@@ -63,20 +63,29 @@ function normalizePattern(pattern: string): string {
   return pattern.replace(/[〜～\s（）()【】]/g, '').trim()
 }
 
-/** 选项展示字数区间（中文/标点计 1 字） */
+/** 选项展示字数上限（中文/标点计 1 字；UI 已支持多行换行） */
 const QUIZ_OPTION_MIN_LEN = 10
-const QUIZ_OPTION_MAX_LEN = 36
+const QUIZ_OPTION_MEANING_MAX = 52
+const QUIZ_OPTION_USAGE_MAX = 72
 
 function optionDisplayLength(text: string): number {
   return text.replace(/\s/g, '').length
 }
 
-/** 将选项文字控制在统一展示区间：过长的智能截断 */
-function formatQuizOptionText(text: string, maxLen = QUIZ_OPTION_MAX_LEN): string {
+/** 将选项文字控制在展示上限内：优先在标点处截断 */
+function formatQuizOptionText(
+  text: string,
+  maxLen = QUIZ_OPTION_MEANING_MAX,
+): string {
   const t = text.replace(/\s+/g, ' ').trim()
   if (optionDisplayLength(t) <= maxLen) return t
   const cut = t.slice(0, maxLen)
-  const last = Math.max(cut.lastIndexOf('，'), cut.lastIndexOf('。'), cut.lastIndexOf('；'))
+  const last = Math.max(
+    cut.lastIndexOf('，'),
+    cut.lastIndexOf('。'),
+    cut.lastIndexOf('；'),
+    cut.lastIndexOf('/'),
+  )
   return last > 8 ? cut.slice(0, last + 1) : cut + '…'
 }
 
@@ -94,7 +103,7 @@ function meaningForQuiz(meaning: string): string {
   for (let i = 1; i < parts.length; i++) {
     if (optionDisplayLength(combined) >= QUIZ_OPTION_MIN_LEN) break
     const candidate = `${combined}；${parts[i]}`
-    if (optionDisplayLength(candidate) > QUIZ_OPTION_MAX_LEN) {
+    if (optionDisplayLength(candidate) > QUIZ_OPTION_MEANING_MAX) {
       if (optionDisplayLength(combined) < QUIZ_OPTION_MIN_LEN) {
         combined = formatQuizOptionText(candidate)
       }
@@ -108,19 +117,12 @@ function meaningForQuiz(meaning: string): string {
   return formatQuizOptionText(combined)
 }
 
-/** 同一题四个选项长度尽量接近：过长的统一截到同一上限 */
-function harmonizeQuizOptionTexts(texts: string[]): string[] {
-  const formatted = texts.map((t) => formatQuizOptionText(t))
-  const lengths = formatted.map(optionDisplayLength)
-  const maxLen = Math.max(...lengths)
-  const minLen = Math.min(...lengths)
-  if (maxLen <= QUIZ_OPTION_MAX_LEN && maxLen <= minLen * 1.6) return formatted
-
-  const cap = Math.min(
-    QUIZ_OPTION_MAX_LEN,
-    Math.max(QUIZ_OPTION_MIN_LEN, Math.ceil((maxLen + minLen) / 2)),
-  )
-  return texts.map((t) => formatQuizOptionText(t, cap))
+/** 各选项独立截断到上限；不因干扰项较短而整体再缩短 */
+function harmonizeQuizOptionTexts(
+  texts: string[],
+  maxLen = QUIZ_OPTION_MEANING_MAX,
+): string[] {
+  return texts.map((t) => formatQuizOptionText(t, maxLen))
 }
 
 /** 取释义的主干（避免截断丢失多义） */
@@ -240,10 +242,10 @@ function usageHook(entry: GrammarEntry, all: GrammarEntry[]): string | null {
   if (segments.length === 0) return null
 
   for (const seg of segments) {
-    if (USAGE_SIGNAL.test(seg)) return formatQuizOptionText(seg)
+    if (USAGE_SIGNAL.test(seg)) return formatQuizOptionText(seg, QUIZ_OPTION_USAGE_MAX)
   }
 
-  return formatQuizOptionText(segments[0]!)
+  return formatQuizOptionText(segments[0]!, QUIZ_OPTION_USAGE_MAX)
 }
 
 function truncate(text: string, max = 72): string {
@@ -415,7 +417,10 @@ function createUsageQuestion(
   const distractors = pickUsageDistractors(entry, all, hook, hookCache)
   if (distractors.length < 3) return null
 
-  const optionTexts = harmonizeQuizOptionTexts([hook, ...distractors])
+  const optionTexts = harmonizeQuizOptionTexts(
+    [hook, ...distractors],
+    QUIZ_OPTION_USAGE_MAX,
+  )
   const options = [
     { id: 'a', text: optionTexts[0]! },
     { id: 'b', text: optionTexts[1]! },
