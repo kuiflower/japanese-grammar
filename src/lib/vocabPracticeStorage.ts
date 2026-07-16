@@ -161,6 +161,17 @@ export function clearVocabCheckpoint(level: VocabLevel, track: VocabTrack = 'exa
   writeCheckpoints(all)
 }
 
+/** 清空全部単語答题记录（未完成 checkpoint + 历史摘要） */
+export function clearAllVocabSessionRecords() {
+  writeCheckpoints({})
+  writeHistory({})
+}
+
+/** 清空全部単語错题记录 */
+export function clearAllVocabWrongQuestions() {
+  writeWrong([])
+}
+
 export function addVocabWrongQuestion(
   questionId: string,
   level: VocabLevel,

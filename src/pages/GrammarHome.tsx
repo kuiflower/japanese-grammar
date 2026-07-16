@@ -2,6 +2,8 @@ import { useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   HOME_ROUND_GROUPS,
+  clearAllSessionRecords,
+  clearAllWrongQuestions,
   countWrongForRound,
   formatProgress,
   formatRelativeTime,
@@ -97,6 +99,19 @@ export default function GrammarHome() {
       <section className="section">
         <div className="section-header">
           <h2>上次答题记录</h2>
+          {recordGroups.length > 0 && (
+            <button
+              type="button"
+              className="memory-clear-btn"
+              onClick={() => {
+                if (window.confirm('确定清空全部答题记录？此操作不可恢复。')) {
+                  clearAllSessionRecords()
+                }
+              }}
+            >
+              一键清除
+            </button>
+          )}
         </div>
         <div className="memory-panel memory-panel-card">
           {recordGroups.map(({ round, label, links }) => (
@@ -126,6 +141,19 @@ export default function GrammarHome() {
       <section className="section">
         <div className="section-header">
           <h2>错题记录</h2>
+          {hasAnyWrong && (
+            <button
+              type="button"
+              className="memory-clear-btn"
+              onClick={() => {
+                if (window.confirm('确定清空全部错题记录？此操作不可恢复。')) {
+                  clearAllWrongQuestions()
+                }
+              }}
+            >
+              一键清除
+            </button>
+          )}
         </div>
         <div className="memory-panel memory-panel-card">
           {HOME_ROUND_GROUPS.map(({ round, label }) => {

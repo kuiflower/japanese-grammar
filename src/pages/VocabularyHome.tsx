@@ -2,6 +2,8 @@ import { useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   HOME_TRACK_GROUPS,
+  clearAllVocabSessionRecords,
+  clearAllVocabWrongQuestions,
   countVocabWrong,
   formatRelativeTime,
   formatVocabProgress,
@@ -100,6 +102,19 @@ export default function VocabularyHome() {
       <section className="section">
         <div className="section-header">
           <h2>上次答题记录</h2>
+          {recordGroups.length > 0 && (
+            <button
+              type="button"
+              className="memory-clear-btn"
+              onClick={() => {
+                if (window.confirm('确定清空全部答题记录？此操作不可恢复。')) {
+                  clearAllVocabSessionRecords()
+                }
+              }}
+            >
+              一键清除
+            </button>
+          )}
         </div>
         <div className="memory-panel memory-panel-card">
           {recordGroups.map(({ track, label, links }) => (
@@ -129,6 +144,19 @@ export default function VocabularyHome() {
       <section className="section">
         <div className="section-header">
           <h2>错题记录</h2>
+          {hasAnyWrong && (
+            <button
+              type="button"
+              className="memory-clear-btn"
+              onClick={() => {
+                if (window.confirm('确定清空全部错题记录？此操作不可恢复。')) {
+                  clearAllVocabWrongQuestions()
+                }
+              }}
+            >
+              一键清除
+            </button>
+          )}
         </div>
         <div className="memory-panel memory-panel-card">
           {HOME_TRACK_GROUPS.map(({ track, label }) => {

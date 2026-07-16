@@ -141,6 +141,17 @@ export function clearCheckpoint(level: JlptLevel, round: QuizRound) {
   writeCheckpoints(all)
 }
 
+/** 清空全部答题记录（未完成 checkpoint + 历史摘要） */
+export function clearAllSessionRecords() {
+  writeCheckpoints({})
+  writeHistory({})
+}
+
+/** 清空全部错题记录 */
+export function clearAllWrongQuestions() {
+  writeWrong([])
+}
+
 export function listActiveCheckpoints(): PracticeCheckpoint[] {
   return Object.values(readCheckpoints())
     .filter((cp) => cp.currentIndex < cp.questionIds.length)
