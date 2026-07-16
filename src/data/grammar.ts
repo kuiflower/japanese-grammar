@@ -1,10 +1,8 @@
 import {
   getAllGrammarEntries,
   getGrammarEntryById,
-  getGrammarEntries,
-  GRAMMAR_LEVELS,
 } from '@/data/levels/grammar-db'
-import type { GrammarEntry, GrammarLevel } from '@/data/types/grammar-entry'
+import type { GrammarEntry } from '@/data/types/grammar-entry'
 import type { GrammarPoint, GrammarCategory, JlptLevel } from '@/types/grammar'
 
 const categoryMap: Record<string, GrammarCategory> = {
@@ -49,11 +47,6 @@ export function getGrammarById(id: string): GrammarPoint | undefined {
   return entry ? toGrammarPoint(entry) : undefined
 }
 
-export function getGrammarByLevel(level: GrammarPoint['level']): GrammarPoint[] {
-  if (!GRAMMAR_LEVELS.includes(level as GrammarLevel)) return []
-  return getGrammarEntries(level as GrammarLevel).map(toGrammarPoint)
-}
-
 export const categoryLabels: Record<GrammarPoint['category'], string> = {
   particles: '助词',
   verbs: '动词',
@@ -61,11 +54,4 @@ export const categoryLabels: Record<GrammarPoint['category'], string> = {
   conjunctions: '接续',
   expressions: '表达',
   other: '其他',
-}
-
-export const grammarStats = {
-  preN3: getGrammarEntries('PRE-N3').length,
-  n2: getGrammarEntries('N2').length,
-  n3: getGrammarEntries('N3').length,
-  total: getAllGrammarEntries().length,
 }

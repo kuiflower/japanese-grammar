@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 import {
   HOME_ROUND_GROUPS,
   clearAllSessionRecords,
+  clearAllUnfamiliarQuestions,
   clearAllWrongQuestions,
+  countUnfamiliarForRound,
   countWrongForRound,
   formatProgress,
   formatRelativeTime,
@@ -79,6 +81,10 @@ export default function GrammarHome() {
 
   const hasAnyWrong = LEVELS.some((level) =>
     HOME_ROUND_GROUPS.some(({ round }) => countWrongForRound(level, round) > 0),
+  )
+
+  const hasAnyUnfamiliar = LEVELS.some((level) =>
+    HOME_ROUND_GROUPS.some(({ round }) => countUnfamiliarForRound(level, round) > 0),
   )
 
   return (
@@ -184,6 +190,55 @@ export default function GrammarHome() {
             )
           })}
           {!hasAnyWrong && <p className="memory-empty">暂无错题</p>}
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-header">
+          <h2>不熟悉记录</h2>
+          {hasAnyUnfamiliar && (
+            <button
+              type="button"
+              className="memory-clear-btn"
+              onClick={() => {
+                if (window.confirm('确定清空全部不熟悉记录？此操作不可恢复。')) {
+                  clearAllUnfamiliarQuestions()
+                }
+              }}
+            >
+              一键清除
+            </button>
+          )}
+        </div>
+        <div className="memory-panel memory-panel-card">
+          {HOME_ROUND_GROUPS.map(({ round, label }) => {
+            const links = LEVELS.map((level) => ({
+              level,
+              count: countUnfamiliarForRound(level, round),
+            })).filter((item) => item.count > 0)
+            if (links.length === 0) return null
+            return (
+              <div key={`unfamiliar-${round}`} className="memory-block">
+                <h3 className="memory-group-title">{label}</h3>
+                <div className="memory-pill-links">
+                  {links.map(({ level, count }) => (
+                    <Link
+                      key={level}
+                      to={`/unfamiliar/${levelToPath(level)}?round=${round}`}
+                      className="memory-pill-link memory-pill-unfamiliar"
+                    >
+                      <span className="badge badge-level">{LEVEL_LABELS[level]}</span>
+                      <span className="memory-pill-body">
+                        <span className="memory-pill-title">{count} 题</span>
+                        <span className="memory-pill-meta">待巩固</span>
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )
+          })}
+          {!hasAnyUnfamiliar && <p className="memory-empty">暂无不熟悉题</p>}
         </div>
       </section>
     </div>

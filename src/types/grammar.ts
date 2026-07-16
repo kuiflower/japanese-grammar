@@ -22,7 +22,7 @@ export interface GrammarPoint {
   notes?: string
 }
 
-export interface GrammarExample {
+interface GrammarExample {
   japanese: string
   reading: string
   chinese: string

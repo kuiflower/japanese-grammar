@@ -10,7 +10,8 @@ export function getAppSection(pathname: string): AppSection {
     pathname.startsWith(`${VOCABULARY_HOME_PATH}/`) ||
     pathname.startsWith('/vocabulary') ||
     pathname.startsWith('/vocab-practice') ||
-    pathname.startsWith('/vocab-wrong')
+    pathname.startsWith('/vocab-wrong') ||
+    pathname.startsWith('/vocab-unfamiliar')
   ) {
     return 'vocabulary'
   }

@@ -7,14 +7,17 @@ import {
   shuffleQuestions,
 } from '@/data/quiz'
 import {
+  addUnfamiliarQuestion,
   addWrongQuestion,
   clearCheckpoint,
   getCheckpoint,
+  removeUnfamiliarQuestion,
   removeWrongQuestion,
   saveCheckpoint,
   saveSessionSummary,
 } from '@/lib/practiceStorage'
 import {
+  getUnfamiliarQuestionsForRound,
   getWrongQuestionsForRound,
   resolveQuestionsByIds,
 } from '@/lib/practiceQuestions'
@@ -53,7 +56,7 @@ function logFromAnswers(
 }
 
 interface PracticeSessionProps {
-  mode?: 'practice' | 'wrong'
+  mode?: 'practice' | 'wrong' | 'unfamiliar'
 }
 
 export default function PracticeSession({ mode = 'practice' }: PracticeSessionProps) {
@@ -71,6 +74,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
   const [finished, setFinished] = useState(false)
   const [ready, setReady] = useState(false)
   const lastAnswerCorrect = useRef(false)
+  const lastFamiliarRef = useRef(false)
   const correctCountRef = useRef(0)
   const answerLogRef = useRef<Map<string, AnswerRecord>>(new Map())
   /** 错题复习点了「猜对」：进入下一题，但保留在错题库 */
@@ -88,18 +92,22 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
     setReady(false)
     setFinished(false)
     lastAnswerCorrect.current = false
+    lastFamiliarRef.current = false
     answerLogRef.current = new Map()
     keepInWrongBankRef.current = false
     setWrongTrail([])
     setWrongTrailPos(0)
     wrongInitialCountRef.current = 0
 
-    if (mode === 'wrong') {
-      const wrongQs = getWrongQuestionsForRound(level, round)
-      wrongInitialCountRef.current = wrongQs.length
-      setWrongTrail(wrongQs.length > 0 ? [wrongQs[0]!] : [])
+    if (mode === 'wrong' || mode === 'unfamiliar') {
+      const bankQs =
+        mode === 'wrong'
+          ? getWrongQuestionsForRound(level, round)
+          : getUnfamiliarQuestionsForRound(level, round)
+      wrongInitialCountRef.current = bankQs.length
+      setWrongTrail(bankQs.length > 0 ? [bankQs[0]!] : [])
       setWrongTrailPos(0)
-      setQuestions(wrongQs)
+      setQuestions(bankQs)
       setIndex(0)
       setCorrectCount(0)
       correctCountRef.current = 0
@@ -156,27 +164,25 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
     setReady(true)
   }, [sessionKey, level, mode, round, fresh, resume, retryKey])
 
-  const current = mode === 'wrong' ? wrongTrail[wrongTrailPos] : questions[index]
-  const displayIndex = mode === 'wrong' ? wrongTrailPos : index
-  const displayTotal =
-    mode === 'wrong' ? wrongInitialCountRef.current : questions.length
-  const canGoPrevious = mode === 'wrong' ? wrongTrailPos > 0 : index > 0
+  const isBankMode = mode === 'wrong' || mode === 'unfamiliar'
+  const current = isBankMode ? wrongTrail[wrongTrailPos] : questions[index]
+  const displayIndex = isBankMode ? wrongTrailPos : index
+  const displayTotal = isBankMode ? wrongInitialCountRef.current : questions.length
+  const canGoPrevious = isBankMode ? wrongTrailPos > 0 : index > 0
   const poolIndex =
-    mode === 'wrong' && current
-      ? questions.findIndex((q) => q.id === current.id)
-      : -1
+    isBankMode && current ? questions.findIndex((q) => q.id === current.id) : -1
   const isLastWrong =
-    mode === 'wrong' &&
+    isBankMode &&
     wrongTrailPos >= wrongTrail.length - 1 &&
     poolIndex >= questions.length - 1
-  const backLink = mode === 'wrong' ? '/' : '/practice'
-  const backLabel = mode === 'wrong' ? '← 首页' : '← 返回'
+  const backLink = isBankMode ? '/learn/grammar' : '/practice'
+  const backLabel = isBankMode ? '← 首页' : '← 返回'
 
   if (!level || !VALID_LEVELS.includes(level)) {
     return (
       <div className="page empty-state">
         <h1>无效的等级</h1>
-        <Link to="/" className="btn btn-primary">
+        <Link to="/learn/grammar" className="btn btn-primary">
           返回首页
         </Link>
       </div>
@@ -194,14 +200,22 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
   if (questions.length === 0) {
     return (
       <div className="page empty-state">
-        <h1>{mode === 'wrong' ? '暂无错题' : '暂无题目'}</h1>
+        <h1>
+          {mode === 'wrong'
+            ? '暂无错题'
+            : mode === 'unfamiliar'
+              ? '暂无不熟悉题'
+              : '暂无题目'}
+        </h1>
         <p>
           {mode === 'wrong'
             ? '该分类下没有需要复习的错题，继续保持！'
-            : '该模式下还没有题目，请换其他模式。'}
+            : mode === 'unfamiliar'
+              ? '该分类下没有需要巩固的不熟悉题。'
+              : '该模式下还没有题目，请换其他模式。'}
         </p>
         <Link to={backLink} className="btn btn-primary">
-          {mode === 'wrong' ? '返回首页' : '返回练习'}
+          {isBankMode ? '返回首页' : '返回练习'}
         </Link>
       </div>
     )
@@ -219,8 +233,15 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
           <p className="quiz-result-label">
             {LEVEL_LABELS[level]} · {ROUND_LABELS[round]}
             {mode === 'wrong' ? ' · 错题复习' : ''}
+            {mode === 'unfamiliar' ? ' · 不熟悉复习' : ''}
           </p>
-          <h1>{mode === 'wrong' ? '错题复习完成' : '练习完成'}</h1>
+          <h1>
+            {mode === 'wrong'
+              ? '错题复习完成'
+              : mode === 'unfamiliar'
+                ? '不熟悉复习完成'
+                : '练习完成'}
+          </h1>
           {mode === 'practice' && (
             <>
               <p className="quiz-result-score">
@@ -234,6 +255,11 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
               本轮真正学会了 {correctCount} 道文法题
             </p>
           )}
+          {mode === 'unfamiliar' && (
+            <p className="quiz-result-pct">
+              本轮熟悉了 {correctCount} 道文法题
+            </p>
+          )}
           <div className="quiz-result-actions">
             {mode === 'practice' ? (
               <Link
@@ -243,12 +269,12 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
                 再来一轮
               </Link>
             ) : (
-              <Link to="/" className="btn btn-primary">
+              <Link to="/learn/grammar" className="btn btn-primary">
                 返回首页
               </Link>
             )}
             <Link to={backLink} className="btn btn-secondary">
-              {mode === 'wrong' ? '回首页' : '返回练习'}
+              {isBankMode ? '回首页' : '返回练习'}
             </Link>
           </div>
         </div>
@@ -275,6 +301,9 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
       {mode === 'wrong' && (
         <p className="session-mode-hint">答对移除 · 蒙对点「猜对」暂留</p>
       )}
+      {mode === 'unfamiliar' && (
+        <p className="session-mode-hint">限时内答出即熟悉并移除</p>
+      )}
       <QuizCard
         key={`${current.id}@${displayIndex}`}
         question={current}
@@ -282,13 +311,13 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
         total={displayTotal}
         initialSelectedId={answerLogRef.current.get(current.id)?.selectedId ?? null}
         isLast={
-          mode === 'wrong'
+          isBankMode
             ? isLastWrong
             : questions.length <= 1 || index >= questions.length - 1
         }
         canGoPrevious={canGoPrevious}
         onPrevious={() => {
-          if (mode === 'wrong') {
+          if (isBankMode) {
             const prevPos = wrongTrailPos - 1
             const prev = wrongTrail[prevPos]
             const prevRecord = prev ? answerLogRef.current.get(prev.id) : undefined
@@ -314,11 +343,11 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
           lastAnswerCorrect.current = prevRecord?.correct ?? false
           setIndex(prevIndex)
         }}
-        onAnswer={(correct, selectedId) => {
+        onAnswer={(correct, selectedId, meta) => {
           lastAnswerCorrect.current = correct
+          lastFamiliarRef.current = meta.familiar
           const previous = answerLogRef.current.get(current.id)
           answerLogRef.current.set(current.id, { selectedId, correct })
-          // 同题已答过（含「上一题」回来再看）时不重复计分
           if (previous) return
 
           if (mode === 'practice') {
@@ -327,6 +356,11 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
               setCorrectCount(correctCountRef.current)
             } else {
               addWrongQuestion(current.id, level)
+            }
+            if (meta.familiar) {
+              removeUnfamiliarQuestion(current.id)
+            } else {
+              addUnfamiliarQuestion(current.id, level, meta.elapsedMs)
             }
             saveCheckpoint({
               level,
@@ -337,6 +371,13 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
               answers: answersFromLog(answerLogRef.current),
               updatedAt: Date.now(),
             })
+          } else if (mode === 'unfamiliar') {
+            if (meta.familiar) {
+              correctCountRef.current += 1
+              setCorrectCount(correctCountRef.current)
+            } else {
+              addUnfamiliarQuestion(current.id, level, meta.elapsedMs)
+            }
           } else if (correct) {
             correctCountRef.current += 1
             setCorrectCount(correctCountRef.current)
@@ -345,17 +386,26 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
         onGuessedCorrect={
           mode === 'practice'
             ? () => addWrongQuestion(current.id, level)
-            : () => {
-                keepInWrongBankRef.current = true
-              }
+            : mode === 'wrong'
+              ? () => {
+                  keepInWrongBankRef.current = true
+                }
+              : undefined
         }
         onNext={() => {
-          if (mode === 'wrong') {
-            if (lastAnswerCorrect.current) {
-              const keepInBank = keepInWrongBankRef.current
-              keepInWrongBankRef.current = false
-              if (!keepInBank) {
+          if (isBankMode) {
+            const keepInBank = keepInWrongBankRef.current
+            keepInWrongBankRef.current = false
+            const shouldRemove =
+              mode === 'wrong'
+                ? lastAnswerCorrect.current && !keepInBank
+                : lastFamiliarRef.current
+
+            if (shouldRemove) {
+              if (mode === 'wrong') {
                 removeWrongQuestion(current.id)
+              } else {
+                removeUnfamiliarQuestion(current.id)
               }
               answerLogRef.current.delete(current.id)
               const remaining = questions.filter((q) => q.id !== current.id)
@@ -369,8 +419,8 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
               if (wrongTrailPos < wrongTrail.length - 1) {
                 setWrongTrailPos((p) => p + 1)
               } else {
-                const poolIndex = questions.findIndex((q) => q.id === current.id)
-                const next = remaining[poolIndex] ?? remaining[0]
+                const pi = questions.findIndex((q) => q.id === current.id)
+                const next = remaining[pi] ?? remaining[0]
                 if (!next) {
                   setFinished(true)
                   return
@@ -386,8 +436,8 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
               return
             }
 
-            const poolIndex = questions.findIndex((q) => q.id === current.id)
-            const next = questions[poolIndex + 1]
+            const pi = questions.findIndex((q) => q.id === current.id)
+            const next = questions[pi + 1]
             if (!next) {
               setFinished(true)
               return

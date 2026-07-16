@@ -167,7 +167,7 @@ function buildExplanation(entry: VocabularyEntry): string {
   return lines.join('\n')
 }
 
-export function generateVocabQuestion(
+function generateVocabQuestion(
   entry: VocabularyEntry,
   all: VocabularyEntry[],
   track: VocabTrack = 'exam',

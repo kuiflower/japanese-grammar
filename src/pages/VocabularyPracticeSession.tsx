@@ -3,14 +3,17 @@ import { Link, Navigate, useParams, useSearchParams } from 'react-router-dom'
 import VocabQuizCard, { type VocabStepAnswer } from '@/components/vocab/VocabQuizCard'
 import { getVocabQuestionsByLevel } from '@/data/vocab-quiz'
 import {
+  addVocabUnfamiliarQuestion,
   addVocabWrongQuestion,
   clearVocabCheckpoint,
   getVocabCheckpoint,
+  removeVocabUnfamiliarQuestion,
   removeVocabWrongQuestion,
   saveVocabCheckpoint,
   saveVocabSessionSummary,
 } from '@/lib/vocabPracticeStorage'
 import {
+  getVocabUnfamiliarQuestions,
   getVocabWrongQuestions,
   resolveVocabQuestions,
 } from '@/lib/vocabPracticeQuestions'
@@ -31,7 +34,7 @@ interface VocabAnswerRecord {
 }
 
 interface VocabularyPracticeSessionProps {
-  mode?: 'practice' | 'wrong'
+  mode?: 'practice' | 'wrong' | 'unfamiliar'
 }
 
 export default function VocabularyPracticeSession({
@@ -54,6 +57,7 @@ export default function VocabularyPracticeSession({
   const [finished, setFinished] = useState(false)
   const [ready, setReady] = useState(false)
   const lastAnswerCorrect = useRef(false)
+  const lastFamiliarRef = useRef(false)
   const correctCountRef = useRef(0)
   const answerLogRef = useRef<Map<string, VocabAnswerRecord>>(new Map())
   const keepInWrongBankRef = useRef(false)
@@ -69,18 +73,22 @@ export default function VocabularyPracticeSession({
     setReady(false)
     setFinished(false)
     lastAnswerCorrect.current = false
+    lastFamiliarRef.current = false
     answerLogRef.current = new Map()
     keepInWrongBankRef.current = false
     setWrongTrail([])
     setWrongTrailPos(0)
     wrongInitialCountRef.current = 0
 
-    if (mode === 'wrong') {
-      const wrongQs = getVocabWrongQuestions(level, track)
-      wrongInitialCountRef.current = wrongQs.length
-      setWrongTrail(wrongQs.length > 0 ? [wrongQs[0]!] : [])
+    if (mode === 'wrong' || mode === 'unfamiliar') {
+      const bankQs =
+        mode === 'wrong'
+          ? getVocabWrongQuestions(level, track)
+          : getVocabUnfamiliarQuestions(level, track)
+      wrongInitialCountRef.current = bankQs.length
+      setWrongTrail(bankQs.length > 0 ? [bankQs[0]!] : [])
       setWrongTrailPos(0)
-      setQuestions(wrongQs)
+      setQuestions(bankQs)
       setIndex(0)
       setCorrectCount(0)
       correctCountRef.current = 0
@@ -125,21 +133,19 @@ export default function VocabularyPracticeSession({
   }
 
   const trackPath = vocabTrackToPath(track)
-  const current = mode === 'wrong' ? wrongTrail[wrongTrailPos] : questions[index]
-  const displayIndex = mode === 'wrong' ? wrongTrailPos : index
-  const displayTotal =
-    mode === 'wrong' ? wrongInitialCountRef.current : questions.length
-  const canGoPrevious = mode === 'wrong' ? wrongTrailPos > 0 : index > 0
+  const isBankMode = mode === 'wrong' || mode === 'unfamiliar'
+  const current = isBankMode ? wrongTrail[wrongTrailPos] : questions[index]
+  const displayIndex = isBankMode ? wrongTrailPos : index
+  const displayTotal = isBankMode ? wrongInitialCountRef.current : questions.length
+  const canGoPrevious = isBankMode ? wrongTrailPos > 0 : index > 0
   const poolIndex =
-    mode === 'wrong' && current
-      ? questions.findIndex((q) => q.id === current.id)
-      : -1
+    isBankMode && current ? questions.findIndex((q) => q.id === current.id) : -1
   const isLastWrong =
-    mode === 'wrong' &&
+    isBankMode &&
     wrongTrailPos >= wrongTrail.length - 1 &&
     poolIndex >= questions.length - 1
-  const backLink = mode === 'wrong' ? '/learn/vocabulary' : '/vocab-practice'
-  const backLabel = mode === 'wrong' ? '← 练习' : '← 返回'
+  const backLink = isBankMode ? '/learn/vocabulary' : '/vocab-practice'
+  const backLabel = isBankMode ? '← 首页' : '← 返回'
 
   if (!level || !VOCAB_LEVELS.includes(level)) {
     return (
@@ -163,11 +169,19 @@ export default function VocabularyPracticeSession({
   if (questions.length === 0) {
     return (
       <div className="page empty-state">
-        <h1>{mode === 'wrong' ? '暂无错题' : '暂无题目'}</h1>
+        <h1>
+          {mode === 'wrong'
+            ? '暂无错题'
+            : mode === 'unfamiliar'
+              ? '暂无不熟悉题'
+              : '暂无题目'}
+        </h1>
         <p>
           {mode === 'wrong'
             ? '该等级没有需要复习的错题。'
-            : '该等级词库筹备中，请先导入単語数据。'}
+            : mode === 'unfamiliar'
+              ? '该等级没有需要巩固的不熟悉题。'
+              : '该等级词库筹备中，请先导入単語数据。'}
         </p>
         <Link to={backLink} className="btn btn-primary">
           {backLabel}
@@ -187,9 +201,19 @@ export default function VocabularyPracticeSession({
         <div className="quiz-result-card">
           <p className="quiz-result-label">
             {VOCAB_TRACK_LABELS[track]} · {VOCAB_LEVEL_LABELS[level]}
-            {mode === 'wrong' ? ' · 错题复习' : ' · 単語练习'}
+            {mode === 'wrong'
+              ? ' · 错题复习'
+              : mode === 'unfamiliar'
+                ? ' · 不熟悉复习'
+                : ' · 単語练习'}
           </p>
-          <h1>{mode === 'wrong' ? '错题复习完成' : '练习完成'}</h1>
+          <h1>
+            {mode === 'wrong'
+              ? '错题复习完成'
+              : mode === 'unfamiliar'
+                ? '不熟悉复习完成'
+                : '练习完成'}
+          </h1>
           {mode === 'practice' && (
             <>
               <p className="quiz-result-score">
@@ -202,6 +226,9 @@ export default function VocabularyPracticeSession({
             <p className="quiz-result-pct">
               本轮真正记住了 {correctCount} 个単語
             </p>
+          )}
+          {mode === 'unfamiliar' && (
+            <p className="quiz-result-pct">本轮熟悉了 {correctCount} 个単語</p>
           )}
           <div className="quiz-result-actions">
             {mode === 'practice' ? (
@@ -217,7 +244,7 @@ export default function VocabularyPracticeSession({
               </Link>
             )}
             <Link to={backLink} className="btn btn-secondary">
-              {mode === 'wrong' ? '回首页' : '换题库'}
+              {isBankMode ? '回首页' : '换题库'}
             </Link>
           </div>
         </div>
@@ -244,6 +271,9 @@ export default function VocabularyPracticeSession({
       {mode === 'wrong' && (
         <p className="session-mode-hint">三关全对才移除 · 蒙对点「猜对」暂留</p>
       )}
+      {mode === 'unfamiliar' && (
+        <p className="session-mode-hint">限时内答完三关即熟悉并移除</p>
+      )}
       <VocabQuizCard
         key={`${current.id}@${displayIndex}`}
         question={current}
@@ -251,13 +281,13 @@ export default function VocabularyPracticeSession({
         total={displayTotal}
         initialAnswers={answerLogRef.current.get(current.id)?.answers ?? null}
         isLast={
-          mode === 'wrong'
+          isBankMode
             ? isLastWrong
             : questions.length <= 1 || index >= questions.length - 1
         }
         canGoPrevious={canGoPrevious}
         onPrevious={() => {
-          if (mode === 'wrong') {
+          if (isBankMode) {
             const prevPos = wrongTrailPos - 1
             const prev = wrongTrail[prevPos]
             const prevRecord = prev ? answerLogRef.current.get(prev.id) : undefined
@@ -282,8 +312,9 @@ export default function VocabularyPracticeSession({
           lastAnswerCorrect.current = prevRecord?.correct ?? false
           setIndex(prevIndex)
         }}
-        onAnswer={(correct, answers) => {
+        onAnswer={(correct, answers, meta) => {
           lastAnswerCorrect.current = correct
+          lastFamiliarRef.current = meta.familiar
           answerLogRef.current.set(current.id, { answers, correct })
           if (mode === 'practice') {
             if (correct) {
@@ -291,6 +322,18 @@ export default function VocabularyPracticeSession({
               setCorrectCount(correctCountRef.current)
             } else {
               addVocabWrongQuestion(current.id, level, track)
+            }
+            if (meta.familiar) {
+              removeVocabUnfamiliarQuestion(current.id, track)
+            } else {
+              addVocabUnfamiliarQuestion(current.id, level, track, meta.elapsedMs)
+            }
+          } else if (mode === 'unfamiliar') {
+            if (meta.familiar) {
+              correctCountRef.current += 1
+              setCorrectCount(correctCountRef.current)
+            } else {
+              addVocabUnfamiliarQuestion(current.id, level, track, meta.elapsedMs)
             }
           } else if (correct) {
             correctCountRef.current += 1
@@ -300,17 +343,26 @@ export default function VocabularyPracticeSession({
         onGuessedCorrect={
           mode === 'practice'
             ? () => addVocabWrongQuestion(current.id, level, track)
-            : () => {
-                keepInWrongBankRef.current = true
-              }
+            : mode === 'wrong'
+              ? () => {
+                  keepInWrongBankRef.current = true
+                }
+              : undefined
         }
         onNext={() => {
-          if (mode === 'wrong') {
-            if (lastAnswerCorrect.current) {
-              const keepInBank = keepInWrongBankRef.current
-              keepInWrongBankRef.current = false
-              if (!keepInBank) {
+          if (isBankMode) {
+            const keepInBank = keepInWrongBankRef.current
+            keepInWrongBankRef.current = false
+            const shouldRemove =
+              mode === 'wrong'
+                ? lastAnswerCorrect.current && !keepInBank
+                : lastFamiliarRef.current
+
+            if (shouldRemove) {
+              if (mode === 'wrong') {
                 removeVocabWrongQuestion(current.id, track)
+              } else {
+                removeVocabUnfamiliarQuestion(current.id, track)
               }
               answerLogRef.current.delete(current.id)
               const remaining = questions.filter((q) => q.id !== current.id)

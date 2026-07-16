@@ -3,6 +3,7 @@ import type { JlptLevel, QuizRound } from '@/types/quiz'
 const CHECKPOINTS_KEY = 'jg-v1-checkpoints'
 const HISTORY_KEY = 'jg-v1-session-history'
 const WRONG_KEY = 'jg-v1-wrong'
+const UNFAMILIAR_KEY = 'jg-v1-unfamiliar'
 
 export interface PracticeCheckpoint {
   level: JlptLevel
@@ -32,6 +33,15 @@ export interface WrongQuestionRecord {
   level: JlptLevel
   addedAt: number
   wrongCount: number
+}
+
+export interface UnfamiliarQuestionRecord {
+  questionId: string
+  level: JlptLevel
+  addedAt: number
+  /** 最近一次答题耗时（毫秒） */
+  elapsedMs: number
+  unfamiliarCount: number
 }
 
 export const HOME_ROUND_GROUPS: { round: QuizRound; label: string }[] = [
@@ -152,10 +162,61 @@ export function clearAllWrongQuestions() {
   writeWrong([])
 }
 
-export function listActiveCheckpoints(): PracticeCheckpoint[] {
-  return Object.values(readCheckpoints())
-    .filter((cp) => cp.currentIndex < cp.questionIds.length)
-    .sort((a, b) => b.updatedAt - a.updatedAt)
+function readUnfamiliarRecords(): UnfamiliarQuestionRecord[] {
+  try {
+    const raw = localStorage.getItem(UNFAMILIAR_KEY)
+    return raw ? (JSON.parse(raw) as UnfamiliarQuestionRecord[]) : []
+  } catch {
+    return []
+  }
+}
+
+function writeUnfamiliar(records: UnfamiliarQuestionRecord[]) {
+  localStorage.setItem(UNFAMILIAR_KEY, JSON.stringify(records))
+  notifyStorageUpdate()
+}
+
+export function listUnfamiliarRecords(): UnfamiliarQuestionRecord[] {
+  return readUnfamiliarRecords()
+}
+
+export function addUnfamiliarQuestion(
+  questionId: string,
+  level: JlptLevel,
+  elapsedMs: number,
+) {
+  const records = readUnfamiliarRecords()
+  const existing = records.find((r) => r.questionId === questionId)
+  if (existing) {
+    existing.unfamiliarCount += 1
+    existing.elapsedMs = elapsedMs
+    existing.addedAt = Date.now()
+  } else {
+    records.push({
+      questionId,
+      level,
+      addedAt: Date.now(),
+      elapsedMs,
+      unfamiliarCount: 1,
+    })
+  }
+  writeUnfamiliar(records)
+}
+
+export function removeUnfamiliarQuestion(questionId: string) {
+  writeUnfamiliar(readUnfamiliarRecords().filter((r) => r.questionId !== questionId))
+}
+
+/** 清空全部不熟悉记录 */
+export function clearAllUnfamiliarQuestions() {
+  writeUnfamiliar([])
+}
+
+/** 只读 localStorage 计数，不触发出题、不加载题库 */
+export function countUnfamiliarForRound(level: JlptLevel, round: QuizRound): number {
+  const records = readUnfamiliarRecords().filter((r) => r.level === level)
+  if (round === 'all') return records.length
+  return records.filter((r) => roundFromQuestionId(r.questionId) === round).length
 }
 
 export function addWrongQuestion(questionId: string, level: JlptLevel) {
@@ -192,22 +253,6 @@ export function countWrongForRound(level: JlptLevel, round: QuizRound): number {
   const records = readWrongRecords().filter((r) => r.level === level)
   if (round === 'all') return records.length
   return records.filter((r) => roundFromQuestionId(r.questionId) === round).length
-}
-
-export function listWrongSummary(): {
-  level: JlptLevel
-  round: QuizRound
-  count: number
-}[] {
-  const levels: JlptLevel[] = ['PRE-N3', 'N2', 'N3']
-  const result: { level: JlptLevel; round: QuizRound; count: number }[] = []
-  for (const level of levels) {
-    for (const { round } of HOME_ROUND_GROUPS) {
-      const count = countWrongForRound(level, round)
-      if (count > 0) result.push({ level, round, count })
-    }
-  }
-  return result
 }
 
 export function formatProgress(

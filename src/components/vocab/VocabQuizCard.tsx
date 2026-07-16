@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { VocabCompositeQuestion, VocabQuizOption } from '@/types/vocab-quiz'
+import { FAMILIAR_MS, formatElapsed, isFamiliar } from '@/lib/familiarity'
 
 export interface VocabStepAnswer {
   stepIndex: number
@@ -12,7 +13,11 @@ interface VocabQuizCardProps {
   questionIndex: number
   total: number
   initialAnswers?: VocabStepAnswer[] | null
-  onAnswer: (correct: boolean, answers: VocabStepAnswer[]) => void
+  onAnswer: (
+    correct: boolean,
+    answers: VocabStepAnswer[],
+    meta: { elapsedMs: number; familiar: boolean },
+  ) => void
   onNext: () => void
   onPrevious?: () => void
   canGoPrevious?: boolean
@@ -87,17 +92,34 @@ export default function VocabQuizCard({
   const [finished, setFinished] = useState(
     (initialAnswers?.length ?? 0) >= question.steps.length,
   )
+  const [elapsedMs, setElapsedMs] = useState(0)
+  const [answerMeta, setAnswerMeta] = useState<{
+    elapsedMs: number
+    familiar: boolean
+  } | null>(null)
   const feedbackRef = useRef<HTMLDivElement>(null)
   const step3Ref = useRef<HTMLElement>(null)
   const shouldScrollToStep3 = useRef(false)
   const shouldScrollToFeedback = useRef(false)
+  const startedAtRef = useRef(0)
 
   useEffect(() => {
     const init = initialAnswers ?? []
     setAnswers(init)
     setActiveStep(init.length >= question.steps.length ? 2 : init.length)
     setFinished(init.length >= question.steps.length)
-  }, [question.id, questionIndex, initialAnswers])
+    setAnswerMeta(null)
+    startedAtRef.current = performance.now()
+    setElapsedMs(0)
+  }, [question.id, questionIndex, initialAnswers, question.steps.length])
+
+  useEffect(() => {
+    if (finished || (initialAnswers?.length ?? 0) >= question.steps.length) return
+    const id = window.setInterval(() => {
+      setElapsedMs(performance.now() - startedAtRef.current)
+    }, 200)
+    return () => window.clearInterval(id)
+  }, [finished, initialAnswers, question.id, questionIndex, question.steps.length])
 
   useEffect(() => {
     if (activeStep !== 2 || !shouldScrollToStep3.current) return
@@ -154,7 +176,12 @@ export default function VocabQuizCard({
     shouldScrollToFeedback.current = true
     setFinished(true)
     const overall = nextAnswers.every((a) => a.correct)
-    onAnswer(overall, nextAnswers)
+    const ms = Math.round(performance.now() - startedAtRef.current)
+    const familiar = isFamiliar(ms, 'vocab')
+    const meta = { elapsedMs: ms, familiar }
+    setElapsedMs(ms)
+    setAnswerMeta(meta)
+    onAnswer(overall, nextAnswers, meta)
   }
 
   function getStepAnswer(stepIndex: number) {
@@ -162,11 +189,35 @@ export default function VocabQuizCard({
   }
 
   const progress = ((questionIndex + (finished ? 1 : answers.length / question.steps.length)) / total) * 100
+  const displayMs = answerMeta?.elapsedMs ?? elapsedMs
+  const showFamiliarHint = answerMeta != null
+  const withinFamiliar =
+    answerMeta != null ? answerMeta.familiar : elapsedMs <= FAMILIAR_MS.vocab
+  const resumeView = (initialAnswers?.length ?? 0) >= question.steps.length
+  const showTimer = !resumeView
 
   return (
     <article className="quiz-card vocab-quiz-card">
-      <div className="quiz-progress">
-        <div className="quiz-progress-bar" style={{ width: `${progress}%` }} />
+      <div className="quiz-status">
+        <div className="quiz-progress">
+          <div className="quiz-progress-bar" style={{ width: `${progress}%` }} />
+        </div>
+        <p className="quiz-counter">
+          {questionIndex + 1} / {total}
+        </p>
+        {showTimer ? (
+          <p
+            className={`quiz-elapsed${
+              withinFamiliar ? ' quiz-elapsed-ok' : ' quiz-elapsed-over'
+            }`}
+            aria-hidden="true"
+          >
+            {formatElapsed(displayMs)}
+            {showFamiliarHint ? (answerMeta.familiar ? ' · 熟' : ' · 生') : ''}
+          </p>
+        ) : (
+          <span className="quiz-elapsed-spacer" aria-hidden="true" />
+        )}
       </div>
 
       <header className="quiz-card-header">
@@ -174,16 +225,11 @@ export default function VocabQuizCard({
           <span className="badge badge-level">{question.level}</span>
           <span className="quiz-type-badge">复合题</span>
         </div>
-        <div className="quiz-header-actions">
-          {canGoPrevious && onPrevious && (
-            <button type="button" className="quiz-prev-btn" onClick={onPrevious}>
-              上一题
-            </button>
-          )}
-          <p className="quiz-counter">
-            {questionIndex + 1} / {total}
-          </p>
-        </div>
+        {canGoPrevious && onPrevious && (
+          <button type="button" className="quiz-prev-btn" onClick={onPrevious}>
+            ← 上一题
+          </button>
+        )}
       </header>
 
       <div className="vocab-quiz-head">

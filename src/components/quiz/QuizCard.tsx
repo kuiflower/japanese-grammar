@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { QuizOption, QuizQuestion } from '@/types/quiz'
-import { QUESTION_TYPE_LABELS } from '@/types/quiz'
+import { FAMILIAR_MS, formatElapsed, isFamiliar } from '@/lib/familiarity'
 
 function isJapaneseLine(text: string): boolean {
   return /[\u3040-\u30ff\u4e00-\u9faf]/.test(text) && !/^【/.test(text)
@@ -57,7 +57,11 @@ interface QuizCardProps {
   questionIndex: number
   total: number
   initialSelectedId?: string | null
-  onAnswer: (correct: boolean, selectedId: string) => void
+  onAnswer: (
+    correct: boolean,
+    selectedId: string,
+    meta: { elapsedMs: number; familiar: boolean },
+  ) => void
   onNext: () => void
   onPrevious?: () => void
   canGoPrevious?: boolean
@@ -79,12 +83,29 @@ export default function QuizCard({
   isLast,
 }: QuizCardProps) {
   const [selectedId, setSelectedId] = useState<string | null>(initialSelectedId)
+  const [elapsedMs, setElapsedMs] = useState(0)
+  const [answerMeta, setAnswerMeta] = useState<{
+    elapsedMs: number
+    familiar: boolean
+  } | null>(null)
   const feedbackRef = useRef<HTMLDivElement>(null)
   const shouldScrollToFeedback = useRef(false)
+  const startedAtRef = useRef(0)
 
   useEffect(() => {
     setSelectedId(initialSelectedId ?? null)
+    setAnswerMeta(null)
+    startedAtRef.current = performance.now()
+    setElapsedMs(0)
   }, [question.id, questionIndex, initialSelectedId])
+
+  useEffect(() => {
+    if (selectedId !== null || initialSelectedId) return
+    const id = window.setInterval(() => {
+      setElapsedMs(performance.now() - startedAtRef.current)
+    }, 200)
+    return () => window.clearInterval(id)
+  }, [selectedId, initialSelectedId, question.id, questionIndex])
 
   const answered = selectedId !== null
   const isCorrect = selectedId === question.correctOptionId
@@ -112,12 +133,18 @@ export default function QuizCard({
   function handleSelect(option: QuizOption) {
     if (answered) return
     shouldScrollToFeedback.current = true
+    const ms = Math.round(performance.now() - startedAtRef.current)
+    const familiar = isFamiliar(ms, 'grammar')
+    const meta = { elapsedMs: ms, familiar }
+    setElapsedMs(ms)
+    setAnswerMeta(meta)
     setSelectedId(option.id)
-    onAnswer(option.id === question.correctOptionId, option.id)
+    onAnswer(option.id === question.correctOptionId, option.id, meta)
   }
 
   function handleNext() {
     setSelectedId(null)
+    setAnswerMeta(null)
     onNext()
   }
 
@@ -127,11 +154,34 @@ export default function QuizCard({
   }
 
   const progress = ((questionIndex + (answered ? 1 : 0)) / total) * 100
+  const displayMs = answerMeta?.elapsedMs ?? elapsedMs
+  const showFamiliarHint = answerMeta != null
+  const withinFamiliar =
+    answerMeta != null ? answerMeta.familiar : elapsedMs <= FAMILIAR_MS.grammar
+  const showTimer = !initialSelectedId
 
   return (
     <article className="quiz-card">
-      <div className="quiz-progress">
-        <div className="quiz-progress-bar" style={{ width: `${progress}%` }} />
+      <div className="quiz-status">
+        <div className="quiz-progress">
+          <div className="quiz-progress-bar" style={{ width: `${progress}%` }} />
+        </div>
+        <p className="quiz-counter">
+          {questionIndex + 1} / {total}
+        </p>
+        {showTimer ? (
+          <p
+            className={`quiz-elapsed${
+              withinFamiliar ? ' quiz-elapsed-ok' : ' quiz-elapsed-over'
+            }`}
+            aria-hidden="true"
+          >
+            {formatElapsed(displayMs)}
+            {showFamiliarHint ? (answerMeta.familiar ? ' · 熟' : ' · 生') : ''}
+          </p>
+        ) : (
+          <span className="quiz-elapsed-spacer" aria-hidden="true" />
+        )}
       </div>
 
       <header className="quiz-card-header">
@@ -140,20 +190,15 @@ export default function QuizCard({
           <span className="quiz-grammar-tag">{question.grammarPattern}</span>
           <span className="quiz-type-badge">{question.typeLabel}</span>
         </div>
-        <div className="quiz-header-actions">
-          {canGoPrevious && onPrevious && (
-            <button
-              type="button"
-              className="quiz-prev-btn"
-              onClick={onPrevious}
-            >
-              上一题
-            </button>
-          )}
-          <p className="quiz-counter">
-            {questionIndex + 1} / {total}
-          </p>
-        </div>
+        {canGoPrevious && onPrevious && (
+          <button
+            type="button"
+            className="quiz-prev-btn"
+            onClick={onPrevious}
+          >
+            ← 上一题
+          </button>
+        )}
       </header>
 
       <h2 className="quiz-prompt">{question.prompt}</h2>
@@ -230,15 +275,5 @@ export default function QuizCard({
         </div>
       )}
     </article>
-  )
-}
-
-export function QuizTypeLegend() {
-  return (
-    <ul className="quiz-legend">
-      {Object.entries(QUESTION_TYPE_LABELS).map(([key, label]) => (
-        <li key={key}>{label}</li>
-      ))}
-    </ul>
   )
 }

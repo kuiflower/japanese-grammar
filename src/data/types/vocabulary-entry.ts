@@ -4,7 +4,7 @@ export type VocabLevel = 'N5' | 'N4' | 'N3' | 'N2' | 'N1'
 /** 题库：频出 / 全套 */
 export type VocabTrack = 'exam' | 'full'
 
-export interface VocabularyExample {
+interface VocabularyExample {
   japanese: string
   chinese?: string
 }

@@ -32,7 +32,7 @@ alwaysApply: true
 
 - 语法：`src/data/quiz/generateQuestions.ts` → `src/data/quiz/index.ts`
 - 单词：`src/data/vocab-quiz/generateQuestions.ts` → `src/data/vocab-quiz/index.ts`
-- 按 level 调库：`src/data/levels/index.ts`
+- 按 level 调库：`src/data/levels/grammar-db.ts` / `vocabulary-db.ts`
 - 新增题型**只改模版**，从 `GrammarEntry` / `VocabularyEntry` 读字段
 
 ## 禁止事项

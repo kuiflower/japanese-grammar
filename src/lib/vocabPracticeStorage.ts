@@ -10,6 +10,7 @@ export const HOME_TRACK_GROUPS = VOCAB_TRACKS.map((track) => ({
 const CHECKPOINTS_KEY = 'jv-v1-checkpoints'
 const HISTORY_KEY = 'jv-v1-session-history'
 const WRONG_KEY = 'jv-v1-wrong'
+const UNFAMILIAR_KEY = 'jv-v1-unfamiliar'
 
 export interface VocabPracticeCheckpoint {
   track: VocabTrack
@@ -36,6 +37,15 @@ export interface VocabWrongQuestionRecord {
   level: VocabLevel
   addedAt: number
   wrongCount: number
+}
+
+export interface VocabUnfamiliarQuestionRecord {
+  questionId: string
+  track: VocabTrack
+  level: VocabLevel
+  addedAt: number
+  elapsedMs: number
+  unfamiliarCount: number
 }
 
 function checkpointKey(track: VocabTrack, level: VocabLevel) {
@@ -170,6 +180,73 @@ export function clearAllVocabSessionRecords() {
 /** 清空全部単語错题记录 */
 export function clearAllVocabWrongQuestions() {
   writeWrong([])
+}
+
+function readUnfamiliarRecords(): VocabUnfamiliarQuestionRecord[] {
+  try {
+    const raw = localStorage.getItem(UNFAMILIAR_KEY)
+    if (!raw) return []
+    const parsed = JSON.parse(raw) as Array<VocabUnfamiliarQuestionRecord & { track?: VocabTrack }>
+    return parsed.map((r) => ({ ...r, track: r.track ?? 'exam' }))
+  } catch {
+    return []
+  }
+}
+
+function writeUnfamiliar(records: VocabUnfamiliarQuestionRecord[]) {
+  localStorage.setItem(UNFAMILIAR_KEY, JSON.stringify(records))
+  notifyStorageUpdate()
+}
+
+export function addVocabUnfamiliarQuestion(
+  questionId: string,
+  level: VocabLevel,
+  track: VocabTrack,
+  elapsedMs: number,
+) {
+  const records = readUnfamiliarRecords()
+  const existing = records.find(
+    (r) => r.questionId === questionId && r.track === track && r.level === level,
+  )
+  if (existing) {
+    existing.unfamiliarCount += 1
+    existing.elapsedMs = elapsedMs
+    existing.addedAt = Date.now()
+  } else {
+    records.push({
+      questionId,
+      track,
+      level,
+      addedAt: Date.now(),
+      elapsedMs,
+      unfamiliarCount: 1,
+    })
+  }
+  writeUnfamiliar(records)
+}
+
+export function removeVocabUnfamiliarQuestion(
+  questionId: string,
+  track: VocabTrack = 'exam',
+) {
+  writeUnfamiliar(
+    readUnfamiliarRecords().filter(
+      (r) => !(r.questionId === questionId && r.track === track),
+    ),
+  )
+}
+
+export function clearAllVocabUnfamiliarQuestions() {
+  writeUnfamiliar([])
+}
+
+export function listVocabUnfamiliarRecords(): VocabUnfamiliarQuestionRecord[] {
+  return readUnfamiliarRecords()
+}
+
+export function countVocabUnfamiliar(level: VocabLevel, track: VocabTrack = 'exam'): number {
+  return readUnfamiliarRecords().filter((r) => r.level === level && r.track === track)
+    .length
 }
 
 export function addVocabWrongQuestion(

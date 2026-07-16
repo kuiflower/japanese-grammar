@@ -40,18 +40,3 @@ export function getQuizHubStats(level: JlptLevel) {
     grammarCount: getGrammarEntries(level).length,
   }
 }
-
-/** 需要精确题数时再生成（会话内使用） */
-export function getQuizStats(level: JlptLevel) {
-  const all = getQuestionsByLevel(level)
-  const grammarIds = new Set(all.map((q) => q.grammarId))
-  return {
-    total: all.length,
-    grammarCount: grammarIds.size,
-    round1: all.filter((q) => q.round === 'round1').length,
-    round2: all.filter((q) => q.round === 'round2').length,
-    enhanced: all.filter((q) => q.round === 'enhanced').length,
-  }
-}
-
-export { generateQuestionsFromGrammar } from './generateQuestions'

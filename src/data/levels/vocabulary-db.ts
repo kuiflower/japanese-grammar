@@ -19,7 +19,7 @@ import n1VocabularyFull from './n1/vocabulary-full.json'
  * - 频出：vocabulary.json
  * - 全套：vocabulary-full.json
  */
-export const LEVEL_VOCABULARY_EXAM_DB: Record<VocabLevel, VocabularyEntry[]> = {
+const LEVEL_VOCABULARY_EXAM_DB: Record<VocabLevel, VocabularyEntry[]> = {
   N5: n5VocabularyExam as VocabularyEntry[],
   N4: n4VocabularyExam as VocabularyEntry[],
   N3: n3VocabularyExam as VocabularyEntry[],
@@ -27,7 +27,7 @@ export const LEVEL_VOCABULARY_EXAM_DB: Record<VocabLevel, VocabularyEntry[]> = {
   N1: n1VocabularyExam as VocabularyEntry[],
 }
 
-export const LEVEL_VOCABULARY_FULL_DB: Record<VocabLevel, VocabularyEntry[]> = {
+const LEVEL_VOCABULARY_FULL_DB: Record<VocabLevel, VocabularyEntry[]> = {
   N5: n5VocabularyFull as VocabularyEntry[],
   N4: n4VocabularyFull as VocabularyEntry[],
   N3: n3VocabularyFull as VocabularyEntry[],
@@ -35,7 +35,7 @@ export const LEVEL_VOCABULARY_FULL_DB: Record<VocabLevel, VocabularyEntry[]> = {
   N1: n1VocabularyFull as VocabularyEntry[],
 }
 
-export const LEVEL_VOCABULARY_DB: Record<
+const LEVEL_VOCABULARY_DB: Record<
   VocabTrack,
   Record<VocabLevel, VocabularyEntry[]>
 > = {
@@ -43,7 +43,7 @@ export const LEVEL_VOCABULARY_DB: Record<
   full: LEVEL_VOCABULARY_FULL_DB,
 }
 
-export const VOCABULARY_LEVELS: VocabLevel[] = ['N5', 'N4', 'N3', 'N2', 'N1']
+const VOCABULARY_LEVELS: VocabLevel[] = ['N5', 'N4', 'N3', 'N2', 'N1']
 
 export function getVocabularyEntries(
   level: VocabLevel,

@@ -1,6 +1,6 @@
 export type JlptLevel = 'PRE-N3' | 'N2' | 'N3'
 
-export type QuizQuestionType =
+type QuizQuestionType =
   | 'meaning'
   | 'usage'
   | 'sentence-pick'
@@ -26,14 +26,6 @@ export interface QuizQuestion {
   options: QuizOption[]
   correctOptionId: string
   explanation: string
-}
-
-export const QUESTION_TYPE_LABELS: Record<QuizQuestionType, string> = {
-  meaning: '中文意思',
-  usage: '用法要点',
-  'sentence-pick': '选正确例句',
-  'fill-blank': '文法挖空',
-  'error-detect': '改错辨析',
 }
 
 export const LEVEL_LABELS: Record<JlptLevel, string> = {

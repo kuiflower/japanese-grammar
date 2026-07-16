@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 import {
   HOME_TRACK_GROUPS,
   clearAllVocabSessionRecords,
+  clearAllVocabUnfamiliarQuestions,
   clearAllVocabWrongQuestions,
+  countVocabUnfamiliar,
   countVocabWrong,
   formatRelativeTime,
   formatVocabProgress,
@@ -82,6 +84,10 @@ export default function VocabularyHome() {
 
   const hasAnyWrong = VOCAB_LEVELS.some((level) =>
     HOME_TRACK_GROUPS.some(({ track }) => countVocabWrong(level, track) > 0),
+  )
+
+  const hasAnyUnfamiliar = VOCAB_LEVELS.some((level) =>
+    HOME_TRACK_GROUPS.some(({ track }) => countVocabUnfamiliar(level, track) > 0),
   )
 
   return (
@@ -188,6 +194,56 @@ export default function VocabularyHome() {
             )
           })}
           {!hasAnyWrong && <p className="memory-empty">暂无错题</p>}
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-header">
+          <h2>不熟悉记录</h2>
+          {hasAnyUnfamiliar && (
+            <button
+              type="button"
+              className="memory-clear-btn"
+              onClick={() => {
+                if (window.confirm('确定清空全部不熟悉记录？此操作不可恢复。')) {
+                  clearAllVocabUnfamiliarQuestions()
+                }
+              }}
+            >
+              一键清除
+            </button>
+          )}
+        </div>
+        <div className="memory-panel memory-panel-card">
+          {HOME_TRACK_GROUPS.map(({ track, label }) => {
+            const links = VOCAB_LEVELS.map((level) => ({
+              level,
+              count: countVocabUnfamiliar(level, track),
+            })).filter((item) => item.count > 0)
+            if (links.length === 0) return null
+            const trackPath = vocabTrackToPath(track)
+            return (
+              <div key={`unfamiliar-${track}`} className="memory-block">
+                <h3 className="memory-group-title">{label}</h3>
+                <div className="memory-pill-links">
+                  {links.map(({ level, count }) => (
+                    <Link
+                      key={level}
+                      to={`/vocab-unfamiliar/${trackPath}/${vocabLevelToPath(level)}`}
+                      className="memory-pill-link memory-pill-unfamiliar"
+                    >
+                      <span className="badge badge-level">{VOCAB_LEVEL_LABELS[level]}</span>
+                      <span className="memory-pill-body">
+                        <span className="memory-pill-title">{count} 题</span>
+                        <span className="memory-pill-meta">待巩固</span>
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )
+          })}
+          {!hasAnyUnfamiliar && <p className="memory-empty">暂无不熟悉题</p>}
         </div>
       </section>
     </div>

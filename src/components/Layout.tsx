@@ -41,6 +41,8 @@ function detectVocabTrack(pathname: string) {
   if (fromPractice) return parseVocabTrackParam(fromPractice[1])
   const fromWrong = pathname.match(/^\/vocab-wrong\/(exam|full)\//)
   if (fromWrong) return parseVocabTrackParam(fromWrong[1])
+  const fromUnfamiliar = pathname.match(/^\/vocab-unfamiliar\/(exam|full)\//)
+  if (fromUnfamiliar) return parseVocabTrackParam(fromUnfamiliar[1])
   const fromList = pathname.match(/^\/vocabulary\/(exam|full)/)
   if (fromList) return parseVocabTrackParam(fromList[1])
   return null
@@ -54,10 +56,18 @@ function isNavActive(pathname: string, path: string): boolean {
     return pathname === VOCABULARY_HOME_PATH
   }
   if (path === '/practice') {
-    return pathname.startsWith('/practice') || pathname.startsWith('/wrong')
+    return (
+      pathname.startsWith('/practice') ||
+      pathname.startsWith('/wrong') ||
+      pathname.startsWith('/unfamiliar')
+    )
   }
   if (path === '/vocab-practice') {
-    return pathname.startsWith('/vocab-practice') || pathname.startsWith('/vocab-wrong')
+    return (
+      pathname.startsWith('/vocab-practice') ||
+      pathname.startsWith('/vocab-wrong') ||
+      pathname.startsWith('/vocab-unfamiliar')
+    )
   }
   if (path.startsWith('/vocabulary/')) {
     return pathname.startsWith('/vocabulary/')
@@ -79,13 +89,16 @@ function getFooterText(pathname: string, search: string): string {
     const track = detectVocabTrack(pathname)
     const practice = pathname.match(/^\/vocab-practice\/(exam|full)\/([^/]+)/)
     const wrong = pathname.match(/^\/vocab-wrong\/(exam|full)\/([^/]+)/)
-    const level = parseVocabLevelParam(practice?.[2] ?? wrong?.[2])
+    const unfamiliar = pathname.match(/^\/vocab-unfamiliar\/(exam|full)\/([^/]+)/)
+    const level = parseVocabLevelParam(practice?.[2] ?? wrong?.[2] ?? unfamiliar?.[2])
     const trackLabel = track ? VOCAB_TRACK_LABELS[track] : null
 
     if (level && trackLabel) {
-      return wrong
-        ? `东东単語 · ${trackLabel} · ${VOCAB_LEVEL_LABELS[level]} · 错题复习`
-        : `东东単語 · ${trackLabel} · ${VOCAB_LEVEL_LABELS[level]} · 単語练习`
+      if (wrong) return `东东単語 · ${trackLabel} · ${VOCAB_LEVEL_LABELS[level]} · 错题复习`
+      if (unfamiliar) {
+        return `东东単語 · ${trackLabel} · ${VOCAB_LEVEL_LABELS[level]} · 不熟悉复习`
+      }
+      return `东东単語 · ${trackLabel} · ${VOCAB_LEVEL_LABELS[level]} · 単語练习`
     }
     if (pathname.startsWith('/vocabulary/') && trackLabel) {
       return `东东単語 · ${trackLabel} · 単語库`
@@ -103,12 +116,17 @@ function getFooterText(pathname: string, search: string): string {
 
   const practiceMatch = pathname.match(/^\/practice\/([^/]+)/)
   const wrongMatch = pathname.match(/^\/wrong\/([^/]+)/)
-  const level = parseLevelParam(practiceMatch?.[1] ?? wrongMatch?.[1])
+  const unfamiliarMatch = pathname.match(/^\/unfamiliar\/([^/]+)/)
+  const level = parseLevelParam(
+    practiceMatch?.[1] ?? wrongMatch?.[1] ?? unfamiliarMatch?.[1],
+  )
 
   if (level) {
     const activeRound = round ?? 'all'
     const title = `${LEVEL_LABELS[level]} · ${ROUND_LABELS[activeRound]}`
-    return wrongMatch ? `东东文法 · ${title} · 错题复习` : `东东文法 · ${title}`
+    if (wrongMatch) return `东东文法 · ${title} · 错题复习`
+    if (unfamiliarMatch) return `东东文法 · ${title} · 不熟悉复习`
+    return `东东文法 · ${title}`
   }
 
   if (pathname.startsWith('/grammar')) return '东东文法 · 文法库'

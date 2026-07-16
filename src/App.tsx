@@ -9,6 +9,7 @@ const GrammarList = lazy(() => import('./pages/GrammarList'))
 const Practice = lazy(() => import('./pages/Practice'))
 const PracticeSession = lazy(() => import('./pages/PracticeSession'))
 const WrongReviewSession = lazy(() => import('./pages/WrongReviewSession'))
+const UnfamiliarReviewSession = lazy(() => import('./pages/UnfamiliarReviewSession'))
 
 const VocabularyHome = lazy(() => import('./pages/VocabularyHome'))
 const VocabularyList = lazy(() => import('./pages/VocabularyList'))
@@ -16,6 +17,9 @@ const VocabularyPractice = lazy(() => import('./pages/VocabularyPractice'))
 const VocabularyPracticeSession = lazy(() => import('./pages/VocabularyPracticeSession'))
 const VocabularyWrongReviewSession = lazy(
   () => import('./pages/VocabularyWrongReviewSession'),
+)
+const VocabularyUnfamiliarReviewSession = lazy(
+  () => import('./pages/VocabularyUnfamiliarReviewSession'),
 )
 
 function RouteFallback() {
@@ -49,6 +53,10 @@ function App() {
             path="/vocab-wrong/:track/:level"
             element={<VocabularyWrongReviewSession />}
           />
+          <Route
+            path="/vocab-unfamiliar/:track/:level"
+            element={<VocabularyUnfamiliarReviewSession />}
+          />
           <Route path="/vocabulary" element={<Navigate to="/vocabulary/exam" replace />} />
           <Route
             path="/vocab-practice/:track"
@@ -59,6 +67,7 @@ function App() {
           <Route path="/practice" element={<Practice />} />
           <Route path="/practice/:level" element={<PracticeSession mode="practice" />} />
           <Route path="/wrong/:level" element={<WrongReviewSession />} />
+          <Route path="/unfamiliar/:level" element={<UnfamiliarReviewSession />} />
         </Routes>
       </Suspense>
     </Layout>

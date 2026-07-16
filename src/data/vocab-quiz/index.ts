@@ -1,6 +1,6 @@
 import type { VocabLevel, VocabTrack } from '@/data/types/vocabulary-entry'
 import type { VocabCompositeQuestion } from '@/types/vocab-quiz'
-import { getVocabularyCount, getVocabularyEntries } from '@/data/levels/vocabulary-db'
+import { getVocabularyEntries } from '@/data/levels/vocabulary-db'
 import { generateQuestionsFromVocabulary } from './generateQuestions'
 
 const questionBank: Partial<
@@ -26,15 +26,6 @@ export function getVocabQuestionsByLevel(
   return loadQuestions(level, track)
 }
 
-/** 练习中心轻量统计：词条数=题数，不触发出题 */
-export function getVocabQuizStats(level: VocabLevel, track: VocabTrack = 'exam') {
-  const wordCount = getVocabularyCount(level, track)
-  return {
-    wordCount,
-    total: wordCount,
-  }
-}
-
 export function resolveVocabQuestionsByIds(
   ids: string[],
   level: VocabLevel,
@@ -43,5 +34,3 @@ export function resolveVocabQuestionsByIds(
   const map = new Map(getVocabQuestionsByLevel(level, track).map((q) => [q.id, q]))
   return ids.map((id) => map.get(id)).filter((q): q is VocabCompositeQuestion => !!q)
 }
-
-export { generateQuestionsFromVocabulary } from './generateQuestions'
