@@ -13,7 +13,7 @@ const entries: {
     to: GRAMMAR_HOME_PATH,
     ja: '文法',
     title: '学文法',
-    desc: '理清接续与近义辨析，做题时更快认出考点。现含 PRE-N3 / N3 / N2。',
+    desc: '理清接续与近义辨析，做题时更快认出考点。覆盖 N5～N2。',
     tone: 'grammar' as const,
     status: 'ready' as const,
   },

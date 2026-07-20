@@ -1,5 +1,5 @@
 /** 各级别语法数据库条目的统一字段约定（出题模版与语法库共用） */
-export type GrammarLevel = 'PRE-N3' | 'N2' | 'N3'
+export type GrammarLevel = 'N5' | 'N4' | 'N3' | 'N2'
 
 interface GrammarExample {
   japanese: string

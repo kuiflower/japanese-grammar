@@ -1,0 +1,801 @@
+[
+  {
+    "id": "n4-001-ba",
+    "index": 1,
+    "level": "N4",
+    "pattern": "〜ば",
+    "meaning": "如果……就……",
+    "category": "假设",
+    "usage": "动词／い形＋ば；な形＋なら；名词＋なら。假定条件。",
+    "examples": [
+      {
+        "japanese": "時間があれば、旅行したいです。",
+        "chinese": "有时间的话想去旅行。"
+      }
+    ]
+  },
+  {
+    "id": "n4-002-tara",
+    "index": 2,
+    "level": "N4",
+    "pattern": "〜たら",
+    "meaning": "如果……；……之后",
+    "category": "假设",
+    "usage": "动词／い形た形＋ら；发现、假定、时间先后。",
+    "examples": [
+      {
+        "japanese": "雨が降ったら、試合は中止です。",
+        "chinese": "要是下雨，比赛就取消。"
+      }
+    ]
+  },
+  {
+    "id": "n4-003-nara",
+    "index": 3,
+    "level": "N4",
+    "pattern": "〜なら",
+    "meaning": "如果是……；谈到……",
+    "category": "假设",
+    "usage": "普通形／名词＋なら；承接对方话题或提建议。",
+    "examples": [
+      {
+        "japanese": "日本へ行くなら、京都がおすすめです。",
+        "chinese": "要去日本的话，推荐京都。"
+      }
+    ]
+  },
+  {
+    "id": "n4-004-temo",
+    "index": 4,
+    "level": "N4",
+    "pattern": "〜ても",
+    "meaning": "即使……也……",
+    "category": "假设",
+    "usage": "动词て形／い形く＋ても；让步。",
+    "examples": [
+      {
+        "japanese": "雨が降っても、行きます。",
+        "chinese": "即使下雨也去。"
+      }
+    ]
+  },
+  {
+    "id": "n4-005-nakutemo-ii",
+    "index": 5,
+    "level": "N4",
+    "pattern": "〜なくてもいい",
+    "meaning": "不……也可以",
+    "category": "表达",
+    "usage": "动词ない形＋くてもいい；不必。",
+    "examples": [
+      {
+        "japanese": "今日は来なくてもいいです。",
+        "chinese": "今天不来也行。"
+      }
+    ]
+  },
+  {
+    "id": "n4-006-you-ni",
+    "index": 6,
+    "level": "N4",
+    "pattern": "〜ように／〜ようにする",
+    "meaning": "以便……；设法做到……",
+    "category": "表达",
+    "usage": "辞书形／ない形＋ように；目标或习惯化。",
+    "examples": [
+      {
+        "japanese": "毎日運動するようにしています。",
+        "chinese": "设法每天运动。"
+      }
+    ]
+  },
+  {
+    "id": "n4-007-you-ni-naru",
+    "index": 7,
+    "level": "N4",
+    "pattern": "〜ようになる",
+    "meaning": "变得……；终于能……",
+    "category": "表达",
+    "usage": "辞书形／ない形＋ようになる；变化结果。",
+    "examples": [
+      {
+        "japanese": "日本語が話せるようになりました。",
+        "chinese": "终于能说日语了。"
+      }
+    ]
+  },
+  {
+    "id": "n4-008-tame-ni",
+    "index": 8,
+    "level": "N4",
+    "pattern": "〜ために",
+    "meaning": "为了……；因为……",
+    "category": "因果",
+    "usage": "动词辞书形／名词の＋ために；目的或原因。",
+    "examples": [
+      {
+        "japanese": "健康のために、毎日走っています。",
+        "chinese": "为了健康每天跑步。"
+      }
+    ]
+  },
+  {
+    "id": "n4-009-sou-da",
+    "index": 9,
+    "level": "N4",
+    "pattern": "〜そうだ（样态／传闻）",
+    "meaning": "好像……；听说……",
+    "category": "推测",
+    "usage": "样态：ます形去ます／い形去い＋そうだ。传闻：普通形＋そうだ。",
+    "examples": [
+      {
+        "japanese": "雨が降りそうです。",
+        "chinese": "好像要下雨。"
+      },
+      {
+        "japanese": "彼は来ないそうです。",
+        "chinese": "听说他不来。"
+      }
+    ]
+  },
+  {
+    "id": "n4-010-you-da",
+    "index": 10,
+    "level": "N4",
+    "pattern": "〜ようだ／〜みたいだ",
+    "meaning": "好像……（比喻）",
+    "category": "推测",
+    "usage": "普通形＋ようだ／みたいだ；样态推测，みたい更口语。",
+    "examples": [
+      {
+        "japanese": "彼は疲れたみたいです。",
+        "chinese": "他好像累了。"
+      }
+    ]
+  },
+  {
+    "id": "n4-011-rashii",
+    "index": 11,
+    "level": "N4",
+    "pattern": "〜らしい",
+    "meaning": "好像……；典型的……",
+    "category": "推测",
+    "usage": "普通形／名词＋らしい；根据信息的推测或典型性。",
+    "examples": [
+      {
+        "japanese": "彼女は学生らしいです。",
+        "chinese": "她好像是学生。"
+      }
+    ]
+  },
+  {
+    "id": "n4-012-kamo",
+    "index": 12,
+    "level": "N4",
+    "pattern": "〜かもしれない",
+    "meaning": "也许……",
+    "category": "推测",
+    "usage": "普通形＋かもしれない；不确定推测。",
+    "examples": [
+      {
+        "japanese": "明日は雪かもしれません。",
+        "chinese": "明天也许会下雪。"
+      }
+    ]
+  },
+  {
+    "id": "n4-013-hazu",
+    "index": 13,
+    "level": "N4",
+    "pattern": "〜はずだ",
+    "meaning": "应该……；按理会……",
+    "category": "推测",
+    "usage": "普通形＋はずだ；根据理由的推断。",
+    "examples": [
+      {
+        "japanese": "彼はもう着いたはずです。",
+        "chinese": "他应该已经到了。"
+      }
+    ]
+  },
+  {
+    "id": "n4-014-beki",
+    "index": 14,
+    "level": "N4",
+    "pattern": "〜べきだ",
+    "meaning": "应该……（道义）",
+    "category": "表达",
+    "usage": "动词辞书形＋べきだ；应当。",
+    "examples": [
+      {
+        "japanese": "約束は守るべきです。",
+        "chinese": "应该遵守约定。"
+      }
+    ]
+  },
+  {
+    "id": "n4-015-hitsuyou",
+    "index": 15,
+    "level": "N4",
+    "pattern": "〜必要がある",
+    "meaning": "有必要……",
+    "category": "表达",
+    "usage": "动词辞书形＋必要がある。",
+    "examples": [
+      {
+        "japanese": "もっと練習する必要があります。",
+        "chinese": "有必要多练习。"
+      }
+    ]
+  },
+  {
+    "id": "n4-016-te-kuru-iku",
+    "index": 16,
+    "level": "N4",
+    "pattern": "〜てくる／〜ていく",
+    "meaning": "……来；……去（变化趋向）",
+    "category": "动词",
+    "usage": "て形＋くる（近向）；ていく（远向）；变化发展。",
+    "examples": [
+      {
+        "japanese": "だんだん暖かくなってきました。",
+        "chinese": "渐渐暖和起来了。"
+      }
+    ]
+  },
+  {
+    "id": "n4-017-uchini",
+    "index": 17,
+    "level": "N4",
+    "pattern": "〜うちに",
+    "meaning": "趁着……；在……期间",
+    "category": "时序",
+    "usage": "动词辞书形／ている／ない形＋うちに；趁状态未变。",
+    "examples": [
+      {
+        "japanese": "若いうちに、たくさん旅行したい。",
+        "chinese": "想趁年轻多旅行。"
+      }
+    ]
+  },
+  {
+    "id": "n4-018-totan",
+    "index": 18,
+    "level": "N4",
+    "pattern": "〜たとたん（に）",
+    "meaning": "刚一……就……",
+    "category": "时序",
+    "usage": "动词た形＋とたん（に）；意外紧接着发生。",
+    "examples": [
+      {
+        "japanese": "家を出たとたん、雨が降り出した。",
+        "chinese": "刚出门就下起雨来。"
+      }
+    ]
+  },
+  {
+    "id": "n4-019-tabini",
+    "index": 19,
+    "level": "N4",
+    "pattern": "〜たびに",
+    "meaning": "每次……都……",
+    "category": "时序",
+    "usage": "动词辞书形／名词＋の＋たびに。",
+    "examples": [
+      {
+        "japanese": "この歌を聞くたびに、故郷を思い出す。",
+        "chinese": "每次听这首歌都想起故乡。"
+      }
+    ]
+  },
+  {
+    "id": "n4-020-ta-koto-ga-aru",
+    "index": 20,
+    "level": "N4",
+    "pattern": "〜たことがある",
+    "meaning": "曾经……过",
+    "category": "表达",
+    "usage": "动词た形＋ことがある；经验。",
+    "examples": [
+      {
+        "japanese": "富士山に登ったことがあります。",
+        "chinese": "曾经登过富士山。"
+      }
+    ]
+  },
+  {
+    "id": "n4-021-ta-hou-ga-ii",
+    "index": 21,
+    "level": "N4",
+    "pattern": "〜たほうがいい",
+    "meaning": "最好……；……比较好",
+    "category": "表达",
+    "usage": "动词た形／ない形＋ほうがいい；建议。",
+    "examples": [
+      {
+        "japanese": "早く寝たほうがいいですよ。",
+        "chinese": "早点睡比较好哦。"
+      }
+    ]
+  },
+  {
+    "id": "n4-022-nai-hou-ga-ii",
+    "index": 22,
+    "level": "N4",
+    "pattern": "〜ないほうがいい",
+    "meaning": "最好不……",
+    "category": "表达",
+    "usage": "动词ない形＋ほうがいい。",
+    "examples": [
+      {
+        "japanese": "無理をしないほうがいい。",
+        "chinese": "最好别勉强。"
+      }
+    ]
+  },
+  {
+    "id": "n4-023-nagara",
+    "index": 23,
+    "level": "N4",
+    "pattern": "〜ながら",
+    "meaning": "一边……一边……；虽然……",
+    "category": "转折",
+    "usage": "动词ます形去ます＋ながら；同时进行或逆接。",
+    "examples": [
+      {
+        "japanese": "音楽を聞きながら勉強する。",
+        "chinese": "一边听音乐一边学习。"
+      }
+    ]
+  },
+  {
+    "id": "n4-024-saichuu",
+    "index": 24,
+    "level": "N4",
+    "pattern": "〜最中（に）",
+    "meaning": "正在……时",
+    "category": "时序",
+    "usage": "动词て形／名词＋の＋最中（に）；某过程正当中。",
+    "examples": [
+      {
+        "japanese": "食事の最中に電話が鳴った。",
+        "chinese": "吃饭时电话响了。"
+      }
+    ]
+  },
+  {
+    "id": "n4-025-koto-ga-aru",
+    "index": 25,
+    "level": "N4",
+    "pattern": "〜ことがある",
+    "meaning": "有时……",
+    "category": "表达",
+    "usage": "动词辞书形＋ことがある；偶尔发生。",
+    "examples": [
+      {
+        "japanese": "夜、遅くまで起きていることがある。",
+        "chinese": "有时熬夜到很晚。"
+      }
+    ]
+  },
+  {
+    "id": "n4-026-dake",
+    "index": 26,
+    "level": "N4",
+    "pattern": "〜だけ",
+    "meaning": "只；仅",
+    "category": "表达",
+    "usage": "名词／动词普通形＋だけ；限定。",
+    "examples": [
+      {
+        "japanese": "水だけください。",
+        "chinese": "请只给我水。"
+      }
+    ]
+  },
+  {
+    "id": "n4-027-shika",
+    "index": 27,
+    "level": "N4",
+    "pattern": "〜しか〜ない",
+    "meaning": "只有……（否定）",
+    "category": "表达",
+    "usage": "しか＋否定；限定「只有」。",
+    "examples": [
+      {
+        "japanese": "1000円しかありません。",
+        "chinese": "只有 1000 日元。"
+      }
+    ]
+  },
+  {
+    "id": "n4-028-bakari",
+    "index": 28,
+    "level": "N4",
+    "pattern": "〜ばかり",
+    "meaning": "刚……；只是一味……",
+    "category": "表达",
+    "usage": "动词た形／て形＋ばかり；刚完或只做某事。",
+    "examples": [
+      {
+        "japanese": "来たばかりです。",
+        "chinese": "刚来。"
+      }
+    ]
+  },
+  {
+    "id": "n4-029-kurai",
+    "index": 29,
+    "level": "N4",
+    "pattern": "〜くらい／〜ぐらい",
+    "meaning": "大约；……程度",
+    "category": "表达",
+    "usage": "数量／普通形＋くらい；概数或程度。",
+    "examples": [
+      {
+        "japanese": "1時間くらいかかります。",
+        "chinese": "大约要花 1 小时。"
+      }
+    ]
+  },
+  {
+    "id": "n4-030-hodo",
+    "index": 30,
+    "level": "N4",
+    "pattern": "〜ほど",
+    "meaning": "越……越……；……程度",
+    "category": "表达",
+    "usage": "数量＋ほど；程度或「越…越…」句型。",
+    "examples": [
+      {
+        "japanese": "日本語は勉強すればするほど面白い。",
+        "chinese": "日语越学越有意思。"
+      }
+    ]
+  },
+  {
+    "id": "n4-031-nado",
+    "index": 31,
+    "level": "N4",
+    "pattern": "〜など",
+    "meaning": "……之类；……等",
+    "category": "表达",
+    "usage": "名词＋など；列举代表性事物。",
+    "examples": [
+      {
+        "japanese": "日曜日は本を読んだり、映画を見たりなどします。",
+        "chinese": "周日看看书、看看电影之类的。"
+      }
+    ]
+  },
+  {
+    "id": "n4-032-nitsuite",
+    "index": 32,
+    "level": "N4",
+    "pattern": "〜について",
+    "meaning": "关于……",
+    "category": "表达",
+    "usage": "名词＋について；话题。",
+    "examples": [
+      {
+        "japanese": "日本の文化について研究しています。",
+        "chinese": "在研究日本文化。"
+      }
+    ]
+  },
+  {
+    "id": "n4-032b-nitotte",
+    "index": 33,
+    "level": "N4",
+    "pattern": "〜にとって",
+    "meaning": "对……来说",
+    "category": "表达",
+    "usage": "名词＋にとって；立场、评价主体。",
+    "examples": [
+      {
+        "japanese": "私にとって、家族は大切です。",
+        "chinese": "对我来说家人很重要。"
+      }
+    ]
+  },
+  {
+    "id": "n4-033-toshite",
+    "index": 34,
+    "level": "N4",
+    "pattern": "〜として",
+    "meaning": "作为……",
+    "category": "表达",
+    "usage": "名词＋として；身份、资格。",
+    "examples": [
+      {
+        "japanese": "教師として働いています。",
+        "chinese": "作为教师工作。"
+      }
+    ]
+  },
+  {
+    "id": "n4-034-niyotte",
+    "index": 35,
+    "level": "N4",
+    "pattern": "〜によって",
+    "meaning": "根据……；由于……；通过……",
+    "category": "表达",
+    "usage": "名词＋によって；因、依、手段多义。",
+    "examples": [
+      {
+        "japanese": "人によって考え方が違います。",
+        "chinese": "人因想法而异。"
+      }
+    ]
+  },
+  {
+    "id": "n4-035-wake",
+    "index": 36,
+    "level": "N4",
+    "pattern": "〜わけではない",
+    "meaning": "并非……；不一定……",
+    "category": "表达",
+    "usage": "普通形＋わけではない；部分否定。",
+    "examples": [
+      {
+        "japanese": "嫌いなわけではない。",
+        "chinese": "并不是讨厌。"
+      }
+    ]
+  },
+  {
+    "id": "n4-036-wake-ga-nai",
+    "index": 37,
+    "level": "N4",
+    "pattern": "〜わけがない",
+    "meaning": "不可能……",
+    "category": "表达",
+    "usage": "普通形＋わけがない；强烈否定可能。",
+    "examples": [
+      {
+        "japanese": "そんなことがあるわけがない。",
+        "chinese": "不可能有那种事。"
+      }
+    ]
+  },
+  {
+    "id": "n4-037-ki-ga-suru",
+    "index": 38,
+    "level": "N4",
+    "pattern": "〜気がする",
+    "meaning": "觉得……；感觉……",
+    "category": "表达",
+    "usage": "普通形＋気がする；主观感觉。",
+    "examples": [
+      {
+        "japanese": "なんだか寒気がする。",
+        "chinese": "总觉得有点发冷。"
+      }
+    ]
+  },
+  {
+    "id": "n4-038-passive",
+    "index": 39,
+    "level": "N4",
+    "pattern": "受身（〜れる／〜られる）",
+    "meaning": "被……；受到……",
+    "category": "被动使役",
+    "usage": "五段れる／一段られる；被动、遭受、尊敬。",
+    "examples": [
+      {
+        "japanese": "弟にケーキを食べられた。",
+        "chinese": "蛋糕被弟弟吃了。"
+      }
+    ]
+  },
+  {
+    "id": "n4-039-causative",
+    "index": 40,
+    "level": "N4",
+    "pattern": "使役（〜せる／〜させる）",
+    "meaning": "让……做；使……做",
+    "category": "被动使役",
+    "usage": "五段せる／一段させる；使役。",
+    "examples": [
+      {
+        "japanese": "母は子供に野菜を食べさせます。",
+        "chinese": "妈妈让孩子吃蔬菜。"
+      }
+    ]
+  },
+  {
+    "id": "n4-040-causative-passive",
+    "index": 41,
+    "level": "N4",
+    "pattern": "使役受身",
+    "meaning": "被迫……",
+    "category": "被动使役",
+    "usage": "使役形＋られる；被迫做某事。",
+    "examples": [
+      {
+        "japanese": "昨日、3時間も待たされました。",
+        "chinese": "昨天被迫等了 3 小时。"
+      }
+    ]
+  },
+  {
+    "id": "n4-041-potential",
+    "index": 42,
+    "level": "N4",
+    "pattern": "可能形",
+    "meaning": "能……",
+    "category": "动词",
+    "usage": "五段え段／一段られる；能力可能。",
+    "examples": [
+      {
+        "japanese": "この漢字が読めます。",
+        "chinese": "这个汉字能读。"
+      }
+    ]
+  },
+  {
+    "id": "n4-042-keigo-base",
+    "index": 43,
+    "level": "N4",
+    "pattern": "敬语（お／ご〜になる）",
+    "meaning": "尊敬语基础",
+    "category": "敬语",
+    "usage": "お／ご＋动词ます形＋になる；尊敬对方动作。",
+    "examples": [
+      {
+        "japanese": "先生がおっしゃいました。",
+        "chinese": "老师说了。"
+      }
+    ]
+  },
+  {
+    "id": "n4-043-kenjou",
+    "index": 44,
+    "level": "N4",
+    "pattern": "謙譲語（お〜する）",
+    "meaning": "自谦表达",
+    "category": "敬语",
+    "usage": "お＋动词ます形＋する；降低自己动作。",
+    "examples": [
+      {
+        "japanese": "後でお電話します。",
+        "chinese": "待会儿给您打电话。"
+      }
+    ]
+  },
+  {
+    "id": "n4-044-te-shimau-n4",
+    "index": 45,
+    "level": "N4",
+    "pattern": "〜てしまう（完了／遗憾）",
+    "meaning": "……完了； unfortunately",
+    "category": "动词",
+    "usage": "完了或无意中做了；语气比 N5 更强调结果。",
+    "examples": [
+      {
+        "japanese": "大切な書類をなくしてしまった。",
+        "chinese": "把重要文件弄丢了。"
+      }
+    ]
+  },
+  {
+    "id": "n4-045-mada-teinai",
+    "index": 46,
+    "level": "N4",
+    "pattern": "〜まだ〜ていない",
+    "meaning": "尚未……",
+    "category": "时序",
+    "usage": "まだ＋ていない；状态持续未到。",
+    "examples": [
+      {
+        "japanese": "まだ結果が出ていません。",
+        "chinese": "结果还没出来。"
+      }
+    ]
+  },
+  {
+    "id": "n4-046-mou-teiru",
+    "index": 47,
+    "level": "N4",
+    "pattern": "〜もう〜ている",
+    "meaning": "已经……了",
+    "category": "时序",
+    "usage": "もう＋ている；动作或状态已完成。",
+    "examples": [
+      {
+        "japanese": "もう荷物が届いています。",
+        "chinese": "行李已经送到了。"
+      }
+    ]
+  },
+  {
+    "id": "n4-047-dandan",
+    "index": 48,
+    "level": "N4",
+    "pattern": "だんだん",
+    "meaning": "渐渐……",
+    "category": "状态",
+    "usage": "副词＋变化；渐进。",
+    "examples": [
+      {
+        "japanese": "だんだん日本語がわかるようになった。",
+        "chinese": "渐渐能听懂日语了。"
+      }
+    ]
+  },
+  {
+    "id": "n4-048-ikkou-ni",
+    "index": 49,
+    "level": "N4",
+    "pattern": "いっこうに",
+    "meaning": "完全（不）……",
+    "category": "状态",
+    "usage": "いっこうに＋否定；全然不。",
+    "examples": [
+      {
+        "japanese": "彼の話はいっこうにわからない。",
+        "chinese": "他的话完全听不懂。"
+      }
+    ]
+  },
+  {
+    "id": "n4-049-zutto",
+    "index": 50,
+    "level": "N4",
+    "pattern": "ずっと",
+    "meaning": "一直……；比……得多",
+    "category": "状态",
+    "usage": "持续或比较程度。",
+    "examples": [
+      {
+        "japanese": "ずっと会いたかったです。",
+        "chinese": "一直想见你。"
+      }
+    ]
+  },
+  {
+    "id": "n4-050-marude",
+    "index": 51,
+    "level": "N4",
+    "pattern": "まるで",
+    "meaning": "简直像……",
+    "category": "表达",
+    "usage": "まるで＋ようだ；比喻强调。",
+    "examples": [
+      {
+        "japanese": "まるで夢のようだ。",
+        "chinese": "简直像做梦一样。"
+      }
+    ]
+  },
+  {
+    "id": "n4-051-ikura-temo",
+    "index": 52,
+    "level": "N4",
+    "pattern": "いくら〜ても",
+    "meaning": "再怎么……也……",
+    "category": "假设",
+    "usage": "いくら＋ても；让步强调无效。",
+    "examples": [
+      {
+        "japanese": "いくら練習しても、うまくならない。",
+        "chinese": "再怎么练也练不好。"
+      }
+    ]
+  },
+  {
+    "id": "n4-052-shi",
+    "index": 53,
+    "level": "N4",
+    "pattern": "〜し",
+    "meaning": "又……又……；而且……",
+    "category": "表达",
+    "usage": "普通形＋し；列举理由或事项。",
+    "examples": [
+      {
+        "japanese": "この店は安いし、おいしいし、人気がある。",
+        "chinese": "这家店又便宜又好吃，很人气。"
+      }
+    ]
+  }
+]

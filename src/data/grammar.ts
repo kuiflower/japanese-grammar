@@ -17,6 +17,9 @@ const categoryMap: Record<string, GrammarCategory> = {
   固定句式: 'expressions',
   时序: 'conjunctions',
   表达: 'expressions',
+  助词: 'particles',
+  敬语: 'expressions',
+  动词: 'verbs',
 }
 
 function toGrammarPoint(entry: GrammarEntry): GrammarPoint {

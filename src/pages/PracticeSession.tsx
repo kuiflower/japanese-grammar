@@ -24,7 +24,7 @@ import {
 import type { JlptLevel, QuizQuestion, QuizRound } from '@/types/quiz'
 import { LEVEL_LABELS, ROUND_LABELS, levelToPath, parseLevelParam } from '@/types/quiz'
 
-const VALID_LEVELS: JlptLevel[] = ['PRE-N3', 'N2', 'N3']
+const VALID_LEVELS: JlptLevel[] = ['N5', 'N4', 'N3', 'N2']
 const VALID_ROUNDS: QuizRound[] = ['all', 'round1', 'round2', 'enhanced']
 
 function parseLevel(param?: string): JlptLevel | null {

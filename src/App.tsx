@@ -65,8 +65,11 @@ function App() {
           <Route path="/grammar" element={<GrammarList />} />
           <Route path="/grammar/:id" element={<GrammarList />} />
           <Route path="/practice" element={<Practice />} />
+          <Route path="/practice/pre-n3" element={<Navigate to="/practice/N3" replace />} />
           <Route path="/practice/:level" element={<PracticeSession mode="practice" />} />
+          <Route path="/wrong/pre-n3" element={<Navigate to="/wrong/N3" replace />} />
           <Route path="/wrong/:level" element={<WrongReviewSession />} />
+          <Route path="/unfamiliar/pre-n3" element={<Navigate to="/unfamiliar/N3" replace />} />
           <Route path="/unfamiliar/:level" element={<UnfamiliarReviewSession />} />
         </Routes>
       </Suspense>

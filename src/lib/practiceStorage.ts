@@ -51,14 +51,55 @@ export const HOME_ROUND_GROUPS: { round: QuizRound; label: string }[] = [
   { round: 'enhanced', label: '第二轮 · 增强' },
 ]
 
+/** 错题/不熟悉首页分组：不含「全部题型」，避免与分轮条目重复展示 */
+export const HOME_REVIEW_ROUND_GROUPS = HOME_ROUND_GROUPS.filter((g) => g.round !== 'all')
+
 function checkpointKey(level: JlptLevel, round: QuizRound) {
   return `${level}:${round}`
+}
+
+/** 旧版 PRE-N3 进度/错题并入 N3 */
+function normalizeLevel(level: string): JlptLevel {
+  return level === 'PRE-N3' ? 'N3' : (level as JlptLevel)
+}
+
+function migrateCheckpoints(
+  raw: Record<string, PracticeCheckpoint>,
+): Record<string, PracticeCheckpoint> {
+  const out: Record<string, PracticeCheckpoint> = {}
+  for (const cp of Object.values(raw)) {
+    const level = normalizeLevel(cp.level as string)
+    const key = checkpointKey(level, cp.round)
+    const migrated = { ...cp, level }
+    const existing = out[key]
+    if (!existing || existing.updatedAt < migrated.updatedAt) {
+      out[key] = migrated
+    }
+  }
+  return out
+}
+
+function migrateHistory(
+  raw: Record<string, PracticeSessionSummary>,
+): Record<string, PracticeSessionSummary> {
+  const out: Record<string, PracticeSessionSummary> = {}
+  for (const summary of Object.values(raw)) {
+    const level = normalizeLevel(summary.level as string)
+    const key = checkpointKey(level, summary.round)
+    const migrated = { ...summary, level }
+    const existing = out[key]
+    if (!existing || existing.updatedAt < migrated.updatedAt) {
+      out[key] = migrated
+    }
+  }
+  return out
 }
 
 function readCheckpoints(): Record<string, PracticeCheckpoint> {
   try {
     const raw = localStorage.getItem(CHECKPOINTS_KEY)
-    return raw ? (JSON.parse(raw) as Record<string, PracticeCheckpoint>) : {}
+    const parsed = raw ? (JSON.parse(raw) as Record<string, PracticeCheckpoint>) : {}
+    return migrateCheckpoints(parsed)
   } catch {
     return {}
   }
@@ -72,7 +113,8 @@ function writeCheckpoints(data: Record<string, PracticeCheckpoint>) {
 function readHistory(): Record<string, PracticeSessionSummary> {
   try {
     const raw = localStorage.getItem(HISTORY_KEY)
-    return raw ? (JSON.parse(raw) as Record<string, PracticeSessionSummary>) : {}
+    const parsed = raw ? (JSON.parse(raw) as Record<string, PracticeSessionSummary>) : {}
+    return migrateHistory(parsed)
   } catch {
     return {}
   }
@@ -90,7 +132,8 @@ function notifyStorageUpdate() {
 export function readWrongRecords(): WrongQuestionRecord[] {
   try {
     const raw = localStorage.getItem(WRONG_KEY)
-    return raw ? (JSON.parse(raw) as WrongQuestionRecord[]) : []
+    const records = raw ? (JSON.parse(raw) as WrongQuestionRecord[]) : []
+    return records.map((r) => ({ ...r, level: normalizeLevel(r.level as string) }))
   } catch {
     return []
   }
@@ -165,7 +208,8 @@ export function clearAllWrongQuestions() {
 function readUnfamiliarRecords(): UnfamiliarQuestionRecord[] {
   try {
     const raw = localStorage.getItem(UNFAMILIAR_KEY)
-    return raw ? (JSON.parse(raw) as UnfamiliarQuestionRecord[]) : []
+    const records = raw ? (JSON.parse(raw) as UnfamiliarQuestionRecord[]) : []
+    return records.map((r) => ({ ...r, level: normalizeLevel(r.level as string) }))
   } catch {
     return []
   }

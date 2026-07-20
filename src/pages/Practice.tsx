@@ -4,7 +4,7 @@ import { getQuizHubStats } from '@/data/quiz'
 import type { JlptLevel, QuizRound } from '@/types/quiz'
 import { LEVEL_LABELS, ROUND_LABELS, grammarLevelTitle, levelToPath } from '@/types/quiz'
 
-const levels: JlptLevel[] = ['PRE-N3', 'N3', 'N2']
+const levels: JlptLevel[] = ['N5', 'N4', 'N3', 'N2']
 
 const rounds: { round: QuizRound; desc: string; recommended?: boolean }[] = [
   { round: 'round1', desc: '意思 + 用法', recommended: true },
@@ -14,7 +14,7 @@ const rounds: { round: QuizRound; desc: string; recommended?: boolean }[] = [
 ]
 
 export default function Practice() {
-  const [openLevel, setOpenLevel] = useState<JlptLevel | null>('PRE-N3')
+  const [openLevel, setOpenLevel] = useState<JlptLevel | null>('N5')
 
   return (
     <div className="page practice-hub">

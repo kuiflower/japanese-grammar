@@ -1,4 +1,4 @@
-export type JlptLevel = 'PRE-N3' | 'N2' | 'N3'
+export type JlptLevel = 'N5' | 'N4' | 'N3' | 'N2'
 
 type QuizQuestionType =
   | 'meaning'
@@ -29,14 +29,15 @@ export interface QuizQuestion {
 }
 
 export const LEVEL_LABELS: Record<JlptLevel, string> = {
-  'PRE-N3': 'PRE-N3',
-  N2: 'N2',
+  N5: 'N5',
+  N4: 'N4',
   N3: 'N3',
+  N2: 'N2',
 }
 
 /** 练习列表等标题（徽章仍用 LEVEL_LABELS，不含「文法」） */
 export function grammarLevelTitle(level: JlptLevel): string {
-  return level === 'PRE-N3' ? 'PRE-N3文法' : `${LEVEL_LABELS[level]} 文法`
+  return `${LEVEL_LABELS[level]} 文法`
 }
 
 export const ROUND_LABELS: Record<QuizRound, string> = {
@@ -47,12 +48,14 @@ export const ROUND_LABELS: Record<QuizRound, string> = {
 }
 
 export function levelToPath(level: JlptLevel): string {
-  return level === 'PRE-N3' ? 'pre-n3' : level
+  return level
 }
 
 export function parseLevelParam(param?: string): JlptLevel | null {
-  if (param === 'pre-n3' || param === 'PRE-N3') return 'PRE-N3'
-  if (param === 'N2' || param === 'n2') return 'N2'
+  if (param === 'pre-n3' || param === 'PRE-N3') return 'N3'
+  if (param === 'N5' || param === 'n5') return 'N5'
+  if (param === 'N4' || param === 'n4') return 'N4'
   if (param === 'N3' || param === 'n3') return 'N3'
+  if (param === 'N2' || param === 'n2') return 'N2'
   return null
 }

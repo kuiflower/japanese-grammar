@@ -11,9 +11,10 @@ alwaysApply: true
 
 | 级别 | 唯一文件 |
 |------|----------|
-| PRE-N3 | `src/data/levels/pre-n3/grammar.json` |
-| N2 | `src/data/levels/n2/grammar.json` |
+| N5 | `src/data/levels/n5/grammar.json` |
+| N4 | `src/data/levels/n4/grammar.json` |
 | N3 | `src/data/levels/n3/grammar.json` |
+| N2 | `src/data/levels/n2/grammar.json` |
 
 **背单词**（每级两套题库；非并列板块）：
 
@@ -39,7 +40,7 @@ alwaysApply: true
 
 - ❌ 不新增 `entries.mjs`、`refinements`、`usage-standard`、`build-*.mjs` 等叠加修正文件
 - ❌ 不把修正写在脚本里再覆盖 JSON；**直接改对应 `grammar.json`**
-- ❌ 不为某级别另建 CSV/第二数据源（N2 与 PRE-N3/N3 同等，只维护 `n2/grammar.json`）
+- ❌ 不为某级别另建 CSV/第二数据源（N2 与 N3 同等，只维护对应 `grammar.json`）
 - ❌ `usage` 不得复读 `meaning`（如「部分肯定：既然…」）；用法题考点须含接续等信息
 - ❌ 不新增 `scripts/` 下的数据管线、导入、校验脚本（非项目核心结构）
 

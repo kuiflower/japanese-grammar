@@ -1,6 +1,6 @@
 # 东东文法 — 日语语法学习
 
-PRE-N3 / N2 / N3 语法库与练习应用（React + Vite）。
+N5～N2 语法库与练习应用（React + Vite）。
 
 ## 快速开始
 
@@ -17,9 +17,10 @@ npm run dev
 src/data/
 ├── types/grammar-entry.ts       # 数据字段约定
 ├── levels/                      # 各级别唯一数据库（唯一数据源）
-│   ├── pre-n3/grammar.json      # PRE-N3（44 条）
-│   ├── n2/grammar.json          # N2（155 条）
-│   └── n3/grammar.json          # N3（192 条）
+│   ├── n5/grammar.json          # N5
+│   ├── n4/grammar.json          # N4
+│   ├── n3/grammar.json          # N3（含原 PRE-N3 基础条目）
+│   └── n2/grammar.json          # N2
 ├── grammar.ts                   # 语法库 UI 适配
 └── quiz/
     ├── generateQuestions.ts     # 出题模版（通用，与级别无关）
@@ -32,9 +33,10 @@ src/data/
 
 | 级别 | 数据库文件 |
 |------|-----------|
-| PRE-N3 | `src/data/levels/pre-n3/grammar.json` |
-| N2 | `src/data/levels/n2/grammar.json` |
+| N5 | `src/data/levels/n5/grammar.json` |
+| N4 | `src/data/levels/n4/grammar.json` |
 | N3 | `src/data/levels/n3/grammar.json` |
+| N2 | `src/data/levels/n2/grammar.json` |
 
 每条字段：`meaning` 释义 · `usage` 用法 · `notes` 辨析 · `examples` 例句
 

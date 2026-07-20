@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
+  HOME_REVIEW_ROUND_GROUPS,
   HOME_ROUND_GROUPS,
   clearAllSessionRecords,
   clearAllUnfamiliarQuestions,
@@ -16,7 +17,7 @@ import {
 import type { JlptLevel } from '@/types/quiz'
 import { LEVEL_LABELS, levelToPath } from '@/types/quiz'
 
-const LEVELS: JlptLevel[] = ['PRE-N3', 'N2', 'N3']
+const LEVELS: JlptLevel[] = ['N5', 'N4', 'N3', 'N2']
 
 function useStorageVersion() {
   const [version, setVersion] = useState(0)
@@ -80,11 +81,11 @@ export default function GrammarHome() {
   }).filter((group) => group.links.length > 0)
 
   const hasAnyWrong = LEVELS.some((level) =>
-    HOME_ROUND_GROUPS.some(({ round }) => countWrongForRound(level, round) > 0),
+    HOME_REVIEW_ROUND_GROUPS.some(({ round }) => countWrongForRound(level, round) > 0),
   )
 
   const hasAnyUnfamiliar = LEVELS.some((level) =>
-    HOME_ROUND_GROUPS.some(({ round }) => countUnfamiliarForRound(level, round) > 0),
+    HOME_REVIEW_ROUND_GROUPS.some(({ round }) => countUnfamiliarForRound(level, round) > 0),
   )
 
   return (
@@ -162,7 +163,7 @@ export default function GrammarHome() {
           )}
         </div>
         <div className="memory-panel memory-panel-card">
-          {HOME_ROUND_GROUPS.map(({ round, label }) => {
+          {HOME_REVIEW_ROUND_GROUPS.map(({ round, label }) => {
             const links = LEVELS.map((level) => ({
               level,
               count: countWrongForRound(level, round),
@@ -211,7 +212,7 @@ export default function GrammarHome() {
           )}
         </div>
         <div className="memory-panel memory-panel-card">
-          {HOME_ROUND_GROUPS.map(({ round, label }) => {
+          {HOME_REVIEW_ROUND_GROUPS.map(({ round, label }) => {
             const links = LEVELS.map((level) => ({
               level,
               count: countUnfamiliarForRound(level, round),

@@ -5,7 +5,7 @@ import { grammarPoints, categoryLabels, getGrammarById } from '@/data/grammar'
 import type { GrammarPoint, JlptLevel } from '@/types/grammar'
 import { LEVEL_LABELS } from '@/types/quiz'
 
-const levels: JlptLevel[] = ['PRE-N3', 'N5', 'N4', 'N3', 'N2', 'N1']
+const levels: JlptLevel[] = ['N5', 'N4', 'N3', 'N2', 'N1']
 
 function GrammarRow({
   point,

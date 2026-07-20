@@ -1,4 +1,4 @@
-export type JlptLevel = 'PRE-N3' | 'N5' | 'N4' | 'N3' | 'N2' | 'N1'
+export type JlptLevel = 'N5' | 'N4' | 'N3' | 'N2' | 'N1'
 
 export type GrammarCategory =
   | 'particles'      // 助词

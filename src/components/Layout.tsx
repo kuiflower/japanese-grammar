@@ -132,7 +132,7 @@ function getFooterText(pathname: string, search: string): string {
   if (pathname.startsWith('/grammar')) return '东东文法 · 文法库'
   if (pathname === '/practice') return '东东文法 · 文法练习'
   if (pathname === GRAMMAR_HOME_PATH) return '东东文法 · 文法练习'
-  return `东东文法 · ${LEVEL_LABELS['PRE-N3']} / ${LEVEL_LABELS.N2} / ${LEVEL_LABELS.N3} 选择题练习`
+  return `东东文法 · ${LEVEL_LABELS.N5} / ${LEVEL_LABELS.N4} / ${LEVEL_LABELS.N3} / ${LEVEL_LABELS.N2} 选择题练习`
 }
 
 export default function Layout({ children }: LayoutProps) {
