@@ -1575,7 +1575,14 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0.55rem;
+}
+
+.quiz-ex-example {
+  padding: 0.5rem 0.65rem;
+  background: var(--color-bg);
+  border-radius: 6px;
+  border-left: 3px solid var(--color-primary);
 }
 
 .quiz-ex-example-ja {
@@ -1583,18 +1590,14 @@
   font-size: 0.95rem;
   line-height: 1.65;
   color: var(--color-text);
-  padding: 0.5rem 0.65rem;
-  background: var(--color-bg);
-  border-radius: 6px;
-  border-left: 3px solid var(--color-primary);
+  margin: 0;
 }
 
 .quiz-ex-example-zh {
   font-size: 0.85rem;
   line-height: 1.5;
   color: var(--color-text-muted);
-  padding-left: 0.65rem;
-  margin-bottom: 0.25rem;
+  margin: 0.25rem 0 0;
 }
 
 .quiz-next-btn {

@@ -6,6 +6,22 @@ function isJapaneseLine(text: string): boolean {
   return /[\u3040-\u30ff\u4e00-\u9faf]/.test(text) && !/^【/.test(text)
 }
 
+function pairExampleLines(lines: string[]): { japanese: string; chinese?: string }[] {
+  const pairs: { japanese: string; chinese?: string }[] = []
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i]!
+    if (!isJapaneseLine(line)) continue
+    const next = lines[i + 1]
+    if (next && !isJapaneseLine(next)) {
+      pairs.push({ japanese: line, chinese: next })
+      i++
+    } else {
+      pairs.push({ japanese: line })
+    }
+  }
+  return pairs
+}
+
 function Round1Explanation({ text }: { text: string }) {
   const sections = useMemo(() => {
     const result: { label: string; lines: string[] }[] = []
@@ -31,17 +47,12 @@ function Round1Explanation({ text }: { text: string }) {
           <p className="quiz-explanation-section-label">{section.label}</p>
           {section.label === '例句' ? (
             <ul className="quiz-explanation-examples">
-              {section.lines.map((line, i) =>
-                isJapaneseLine(line) ? (
-                  <li key={i} className="quiz-ex-example-ja">
-                    {line}
-                  </li>
-                ) : (
-                  <li key={i} className="quiz-ex-example-zh">
-                    {line}
-                  </li>
-                ),
-              )}
+              {pairExampleLines(section.lines).map((ex, i) => (
+                <li key={i} className="quiz-ex-example">
+                  <p className="quiz-ex-example-ja">{ex.japanese}</p>
+                  {ex.chinese && <p className="quiz-ex-example-zh">{ex.chinese}</p>}
+                </li>
+              ))}
             </ul>
           ) : (
             <p className="quiz-explanation-section-text">{section.lines.join('')}</p>
