@@ -58,7 +58,10 @@ function isMisplacedJapaneseMeaning(text: string): boolean {
 }
 
 function normalizePattern(pattern: string): string {
-  return pattern.replace(/[〜～\s（）()【】]/g, '').trim()
+  return pattern
+    .replace(/[（(][^）)]*[）)]/g, '')
+    .replace(/[〜～\s【】]/g, '')
+    .trim()
 }
 
 /** 选项展示字数上限（中文/标点计 1 字；UI 已支持多行换行） */
