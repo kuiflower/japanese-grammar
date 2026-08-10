@@ -1,1 +1,2058 @@
-[]
+[
+  {
+    "id": "n5-vocab-0001",
+    "index": 1,
+    "level": "N5",
+    "word": "私",
+    "reading": "わたし",
+    "pos": "名词",
+    "meaning": "我",
+    "example": {
+      "japanese": "私は学生です。",
+      "chinese": "我是学生。"
+    }
+  },
+  {
+    "id": "n5-vocab-0002",
+    "index": 2,
+    "level": "N5",
+    "word": "これ",
+    "reading": "これ",
+    "pos": "名词",
+    "meaning": "这个",
+    "example": {
+      "japanese": "これは本です。",
+      "chinese": "这是书。"
+    }
+  },
+  {
+    "id": "n5-vocab-0003",
+    "index": 3,
+    "level": "N5",
+    "word": "それ",
+    "reading": "それ",
+    "pos": "名词",
+    "meaning": "那个",
+    "example": {
+      "japanese": "それはペンです。",
+      "chinese": "那是笔。"
+    }
+  },
+  {
+    "id": "n5-vocab-0004",
+    "index": 4,
+    "level": "N5",
+    "word": "あれ",
+    "reading": "あれ",
+    "pos": "名词",
+    "meaning": "那边的那个；那",
+    "example": {
+      "japanese": "あれは何ですか。",
+      "chinese": "那是什么？"
+    }
+  },
+  {
+    "id": "n5-vocab-0005",
+    "index": 5,
+    "level": "N5",
+    "word": "どれ",
+    "reading": "どれ",
+    "pos": "名词",
+    "meaning": "哪个",
+    "example": {
+      "japanese": "どれがいいですか。",
+      "chinese": "哪个好？"
+    }
+  },
+  {
+    "id": "n5-vocab-0006",
+    "index": 6,
+    "level": "N5",
+    "word": "ここ",
+    "reading": "ここ",
+    "pos": "名词",
+    "meaning": "这里",
+    "example": {
+      "japanese": "ここに座ってください。",
+      "chinese": "请坐这里。"
+    }
+  },
+  {
+    "id": "n5-vocab-0007",
+    "index": 7,
+    "level": "N5",
+    "word": "そこ",
+    "reading": "そこ",
+    "pos": "名词",
+    "meaning": "那里",
+    "example": {
+      "japanese": "そこにかばんがあります。",
+      "chinese": "那里有包。"
+    }
+  },
+  {
+    "id": "n5-vocab-0008",
+    "index": 8,
+    "level": "N5",
+    "word": "あそこ",
+    "reading": "あそこ",
+    "pos": "名词",
+    "meaning": "那里",
+    "example": {
+      "japanese": "あそこが駅です。",
+      "chinese": "那里是车站。"
+    }
+  },
+  {
+    "id": "n5-vocab-0009",
+    "index": 9,
+    "level": "N5",
+    "word": "どこ",
+    "reading": "どこ",
+    "pos": "名词",
+    "meaning": "哪里",
+    "example": {
+      "japanese": "トイレはどこですか。",
+      "chinese": "厕所在哪里？"
+    }
+  },
+  {
+    "id": "n5-vocab-0010",
+    "index": 10,
+    "level": "N5",
+    "word": "誰",
+    "reading": "だれ",
+    "pos": "名词",
+    "meaning": "谁",
+    "example": {
+      "japanese": "彼は誰ですか。",
+      "chinese": "他是谁？"
+    }
+  },
+  {
+    "id": "n5-vocab-0011",
+    "index": 11,
+    "level": "N5",
+    "word": "何",
+    "reading": "なに",
+    "pos": "名词",
+    "meaning": "什么",
+    "example": {
+      "japanese": "それは何ですか。",
+      "chinese": "那是什么？"
+    }
+  },
+  {
+    "id": "n5-vocab-0012",
+    "index": 12,
+    "level": "N5",
+    "word": "今日",
+    "reading": "きょう",
+    "pos": "名词",
+    "meaning": "今天",
+    "example": {
+      "japanese": "今日は雨です。",
+      "chinese": "今天下雨。"
+    }
+  },
+  {
+    "id": "n5-vocab-0013",
+    "index": 13,
+    "level": "N5",
+    "word": "明日",
+    "reading": "あした",
+    "pos": "名词",
+    "meaning": "明天",
+    "example": {
+      "japanese": "明日は休みです。",
+      "chinese": "明天休息。"
+    }
+  },
+  {
+    "id": "n5-vocab-0014",
+    "index": 14,
+    "level": "N5",
+    "word": "昨日",
+    "reading": "きのう",
+    "pos": "名词",
+    "meaning": "昨天",
+    "example": {
+      "japanese": "昨日映画を見た。",
+      "chinese": "昨天看了电影。"
+    }
+  },
+  {
+    "id": "n5-vocab-0015",
+    "index": 15,
+    "level": "N5",
+    "word": "朝",
+    "reading": "あさ",
+    "pos": "名词",
+    "meaning": "早上",
+    "example": {
+      "japanese": "朝ごはんを食べる。",
+      "chinese": "吃早饭。"
+    }
+  },
+  {
+    "id": "n5-vocab-0016",
+    "index": 16,
+    "level": "N5",
+    "word": "晩",
+    "reading": "ばん",
+    "pos": "名词",
+    "meaning": "晚上",
+    "example": {
+      "japanese": "晩に電話する。",
+      "chinese": "晚上打电话。"
+    }
+  },
+  {
+    "id": "n5-vocab-0017",
+    "index": 17,
+    "level": "N5",
+    "word": "夜",
+    "reading": "よる",
+    "pos": "名词",
+    "meaning": "夜里",
+    "example": {
+      "japanese": "夜、本を読む。",
+      "chinese": "晚上读书。"
+    }
+  },
+  {
+    "id": "n5-vocab-0018",
+    "index": 18,
+    "level": "N5",
+    "word": "今",
+    "reading": "いま",
+    "pos": "名词",
+    "meaning": "现在",
+    "example": {
+      "japanese": "今、勉強しています。",
+      "chinese": "现在正在学习。"
+    }
+  },
+  {
+    "id": "n5-vocab-0019",
+    "index": 19,
+    "level": "N5",
+    "word": "男",
+    "reading": "おとこ",
+    "pos": "名词",
+    "meaning": "男人",
+    "example": {
+      "japanese": "あの男は先生です。",
+      "chinese": "那个男人是老师。"
+    }
+  },
+  {
+    "id": "n5-vocab-0020",
+    "index": 20,
+    "level": "N5",
+    "word": "女",
+    "reading": "おんな",
+    "pos": "名词",
+    "meaning": "女人",
+    "example": {
+      "japanese": "あの女の人は学生です。",
+      "chinese": "那个女人是学生。"
+    }
+  },
+  {
+    "id": "n5-vocab-0021",
+    "index": 21,
+    "level": "N5",
+    "word": "子供",
+    "reading": "こども",
+    "pos": "名词",
+    "meaning": "孩子",
+    "example": {
+      "japanese": "子供が公園で遊ぶ。",
+      "chinese": "孩子在公园玩。"
+    }
+  },
+  {
+    "id": "n5-vocab-0022",
+    "index": 22,
+    "level": "N5",
+    "word": "大人",
+    "reading": "おとな",
+    "pos": "名词",
+    "meaning": "成人，大人",
+    "example": {
+      "japanese": "大人の料金です。",
+      "chinese": "这是成人票价。"
+    }
+  },
+  {
+    "id": "n5-vocab-0023",
+    "index": 23,
+    "level": "N5",
+    "word": "友達",
+    "reading": "ともだち",
+    "pos": "名词",
+    "meaning": "朋友",
+    "example": {
+      "japanese": "友達と映画を見る。",
+      "chinese": "和朋友看电影。"
+    }
+  },
+  {
+    "id": "n5-vocab-0024",
+    "index": 24,
+    "level": "N5",
+    "word": "先生",
+    "reading": "せんせい",
+    "pos": "名词",
+    "meaning": "老师",
+    "example": {
+      "japanese": "先生に質問する。",
+      "chinese": "向老师提问。"
+    }
+  },
+  {
+    "id": "n5-vocab-0025",
+    "index": 25,
+    "level": "N5",
+    "word": "学生",
+    "reading": "がくせい",
+    "pos": "名词",
+    "meaning": "学生",
+    "example": {
+      "japanese": "私は大学生です。",
+      "chinese": "我是大学生。"
+    }
+  },
+  {
+    "id": "n5-vocab-0026",
+    "index": 26,
+    "level": "N5",
+    "word": "家族",
+    "reading": "かぞく",
+    "pos": "名词",
+    "meaning": "家人；家属",
+    "example": {
+      "japanese": "家族で旅行する。",
+      "chinese": "和家人旅行。"
+    }
+  },
+  {
+    "id": "n5-vocab-0027",
+    "index": 27,
+    "level": "N5",
+    "word": "父",
+    "reading": "ちち",
+    "pos": "名词",
+    "meaning": "父亲",
+    "example": {
+      "japanese": "父は会社員です。",
+      "chinese": "父亲是公司职员。"
+    }
+  },
+  {
+    "id": "n5-vocab-0028",
+    "index": 28,
+    "level": "N5",
+    "word": "母",
+    "reading": "はは",
+    "pos": "名词",
+    "meaning": "母亲（自己的）",
+    "example": {
+      "japanese": "母は会社員です。",
+      "chinese": "我母亲是公司职员。"
+    }
+  },
+  {
+    "id": "n5-vocab-0029",
+    "index": 29,
+    "level": "N5",
+    "word": "兄",
+    "reading": "あに",
+    "pos": "名词",
+    "meaning": "哥哥",
+    "example": {
+      "japanese": "兄は東京にいます。",
+      "chinese": "哥哥在东京。"
+    }
+  },
+  {
+    "id": "n5-vocab-0030",
+    "index": 30,
+    "level": "N5",
+    "word": "姉",
+    "reading": "あね",
+    "pos": "名词",
+    "meaning": "姐姐",
+    "example": {
+      "japanese": "姉は看護師です。",
+      "chinese": "姐姐是护士。"
+    }
+  },
+  {
+    "id": "n5-vocab-0031",
+    "index": 31,
+    "level": "N5",
+    "word": "弟",
+    "reading": "おとうと",
+    "pos": "名词",
+    "meaning": "弟弟",
+    "example": {
+      "japanese": "弟は中学生です。",
+      "chinese": "弟弟是中学生。"
+    }
+  },
+  {
+    "id": "n5-vocab-0032",
+    "index": 32,
+    "level": "N5",
+    "word": "妹",
+    "reading": "いもうと",
+    "pos": "名词",
+    "meaning": "妹妹",
+    "example": {
+      "japanese": "妹は高校生です。",
+      "chinese": "妹妹是高中生。"
+    }
+  },
+  {
+    "id": "n5-vocab-0033",
+    "index": 33,
+    "level": "N5",
+    "word": "家",
+    "reading": "いえ",
+    "pos": "名词",
+    "meaning": "家；房子",
+    "example": {
+      "japanese": "六時に家を出る。",
+      "chinese": "六点出门。"
+    }
+  },
+  {
+    "id": "n5-vocab-0034",
+    "index": 34,
+    "level": "N5",
+    "word": "学校",
+    "reading": "がっこう",
+    "pos": "名词",
+    "meaning": "学校",
+    "example": {
+      "japanese": "学校へ行く。",
+      "chinese": "去学校。"
+    }
+  },
+  {
+    "id": "n5-vocab-0035",
+    "index": 35,
+    "level": "N5",
+    "word": "会社",
+    "reading": "かいしゃ",
+    "pos": "名词",
+    "meaning": "公司",
+    "example": {
+      "japanese": "会社で働く。",
+      "chinese": "在公司工作。"
+    }
+  },
+  {
+    "id": "n5-vocab-0036",
+    "index": 36,
+    "level": "N5",
+    "word": "駅",
+    "reading": "えき",
+    "pos": "名词",
+    "meaning": "车站",
+    "example": {
+      "japanese": "駅で待つ。",
+      "chinese": "在车站等。"
+    }
+  },
+  {
+    "id": "n5-vocab-0037",
+    "index": 37,
+    "level": "N5",
+    "word": "店",
+    "reading": "みせ",
+    "pos": "名词",
+    "meaning": "商店",
+    "example": {
+      "japanese": "この店は安い。",
+      "chinese": "这家店便宜。"
+    }
+  },
+  {
+    "id": "n5-vocab-0038",
+    "index": 38,
+    "level": "N5",
+    "word": "病院",
+    "reading": "びょういん",
+    "pos": "名词",
+    "meaning": "医院",
+    "example": {
+      "japanese": "病院へ行く。",
+      "chinese": "去医院。"
+    }
+  },
+  {
+    "id": "n5-vocab-0039",
+    "index": 39,
+    "level": "N5",
+    "word": "銀行",
+    "reading": "ぎんこう",
+    "pos": "名词",
+    "meaning": "银行",
+    "example": {
+      "japanese": "銀行でお金を下ろす。",
+      "chinese": "在银行取钱。"
+    }
+  },
+  {
+    "id": "n5-vocab-0040",
+    "index": 40,
+    "level": "N5",
+    "word": "図書館",
+    "reading": "としょかん",
+    "pos": "名词",
+    "meaning": "图书馆",
+    "example": {
+      "japanese": "図書館で勉強する。",
+      "chinese": "在图书馆学习。"
+    }
+  },
+  {
+    "id": "n5-vocab-0041",
+    "index": 41,
+    "level": "N5",
+    "word": "公園",
+    "reading": "こうえん",
+    "pos": "名词",
+    "meaning": "公园",
+    "example": {
+      "japanese": "公園を散歩する。",
+      "chinese": "在公园散步。"
+    }
+  },
+  {
+    "id": "n5-vocab-0042",
+    "index": 42,
+    "level": "N5",
+    "word": "日本",
+    "reading": "にほん",
+    "pos": "名词",
+    "meaning": "日本",
+    "example": {
+      "japanese": "日本へ行きたいです。",
+      "chinese": "想去日本。"
+    }
+  },
+  {
+    "id": "n5-vocab-0043",
+    "index": 43,
+    "level": "N5",
+    "word": "日本語",
+    "reading": "にほんご",
+    "pos": "名词",
+    "meaning": "日语",
+    "example": {
+      "japanese": "日本語を勉強する。",
+      "chinese": "学日语。"
+    }
+  },
+  {
+    "id": "n5-vocab-0044",
+    "index": 44,
+    "level": "N5",
+    "word": "電車",
+    "reading": "でんしゃ",
+    "pos": "名词",
+    "meaning": "电车",
+    "example": {
+      "japanese": "電車に乗る。",
+      "chinese": "坐电车。"
+    }
+  },
+  {
+    "id": "n5-vocab-0045",
+    "index": 45,
+    "level": "N5",
+    "word": "バス",
+    "reading": "ばす",
+    "pos": "名词",
+    "meaning": "公共汽车",
+    "example": {
+      "japanese": "バスで学校へ行く。",
+      "chinese": "坐公交去学校。"
+    }
+  },
+  {
+    "id": "n5-vocab-0046",
+    "index": 46,
+    "level": "N5",
+    "word": "車",
+    "reading": "くるま",
+    "pos": "名词",
+    "meaning": "车，汽车",
+    "example": {
+      "japanese": "車を運転する。",
+      "chinese": "开车。"
+    }
+  },
+  {
+    "id": "n5-vocab-0047",
+    "index": 47,
+    "level": "N5",
+    "word": "自転車",
+    "reading": "じてんしゃ",
+    "pos": "名词",
+    "meaning": "自行车",
+    "example": {
+      "japanese": "自転車で行く。",
+      "chinese": "骑自行车去。"
+    }
+  },
+  {
+    "id": "n5-vocab-0048",
+    "index": 48,
+    "level": "N5",
+    "word": "本",
+    "reading": "ほん",
+    "pos": "名词",
+    "meaning": "书",
+    "example": {
+      "japanese": "本を読む。",
+      "chinese": "读书。"
+    }
+  },
+  {
+    "id": "n5-vocab-0049",
+    "index": 49,
+    "level": "N5",
+    "word": "新聞",
+    "reading": "しんぶん",
+    "pos": "名词",
+    "meaning": "报纸",
+    "example": {
+      "japanese": "新聞を読む。",
+      "chinese": "看报纸。"
+    }
+  },
+  {
+    "id": "n5-vocab-0050",
+    "index": 50,
+    "level": "N5",
+    "word": "映画",
+    "reading": "えいが",
+    "pos": "名词",
+    "meaning": "电影",
+    "example": {
+      "japanese": "映画を見る。",
+      "chinese": "看电影。"
+    }
+  },
+  {
+    "id": "n5-vocab-0051",
+    "index": 51,
+    "level": "N5",
+    "word": "音楽",
+    "reading": "おんがく",
+    "pos": "名词",
+    "meaning": "音乐",
+    "example": {
+      "japanese": "音楽を聞く。",
+      "chinese": "听音乐。"
+    }
+  },
+  {
+    "id": "n5-vocab-0052",
+    "index": 52,
+    "level": "N5",
+    "word": "写真",
+    "reading": "しゃしん",
+    "pos": "名词",
+    "meaning": "照片",
+    "example": {
+      "japanese": "写真を撮る。",
+      "chinese": "拍照。"
+    }
+  },
+  {
+    "id": "n5-vocab-0053",
+    "index": 53,
+    "level": "N5",
+    "word": "電話",
+    "reading": "でんわ",
+    "pos": "名词",
+    "meaning": "电话",
+    "example": {
+      "japanese": "母に電話をする。",
+      "chinese": "给妈妈打电话。"
+    }
+  },
+  {
+    "id": "n5-vocab-0054",
+    "index": 54,
+    "level": "N5",
+    "word": "手紙",
+    "reading": "てがみ",
+    "pos": "名词",
+    "meaning": "信",
+    "example": {
+      "japanese": "友達に手紙を書く。",
+      "chinese": "给朋友写信。"
+    }
+  },
+  {
+    "id": "n5-vocab-0055",
+    "index": 55,
+    "level": "N5",
+    "word": "仕事",
+    "reading": "しごと",
+    "pos": "名词",
+    "meaning": "工作",
+    "example": {
+      "japanese": "仕事が終わった。",
+      "chinese": "工作结束了。"
+    }
+  },
+  {
+    "id": "n5-vocab-0056",
+    "index": 56,
+    "level": "N5",
+    "word": "旅行",
+    "reading": "りょこう",
+    "pos": "名词",
+    "meaning": "旅行",
+    "example": {
+      "japanese": "夏に旅行する。",
+      "chinese": "夏天旅行。"
+    }
+  },
+  {
+    "id": "n5-vocab-0057",
+    "index": 57,
+    "level": "N5",
+    "word": "天気",
+    "reading": "てんき",
+    "pos": "名词",
+    "meaning": "天气",
+    "example": {
+      "japanese": "今日は天気がいい。",
+      "chinese": "今天天气好。"
+    }
+  },
+  {
+    "id": "n5-vocab-0058",
+    "index": 58,
+    "level": "N5",
+    "word": "雨",
+    "reading": "あめ",
+    "pos": "名词",
+    "meaning": "雨；下雨",
+    "example": {
+      "japanese": "雨が降っている。",
+      "chinese": "正在下雨。"
+    }
+  },
+  {
+    "id": "n5-vocab-0059",
+    "index": 59,
+    "level": "N5",
+    "word": "空",
+    "reading": "そら",
+    "pos": "名词",
+    "meaning": "天空",
+    "example": {
+      "japanese": "空が青いです。",
+      "chinese": "天空是蓝色的。"
+    }
+  },
+  {
+    "id": "n5-vocab-0060",
+    "index": 60,
+    "level": "N5",
+    "word": "海",
+    "reading": "うみ",
+    "pos": "名词",
+    "meaning": "海",
+    "example": {
+      "japanese": "海で泳ぐ。",
+      "chinese": "在海里游泳。"
+    }
+  },
+  {
+    "id": "n5-vocab-0061",
+    "index": 61,
+    "level": "N5",
+    "word": "山",
+    "reading": "やま",
+    "pos": "名词",
+    "meaning": "山",
+    "example": {
+      "japanese": "山に登る。",
+      "chinese": "爬山。"
+    }
+  },
+  {
+    "id": "n5-vocab-0062",
+    "index": 62,
+    "level": "N5",
+    "word": "川",
+    "reading": "かわ",
+    "pos": "名词",
+    "meaning": "河",
+    "example": {
+      "japanese": "川で泳ぐ。",
+      "chinese": "在河里游泳。"
+    }
+  },
+  {
+    "id": "n5-vocab-0063",
+    "index": 63,
+    "level": "N5",
+    "word": "水",
+    "reading": "みず",
+    "pos": "名词",
+    "meaning": "水",
+    "example": {
+      "japanese": "水を飲む。",
+      "chinese": "喝水。"
+    }
+  },
+  {
+    "id": "n5-vocab-0064",
+    "index": 64,
+    "level": "N5",
+    "word": "お茶",
+    "reading": "おちゃ",
+    "pos": "名词",
+    "meaning": "茶；绿茶",
+    "example": {
+      "japanese": "お茶をください。",
+      "chinese": "请给我茶。"
+    }
+  },
+  {
+    "id": "n5-vocab-0065",
+    "index": 65,
+    "level": "N5",
+    "word": "ご飯",
+    "reading": "ごはん",
+    "pos": "名词",
+    "meaning": "饭；餐",
+    "example": {
+      "japanese": "ご飯を食べます。",
+      "chinese": "吃饭。"
+    }
+  },
+  {
+    "id": "n5-vocab-0066",
+    "index": 66,
+    "level": "N5",
+    "word": "パン",
+    "reading": "ぱん",
+    "pos": "名词",
+    "meaning": "面包",
+    "example": {
+      "japanese": "朝はパンを食べる。",
+      "chinese": "早饭吃面包。"
+    }
+  },
+  {
+    "id": "n5-vocab-0067",
+    "index": 67,
+    "level": "N5",
+    "word": "肉",
+    "reading": "にく",
+    "pos": "名词",
+    "meaning": "肉",
+    "example": {
+      "japanese": "肉が好きです。",
+      "chinese": "喜欢肉。"
+    }
+  },
+  {
+    "id": "n5-vocab-0068",
+    "index": 68,
+    "level": "N5",
+    "word": "魚",
+    "reading": "さかな",
+    "pos": "名词",
+    "meaning": "鱼",
+    "example": {
+      "japanese": "魚を焼く。",
+      "chinese": "烤鱼。"
+    }
+  },
+  {
+    "id": "n5-vocab-0069",
+    "index": 69,
+    "level": "N5",
+    "word": "お金",
+    "reading": "おかね",
+    "pos": "名词",
+    "meaning": "钱",
+    "example": {
+      "japanese": "お金を払います。",
+      "chinese": "付钱。"
+    }
+  },
+  {
+    "id": "n5-vocab-0070",
+    "index": 70,
+    "level": "N5",
+    "word": "部屋",
+    "reading": "へや",
+    "pos": "名词",
+    "meaning": "房间",
+    "example": {
+      "japanese": "部屋を掃除する。",
+      "chinese": "打扫房间。"
+    }
+  },
+  {
+    "id": "n5-vocab-0071",
+    "index": 71,
+    "level": "N5",
+    "word": "窓",
+    "reading": "まど",
+    "pos": "名词",
+    "meaning": "窗户",
+    "example": {
+      "japanese": "窓を開ける。",
+      "chinese": "打开窗户。"
+    }
+  },
+  {
+    "id": "n5-vocab-0072",
+    "index": 72,
+    "level": "N5",
+    "word": "靴",
+    "reading": "くつ",
+    "pos": "名词",
+    "meaning": "鞋子",
+    "example": {
+      "japanese": "靴を脱ぐ。",
+      "chinese": "脱鞋。"
+    }
+  },
+  {
+    "id": "n5-vocab-0073",
+    "index": 73,
+    "level": "N5",
+    "word": "服",
+    "reading": "ふく",
+    "pos": "名词",
+    "meaning": "衣服",
+    "example": {
+      "japanese": "新しい服を買う。",
+      "chinese": "买新衣服。"
+    }
+  },
+  {
+    "id": "n5-vocab-0074",
+    "index": 74,
+    "level": "N5",
+    "word": "犬",
+    "reading": "いぬ",
+    "pos": "名词",
+    "meaning": "狗，犬",
+    "example": {
+      "japanese": "犬を飼っている。",
+      "chinese": "养着狗。"
+    }
+  },
+  {
+    "id": "n5-vocab-0075",
+    "index": 75,
+    "level": "N5",
+    "word": "猫",
+    "reading": "ねこ",
+    "pos": "名词",
+    "meaning": "猫",
+    "example": {
+      "japanese": "猫が好きです。",
+      "chinese": "喜欢猫。"
+    }
+  },
+  {
+    "id": "n5-vocab-0076",
+    "index": 76,
+    "level": "N5",
+    "word": "人",
+    "reading": "ひと",
+    "pos": "名词",
+    "meaning": "人",
+    "example": {
+      "japanese": "あそこに人がいます。",
+      "chinese": "那里有人。"
+    }
+  },
+  {
+    "id": "n5-vocab-0077",
+    "index": 77,
+    "level": "N5",
+    "word": "町",
+    "reading": "まち",
+    "pos": "名词",
+    "meaning": "城镇；市区",
+    "example": {
+      "japanese": "この町は静かです。",
+      "chinese": "这个镇子很安静。"
+    }
+  },
+  {
+    "id": "n5-vocab-0078",
+    "index": 78,
+    "level": "N5",
+    "word": "問題",
+    "reading": "もんだい",
+    "pos": "名词",
+    "meaning": "问题",
+    "example": {
+      "japanese": "この問題は難しい。",
+      "chinese": "这道题很难。"
+    }
+  },
+  {
+    "id": "n5-vocab-0079",
+    "index": 79,
+    "level": "N5",
+    "word": "名前",
+    "reading": "なまえ",
+    "pos": "名词",
+    "meaning": "名字；名称",
+    "example": {
+      "japanese": "名前を書いてください。",
+      "chinese": "请写名字。"
+    }
+  },
+  {
+    "id": "n5-vocab-0080",
+    "index": 80,
+    "level": "N5",
+    "word": "時間",
+    "reading": "じかん",
+    "pos": "名词",
+    "meaning": "时间",
+    "example": {
+      "japanese": "時間がないので急ごう。",
+      "chinese": "没时间了，快点吧。"
+    }
+  },
+  {
+    "id": "n5-vocab-0081",
+    "index": 81,
+    "level": "N5",
+    "word": "大きい",
+    "reading": "おおきい",
+    "pos": "い形容词",
+    "meaning": "大的",
+    "example": {
+      "japanese": "この部屋は大きい。",
+      "chinese": "这个房间很大。"
+    }
+  },
+  {
+    "id": "n5-vocab-0082",
+    "index": 82,
+    "level": "N5",
+    "word": "小さい",
+    "reading": "ちいさい",
+    "pos": "い形容词",
+    "meaning": "小的",
+    "example": {
+      "japanese": "この箱は小さい。",
+      "chinese": "这个箱子很小。"
+    }
+  },
+  {
+    "id": "n5-vocab-0083",
+    "index": 83,
+    "level": "N5",
+    "word": "新しい",
+    "reading": "あたらしい",
+    "pos": "い形容词",
+    "meaning": "新的",
+    "example": {
+      "japanese": "新しいくつを買う。",
+      "chinese": "买新鞋。"
+    }
+  },
+  {
+    "id": "n5-vocab-0084",
+    "index": 84,
+    "level": "N5",
+    "word": "古い",
+    "reading": "ふるい",
+    "pos": "い形容词",
+    "meaning": "旧的；古老的",
+    "example": {
+      "japanese": "古い写真を見る。",
+      "chinese": "看旧照片。"
+    }
+  },
+  {
+    "id": "n5-vocab-0085",
+    "index": 85,
+    "level": "N5",
+    "word": "高い",
+    "reading": "たかい",
+    "pos": "い形容词",
+    "meaning": "高的",
+    "example": {
+      "japanese": "このかばんは高い。",
+      "chinese": "这个包很贵。"
+    }
+  },
+  {
+    "id": "n5-vocab-0086",
+    "index": 86,
+    "level": "N5",
+    "word": "安い",
+    "reading": "やすい",
+    "pos": "い形容词",
+    "meaning": "便宜的",
+    "example": {
+      "japanese": "この店は安い。",
+      "chinese": "这家店便宜。"
+    }
+  },
+  {
+    "id": "n5-vocab-0087",
+    "index": 87,
+    "level": "N5",
+    "word": "良い",
+    "reading": "よい",
+    "pos": "い形容词",
+    "meaning": "好的",
+    "example": {
+      "japanese": "天気が良い。",
+      "chinese": "天气很好。"
+    }
+  },
+  {
+    "id": "n5-vocab-0088",
+    "index": 88,
+    "level": "N5",
+    "word": "悪い",
+    "reading": "わるい",
+    "pos": "い形容词",
+    "meaning": "坏的；不好的",
+    "example": {
+      "japanese": "気分が悪い。",
+      "chinese": "不舒服。"
+    }
+  },
+  {
+    "id": "n5-vocab-0089",
+    "index": 89,
+    "level": "N5",
+    "word": "暑い",
+    "reading": "あつい",
+    "pos": "い形容词",
+    "meaning": "（天气）热的",
+    "example": {
+      "japanese": "今日は暑い。",
+      "chinese": "今天很热。"
+    }
+  },
+  {
+    "id": "n5-vocab-0090",
+    "index": 90,
+    "level": "N5",
+    "word": "寒い",
+    "reading": "さむい",
+    "pos": "い形容词",
+    "meaning": "冷的；寒冷的",
+    "example": {
+      "japanese": "冬は寒い。",
+      "chinese": "冬天很冷。"
+    }
+  },
+  {
+    "id": "n5-vocab-0091",
+    "index": 91,
+    "level": "N5",
+    "word": "難しい",
+    "reading": "むずかしい",
+    "pos": "い形容词",
+    "meaning": "难的",
+    "example": {
+      "japanese": "漢字は難しい。",
+      "chinese": "汉字很难。"
+    }
+  },
+  {
+    "id": "n5-vocab-0092",
+    "index": 92,
+    "level": "N5",
+    "word": "面白い",
+    "reading": "おもしろい",
+    "pos": "い形容词",
+    "meaning": "有趣的；好笑的",
+    "example": {
+      "japanese": "この映画は面白い。",
+      "chinese": "这部电影很有趣。"
+    }
+  },
+  {
+    "id": "n5-vocab-0093",
+    "index": 93,
+    "level": "N5",
+    "word": "忙しい",
+    "reading": "いそがしい",
+    "pos": "い形容词",
+    "meaning": "忙的",
+    "example": {
+      "japanese": "今日は忙しい。",
+      "chinese": "今天很忙。"
+    }
+  },
+  {
+    "id": "n5-vocab-0094",
+    "index": 94,
+    "level": "N5",
+    "word": "楽しい",
+    "reading": "たのしい",
+    "pos": "い形容词",
+    "meaning": "快乐的；愉快的",
+    "example": {
+      "japanese": "旅行は楽しい。",
+      "chinese": "旅行很愉快。"
+    }
+  },
+  {
+    "id": "n5-vocab-0095",
+    "index": 95,
+    "level": "N5",
+    "word": "美味しい",
+    "reading": "おいしい",
+    "pos": "い形容词",
+    "meaning": "好吃的，美味的",
+    "example": {
+      "japanese": "このラーメンは美味しい。",
+      "chinese": "这家拉面很好吃。"
+    }
+  },
+  {
+    "id": "n5-vocab-0096",
+    "index": 96,
+    "level": "N5",
+    "word": "近い",
+    "reading": "ちかい",
+    "pos": "い形容词",
+    "meaning": "近的",
+    "example": {
+      "japanese": "駅は近い。",
+      "chinese": "车站很近。"
+    }
+  },
+  {
+    "id": "n5-vocab-0097",
+    "index": 97,
+    "level": "N5",
+    "word": "遠い",
+    "reading": "とおい",
+    "pos": "い形容词",
+    "meaning": "远的",
+    "example": {
+      "japanese": "学校は遠い。",
+      "chinese": "学校很远。"
+    }
+  },
+  {
+    "id": "n5-vocab-0098",
+    "index": 98,
+    "level": "N5",
+    "word": "早い",
+    "reading": "はやい",
+    "pos": "い形容词",
+    "meaning": "早的",
+    "example": {
+      "japanese": "朝が早い。",
+      "chinese": "早上起得早。"
+    }
+  },
+  {
+    "id": "n5-vocab-0099",
+    "index": 99,
+    "level": "N5",
+    "word": "多い",
+    "reading": "おおい",
+    "pos": "い形容词",
+    "meaning": "多的",
+    "example": {
+      "japanese": "人が多い。",
+      "chinese": "人很多。"
+    }
+  },
+  {
+    "id": "n5-vocab-0100",
+    "index": 100,
+    "level": "N5",
+    "word": "少ない",
+    "reading": "すくない",
+    "pos": "い形容词",
+    "meaning": "少的",
+    "example": {
+      "japanese": "時間が少ない。",
+      "chinese": "时间很少。"
+    }
+  },
+  {
+    "id": "n5-vocab-0101",
+    "index": 101,
+    "level": "N5",
+    "word": "長い",
+    "reading": "ながい",
+    "pos": "い形容词",
+    "meaning": "长的",
+    "example": {
+      "japanese": "髪が長い。",
+      "chinese": "头发很长。"
+    }
+  },
+  {
+    "id": "n5-vocab-0102",
+    "index": 102,
+    "level": "N5",
+    "word": "短い",
+    "reading": "みじかい",
+    "pos": "い形容词",
+    "meaning": "短的",
+    "example": {
+      "japanese": "休みが短い。",
+      "chinese": "假期很短。"
+    }
+  },
+  {
+    "id": "n5-vocab-0103",
+    "index": 103,
+    "level": "N5",
+    "word": "若い",
+    "reading": "わかい",
+    "pos": "い形容词",
+    "meaning": "年轻的",
+    "example": {
+      "japanese": "母はまだ若い。",
+      "chinese": "妈妈还年轻。"
+    }
+  },
+  {
+    "id": "n5-vocab-0104",
+    "index": 104,
+    "level": "N5",
+    "word": "かわいい",
+    "reading": "かわいい",
+    "pos": "い形容词",
+    "meaning": "可爱的",
+    "example": {
+      "japanese": "この猫はかわいい。",
+      "chinese": "这只猫很可爱。"
+    }
+  },
+  {
+    "id": "n5-vocab-0105",
+    "index": 105,
+    "level": "N5",
+    "word": "危ない",
+    "reading": "あぶない",
+    "pos": "い形容词",
+    "meaning": "危险的",
+    "example": {
+      "japanese": "ここは危ない。",
+      "chinese": "这里很危险。"
+    }
+  },
+  {
+    "id": "n5-vocab-0106",
+    "index": 106,
+    "level": "N5",
+    "word": "好き",
+    "reading": "すき",
+    "pos": "な形容词",
+    "meaning": "喜欢",
+    "example": {
+      "japanese": "猫が好きだ。",
+      "chinese": "喜欢猫。"
+    }
+  },
+  {
+    "id": "n5-vocab-0107",
+    "index": 107,
+    "level": "N5",
+    "word": "嫌い",
+    "reading": "きらい",
+    "pos": "な形容词",
+    "meaning": "讨厌",
+    "example": {
+      "japanese": "野菜が嫌いだ。",
+      "chinese": "讨厌蔬菜。"
+    }
+  },
+  {
+    "id": "n5-vocab-0108",
+    "index": 108,
+    "level": "N5",
+    "word": "上手",
+    "reading": "じょうず",
+    "pos": "な形容词",
+    "meaning": "擅长；做得好",
+    "example": {
+      "japanese": "日本語が上手です。",
+      "chinese": "日语很好。"
+    }
+  },
+  {
+    "id": "n5-vocab-0109",
+    "index": 109,
+    "level": "N5",
+    "word": "下手",
+    "reading": "へた",
+    "pos": "な形容词",
+    "meaning": "不擅长；拙劣",
+    "example": {
+      "japanese": "字が下手です。",
+      "chinese": "字写得不好。"
+    }
+  },
+  {
+    "id": "n5-vocab-0110",
+    "index": 110,
+    "level": "N5",
+    "word": "静か",
+    "reading": "しずか",
+    "pos": "な形容词",
+    "meaning": "安静",
+    "example": {
+      "japanese": "図書館は静かです。",
+      "chinese": "图书馆很安静。"
+    }
+  },
+  {
+    "id": "n5-vocab-0111",
+    "index": 111,
+    "level": "N5",
+    "word": "綺麗",
+    "reading": "きれい",
+    "pos": "な形容词",
+    "meaning": "漂亮；干净",
+    "example": {
+      "japanese": "花が綺麗です。",
+      "chinese": "花很漂亮。"
+    }
+  },
+  {
+    "id": "n5-vocab-0112",
+    "index": 112,
+    "level": "N5",
+    "word": "便利",
+    "reading": "べんり",
+    "pos": "な形容词",
+    "meaning": "方便",
+    "example": {
+      "japanese": "スマホは便利です。",
+      "chinese": "智能手机很方便。"
+    }
+  },
+  {
+    "id": "n5-vocab-0113",
+    "index": 113,
+    "level": "N5",
+    "word": "有名",
+    "reading": "ゆうめい",
+    "pos": "な形容词",
+    "meaning": "有名",
+    "example": {
+      "japanese": "富士山は有名です。",
+      "chinese": "富士山很有名。"
+    }
+  },
+  {
+    "id": "n5-vocab-0114",
+    "index": 114,
+    "level": "N5",
+    "word": "元気",
+    "reading": "げんき",
+    "pos": "な形容词",
+    "meaning": "健康；有精神",
+    "example": {
+      "japanese": "母は元気です。",
+      "chinese": "妈妈很健康。"
+    }
+  },
+  {
+    "id": "n5-vocab-0115",
+    "index": 115,
+    "level": "N5",
+    "word": "大丈夫",
+    "reading": "だいじょうぶ",
+    "pos": "な形容词",
+    "meaning": "没关系；没问题",
+    "example": {
+      "japanese": "大丈夫ですか。",
+      "chinese": "没事吧？"
+    }
+  },
+  {
+    "id": "n5-vocab-0116",
+    "index": 116,
+    "level": "N5",
+    "word": "大切",
+    "reading": "たいせつ",
+    "pos": "な形容词",
+    "meaning": "重要；珍贵",
+    "example": {
+      "japanese": "家族は大切です。",
+      "chinese": "家人很重要。"
+    }
+  },
+  {
+    "id": "n5-vocab-0117",
+    "index": 117,
+    "level": "N5",
+    "word": "同じ",
+    "reading": "おなじ",
+    "pos": "な形容词",
+    "meaning": "同样",
+    "example": {
+      "japanese": "同じ本を買う。",
+      "chinese": "买一样的书。"
+    }
+  },
+  {
+    "id": "n5-vocab-0118",
+    "index": 118,
+    "level": "N5",
+    "word": "行く",
+    "reading": "いく",
+    "pos": "动词（五段・自动词）",
+    "meaning": "去",
+    "example": {
+      "japanese": "学校へ行く。",
+      "chinese": "去学校。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n5-vocab-0119",
+    "index": 119,
+    "level": "N5",
+    "word": "来る",
+    "reading": "くる",
+    "pos": "动词（カ变动词・自动词）",
+    "meaning": "来",
+    "example": {
+      "japanese": "明日、友達が来る。",
+      "chinese": "明天朋友来。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n5-vocab-0120",
+    "index": 120,
+    "level": "N5",
+    "word": "帰る",
+    "reading": "かえる",
+    "pos": "动词（五段・自动词）",
+    "meaning": "回去；回家",
+    "example": {
+      "japanese": "家へ帰る。",
+      "chinese": "回家。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n5-vocab-0121",
+    "index": 121,
+    "level": "N5",
+    "word": "食べる",
+    "reading": "たべる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "吃",
+    "example": {
+      "japanese": "パンを食べる。",
+      "chinese": "吃面包。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0122",
+    "index": 122,
+    "level": "N5",
+    "word": "飲む",
+    "reading": "のむ",
+    "pos": "动词（五段・他动词）",
+    "meaning": "喝",
+    "example": {
+      "japanese": "水を飲む。",
+      "chinese": "喝水。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0123",
+    "index": 123,
+    "level": "N5",
+    "word": "見る",
+    "reading": "みる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "看",
+    "example": {
+      "japanese": "テレビを見る。",
+      "chinese": "看电视。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0124",
+    "index": 124,
+    "level": "N5",
+    "word": "聞く",
+    "reading": "きく",
+    "pos": "动词（五段・他动词）",
+    "meaning": "听；问",
+    "example": {
+      "japanese": "音楽を聞く。",
+      "chinese": "听音乐。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0125",
+    "index": 125,
+    "level": "N5",
+    "word": "話す",
+    "reading": "はなす",
+    "pos": "动词（五段・他动词）",
+    "meaning": "说；谈话",
+    "example": {
+      "japanese": "日本語で話す。",
+      "chinese": "用日语说话。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0126",
+    "index": 126,
+    "level": "N5",
+    "word": "読む",
+    "reading": "よむ",
+    "pos": "动词（五段・他动词）",
+    "meaning": "读",
+    "example": {
+      "japanese": "本を読む。",
+      "chinese": "读书。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0127",
+    "index": 127,
+    "level": "N5",
+    "word": "書く",
+    "reading": "かく",
+    "pos": "动词（五段・他动词）",
+    "meaning": "写",
+    "example": {
+      "japanese": "手紙を書く。",
+      "chinese": "写信。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0128",
+    "index": 128,
+    "level": "N5",
+    "word": "買う",
+    "reading": "かう",
+    "pos": "动词（五段・他动词）",
+    "meaning": "买",
+    "example": {
+      "japanese": "水を買う。",
+      "chinese": "买水。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0129",
+    "index": 129,
+    "level": "N5",
+    "word": "待つ",
+    "reading": "まつ",
+    "pos": "动词（五段・他动词）",
+    "meaning": "等",
+    "example": {
+      "japanese": "駅で待つ。",
+      "chinese": "在车站等。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0130",
+    "index": 130,
+    "level": "N5",
+    "word": "持つ",
+    "reading": "もつ",
+    "pos": "动词（五段・他动词）",
+    "meaning": "拿；带着；拥有",
+    "example": {
+      "japanese": "かばんを持つ。",
+      "chinese": "拿包。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0131",
+    "index": 131,
+    "level": "N5",
+    "word": "分かる",
+    "reading": "わかる",
+    "pos": "动词（五段・自动词）",
+    "meaning": "明白",
+    "example": {
+      "japanese": "意味が分かる。",
+      "chinese": "明白意思。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n5-vocab-0132",
+    "index": 132,
+    "level": "N5",
+    "word": "言う",
+    "reading": "いう",
+    "pos": "动词（五段・他动词）",
+    "meaning": "说",
+    "example": {
+      "japanese": "名前を言う。",
+      "chinese": "说名字。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0133",
+    "index": 133,
+    "level": "N5",
+    "word": "する",
+    "reading": "する",
+    "pos": "动词（サ变动词）",
+    "meaning": "做",
+    "example": {
+      "japanese": "宿題をする。",
+      "chinese": "做作业。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0134",
+    "index": 134,
+    "level": "N5",
+    "word": "なる",
+    "reading": "なる",
+    "pos": "动词（五段・自动词）",
+    "meaning": "变成；成为",
+    "example": {
+      "japanese": "先生になる。",
+      "chinese": "成为老师。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n5-vocab-0135",
+    "index": 135,
+    "level": "N5",
+    "word": "ある",
+    "reading": "ある",
+    "pos": "动词（五段・自动词）",
+    "meaning": "有（非生物）",
+    "example": {
+      "japanese": "机の上に本がある。",
+      "chinese": "桌上有书。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n5-vocab-0136",
+    "index": 136,
+    "level": "N5",
+    "word": "いる",
+    "reading": "いる",
+    "pos": "动词（一段・自动词）",
+    "meaning": "有；在（生物）",
+    "example": {
+      "japanese": "部屋に猫がいる。",
+      "chinese": "房间里有猫。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n5-vocab-0137",
+    "index": 137,
+    "level": "N5",
+    "word": "寝る",
+    "reading": "ねる",
+    "pos": "动词（一段・自动词）",
+    "meaning": "睡觉",
+    "example": {
+      "japanese": "早く寝る。",
+      "chinese": "早睡。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n5-vocab-0138",
+    "index": 138,
+    "level": "N5",
+    "word": "起きる",
+    "reading": "おきる",
+    "pos": "动词（一段・自动词）",
+    "meaning": "起床；发生",
+    "example": {
+      "japanese": "六時に起きる。",
+      "chinese": "六点起床。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n5-vocab-0139",
+    "index": 139,
+    "level": "N5",
+    "word": "働く",
+    "reading": "はたらく",
+    "pos": "动词（五段・自动词）",
+    "meaning": "工作",
+    "example": {
+      "japanese": "会社で働く。",
+      "chinese": "在公司工作。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n5-vocab-0140",
+    "index": 140,
+    "level": "N5",
+    "word": "休む",
+    "reading": "やすむ",
+    "pos": "动词（五段・自动词）",
+    "meaning": "休息；请假",
+    "example": {
+      "japanese": "明日は休む。",
+      "chinese": "明天休息。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n5-vocab-0141",
+    "index": 141,
+    "level": "N5",
+    "word": "作る",
+    "reading": "つくる",
+    "pos": "动词（五段・他动词）",
+    "meaning": "做；制作",
+    "example": {
+      "japanese": "料理を作る。",
+      "chinese": "做菜。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0142",
+    "index": 142,
+    "level": "N5",
+    "word": "使う",
+    "reading": "つかう",
+    "pos": "动词（五段・他动词）",
+    "meaning": "使用",
+    "example": {
+      "japanese": "パソコンを使う。",
+      "chinese": "用电脑。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0143",
+    "index": 143,
+    "level": "N5",
+    "word": "歩く",
+    "reading": "あるく",
+    "pos": "动词（五段・自动词）",
+    "meaning": "走",
+    "example": {
+      "japanese": "駅まで歩く。",
+      "chinese": "走到车站。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n5-vocab-0144",
+    "index": 144,
+    "level": "N5",
+    "word": "走る",
+    "reading": "はしる",
+    "pos": "动词（五段・自动词）",
+    "meaning": "跑",
+    "example": {
+      "japanese": "公園を走る。",
+      "chinese": "在公园跑步。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n5-vocab-0145",
+    "index": 145,
+    "level": "N5",
+    "word": "出る",
+    "reading": "でる",
+    "pos": "动词（一段・自动词）",
+    "meaning": "出去；出现",
+    "example": {
+      "japanese": "家を出る。",
+      "chinese": "出门。"
+    },
+    "transitivity": "自动词",
+    "pair": "出す"
+  },
+  {
+    "id": "n5-vocab-0146",
+    "index": 146,
+    "level": "N5",
+    "word": "入る",
+    "reading": "はいる",
+    "pos": "动词（五段・自动词）",
+    "meaning": "进入",
+    "example": {
+      "japanese": "部屋に入る。",
+      "chinese": "进房间。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n5-vocab-0147",
+    "index": 147,
+    "level": "N5",
+    "word": "開ける",
+    "reading": "あける",
+    "pos": "动词（一段・他动词）",
+    "meaning": "打开",
+    "example": {
+      "japanese": "窓を開ける。",
+      "chinese": "打开窗户。"
+    },
+    "transitivity": "他动词",
+    "pair": "開く"
+  },
+  {
+    "id": "n5-vocab-0148",
+    "index": 148,
+    "level": "N5",
+    "word": "閉める",
+    "reading": "しめる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "关上",
+    "example": {
+      "japanese": "ドアを閉める。",
+      "chinese": "关门。"
+    },
+    "transitivity": "他动词",
+    "pair": "閉まる"
+  },
+  {
+    "id": "n5-vocab-0149",
+    "index": 149,
+    "level": "N5",
+    "word": "教える",
+    "reading": "おしえる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "教",
+    "example": {
+      "japanese": "日本語を教える。",
+      "chinese": "教日语。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0150",
+    "index": 150,
+    "level": "N5",
+    "word": "習う",
+    "reading": "ならう",
+    "pos": "动词（五段・他动词）",
+    "meaning": "学习",
+    "example": {
+      "japanese": "ピアノを習う。",
+      "chinese": "学钢琴。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0151",
+    "index": 151,
+    "level": "N5",
+    "word": "乗る",
+    "reading": "のる",
+    "pos": "动词（五段・自动词）",
+    "meaning": "乘坐",
+    "example": {
+      "japanese": "電車に乗る。",
+      "chinese": "坐电车。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n5-vocab-0152",
+    "index": 152,
+    "level": "N5",
+    "word": "会う",
+    "reading": "あう",
+    "pos": "动词（五段・自动词）",
+    "meaning": "见面",
+    "example": {
+      "japanese": "駅で友達に会う。",
+      "chinese": "在车站和朋友见面。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n5-vocab-0153",
+    "index": 153,
+    "level": "N5",
+    "word": "忘れる",
+    "reading": "わすれる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "忘记",
+    "example": {
+      "japanese": "名前を忘れる。",
+      "chinese": "忘记名字。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0154",
+    "index": 154,
+    "level": "N5",
+    "word": "覚える",
+    "reading": "おぼえる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "记住；学会",
+    "example": {
+      "japanese": "単語を覚える。",
+      "chinese": "记单词。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n5-vocab-0155",
+    "index": 155,
+    "level": "N5",
+    "word": "撮る",
+    "reading": "とる",
+    "pos": "动词（五段・他动词）",
+    "meaning": "拍摄",
+    "example": {
+      "japanese": "写真を撮る。",
+      "chinese": "拍照。"
+    },
+    "transitivity": "他动词"
+  }
+]
