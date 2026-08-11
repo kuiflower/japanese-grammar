@@ -1,0 +1,41 @@
+---
+description: 语法/单词数据改完后的质量审计与纠错流程（直接改 JSON，不建旁路脚本）
+globs: src/data/levels/**/*.json
+alwaysApply: false
+---
+
+# 数据质量审计
+
+修改 `grammar.json` / `vocabulary.json` / `vocabulary-full.json` 后，用对话内一次性 Python 命令审计，**直接改对应 JSON**。禁止新增 `scripts/` 数据管线或旁路修正文件。
+
+## 必过 ERR（清零再提交）
+
+### 语法
+- 必填：`pattern` / `meaning` / `usage` / `examples`（日+中）
+- 例句禁止模板垃圾：`を知っている` / `について聞いた` / `を覚えた` / `今日のテーマは` / `何かが〜している` / `源表：`
+- 接续自洽：用法写「名词须加の／な／である」时，例句不得名词光杆直连；若现实中可直接接，应改 usage（如「可直接接／词干」），勿硬改自然例句
+- 多义句型（如 ながら）：①②分写接续；例句尽量覆盖各义（同时进行 + 逆接等）
+- `usage` 不得复读 `meaning`
+
+### 单词（频出 + 全套）
+- 必填：`word` / `reading` / `pos` / `meaning` / `example.japanese`
+- `reading` 不含汉字
+- **挖空**：`example.japanese` 必须包含精确 `word`（动词优先用含原形的辞书形句，避免只有「読みます」）
+- 动词（含サ变）：有 `transitivity`；有对则尽量 `pair`
+- 同禁模板垃圾句
+
+## WARN（尽量清；可暂留须注明）
+
+- 频出 `vocabulary.json` 为空（目前 N4 / N1）
+- 用法列了名词である，但例句未示范名词接续（仅动词例）
+- 释义与例句义项不一致
+
+## 流程
+
+1. 改数据 → 跑审计 → ERR=0
+2. `npm run build`
+3. 用户要求时再 commit / 部署
+
+## 全套单词烂句策略
+
+命中模板黑名单的条目：按级分批重写例句（自然短句 + 中译），合并回唯一 `vocabulary-full.json`，再复扫至 tpl=0、cloze_miss=0。

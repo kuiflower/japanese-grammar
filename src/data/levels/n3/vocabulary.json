@@ -221,7 +221,8 @@
     "example": {
       "japanese": "生活を改善する。",
       "chinese": "改善生活。"
-    }
+    },
+    "transitivity": "他动词"
   },
   {
     "id": "n3-vocab-0018",
@@ -263,7 +264,8 @@
     "example": {
       "japanese": "夜更かしをした。",
       "chinese": "熬夜了。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n3-vocab-0021",
@@ -304,7 +306,8 @@
     "example": {
       "japanese": "毎日八時に出勤する。",
       "chinese": "每天八点上班。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n3-vocab-0024",
@@ -331,7 +334,8 @@
     "example": {
       "japanese": "規模を縮小する。",
       "chinese": "缩小规模。"
-    }
+    },
+    "transitivity": "他动词"
   },
   {
     "id": "n3-vocab-0026",
@@ -401,7 +405,8 @@
     "example": {
       "japanese": "家を建築する。",
       "chinese": "建造房屋。"
-    }
+    },
+    "transitivity": "他动词"
   },
   {
     "id": "n3-vocab-0031",
@@ -428,7 +433,8 @@
     "example": {
       "japanese": "会議を延期する。",
       "chinese": "会议延期。"
-    }
+    },
+    "transitivity": "他动词"
   },
   {
     "id": "n3-vocab-0033",
@@ -483,7 +489,8 @@
     "example": {
       "japanese": "次の角で右折する。",
       "chinese": "下个路口右转。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n3-vocab-0037",
@@ -496,7 +503,8 @@
     "example": {
       "japanese": "ここで左折できない。",
       "chinese": "这里不能左转。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n3-vocab-0038",
@@ -550,7 +558,8 @@
     "example": {
       "japanese": "もう我慢できない。",
       "chinese": "再也忍不住了。"
-    }
+    },
+    "transitivity": "他动词"
   },
   {
     "id": "n3-vocab-0042",
@@ -577,7 +586,8 @@
     "example": {
       "japanese": "次の駅で下車する。",
       "chinese": "下一站下车。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n3-vocab-0044",
@@ -714,7 +724,8 @@
     "example": {
       "japanese": "納得できない。",
       "chinese": "无法理解。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n3-vocab-0054",
@@ -854,7 +865,8 @@
     "example": {
       "japanese": "人口が減少する。",
       "chinese": "人口减少。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n3-vocab-0064",
@@ -1062,12 +1074,13 @@
     "level": "N3",
     "word": "退屈",
     "reading": "たいくつ",
-    "pos": "な形容词",
+    "pos": "な形容词・名词・サ变动词",
     "meaning": "无聊",
     "example": {
       "japanese": "授業は退屈だ。",
       "chinese": "上课很无聊。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n3-vocab-0080",

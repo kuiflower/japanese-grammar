@@ -75,7 +75,8 @@
     "example": {
       "japanese": "充実した毎日を送る。",
       "chinese": "过充实的每一天。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n2-vocab-0007",
@@ -88,7 +89,8 @@
     "example": {
       "japanese": "深く感激する。",
       "chinese": "深受感动。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n2-vocab-0008",
@@ -153,7 +155,8 @@
     "example": {
       "japanese": "退屈な会議だ。",
       "chinese": "无聊的会议。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n2-vocab-0013",
@@ -179,7 +182,8 @@
     "example": {
       "japanese": "社会に寄与する。",
       "chinese": "为社会做贡献。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n2-vocab-0015",
@@ -200,12 +204,13 @@
     "level": "N2",
     "word": "需要",
     "reading": "じゅよう",
-    "pos": "名词",
+    "pos": "名词・サ变动词",
     "meaning": "需求；需要",
     "example": {
       "japanese": "需要が増える。",
       "chinese": "需求增加。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n2-vocab-0017",
@@ -218,7 +223,8 @@
     "example": {
       "japanese": "彼は会社で出世した。",
       "chinese": "他在公司出人头地了。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n2-vocab-0018",
@@ -231,7 +237,8 @@
     "example": {
       "japanese": "作品を評価する。",
       "chinese": "评价作品。"
-    }
+    },
+    "transitivity": "他动词"
   },
   {
     "id": "n2-vocab-0019",
@@ -270,7 +277,8 @@
     "example": {
       "japanese": "来月、大会を開催する。",
       "chinese": "下个月举办大会。"
-    }
+    },
+    "transitivity": "他动词"
   },
   {
     "id": "n2-vocab-0022",
@@ -348,7 +356,8 @@
     "example": {
       "japanese": "ホテルに宿泊する。",
       "chinese": "在酒店住宿。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n2-vocab-0028",
@@ -413,7 +422,8 @@
     "example": {
       "japanese": "三日連続で雨だ。",
       "chinese": "连续三天下雨。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n2-vocab-0033",
@@ -426,7 +436,8 @@
     "example": {
       "japanese": "チームを組織する。",
       "chinese": "组织一支队伍。"
-    }
+    },
+    "transitivity": "他动词"
   },
   {
     "id": "n2-vocab-0034",
@@ -1500,7 +1511,8 @@
     "example": {
       "japanese": "新しいアプローチを試す。",
       "chinese": "尝试新的方法。"
-    }
+    },
+    "transitivity": "他动词"
   },
   {
     "id": "n2-vocab-0113",
@@ -1513,7 +1525,8 @@
     "example": {
       "japanese": "毎日トレーニングする。",
       "chinese": "每天训练。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n2-vocab-0114",
@@ -1539,7 +1552,8 @@
     "example": {
       "japanese": "公園でピクニックする。",
       "chinese": "在公园野餐。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n2-vocab-0116",
