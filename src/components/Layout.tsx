@@ -17,6 +17,7 @@ import {
   parseVocabLevelParam,
   parseVocabTrackParam,
 } from '@/types/vocab-quiz'
+import ThemeToggle from '@/components/ThemeToggle'
 
 interface LayoutProps {
   children: ReactNode
@@ -193,6 +194,7 @@ export default function Layout({ children }: LayoutProps) {
                 {switchLabel}
               </Link>
             )}
+            <ThemeToggle />
           </nav>
         </div>
       </header>

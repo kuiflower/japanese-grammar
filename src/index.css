@@ -1,4 +1,5 @@
 :root {
+  color-scheme: light;
   --color-bg: #f8f6f2;
   --color-surface: #ffffff;
   --color-text: #1a1a1a;
@@ -7,11 +8,62 @@
   --color-primary-hover: #a84a30;
   --color-border: #e8e4dc;
   --color-accent: #2d5a4a;
+  --color-on-primary: #ffffff;
+  --color-on-accent: #ffffff;
+  --color-success: #2d8a5e;
+  --color-success-bg: #eef8f2;
+  --color-success-soft: #f4fbf7;
+  --color-danger: #c45c3e;
+  --color-danger-bg: #fdf3f0;
+  --color-danger-soft: #fdf6f4;
+  --color-option-hover: #fdf9f7;
+  --color-wrong-border: #ffcdd2;
+  --color-wrong-text: #c62828;
+  --color-wrong-hover-bg: #fff5f5;
+  --color-wrong-hover-border: #e57373;
+  --color-unfamiliar-border: #e8dcc8;
+  --color-unfamiliar-text: #8a7040;
+  --color-unfamiliar-hover-bg: #fbf7f0;
+  --color-unfamiliar-hover-border: #c9b48a;
+  --color-ok-border: #6b9e7a;
   --font-sans: 'Hiragino Sans', 'Noto Sans SC', 'PingFang SC', system-ui, sans-serif;
   --font-ja: 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', serif;
   --font-brand: 'Noto Serif SC', 'Songti SC', 'STSong', 'Source Han Serif SC', serif;
   --radius: 12px;
   --shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --shadow-lift: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --color-bg: #161412;
+  --color-surface: #221f1c;
+  --color-text: #f3eee8;
+  --color-text-muted: #b0a79c;
+  --color-primary: #e08b74;
+  --color-primary-hover: #f0a090;
+  --color-border: #3a3530;
+  --color-accent: #7eb89a;
+  --color-on-primary: #1a1412;
+  --color-on-accent: #142018;
+  --color-success: #6ec99a;
+  --color-success-bg: #1e3328;
+  --color-success-soft: #1a2c24;
+  --color-danger: #e08b74;
+  --color-danger-bg: #3a2420;
+  --color-danger-soft: #32201c;
+  --color-option-hover: #2c2522;
+  --color-wrong-border: #6b3a38;
+  --color-wrong-text: #f08a84;
+  --color-wrong-hover-bg: #3d2624;
+  --color-wrong-hover-border: #a05a56;
+  --color-unfamiliar-border: #5a4e38;
+  --color-unfamiliar-text: #d4bc7a;
+  --color-unfamiliar-hover-bg: #322c22;
+  --color-unfamiliar-hover-border: #8a7848;
+  --color-ok-border: #6ec99a;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  --shadow-lift: 0 8px 24px rgba(0, 0, 0, 0.45);
 }
 
 * {
@@ -20,12 +72,17 @@
   padding: 0;
 }
 
+html {
+  background: var(--color-bg);
+}
+
 body {
   font-family: var(--font-sans);
   background: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
   min-height: 100vh;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 a {
