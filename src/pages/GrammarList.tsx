@@ -1,7 +1,8 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import GrammarDetailContent from '@/components/grammar/GrammarDetailContent'
 import { grammarPoints, categoryLabels, getGrammarById } from '@/data/grammar'
+import { filterGrammarPoints } from '@/lib/grammarSearch'
 import type { GrammarPoint, JlptLevel } from '@/types/grammar'
 import { LEVEL_LABELS } from '@/types/quiz'
 
@@ -67,6 +68,7 @@ export default function GrammarList() {
   const { id: routeId } = useParams<{ id?: string }>()
   const navigate = useNavigate()
   const [selectedLevel, setSelectedLevel] = useState<JlptLevel | 'all'>('all')
+  const [query, setQuery] = useState('')
   const [expandedId, setExpandedId] = useState<string | null>(routeId ?? null)
 
   useEffect(() => {
@@ -85,10 +87,13 @@ export default function GrammarList() {
     }
   }, [routeId])
 
-  const filtered =
-    selectedLevel === 'all'
-      ? grammarPoints
-      : grammarPoints.filter((point) => point.level === selectedLevel)
+  const filtered = useMemo(() => {
+    const byLevel =
+      selectedLevel === 'all'
+        ? grammarPoints
+        : grammarPoints.filter((point) => point.level === selectedLevel)
+    return filterGrammarPoints(byLevel, query)
+  }, [selectedLevel, query])
 
   const toggleRow = (id: string) => {
     const next = expandedId === id ? null : id
@@ -100,7 +105,34 @@ export default function GrammarList() {
     <div className="page grammar-list">
       <div className="page-header">
         <h1>文法库</h1>
-        <p>共 {filtered.length} 条</p>
+        <p>
+          {query.trim()
+            ? `找到 ${filtered.length} 条`
+            : `共 ${filtered.length} 条`}
+        </p>
+      </div>
+
+      <div className="grammar-search">
+        <input
+          type="search"
+          className="grammar-search-input"
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+          placeholder="搜索句型或释义，如 ながら、尽管、一边"
+          aria-label="搜索文法"
+          autoComplete="off"
+          enterKeyHint="search"
+        />
+        {query ? (
+          <button
+            type="button"
+            className="grammar-search-clear"
+            onClick={() => setQuery('')}
+            aria-label="清除搜索"
+          >
+            ×
+          </button>
+        ) : null}
       </div>
 
       <div className="filter-bar">
@@ -121,16 +153,22 @@ export default function GrammarList() {
         ))}
       </div>
 
-      <div className="grammar-table">
-        {filtered.map((point) => (
-          <GrammarRow
-            key={point.id}
-            point={point}
-            expanded={expandedId === point.id}
-            onToggle={() => toggleRow(point.id)}
-          />
-        ))}
-      </div>
+      {filtered.length === 0 ? (
+        <div className="placeholder-section">
+          <p>没有符合条件的文法。试试更短的关键词，或切换等级。</p>
+        </div>
+      ) : (
+        <div className="grammar-table">
+          {filtered.map((point) => (
+            <GrammarRow
+              key={point.id}
+              point={point}
+              expanded={expandedId === point.id}
+              onToggle={() => toggleRow(point.id)}
+            />
+          ))}
+        </div>
+      )}
     </div>
   )
 }

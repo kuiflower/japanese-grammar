@@ -793,6 +793,60 @@
   color: var(--color-text-muted);
 }
 
+.grammar-search {
+  position: relative;
+  margin-bottom: 0.85rem;
+}
+
+.grammar-search-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.55rem 2.4rem 0.55rem 0.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+  font-size: 0.95rem;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.grammar-search-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.grammar-search-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.grammar-search-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.grammar-search-clear {
+  position: absolute;
+  top: 50%;
+  right: 0.4rem;
+  transform: translateY(-50%);
+  width: 1.75rem;
+  height: 1.75rem;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.grammar-search-clear:hover {
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
