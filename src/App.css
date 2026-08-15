@@ -1138,7 +1138,11 @@
 
 /* ── Practice Hub ── */
 .practice-hub .page-header {
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.practice-bank-bar {
+  margin-bottom: 1.25rem;
 }
 
 .practice-flow-hint {

@@ -1,20 +1,27 @@
+import type { GrammarBank, GrammarLevel } from '@/data/types/grammar-entry'
 import type { JlptLevel, QuizQuestion, QuizRound } from '@/types/quiz'
-import type { GrammarLevel } from '@/data/types/grammar-entry'
 import { getGrammarEntries } from '@/data/levels/grammar-db'
 import { generateQuestionsFromGrammar } from './generateQuestions'
 
-const questionBank: Partial<Record<GrammarLevel, QuizQuestion[]>> = {}
+const questionBank: Partial<
+  Record<GrammarBank, Partial<Record<GrammarLevel, QuizQuestion[]>>>
+> = {}
 
-/** 按级别从对应数据库生成题目（模版通用，数据按 level 隔离） */
-function loadQuestions(level: GrammarLevel): QuizQuestion[] {
-  if (!questionBank[level]) {
-    questionBank[level] = generateQuestionsFromGrammar(getGrammarEntries(level), level)
+/** 按级别、题库从对应数据库生成题目（模版通用） */
+function loadQuestions(level: GrammarLevel, bank: GrammarBank): QuizQuestion[] {
+  if (!questionBank[bank]) questionBank[bank] = {}
+  const byLevel = questionBank[bank]!
+  if (!byLevel[level]) {
+    byLevel[level] = generateQuestionsFromGrammar(getGrammarEntries(level, bank), level)
   }
-  return questionBank[level]!
+  return byLevel[level]!
 }
 
-export function getQuestionsByLevel(level: JlptLevel): QuizQuestion[] {
-  return loadQuestions(level)
+export function getQuestionsByLevel(
+  level: JlptLevel,
+  bank: GrammarBank = 'basic',
+): QuizQuestion[] {
+  return loadQuestions(level, bank)
 }
 
 export function filterQuestions(
@@ -35,8 +42,8 @@ export function shuffleQuestions(questions: QuizQuestion[]): QuizQuestion[] {
 }
 
 /** 练习中心轻量统计：只读词条数，不触发出题 */
-export function getQuizHubStats(level: JlptLevel) {
+export function getQuizHubStats(level: JlptLevel, bank: GrammarBank = 'basic') {
   return {
-    grammarCount: getGrammarEntries(level).length,
+    grammarCount: getGrammarEntries(level, bank).length,
   }
 }

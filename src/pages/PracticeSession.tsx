@@ -21,8 +21,15 @@ import {
   getWrongQuestionsForRound,
   resolveQuestionsByIds,
 } from '@/lib/practiceQuestions'
-import type { JlptLevel, QuizQuestion, QuizRound } from '@/types/quiz'
-import { LEVEL_LABELS, ROUND_LABELS, levelToPath, parseLevelParam } from '@/types/quiz'
+import type { GrammarBank, JlptLevel, QuizQuestion, QuizRound } from '@/types/quiz'
+import {
+  GRAMMAR_BANK_LABELS,
+  LEVEL_LABELS,
+  ROUND_LABELS,
+  grammarPracticePath,
+  parseGrammarBankParam,
+  parseLevelParam,
+} from '@/types/quiz'
 
 const VALID_LEVELS: JlptLevel[] = ['N5', 'N4', 'N3', 'N2']
 const VALID_ROUNDS: QuizRound[] = ['all', 'round1', 'round2', 'enhanced']
@@ -60,9 +67,13 @@ interface PracticeSessionProps {
 }
 
 export default function PracticeSession({ mode = 'practice' }: PracticeSessionProps) {
-  const { level: levelParam } = useParams<{ level: string }>()
+  const { bank: bankParam, level: levelParam } = useParams<{
+    bank?: string
+    level: string
+  }>()
   const [searchParams] = useSearchParams()
   const level = parseLevel(levelParam)
+  const bank: GrammarBank | null = bankParam ? parseGrammarBankParam(bankParam) : 'basic'
   const round = parseRound(searchParams.get('round'))
   const fresh = searchParams.get('fresh') === '1'
   const resume = searchParams.get('resume') === '1'
@@ -84,10 +95,10 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
   const [wrongTrailPos, setWrongTrailPos] = useState(0)
   const wrongInitialCountRef = useRef(0)
 
-  const sessionKey = `${mode}-${level}-${round}-${fresh}-${resume}-${retryKey}`
+  const sessionKey = `${mode}-${bank}-${level}-${round}-${fresh}-${resume}-${retryKey}`
 
   useEffect(() => {
-    if (!level) return
+    if (!level || !bank) return
 
     setReady(false)
     setFinished(false)
@@ -102,8 +113,8 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
     if (mode === 'wrong' || mode === 'unfamiliar') {
       const bankQs =
         mode === 'wrong'
-          ? getWrongQuestionsForRound(level, round)
-          : getUnfamiliarQuestionsForRound(level, round)
+          ? getWrongQuestionsForRound(level, round, bank)
+          : getUnfamiliarQuestionsForRound(level, round, bank)
       wrongInitialCountRef.current = bankQs.length
       setWrongTrail(bankQs.length > 0 ? [bankQs[0]!] : [])
       setWrongTrailPos(0)
@@ -115,8 +126,8 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
       return
     }
 
-    const filtered = filterQuestions(getQuestionsByLevel(level), round)
-    const cp = resume && !fresh ? getCheckpoint(level, round) : null
+    const filtered = filterQuestions(getQuestionsByLevel(level, bank), round)
+    const cp = resume && !fresh ? getCheckpoint(level, round, bank) : null
 
     let sessionQuestions: QuizQuestion[]
     let startIndex = 0
@@ -135,7 +146,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
         answerLogRef.current = logFromAnswers(cp.answers)
       }
     } else if (cp) {
-      const restored = resolveQuestionsByIds(cp.questionIds, level)
+      const restored = resolveQuestionsByIds(cp.questionIds, level, bank)
       if (restored.length > 0) {
         sessionQuestions = restored
         startIndex = cp.currentIndex
@@ -149,6 +160,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
     }
 
     saveCheckpoint({
+      bank,
       level,
       round,
       questionIds: sessionQuestions.map((q) => q.id),
@@ -162,7 +174,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
     setCorrectCount(startCorrect)
     correctCountRef.current = startCorrect
     setReady(true)
-  }, [sessionKey, level, mode, round, fresh, resume, retryKey])
+  }, [sessionKey, level, bank, mode, round, fresh, resume, retryKey])
 
   const isBankMode = mode === 'wrong' || mode === 'unfamiliar'
   const current = isBankMode ? wrongTrail[wrongTrailPos] : questions[index]
@@ -184,6 +196,17 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
         <h1>无效的等级</h1>
         <Link to="/learn/grammar" className="btn btn-primary">
           返回首页
+        </Link>
+      </div>
+    )
+  }
+
+  if (!bank) {
+    return (
+      <div className="page empty-state">
+        <h1>无效的题库</h1>
+        <Link to="/practice" className="btn btn-primary">
+          返回练习
         </Link>
       </div>
     )
@@ -231,6 +254,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
       <div className="page quiz-result">
         <div className="quiz-result-card">
           <p className="quiz-result-label">
+            {bank !== 'basic' ? `${GRAMMAR_BANK_LABELS[bank]} · ` : ''}
             {LEVEL_LABELS[level]} · {ROUND_LABELS[round]}
             {mode === 'wrong' ? ' · 错题复习' : ''}
             {mode === 'unfamiliar' ? ' · 不熟悉复习' : ''}
@@ -263,7 +287,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
           <div className="quiz-result-actions">
             {mode === 'practice' ? (
               <Link
-                to={`/practice/${levelToPath(level)}?round=${round}&fresh=1`}
+                to={grammarPracticePath(level, round, bank, 'fresh')}
                 className="btn btn-primary"
               >
                 再来一轮
@@ -328,6 +352,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
 
           const prevIndex = index - 1
           saveCheckpoint({
+            bank,
             level,
             round,
             questionIds: questions.map((q) => q.id),
@@ -355,14 +380,15 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
               correctCountRef.current += 1
               setCorrectCount(correctCountRef.current)
             } else {
-              addWrongQuestion(current.id, level)
+              addWrongQuestion(current.id, level, bank)
             }
             if (meta.familiar) {
-              removeUnfamiliarQuestion(current.id)
+              removeUnfamiliarQuestion(current.id, bank)
             } else {
-              addUnfamiliarQuestion(current.id, level, meta.elapsedMs)
+              addUnfamiliarQuestion(current.id, level, meta.elapsedMs, bank)
             }
             saveCheckpoint({
+              bank,
               level,
               round,
               questionIds: questions.map((q) => q.id),
@@ -376,7 +402,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
               correctCountRef.current += 1
               setCorrectCount(correctCountRef.current)
             } else {
-              addUnfamiliarQuestion(current.id, level, meta.elapsedMs)
+              addUnfamiliarQuestion(current.id, level, meta.elapsedMs, bank)
             }
           } else if (correct) {
             correctCountRef.current += 1
@@ -385,7 +411,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
         }}
         onGuessedCorrect={
           mode === 'practice'
-            ? () => addWrongQuestion(current.id, level)
+            ? () => addWrongQuestion(current.id, level, bank)
             : mode === 'wrong'
               ? () => {
                   keepInWrongBankRef.current = true
@@ -403,9 +429,9 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
 
             if (shouldRemove) {
               if (mode === 'wrong') {
-                removeWrongQuestion(current.id)
+                removeWrongQuestion(current.id, bank)
               } else {
-                removeUnfamiliarQuestion(current.id)
+                removeUnfamiliarQuestion(current.id, bank)
               }
               answerLogRef.current.delete(current.id)
               const remaining = questions.filter((q) => q.id !== current.id)
@@ -450,6 +476,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
           const nextIndex = index + 1
           if (nextIndex >= questions.length) {
             saveSessionSummary({
+              bank,
               level,
               round,
               questionIds: questions.map((q) => q.id),
@@ -458,10 +485,11 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
               completed: true,
               updatedAt: Date.now(),
             })
-            clearCheckpoint(level, round)
+            clearCheckpoint(level, round, bank)
             setFinished(true)
           } else {
             saveCheckpoint({
+              bank,
               level,
               round,
               questionIds: questions.map((q) => q.id),

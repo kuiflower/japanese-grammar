@@ -1,4 +1,15 @@
+import type { GrammarBank } from '@/data/types/grammar-entry'
+
+export type { GrammarBank }
 export type JlptLevel = 'N5' | 'N4' | 'N3' | 'N2'
+
+export const GRAMMAR_BANKS: GrammarBank[] = ['basic', 'reading', 'listening']
+
+export const GRAMMAR_BANK_LABELS: Record<GrammarBank, string> = {
+  basic: '基础语法',
+  reading: '阅读专项',
+  listening: '听力专项',
+}
 
 type QuizQuestionType =
   | 'meaning'
@@ -58,4 +69,44 @@ export function parseLevelParam(param?: string): JlptLevel | null {
   if (param === 'N3' || param === 'n3') return 'N3'
   if (param === 'N2' || param === 'n2') return 'N2'
   return null
+}
+
+export function parseGrammarBankParam(param?: string): GrammarBank | null {
+  if (param === 'basic' || param === 'reading' || param === 'listening') return param
+  return null
+}
+
+export function grammarPracticePath(
+  level: JlptLevel,
+  round: QuizRound,
+  bank: GrammarBank = 'basic',
+  extra: 'fresh' | 'resume' = 'fresh',
+): string {
+  const base =
+    bank === 'basic'
+      ? `/practice/${levelToPath(level)}`
+      : `/practice/${bank}/${levelToPath(level)}`
+  return `${base}?round=${round}&${extra}=1`
+}
+
+export function grammarWrongPath(
+  level: JlptLevel,
+  round: QuizRound,
+  bank: GrammarBank = 'basic',
+): string {
+  const base =
+    bank === 'basic' ? `/wrong/${levelToPath(level)}` : `/wrong/${bank}/${levelToPath(level)}`
+  return `${base}?round=${round}`
+}
+
+export function grammarUnfamiliarPath(
+  level: JlptLevel,
+  round: QuizRound,
+  bank: GrammarBank = 'basic',
+): string {
+  const base =
+    bank === 'basic'
+      ? `/unfamiliar/${levelToPath(level)}`
+      : `/unfamiliar/${bank}/${levelToPath(level)}`
+  return `${base}?round=${round}`
 }

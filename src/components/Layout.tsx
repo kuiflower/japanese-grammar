@@ -6,8 +6,10 @@ import {
   VOCABULARY_HOME_PATH,
 } from '@/lib/appSections'
 import {
+  GRAMMAR_BANK_LABELS,
   LEVEL_LABELS,
   ROUND_LABELS,
+  parseGrammarBankParam,
   parseLevelParam,
   type QuizRound,
 } from '@/types/quiz'
@@ -38,11 +40,13 @@ const vocabularyNavItems = [
 ]
 
 function detectVocabTrack(pathname: string) {
-  const fromPractice = pathname.match(/^\/vocab-practice\/(exam|full)\//)
+  const fromPractice = pathname.match(/^\/vocab-practice\/(exam|full|reading|listening)\//)
   if (fromPractice) return parseVocabTrackParam(fromPractice[1])
-  const fromWrong = pathname.match(/^\/vocab-wrong\/(exam|full)\//)
+  const fromWrong = pathname.match(/^\/vocab-wrong\/(exam|full|reading|listening)\//)
   if (fromWrong) return parseVocabTrackParam(fromWrong[1])
-  const fromUnfamiliar = pathname.match(/^\/vocab-unfamiliar\/(exam|full)\//)
+  const fromUnfamiliar = pathname.match(
+    /^\/vocab-unfamiliar\/(exam|full|reading|listening)\//,
+  )
   if (fromUnfamiliar) return parseVocabTrackParam(fromUnfamiliar[1])
   const fromList = pathname.match(/^\/vocabulary\/(exam|full)/)
   if (fromList) return parseVocabTrackParam(fromList[1])
@@ -88,9 +92,11 @@ function getFooterText(pathname: string, search: string): string {
 
   if (section === 'vocabulary') {
     const track = detectVocabTrack(pathname)
-    const practice = pathname.match(/^\/vocab-practice\/(exam|full)\/([^/]+)/)
-    const wrong = pathname.match(/^\/vocab-wrong\/(exam|full)\/([^/]+)/)
-    const unfamiliar = pathname.match(/^\/vocab-unfamiliar\/(exam|full)\/([^/]+)/)
+    const practice = pathname.match(/^\/vocab-practice\/(exam|full|reading|listening)\/([^/]+)/)
+    const wrong = pathname.match(/^\/vocab-wrong\/(exam|full|reading|listening)\/([^/]+)/)
+    const unfamiliar = pathname.match(
+      /^\/vocab-unfamiliar\/(exam|full|reading|listening)\/([^/]+)/,
+    )
     const level = parseVocabLevelParam(practice?.[2] ?? wrong?.[2] ?? unfamiliar?.[2])
     const trackLabel = track ? VOCAB_TRACK_LABELS[track] : null
 
@@ -115,16 +121,33 @@ function getFooterText(pathname: string, search: string): string {
       ? (roundParam as QuizRound)
       : null
 
-  const practiceMatch = pathname.match(/^\/practice\/([^/]+)/)
-  const wrongMatch = pathname.match(/^\/wrong\/([^/]+)/)
-  const unfamiliarMatch = pathname.match(/^\/unfamiliar\/([^/]+)/)
-  const level = parseLevelParam(
-    practiceMatch?.[1] ?? wrongMatch?.[1] ?? unfamiliarMatch?.[1],
-  )
+  const practiceMatch =
+    pathname.match(/^\/practice\/(basic|reading|listening)\/([^/]+)/) ??
+    pathname.match(/^\/practice\/([^/]+)/)
+  const wrongMatch =
+    pathname.match(/^\/wrong\/(basic|reading|listening)\/([^/]+)/) ??
+    pathname.match(/^\/wrong\/([^/]+)/)
+  const unfamiliarMatch =
+    pathname.match(/^\/unfamiliar\/(basic|reading|listening)\/([^/]+)/) ??
+    pathname.match(/^\/unfamiliar\/([^/]+)/)
+
+  const bankParam = practiceMatch?.[2]
+    ? practiceMatch[1]
+    : wrongMatch?.[2]
+      ? wrongMatch[1]
+      : unfamiliarMatch?.[2]
+        ? unfamiliarMatch[1]
+        : undefined
+  const levelParam = practiceMatch?.[2] ?? practiceMatch?.[1]
+    ?? wrongMatch?.[2] ?? wrongMatch?.[1]
+    ?? unfamiliarMatch?.[2] ?? unfamiliarMatch?.[1]
+  const bank = parseGrammarBankParam(bankParam) ?? 'basic'
+  const level = parseLevelParam(levelParam)
 
   if (level) {
     const activeRound = round ?? 'all'
-    const title = `${LEVEL_LABELS[level]} · ${ROUND_LABELS[activeRound]}`
+    const bankLabel = bank === 'basic' ? '' : `${GRAMMAR_BANK_LABELS[bank]} · `
+    const title = `${bankLabel}${LEVEL_LABELS[level]} · ${ROUND_LABELS[activeRound]}`
     if (wrongMatch) return `东东文法 · ${title} · 错题复习`
     if (unfamiliarMatch) return `东东文法 · ${title} · 不熟悉复习`
     return `东东文法 · ${title}`

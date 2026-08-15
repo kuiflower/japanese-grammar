@@ -1,6 +1,9 @@
 /** 各级别语法数据库条目的统一字段约定（出题模版与语法库共用） */
 export type GrammarLevel = 'N5' | 'N4' | 'N3' | 'N2'
 
+/** 练习题库：基础语法 / 阅读专项 / 听力专项（文法库始终用 basic） */
+export type GrammarBank = 'basic' | 'reading' | 'listening'
+
 interface GrammarExample {
   japanese: string
   chinese?: string

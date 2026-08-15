@@ -7,7 +7,7 @@ alwaysApply: true
 
 ## 唯一数据源
 
-每级别**只有一个**运行时数据库，直接编辑 JSON，禁止旁路：
+每级别**基础语法**只有一个运行时数据库，直接编辑 JSON，禁止旁路：
 
 | 级别 | 唯一文件 |
 |------|----------|
@@ -16,18 +16,31 @@ alwaysApply: true
 | N3 | `src/data/levels/n3/grammar.json` |
 | N2 | `src/data/levels/n2/grammar.json` |
 
-**背单词**（每级两套题库；非并列板块）：
+**阅读 / 听力专项**（练习页分类；文法库不收录）按级别另文件，空数组 = 筹备中：
+
+| 专项 | 文件 |
+|------|------|
+| 阅读高频语法 | `src/data/levels/{n5\|n4\|n3\|n2}/grammar-reading.json` |
+| 听力高频语法 | `src/data/levels/{n5\|n4\|n3\|n2}/grammar-listening.json` |
+
+**背单词**（每级题库；非并列板块）：
 
 | 题库 | 级别 | 唯一文件 |
 |------|------|----------|
 | 频出单词 | N5～N1 | `src/data/levels/{n5\|n4\|n3\|n2\|n1}/vocabulary.json` |
 | 全套单词 | N5～N1 | `src/data/levels/{n5\|n4\|n3\|n2\|n1}/vocabulary-full.json` |
+| 阅读高频词汇 | N5～N1 | `src/data/levels/{n5\|n4\|n3\|n2\|n1}/vocabulary-reading.json` |
+| 听力高频词汇 | N5～N1 | `src/data/levels/{n5\|n4\|n3\|n2\|n1}/vocabulary-listening.json` |
+
+単語库只展示频出 / 全套。专项只走练习页。
 
 字段约定（语法）：`meaning` 释义 · `usage` 用法 · `notes` 辨析 · `examples` 例句
 
 字段约定（单词）：`word` · `reading` · `pos` · `meaning` · `example` · 动词可选 `transitivity` / `pair`
 
-频出与全套共用同一出题模版（复合题：读音 → 释义 → 填空），进度/错题按 `exam` / `full` 分题库存储。
+频出、全套、阅读、听力共用同一出题模版（复合题：读音 → 释义 → 填空），进度/错题按 `exam` / `full` / `reading` / `listening` 分题库存储。
+
+语法基础 / 阅读 / 听力共用同一出题模版，进度/错题按 `basic` / `reading` / `listening` 分题库存储。
 
 ## 出题模版
 
@@ -39,13 +52,13 @@ alwaysApply: true
 ## 禁止事项
 
 - ❌ 不新增 `entries.mjs`、`refinements`、`usage-standard`、`build-*.mjs` 等叠加修正文件
-- ❌ 不把修正写在脚本里再覆盖 JSON；**直接改对应 `grammar.json`**
-- ❌ 不为某级别另建 CSV/第二数据源（N2 与 N3 同等，只维护对应 `grammar.json`）
+- ❌ 不把修正写在脚本里再覆盖 JSON；**直接改对应正式 JSON**
+- ❌ 不为某级别另建 CSV 或旁路数据源（专项只维护对应 `grammar-reading.json` 等正式文件）
 - ❌ `usage` 不得复读 `meaning`（如「部分肯定：既然…」）；用法题考点须含接续等信息
 - ❌ 不新增 `scripts/` 下的数据管线、导入、校验脚本（非项目核心结构）
 
 ## 修改语法内容时
 
-1. 打开该级别唯一的 `grammar.json`
+1. 基础语法改该级 `grammar.json`；专项改 `grammar-reading.json` / `grammar-listening.json`
 2. 改 `meaning` / `usage` / `notes` / `examples`
 3. `npm run build` 验证编译通过

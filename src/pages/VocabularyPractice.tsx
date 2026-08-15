@@ -2,37 +2,69 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { getVocabularyCount } from '@/data/levels/vocabulary-db'
 import {
+  VOCAB_BANKS,
+  VOCAB_BANK_LABELS,
   VOCAB_LEVELS,
   VOCAB_LEVEL_LABELS,
   VOCAB_TRACK_DESCS,
   VOCAB_TRACK_LABELS,
-  VOCAB_TRACKS,
+  VOCAB_TRACKS_BY_BANK,
   vocabLevelToPath,
   vocabTrackToPath,
+  type VocabBank,
   type VocabLevel,
 } from '@/types/vocab-quiz'
 
 export default function VocabularyPractice() {
+  const [bank, setBank] = useState<VocabBank>('basic')
   const [openLevel, setOpenLevel] = useState<VocabLevel | null>('N5')
+
+  const tracks = VOCAB_TRACKS_BY_BANK[bank]
 
   return (
     <div className="page practice-hub">
       <header className="page-header">
         <h1>単語练习</h1>
         <p className="page-header-note">
-          频出：考试高频词先突击 · 全套：整级词表系统过
+          {bank === 'basic'
+            ? '频出：考试高频词先突击 · 全套：整级词表系统过'
+            : bank === 'reading'
+              ? '阅读专项：读解里最核心的高频词'
+              : '听力专项：听解场面里最核心的高频词'}
         </p>
       </header>
 
+      <div className="filter-bar practice-bank-bar">
+        {VOCAB_BANKS.map((item) => (
+          <button
+            key={item}
+            type="button"
+            className={bank === item ? 'filter-btn active' : 'filter-btn'}
+            onClick={() => {
+              setBank(item)
+              const firstReady = VOCAB_LEVELS.find((level) =>
+                VOCAB_TRACKS_BY_BANK[item].some(
+                  (track) => getVocabularyCount(level, track) > 0,
+                ),
+              )
+              setOpenLevel(firstReady ?? 'N5')
+            }}
+          >
+            {VOCAB_BANK_LABELS[item]}
+          </button>
+        ))}
+      </div>
+
       {VOCAB_LEVELS.map((level) => {
         const open = openLevel === level
-        const examCount = getVocabularyCount(level, 'exam')
-        const fullCount = getVocabularyCount(level, 'full')
-        const total = examCount + fullCount
+        const total = tracks.reduce(
+          (sum, track) => sum + getVocabularyCount(level, track),
+          0,
+        )
 
         return (
           <section
-            key={level}
+            key={`${bank}-${level}`}
             className={`practice-level-section ${open ? 'is-open' : ''}`}
           >
             <button
@@ -57,7 +89,7 @@ export default function VocabularyPractice() {
 
             {open && (
               <div className="practice-mode-grid">
-                {VOCAB_TRACKS.map((track, index) => {
+                {tracks.map((track, index) => {
                   const wordCount = getVocabularyCount(level, track)
                   const ready = wordCount > 0
                   const recommended = index === 0 && ready

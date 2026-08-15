@@ -6,10 +6,10 @@ import type { VocabularyEntry } from '@/data/types/vocabulary-entry'
 import {
   VOCAB_LEVELS,
   VOCAB_LEVEL_LABELS,
+  VOCAB_LIBRARY_TRACKS,
   VOCAB_TRACK_DESCS,
   VOCAB_TRACK_LABELS,
   VOCAB_TRACK_SHORT_LABELS,
-  VOCAB_TRACKS,
   parseVocabTrackParam,
   vocabTrackToPath,
   type VocabLevel,
@@ -103,7 +103,7 @@ export default function VocabularyList() {
     }
   }, [routeId, track])
 
-  if (!track) {
+  if (!track || !VOCAB_LIBRARY_TRACKS.includes(track)) {
     return <Navigate to="/vocabulary/exam" replace />
   }
 
@@ -133,7 +133,7 @@ export default function VocabularyList() {
       </div>
 
       <div className="filter-bar track-filter-bar">
-        {VOCAB_TRACKS.map((t) => (
+        {VOCAB_LIBRARY_TRACKS.map((t) => (
           <button
             key={t}
             type="button"

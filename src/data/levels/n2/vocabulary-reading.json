@@ -1,0 +1,1382 @@
+[
+  {
+    "id": "n2-vr-0001",
+    "index": 1,
+    "level": "N2",
+    "word": "傾向",
+    "reading": "けいこう",
+    "pos": "名词",
+    "meaning": "倾向",
+    "example": {
+      "japanese": "最近は一人で昼食を取る人が増える傾向にある。",
+      "chinese": "最近独自吃午饭的人有增加的趋势。"
+    }
+  },
+  {
+    "id": "n2-vr-0002",
+    "index": 2,
+    "level": "N2",
+    "word": "影響",
+    "reading": "えいきょう",
+    "pos": "名词",
+    "meaning": "影响",
+    "example": {
+      "japanese": "雨が試合に大きな影響を与えた。",
+      "chinese": "雨对比赛造成了很大影响。"
+    }
+  },
+  {
+    "id": "n2-vr-0003",
+    "index": 3,
+    "level": "N2",
+    "word": "対象",
+    "reading": "たいしょう",
+    "pos": "名词",
+    "meaning": "对象",
+    "example": {
+      "japanese": "この調査の対象は大学生だ。",
+      "chinese": "这项调查的对象是大学生。"
+    }
+  },
+  {
+    "id": "n2-vr-0004",
+    "index": 4,
+    "level": "N2",
+    "word": "現象",
+    "reading": "げんしょう",
+    "pos": "名词",
+    "meaning": "现象",
+    "example": {
+      "japanese": "虹は光の不思議な現象の一つだ。",
+      "chinese": "彩虹是光的一种奇妙现象。"
+    }
+  },
+  {
+    "id": "n2-vr-0005",
+    "index": 5,
+    "level": "N2",
+    "word": "状況",
+    "reading": "じょうきょう",
+    "pos": "名词",
+    "meaning": "状况",
+    "example": {
+      "japanese": "まず状況を落ち着いて説明してください。",
+      "chinese": "请先冷静地说明状况。"
+    }
+  },
+  {
+    "word": "原因",
+    "reading": "げんいん",
+    "pos": "名词",
+    "meaning": "原因",
+    "example": {
+      "japanese": "遅れた原因を調べる。",
+      "chinese": "调查迟到的原因。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0006",
+    "index": 6
+  },
+  {
+    "id": "n2-vr-0007",
+    "index": 7,
+    "level": "N2",
+    "word": "結果",
+    "reading": "けっか",
+    "pos": "名词",
+    "meaning": "结果",
+    "example": {
+      "japanese": "努力した結果、合格できた。",
+      "chinese": "努力的结果是考过了。"
+    }
+  },
+  {
+    "id": "n2-vr-0008",
+    "index": 8,
+    "level": "N2",
+    "word": "目的",
+    "reading": "もくてき",
+    "pos": "名词",
+    "meaning": "目的",
+    "example": {
+      "japanese": "旅行の目的は温泉に入ることだ。",
+      "chinese": "旅行的目的是泡温泉。"
+    }
+  },
+  {
+    "id": "n2-vr-0009",
+    "index": 9,
+    "level": "N2",
+    "word": "手段",
+    "reading": "しゅだん",
+    "pos": "名词",
+    "meaning": "手段",
+    "example": {
+      "japanese": "話し合いで解決する手段を選んだ。",
+      "chinese": "选择了通过商量来解决的手段。"
+    }
+  },
+  {
+    "id": "n2-vr-0010",
+    "index": 10,
+    "level": "N2",
+    "word": "役割",
+    "reading": "やくわり",
+    "pos": "名词",
+    "meaning": "作用；角色",
+    "example": {
+      "japanese": "親の役割は大きい。",
+      "chinese": "父母的作用很大。"
+    }
+  },
+  {
+    "id": "n2-vr-0011",
+    "index": 11,
+    "level": "N2",
+    "word": "効果",
+    "reading": "こうか",
+    "pos": "名词",
+    "meaning": "效果",
+    "example": {
+      "japanese": "この薬はすぐ効果が出た。",
+      "chinese": "这药很快见效了。"
+    }
+  },
+  {
+    "id": "n2-vr-0012",
+    "index": 12,
+    "level": "N2",
+    "word": "特徴",
+    "reading": "とくちょう",
+    "pos": "名词",
+    "meaning": "特征",
+    "example": {
+      "japanese": "この町の特徴は温泉が多いことだ。",
+      "chinese": "这座城镇的特点是温泉很多。"
+    }
+  },
+  {
+    "id": "n2-vr-0013",
+    "index": 13,
+    "level": "N2",
+    "word": "比較",
+    "reading": "ひかく",
+    "pos": "名词",
+    "meaning": "比较",
+    "example": {
+      "japanese": "二つの商品を比較して選んだ。",
+      "chinese": "我比较了两种商品后做了选择。"
+    }
+  },
+  {
+    "id": "n2-vr-0014",
+    "index": 14,
+    "level": "N2",
+    "word": "増加",
+    "reading": "ぞうか",
+    "pos": "名词",
+    "meaning": "增加",
+    "example": {
+      "japanese": "観光客が増加している。",
+      "chinese": "游客正在增加。"
+    }
+  },
+  {
+    "id": "n2-vr-0015",
+    "index": 15,
+    "level": "N2",
+    "word": "減少",
+    "reading": "げんしょう",
+    "pos": "名词",
+    "meaning": "减少",
+    "example": {
+      "japanese": "利用者の減少が問題になっている。",
+      "chinese": "使用者的减少正成为问题。"
+    }
+  },
+  {
+    "id": "n2-vr-0016",
+    "index": 16,
+    "level": "N2",
+    "word": "変化",
+    "reading": "へんか",
+    "pos": "名词",
+    "meaning": "变化",
+    "example": {
+      "japanese": "町の様子は十年で大きく変化した。",
+      "chinese": "这座城镇十年间发生了很大变化。"
+    }
+  },
+  {
+    "id": "n2-vr-0017",
+    "index": 17,
+    "level": "N2",
+    "word": "維持",
+    "reading": "いじ",
+    "pos": "名词",
+    "meaning": "维持",
+    "example": {
+      "japanese": "健康を維持するため毎朝歩いている。",
+      "chinese": "为了保持健康，我每天早晨走路。"
+    }
+  },
+  {
+    "id": "n2-vr-0018",
+    "index": 18,
+    "level": "N2",
+    "word": "改善",
+    "reading": "かいぜん",
+    "pos": "名词",
+    "meaning": "改善",
+    "example": {
+      "japanese": "意見を集めて制度を改善した。",
+      "chinese": "收集意见后改善了制度。"
+    }
+  },
+  {
+    "id": "n2-vr-0019",
+    "index": 19,
+    "level": "N2",
+    "word": "解決",
+    "reading": "かいけつ",
+    "pos": "名词",
+    "meaning": "解决",
+    "example": {
+      "japanese": "問題を早く解決したい。",
+      "chinese": "想尽快解决问题。"
+    }
+  },
+  {
+    "id": "n2-vr-0020",
+    "index": 20,
+    "level": "N2",
+    "word": "調査",
+    "reading": "ちょうさ",
+    "pos": "名词",
+    "meaning": "调查",
+    "example": {
+      "japanese": "事故の原因を調査している。",
+      "chinese": "正在调查事故的原因。"
+    }
+  },
+  {
+    "word": "研究",
+    "reading": "けんきゅう",
+    "pos": "名词",
+    "meaning": "研究",
+    "example": {
+      "japanese": "大学で日本語を研究している。",
+      "chinese": "我在大学研究日语。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0021",
+    "index": 21
+  },
+  {
+    "word": "指摘",
+    "reading": "してき",
+    "pos": "名词",
+    "meaning": "指出",
+    "example": {
+      "japanese": "報告書の誤りを指摘された。",
+      "chinese": "报告里的错误被指了出来。"
+    },
+    "id": "n2-vr-0022",
+    "index": 22,
+    "level": "N2"
+  },
+  {
+    "id": "n2-vr-0023",
+    "index": 23,
+    "level": "N2",
+    "word": "主張",
+    "reading": "しゅちょう",
+    "pos": "名词",
+    "meaning": "主张",
+    "example": {
+      "japanese": "彼の主張には十分な理由がある。",
+      "chinese": "他的主张有充分的理由。"
+    }
+  },
+  {
+    "id": "n2-vr-0024",
+    "index": 24,
+    "level": "N2",
+    "word": "明らか",
+    "reading": "あきらか",
+    "pos": "な形容词",
+    "meaning": "明显，显然",
+    "example": {
+      "japanese": "原因が明らかになった。",
+      "chinese": "原因已经清楚了。"
+    }
+  },
+  {
+    "id": "n2-vr-0025",
+    "index": 25,
+    "level": "N2",
+    "word": "重要",
+    "reading": "じゅうよう",
+    "pos": "な形容词",
+    "meaning": "重要",
+    "example": {
+      "japanese": "安全が最も重要だ。",
+      "chinese": "安全最重要。"
+    }
+  },
+  {
+    "id": "n2-vr-0026",
+    "index": 26,
+    "level": "N2",
+    "word": "必要",
+    "reading": "ひつよう",
+    "pos": "な形容词",
+    "meaning": "必要",
+    "example": {
+      "japanese": "予約が必要だ。",
+      "chinese": "需要预约。"
+    }
+  },
+  {
+    "id": "n2-vr-0027",
+    "index": 27,
+    "level": "N2",
+    "word": "可能",
+    "reading": "かのう",
+    "pos": "名词・な形容词",
+    "meaning": "可能",
+    "example": {
+      "japanese": "実現は可能だ。",
+      "chinese": "实现是可能的。"
+    }
+  },
+  {
+    "word": "平均",
+    "reading": "へいきん",
+    "pos": "名词",
+    "meaning": "平均",
+    "example": {
+      "japanese": "参加者の平均年齢は三十歳だ。",
+      "chinese": "参加者的平均年龄是三十岁。"
+    },
+    "id": "n2-vr-0028",
+    "index": 28,
+    "level": "N2"
+  },
+  {
+    "word": "割合",
+    "reading": "わりあい",
+    "pos": "名词",
+    "meaning": "比率，比例",
+    "example": {
+      "japanese": "女性の割合が高い会社だ。",
+      "chinese": "这是一家女性比例高的公司。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0029",
+    "index": 29
+  },
+  {
+    "id": "n2-vr-0030",
+    "index": 30,
+    "level": "N2",
+    "word": "占める",
+    "reading": "しめる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "占有，占领；取得（第几名）",
+    "example": {
+      "japanese": "輸出が売上の半分を占める。",
+      "chinese": "出口占销售额的一半。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "word": "基づく",
+    "reading": "もとづく",
+    "pos": "动词（五段・自动词）",
+    "meaning": "基于，根据，按照",
+    "example": {
+      "japanese": "判断は事実に基づく。",
+      "chinese": "判断基于事实。"
+    },
+    "id": "n2-vr-0031",
+    "index": 31,
+    "level": "N2",
+    "transitivity": "自动词"
+  },
+  {
+    "word": "伴う",
+    "reading": "ともなう",
+    "pos": "动词（五段・他动词）",
+    "meaning": "伴随",
+    "example": {
+      "japanese": "成長に伴う問題もある。",
+      "chinese": "也有伴随成长而来的问题。"
+    },
+    "id": "n2-vr-0032",
+    "index": 32,
+    "level": "N2",
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vr-0033",
+    "index": 33,
+    "level": "N2",
+    "word": "示す",
+    "reading": "しめす",
+    "pos": "动词（五段・他动词）",
+    "meaning": "显示；出示",
+    "example": {
+      "japanese": "この数字は変化を示す。",
+      "chinese": "这个数字表明了变化。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "word": "述べる",
+    "reading": "のべる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "述",
+    "example": {
+      "japanese": "会議で意見を述べる。",
+      "chinese": "在会上陈述意见。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0034",
+    "index": 34,
+    "transitivity": "他动词"
+  },
+  {
+    "word": "考える",
+    "reading": "かんがえる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "考虑，思考",
+    "example": {
+      "japanese": "週末の予定を考える。",
+      "chinese": "考虑周末的安排。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0035",
+    "index": 35,
+    "transitivity": "他动词"
+  },
+  {
+    "word": "もたらす",
+    "reading": "もたらす",
+    "pos": "动词（五段・他动词）",
+    "meaning": "带来",
+    "example": {
+      "japanese": "雨は被害をもたらす。",
+      "chinese": "雨会带来灾害。"
+    },
+    "id": "n2-vr-0036",
+    "index": 36,
+    "level": "N2",
+    "transitivity": "他动词"
+  },
+  {
+    "word": "進む",
+    "reading": "すすむ",
+    "pos": "动词（五段・自动词）",
+    "meaning": "进；进（展）；（先）进",
+    "example": {
+      "japanese": "話し合いが進む。",
+      "chinese": "商谈会推进。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0037",
+    "index": 37,
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vr-0038",
+    "index": 38,
+    "level": "N2",
+    "word": "高まる",
+    "reading": "たかまる",
+    "pos": "动词（五段・自动词）",
+    "meaning": "变高，得到提高，增高",
+    "example": {
+      "japanese": "関心が高まる。",
+      "chinese": "关注度会提高。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "word": "低下",
+    "reading": "ていか",
+    "pos": "名词",
+    "meaning": "低下；下降",
+    "example": {
+      "japanese": "年齢とともに体力が低下する。",
+      "chinese": "体力会随着年龄增长而下降。"
+    },
+    "id": "n2-vr-0039",
+    "index": 39,
+    "level": "N2"
+  },
+  {
+    "word": "著しい",
+    "reading": "いちじるしい",
+    "pos": "い形容词",
+    "meaning": "显著的",
+    "example": {
+      "japanese": "技術の進歩は著しい。",
+      "chinese": "技术进步很显著。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0040",
+    "index": 40
+  },
+  {
+    "word": "徐々に",
+    "reading": "じょじょに",
+    "pos": "副词",
+    "meaning": "徐徐地，循序渐进地",
+    "example": {
+      "japanese": "徐々に慣れてきた。",
+      "chinese": "渐渐习惯了。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0041",
+    "index": 41
+  },
+  {
+    "id": "n2-vr-0042",
+    "index": 42,
+    "level": "N2",
+    "word": "急速",
+    "reading": "きゅうそく",
+    "pos": "な形容词",
+    "meaning": "急速",
+    "example": {
+      "japanese": "都市化が急速に進んだ。",
+      "chinese": "城市化迅速推进了。"
+    }
+  },
+  {
+    "id": "n2-vr-0043",
+    "index": 43,
+    "level": "N2",
+    "word": "一般",
+    "reading": "いっぱん",
+    "pos": "名词",
+    "meaning": "一般，普通",
+    "example": {
+      "japanese": "一般にそう言われている。",
+      "chinese": "一般都那么说。"
+    }
+  },
+  {
+    "id": "n2-vr-0044",
+    "index": 44,
+    "level": "N2",
+    "word": "特に",
+    "reading": "とくに",
+    "pos": "副词",
+    "meaning": "特别",
+    "example": {
+      "japanese": "冬は特に寒い。",
+      "chinese": "冬天特别冷。"
+    }
+  },
+  {
+    "id": "n2-vr-0045",
+    "index": 45,
+    "level": "N2",
+    "word": "つまり",
+    "reading": "つまり",
+    "pos": "副词",
+    "meaning": "总之，也就是说",
+    "example": {
+      "japanese": "つまり、準備が足りない。",
+      "chinese": "也就是说，准备不够。"
+    }
+  },
+  {
+    "id": "n2-vr-0046",
+    "index": 46,
+    "level": "N2",
+    "word": "実際",
+    "reading": "じっさい",
+    "pos": "名词",
+    "meaning": "实际",
+    "example": {
+      "japanese": "実際に使ってみると、とても便利だった。",
+      "chinese": "实际用过后，觉得非常方便。"
+    }
+  },
+  {
+    "word": "現在",
+    "reading": "げんざい",
+    "pos": "名词",
+    "meaning": "现在",
+    "example": {
+      "japanese": "現在、雨が降っています。",
+      "chinese": "现在正在下雨。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0047",
+    "index": 47
+  },
+  {
+    "id": "n2-vr-0048",
+    "index": 48,
+    "level": "N2",
+    "word": "今後",
+    "reading": "こんご",
+    "pos": "名词",
+    "meaning": "今后",
+    "example": {
+      "japanese": "今後は連絡を早めにお願いします。",
+      "chinese": "今后请尽早联系我。"
+    }
+  },
+  {
+    "word": "従来",
+    "reading": "じゅうらい",
+    "pos": "名词",
+    "meaning": "以往",
+    "example": {
+      "japanese": "従来の方法を見直す。",
+      "chinese": "重新审视以往的方法。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0049",
+    "index": 49
+  },
+  {
+    "id": "n2-vr-0050",
+    "index": 50,
+    "level": "N2",
+    "word": "近年",
+    "reading": "きんねん",
+    "pos": "名词",
+    "meaning": "近年",
+    "example": {
+      "japanese": "近年、観光客が増えている。",
+      "chinese": "近年来游客在增加。"
+    }
+  },
+  {
+    "word": "社会",
+    "reading": "しゃかい",
+    "pos": "名词",
+    "meaning": "社会",
+    "example": {
+      "japanese": "社会の問題について話した。",
+      "chinese": "谈论了社会问题。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0051",
+    "index": 51
+  },
+  {
+    "id": "n2-vr-0052",
+    "index": 52,
+    "level": "N2",
+    "word": "環境",
+    "reading": "かんきょう",
+    "pos": "名词",
+    "meaning": "环境",
+    "example": {
+      "japanese": "自然環境を守る。",
+      "chinese": "保护自然环境。"
+    }
+  },
+  {
+    "word": "経済",
+    "reading": "けいざい",
+    "pos": "名词",
+    "meaning": "经济",
+    "example": {
+      "japanese": "国の経済が少しよくなった。",
+      "chinese": "国家经济稍微好转了。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0053",
+    "index": 53
+  },
+  {
+    "id": "n2-vr-0054",
+    "index": 54,
+    "level": "N2",
+    "word": "企業",
+    "reading": "きぎょう",
+    "pos": "名词",
+    "meaning": "企业",
+    "example": {
+      "japanese": "その企業は海外にも進出している。",
+      "chinese": "那家企业也在向海外发展。"
+    }
+  },
+  {
+    "word": "技術",
+    "reading": "ぎじゅつ",
+    "pos": "名词",
+    "meaning": "技术",
+    "example": {
+      "japanese": "新しい技術を導入した。",
+      "chinese": "引进了新技术。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0055",
+    "index": 55
+  },
+  {
+    "id": "n2-vr-0056",
+    "index": 56,
+    "level": "N2",
+    "word": "情報",
+    "reading": "じょうほう",
+    "pos": "名词",
+    "meaning": "信息",
+    "example": {
+      "japanese": "旅行に必要な情報を集めている。",
+      "chinese": "我正在收集旅行所需的信息。"
+    }
+  },
+  {
+    "id": "n2-vr-0057",
+    "index": 57,
+    "level": "N2",
+    "word": "制度",
+    "reading": "せいど",
+    "pos": "名词",
+    "meaning": "制度",
+    "example": {
+      "japanese": "新しい制度について説明会が開かれた。",
+      "chinese": "举办了关于新制度的说明会。"
+    }
+  },
+  {
+    "word": "政策",
+    "reading": "せいさく",
+    "pos": "名词",
+    "meaning": "政策",
+    "example": {
+      "japanese": "新しい政策が発表された。",
+      "chinese": "公布了新政策。"
+    },
+    "id": "n2-vr-0058",
+    "index": 58,
+    "level": "N2"
+  },
+  {
+    "word": "問題",
+    "reading": "もんだい",
+    "pos": "名词",
+    "meaning": "问题",
+    "example": {
+      "japanese": "環境問題について考える。",
+      "chinese": "思考环境问题。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0059",
+    "index": 59
+  },
+  {
+    "word": "課題",
+    "reading": "かだい",
+    "pos": "名词",
+    "meaning": "课题，题目",
+    "example": {
+      "japanese": "少子化は大きな課題だ。",
+      "chinese": "少子化是重大课题。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0060",
+    "index": 60
+  },
+  {
+    "id": "n2-vr-0061",
+    "index": 61,
+    "level": "N2",
+    "word": "意識",
+    "reading": "いしき",
+    "pos": "名词",
+    "meaning": "意识，认知；知觉，神志",
+    "example": {
+      "japanese": "環境への意識が高まっている。",
+      "chinese": "环保意识在提高。"
+    }
+  },
+  {
+    "id": "n2-vr-0062",
+    "index": 62,
+    "level": "N2",
+    "word": "価値",
+    "reading": "かち",
+    "pos": "名词",
+    "meaning": "价值",
+    "example": {
+      "japanese": "読む価値がある。",
+      "chinese": "值得一读。"
+    }
+  },
+  {
+    "word": "視点",
+    "reading": "してん",
+    "pos": "名词",
+    "meaning": "观点，视角",
+    "example": {
+      "japanese": "別の視点から問題を考えよう。",
+      "chinese": "让我们从另一个视角思考问题。"
+    },
+    "id": "n2-vr-0063",
+    "index": 63,
+    "level": "N2"
+  },
+  {
+    "word": "立場",
+    "reading": "たちば",
+    "pos": "名词",
+    "meaning": "立场",
+    "example": {
+      "japanese": "相手の立場で考える。",
+      "chinese": "站在对方的立场考虑。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0064",
+    "index": 64
+  },
+  {
+    "id": "n2-vr-0065",
+    "index": 65,
+    "level": "N2",
+    "word": "範囲",
+    "reading": "はんい",
+    "pos": "名词",
+    "meaning": "范围",
+    "example": {
+      "japanese": "試験の範囲を確認しておこう。",
+      "chinese": "先确认一下考试范围吧。"
+    }
+  },
+  {
+    "id": "n2-vr-0066",
+    "index": 66,
+    "level": "N2",
+    "word": "程度",
+    "reading": "ていど",
+    "pos": "名词",
+    "meaning": "程度",
+    "example": {
+      "japanese": "熱の程度によって薬を変える。",
+      "chinese": "根据发烧程度更换药物。"
+    }
+  },
+  {
+    "word": "注目",
+    "reading": "ちゅうもく",
+    "pos": "名词",
+    "meaning": "注目，着眼",
+    "example": {
+      "japanese": "みんなが新しい店に注目している。",
+      "chinese": "大家都在关注新开的店。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0067",
+    "index": 67
+  },
+  {
+    "id": "n2-vr-0068",
+    "index": 68,
+    "level": "N2",
+    "word": "重視",
+    "reading": "じゅうし",
+    "pos": "名词",
+    "meaning": "重视",
+    "example": {
+      "japanese": "この会社は安全を重視している。",
+      "chinese": "这家公司重视安全。"
+    }
+  },
+  {
+    "id": "n2-vr-0069",
+    "index": 69,
+    "level": "N2",
+    "word": "評価",
+    "reading": "ひょうか",
+    "pos": "名词・サ变动词",
+    "meaning": "评价",
+    "example": {
+      "japanese": "作品を評価する。",
+      "chinese": "评价作品。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vr-0070",
+    "index": 70,
+    "level": "N2",
+    "word": "判断",
+    "reading": "はんだん",
+    "pos": "名词",
+    "meaning": "判断",
+    "example": {
+      "japanese": "自分で判断してください。",
+      "chinese": "请自己判断。"
+    }
+  },
+  {
+    "word": "選択",
+    "reading": "せんたく",
+    "pos": "名词",
+    "meaning": "选择",
+    "example": {
+      "japanese": "好きな色を選択してください。",
+      "chinese": "请选择喜欢的颜色。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0071",
+    "index": 71
+  },
+  {
+    "id": "n2-vr-0072",
+    "index": 72,
+    "level": "N2",
+    "word": "実施",
+    "reading": "じっし",
+    "pos": "名词",
+    "meaning": "实施",
+    "example": {
+      "japanese": "新しい制度は来月から実施される。",
+      "chinese": "新制度将从下个月开始实施。"
+    }
+  },
+  {
+    "word": "提供",
+    "reading": "ていきょう",
+    "pos": "名词",
+    "meaning": "提供",
+    "example": {
+      "japanese": "食事を無料で提供する。",
+      "chinese": "免费提供餐食。"
+    },
+    "level": "N2",
+    "id": "n2-vr-0073",
+    "index": 73
+  },
+  {
+    "id": "n2-vr-0074",
+    "index": 74,
+    "level": "N2",
+    "word": "含む",
+    "reading": "ふくむ",
+    "pos": "动词（五段・他动词）",
+    "meaning": "含有（东西）；包含（成分、要素、性质、费用等）",
+    "example": {
+      "japanese": "税を含む値段だ。",
+      "chinese": "这是含税价格。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vr-0075",
+    "index": 75,
+    "level": "N2",
+    "word": "超える",
+    "reading": "こえる",
+    "pos": "动词（一段・自动词）",
+    "meaning": "越过；超过；胜过",
+    "example": {
+      "japanese": "気温が三十度を超える。",
+      "chinese": "气温会超过三十度。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "word": "関わる",
+    "reading": "かかわる",
+    "pos": "动词（五段・自动词）",
+    "meaning": "有关",
+    "example": {
+      "japanese": "教育に関わる仕事をしたい。",
+      "chinese": "想做和教育有关的工作。"
+    },
+    "id": "n2-vr-0076",
+    "index": 76,
+    "level": "N2",
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vr-0077",
+    "index": 77,
+    "level": "N2",
+    "word": "限る",
+    "reading": "かぎる",
+    "pos": "动词（五段・他动词）",
+    "meaning": "限定；极限；限于",
+    "example": {
+      "japanese": "参加者は学生に限る。",
+      "chinese": "参加者仅限学生。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vr-0078",
+    "index": 78,
+    "level": "N2",
+    "word": "構造",
+    "reading": "こうぞう",
+    "pos": "名词",
+    "meaning": "构造",
+    "example": {
+      "japanese": "橋の構造を図で説明してくれた。",
+      "chinese": "他用图说明了桥梁的构造。"
+    }
+  },
+  {
+    "word": "実態",
+    "reading": "じったい",
+    "pos": "名词",
+    "meaning": "实际情况",
+    "example": {
+      "japanese": "調査で地域の実態が明らかになった。",
+      "chinese": "调查揭示了当地的实际情况。"
+    },
+    "id": "n2-vr-0079",
+    "index": 79,
+    "level": "N2"
+  },
+  {
+    "id": "n2-vr-0080",
+    "index": 80,
+    "level": "N2",
+    "word": "例えば",
+    "reading": "たとえば",
+    "pos": "副词",
+    "meaning": "例如；比方说",
+    "example": {
+      "japanese": "例えば、この方法を試してみて。",
+      "chinese": "比如说，试试这个方法。"
+    }
+  },
+  {
+    "id": "n2-vr-0081",
+    "index": 81,
+    "level": "N2",
+    "word": "関係",
+    "reading": "かんけい",
+    "pos": "名词・サ变动词",
+    "meaning": "关系；有关",
+    "example": {
+      "japanese": "二つの問題には関係がある。",
+      "chinese": "两个问题有关系。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vr-0082",
+    "index": 82,
+    "level": "N2",
+    "word": "むしろ",
+    "reading": "むしろ",
+    "pos": "副词",
+    "meaning": "宁可；反倒；与其……不如……",
+    "example": {
+      "japanese": "待つより、むしろ自分で行った方がいい。",
+      "chinese": "与其等，不如自己去更好。"
+    }
+  },
+  {
+    "id": "n2-vr-0083",
+    "index": 83,
+    "level": "N2",
+    "word": "困難",
+    "reading": "こんなん",
+    "pos": "名词・な形容词",
+    "meaning": "困难",
+    "example": {
+      "japanese": "困難な問題に直面した。",
+      "chinese": "面临了困难的问题。"
+    }
+  },
+  {
+    "word": "しかし",
+    "reading": "しかし",
+    "pos": "接续词",
+    "meaning": "但是；可是（转折）",
+    "example": {
+      "japanese": "便利だ。しかし、値段が高い。",
+      "chinese": "很方便。但是价格贵。"
+    },
+    "id": "n2-vr-0084",
+    "index": 84,
+    "level": "N2"
+  },
+  {
+    "word": "ところが",
+    "reading": "ところが",
+    "pos": "接续词",
+    "meaning": "然而；可是（结果出乎意料）",
+    "example": {
+      "japanese": "晴れるはずだった。ところが、雨が降った。",
+      "chinese": "本该放晴。然而却下雨了。"
+    },
+    "id": "n2-vr-0085",
+    "index": 85,
+    "level": "N2"
+  },
+  {
+    "word": "ただし",
+    "reading": "ただし",
+    "pos": "接续词",
+    "meaning": "不过；但是（补充限制条件）",
+    "example": {
+      "japanese": "誰でも参加できる。ただし、予約が必要だ。",
+      "chinese": "谁都可以参加。不过需要预约。"
+    },
+    "id": "n2-vr-0086",
+    "index": 86,
+    "level": "N2"
+  },
+  {
+    "word": "それでも",
+    "reading": "それでも",
+    "pos": "接续词",
+    "meaning": "尽管如此；即使那样还是",
+    "example": {
+      "japanese": "何度も失敗した。それでも、諦めなかった。",
+      "chinese": "失败了很多次。尽管如此也没有放弃。"
+    },
+    "id": "n2-vr-0087",
+    "index": 87,
+    "level": "N2"
+  },
+  {
+    "word": "だが",
+    "reading": "だが",
+    "pos": "接续词",
+    "meaning": "但是（书面转折）",
+    "example": {
+      "japanese": "方法は簡単だ。だが、時間がかかる。",
+      "chinese": "方法简单。但是费时间。"
+    },
+    "id": "n2-vr-0088",
+    "index": 88,
+    "level": "N2"
+  },
+  {
+    "word": "そのため",
+    "reading": "そのため",
+    "pos": "接续词",
+    "meaning": "因此；由于这个原因",
+    "example": {
+      "japanese": "雨が強かった。そのため、試合は中止になった。",
+      "chinese": "雨很大。因此比赛中止了。"
+    },
+    "id": "n2-vr-0089",
+    "index": 89,
+    "level": "N2"
+  },
+  {
+    "word": "したがって",
+    "reading": "したがって",
+    "pos": "接续词",
+    "meaning": "因而；所以（书面）",
+    "example": {
+      "japanese": "証拠が不足している。したがって、結論は出せない。",
+      "chinese": "证据不足。因而得不出结论。"
+    },
+    "id": "n2-vr-0090",
+    "index": 90,
+    "level": "N2"
+  },
+  {
+    "word": "なぜなら",
+    "reading": "なぜなら",
+    "pos": "接续词",
+    "meaning": "因为（后项常接「からだ」）",
+    "example": {
+      "japanese": "今日は行かない。なぜなら、時間がないからだ。",
+      "chinese": "今天不去。因为没有时间。"
+    },
+    "id": "n2-vr-0091",
+    "index": 91,
+    "level": "N2"
+  },
+  {
+    "word": "というのは",
+    "reading": "というのは",
+    "pos": "接续词",
+    "meaning": "因为；也就是说（解释原因或内容）",
+    "example": {
+      "japanese": "遅れた。というのは、電車が止まったからだ。",
+      "chinese": "迟到了。因为电车停了。"
+    },
+    "id": "n2-vr-0092",
+    "index": 92,
+    "level": "N2"
+  },
+  {
+    "word": "そこで",
+    "reading": "そこで",
+    "pos": "接续词",
+    "meaning": "于是；所以就（据此采取行动）",
+    "example": {
+      "japanese": "問題が起きた。そこで、対策を考えた。",
+      "chinese": "出了问题。于是想了对策。"
+    },
+    "id": "n2-vr-0093",
+    "index": 93,
+    "level": "N2"
+  },
+  {
+    "word": "その結果",
+    "reading": "そのけっか",
+    "pos": "接续词",
+    "meaning": "其结果；因此",
+    "example": {
+      "japanese": "実験を繰り返した。その結果、原因が分かった。",
+      "chinese": "反复做了实验。结果查明了原因。"
+    },
+    "id": "n2-vr-0094",
+    "index": 94,
+    "level": "N2"
+  },
+  {
+    "word": "さらに",
+    "reading": "さらに",
+    "pos": "副词・接续词",
+    "meaning": "而且；进一步",
+    "example": {
+      "japanese": "価格が下がった。さらに、品質も良くなった。",
+      "chinese": "价格下降了。而且质量也变好了。"
+    },
+    "id": "n2-vr-0095",
+    "index": 95,
+    "level": "N2"
+  },
+  {
+    "word": "しかも",
+    "reading": "しかも",
+    "pos": "接续词",
+    "meaning": "而且；并且（递进强调）",
+    "example": {
+      "japanese": "この店は安い。しかも、味もいい。",
+      "chinese": "这家店便宜。而且味道也好。"
+    },
+    "id": "n2-vr-0096",
+    "index": 96,
+    "level": "N2"
+  },
+  {
+    "word": "そのうえ",
+    "reading": "そのうえ",
+    "pos": "接续词",
+    "meaning": "而且；再加上",
+    "example": {
+      "japanese": "仕事が忙しい。そのうえ、人手も足りない。",
+      "chinese": "工作忙。再加上人手也不够。"
+    },
+    "id": "n2-vr-0097",
+    "index": 97,
+    "level": "N2"
+  },
+  {
+    "word": "加えて",
+    "reading": "くわえて",
+    "pos": "副词",
+    "meaning": "加之；再加上",
+    "example": {
+      "japanese": "費用が上がった。加えて、納期も遅れた。",
+      "chinese": "费用上涨了。再加上交货也晚了。"
+    },
+    "id": "n2-vr-0098",
+    "index": 98,
+    "level": "N2"
+  },
+  {
+    "word": "すなわち",
+    "reading": "すなわち",
+    "pos": "接续词",
+    "meaning": "即；也就是",
+    "example": {
+      "japanese": "水不足、すなわち渇水が問題になっている。",
+      "chinese": "缺水，也就是干旱，成了问题。"
+    },
+    "id": "n2-vr-0099",
+    "index": 99,
+    "level": "N2"
+  },
+  {
+    "word": "要するに",
+    "reading": "ようするに",
+    "pos": "副词",
+    "meaning": "总之；说到底",
+    "example": {
+      "japanese": "要するに、準備が足りなかったのだ。",
+      "chinese": "总之，是准备不够。"
+    },
+    "id": "n2-vr-0100",
+    "index": 100,
+    "level": "N2"
+  },
+  {
+    "word": "このように",
+    "reading": "このように",
+    "pos": "副词",
+    "meaning": "像这样；由此可见（归纳）",
+    "example": {
+      "japanese": "このように、環境は大きく変化している。",
+      "chinese": "像这样，环境正在大幅变化。"
+    },
+    "id": "n2-vr-0101",
+    "index": 101,
+    "level": "N2"
+  },
+  {
+    "word": "結局",
+    "reading": "けっきょく",
+    "pos": "副词・名词",
+    "meaning": "到底；结果；最终",
+    "example": {
+      "japanese": "結局、彼は来なかった。",
+      "chinese": "结果他没来。"
+    },
+    "id": "n2-vr-0102",
+    "index": 102,
+    "level": "N2"
+  },
+  {
+    "word": "逆に",
+    "reading": "ぎゃくに",
+    "pos": "副词",
+    "meaning": "反过来；相反",
+    "example": {
+      "japanese": "予想とは逆に、売上は減った。",
+      "chinese": "和预想相反，销售额减少了。"
+    },
+    "id": "n2-vr-0103",
+    "index": 103,
+    "level": "N2"
+  },
+  {
+    "word": "なお",
+    "reading": "なお",
+    "pos": "接续词",
+    "meaning": "另外；再者（补充说明）",
+    "example": {
+      "japanese": "入場は無料だ。なお、予約が必要である。",
+      "chinese": "入场免费。另外需要预约。"
+    },
+    "id": "n2-vr-0104",
+    "index": 104,
+    "level": "N2"
+  },
+  {
+    "word": "もっとも",
+    "reading": "もっとも",
+    "pos": "接续词",
+    "meaning": "不过（对前文作部分修正）",
+    "example": {
+      "japanese": "この案に賛成だ。もっとも、条件がある。",
+      "chinese": "赞成这个方案。不过有条件。"
+    },
+    "id": "n2-vr-0105",
+    "index": 105,
+    "level": "N2"
+  }
+]

@@ -1,4 +1,5 @@
-import type { JlptLevel, QuizRound } from '@/types/quiz'
+import type { GrammarBank, JlptLevel, QuizRound } from '@/types/quiz'
+import { parseGrammarBankParam } from '@/types/quiz'
 
 const CHECKPOINTS_KEY = 'jg-v1-checkpoints'
 const HISTORY_KEY = 'jg-v1-session-history'
@@ -6,6 +7,7 @@ const WRONG_KEY = 'jg-v1-wrong'
 const UNFAMILIAR_KEY = 'jg-v1-unfamiliar'
 
 export interface PracticeCheckpoint {
+  bank: GrammarBank
   level: JlptLevel
   round: QuizRound
   questionIds: string[]
@@ -19,6 +21,7 @@ export interface PracticeCheckpoint {
 
 /** 各等级×模式最近一次练习（含已完成），用于首页展示 */
 export interface PracticeSessionSummary {
+  bank: GrammarBank
   level: JlptLevel
   round: QuizRound
   questionIds: string[]
@@ -30,6 +33,7 @@ export interface PracticeSessionSummary {
 
 export interface WrongQuestionRecord {
   questionId: string
+  bank: GrammarBank
   level: JlptLevel
   addedAt: number
   wrongCount: number
@@ -37,6 +41,7 @@ export interface WrongQuestionRecord {
 
 export interface UnfamiliarQuestionRecord {
   questionId: string
+  bank: GrammarBank
   level: JlptLevel
   addedAt: number
   /** 最近一次答题耗时（毫秒） */
@@ -54,8 +59,8 @@ export const HOME_ROUND_GROUPS: { round: QuizRound; label: string }[] = [
 /** 错题/不熟悉首页分组：不含「全部题型」，避免与分轮条目重复展示 */
 export const HOME_REVIEW_ROUND_GROUPS = HOME_ROUND_GROUPS.filter((g) => g.round !== 'all')
 
-function checkpointKey(level: JlptLevel, round: QuizRound) {
-  return `${level}:${round}`
+function checkpointKey(bank: GrammarBank, level: JlptLevel, round: QuizRound) {
+  return `${bank}:${level}:${round}`
 }
 
 /** 旧版 PRE-N3 进度/错题并入 N3 */
@@ -63,14 +68,19 @@ function normalizeLevel(level: string): JlptLevel {
   return level === 'PRE-N3' ? 'N3' : (level as JlptLevel)
 }
 
+function normalizeBank(bank?: string): GrammarBank {
+  return parseGrammarBankParam(bank) ?? 'basic'
+}
+
 function migrateCheckpoints(
-  raw: Record<string, PracticeCheckpoint>,
+  raw: Record<string, PracticeCheckpoint & { bank?: GrammarBank }>,
 ): Record<string, PracticeCheckpoint> {
   const out: Record<string, PracticeCheckpoint> = {}
   for (const cp of Object.values(raw)) {
     const level = normalizeLevel(cp.level as string)
-    const key = checkpointKey(level, cp.round)
-    const migrated = { ...cp, level }
+    const bank = normalizeBank(cp.bank)
+    const key = checkpointKey(bank, level, cp.round)
+    const migrated = { ...cp, level, bank }
     const existing = out[key]
     if (!existing || existing.updatedAt < migrated.updatedAt) {
       out[key] = migrated
@@ -80,13 +90,14 @@ function migrateCheckpoints(
 }
 
 function migrateHistory(
-  raw: Record<string, PracticeSessionSummary>,
+  raw: Record<string, PracticeSessionSummary & { bank?: GrammarBank }>,
 ): Record<string, PracticeSessionSummary> {
   const out: Record<string, PracticeSessionSummary> = {}
   for (const summary of Object.values(raw)) {
     const level = normalizeLevel(summary.level as string)
-    const key = checkpointKey(level, summary.round)
-    const migrated = { ...summary, level }
+    const bank = normalizeBank(summary.bank)
+    const key = checkpointKey(bank, level, summary.round)
+    const migrated = { ...summary, level, bank }
     const existing = out[key]
     if (!existing || existing.updatedAt < migrated.updatedAt) {
       out[key] = migrated
@@ -98,7 +109,9 @@ function migrateHistory(
 function readCheckpoints(): Record<string, PracticeCheckpoint> {
   try {
     const raw = localStorage.getItem(CHECKPOINTS_KEY)
-    const parsed = raw ? (JSON.parse(raw) as Record<string, PracticeCheckpoint>) : {}
+    const parsed = raw
+      ? (JSON.parse(raw) as Record<string, PracticeCheckpoint & { bank?: GrammarBank }>)
+      : {}
     return migrateCheckpoints(parsed)
   } catch {
     return {}
@@ -113,7 +126,9 @@ function writeCheckpoints(data: Record<string, PracticeCheckpoint>) {
 function readHistory(): Record<string, PracticeSessionSummary> {
   try {
     const raw = localStorage.getItem(HISTORY_KEY)
-    const parsed = raw ? (JSON.parse(raw) as Record<string, PracticeSessionSummary>) : {}
+    const parsed = raw
+      ? (JSON.parse(raw) as Record<string, PracticeSessionSummary & { bank?: GrammarBank }>)
+      : {}
     return migrateHistory(parsed)
   } catch {
     return {}
@@ -132,8 +147,14 @@ function notifyStorageUpdate() {
 export function readWrongRecords(): WrongQuestionRecord[] {
   try {
     const raw = localStorage.getItem(WRONG_KEY)
-    const records = raw ? (JSON.parse(raw) as WrongQuestionRecord[]) : []
-    return records.map((r) => ({ ...r, level: normalizeLevel(r.level as string) }))
+    const records = raw
+      ? (JSON.parse(raw) as Array<WrongQuestionRecord & { bank?: GrammarBank }>)
+      : []
+    return records.map((r) => ({
+      ...r,
+      level: normalizeLevel(r.level as string),
+      bank: normalizeBank(r.bank),
+    }))
   } catch {
     return []
   }
@@ -147,14 +168,17 @@ function writeWrong(records: WrongQuestionRecord[]) {
 export function getSessionSummary(
   level: JlptLevel,
   round: QuizRound,
+  bank: GrammarBank = 'basic',
 ): PracticeSessionSummary | null {
-  return readHistory()[checkpointKey(level, round)] ?? null
+  return readHistory()[checkpointKey(bank, level, round)] ?? null
 }
 
 export function saveSessionSummary(summary: PracticeSessionSummary) {
   const all = readHistory()
-  all[checkpointKey(summary.level, summary.round)] = {
+  const bank = normalizeBank(summary.bank)
+  all[checkpointKey(bank, summary.level, summary.round)] = {
     ...summary,
+    bank,
     updatedAt: Date.now(),
   }
   writeHistory(all)
@@ -163,21 +187,25 @@ export function saveSessionSummary(summary: PracticeSessionSummary) {
 export function getCheckpoint(
   level: JlptLevel,
   round: QuizRound,
+  bank: GrammarBank = 'basic',
 ): PracticeCheckpoint | null {
-  const cp = readCheckpoints()[checkpointKey(level, round)]
+  const cp = readCheckpoints()[checkpointKey(bank, level, round)]
   if (!cp || cp.currentIndex >= cp.questionIds.length) return null
   return cp
 }
 
 export function saveCheckpoint(checkpoint: PracticeCheckpoint) {
   const updatedAt = Date.now()
+  const bank = normalizeBank(checkpoint.bank)
   const all = readCheckpoints()
-  all[checkpointKey(checkpoint.level, checkpoint.round)] = {
+  all[checkpointKey(bank, checkpoint.level, checkpoint.round)] = {
     ...checkpoint,
+    bank,
     updatedAt,
   }
   writeCheckpoints(all)
   saveSessionSummary({
+    bank,
     level: checkpoint.level,
     round: checkpoint.round,
     questionIds: checkpoint.questionIds,
@@ -188,9 +216,13 @@ export function saveCheckpoint(checkpoint: PracticeCheckpoint) {
   })
 }
 
-export function clearCheckpoint(level: JlptLevel, round: QuizRound) {
+export function clearCheckpoint(
+  level: JlptLevel,
+  round: QuizRound,
+  bank: GrammarBank = 'basic',
+) {
   const all = readCheckpoints()
-  delete all[checkpointKey(level, round)]
+  delete all[checkpointKey(bank, level, round)]
   writeCheckpoints(all)
 }
 
@@ -208,8 +240,14 @@ export function clearAllWrongQuestions() {
 function readUnfamiliarRecords(): UnfamiliarQuestionRecord[] {
   try {
     const raw = localStorage.getItem(UNFAMILIAR_KEY)
-    const records = raw ? (JSON.parse(raw) as UnfamiliarQuestionRecord[]) : []
-    return records.map((r) => ({ ...r, level: normalizeLevel(r.level as string) }))
+    const records = raw
+      ? (JSON.parse(raw) as Array<UnfamiliarQuestionRecord & { bank?: GrammarBank }>)
+      : []
+    return records.map((r) => ({
+      ...r,
+      level: normalizeLevel(r.level as string),
+      bank: normalizeBank(r.bank),
+    }))
   } catch {
     return []
   }
@@ -228,9 +266,12 @@ export function addUnfamiliarQuestion(
   questionId: string,
   level: JlptLevel,
   elapsedMs: number,
+  bank: GrammarBank = 'basic',
 ) {
   const records = readUnfamiliarRecords()
-  const existing = records.find((r) => r.questionId === questionId)
+  const existing = records.find(
+    (r) => r.questionId === questionId && r.bank === bank && r.level === level,
+  )
   if (existing) {
     existing.unfamiliarCount += 1
     existing.elapsedMs = elapsedMs
@@ -238,6 +279,7 @@ export function addUnfamiliarQuestion(
   } else {
     records.push({
       questionId,
+      bank,
       level,
       addedAt: Date.now(),
       elapsedMs,
@@ -247,8 +289,15 @@ export function addUnfamiliarQuestion(
   writeUnfamiliar(records)
 }
 
-export function removeUnfamiliarQuestion(questionId: string) {
-  writeUnfamiliar(readUnfamiliarRecords().filter((r) => r.questionId !== questionId))
+export function removeUnfamiliarQuestion(
+  questionId: string,
+  bank: GrammarBank = 'basic',
+) {
+  writeUnfamiliar(
+    readUnfamiliarRecords().filter(
+      (r) => !(r.questionId === questionId && r.bank === bank),
+    ),
+  )
 }
 
 /** 清空全部不熟悉记录 */
@@ -257,21 +306,34 @@ export function clearAllUnfamiliarQuestions() {
 }
 
 /** 只读 localStorage 计数，不触发出题、不加载题库 */
-export function countUnfamiliarForRound(level: JlptLevel, round: QuizRound): number {
-  const records = readUnfamiliarRecords().filter((r) => r.level === level)
+export function countUnfamiliarForRound(
+  level: JlptLevel,
+  round: QuizRound,
+  bank: GrammarBank = 'basic',
+): number {
+  const records = readUnfamiliarRecords().filter(
+    (r) => r.level === level && r.bank === bank,
+  )
   if (round === 'all') return records.length
   return records.filter((r) => roundFromQuestionId(r.questionId) === round).length
 }
 
-export function addWrongQuestion(questionId: string, level: JlptLevel) {
+export function addWrongQuestion(
+  questionId: string,
+  level: JlptLevel,
+  bank: GrammarBank = 'basic',
+) {
   const records = readWrongRecords()
-  const existing = records.find((r) => r.questionId === questionId)
+  const existing = records.find(
+    (r) => r.questionId === questionId && r.bank === bank && r.level === level,
+  )
   if (existing) {
     existing.wrongCount += 1
     existing.addedAt = Date.now()
   } else {
     records.push({
       questionId,
+      bank,
       level,
       addedAt: Date.now(),
       wrongCount: 1,
@@ -280,8 +342,10 @@ export function addWrongQuestion(questionId: string, level: JlptLevel) {
   writeWrong(records)
 }
 
-export function removeWrongQuestion(questionId: string) {
-  writeWrong(readWrongRecords().filter((r) => r.questionId !== questionId))
+export function removeWrongQuestion(questionId: string, bank: GrammarBank = 'basic') {
+  writeWrong(
+    readWrongRecords().filter((r) => !(r.questionId === questionId && r.bank === bank)),
+  )
 }
 
 /** 题号后缀编码轮次，首页计数无需生成题库 */
@@ -293,8 +357,12 @@ function roundFromQuestionId(questionId: string): QuizRound | null {
 }
 
 /** 只读 localStorage 计数，不触发出题、不加载题库 */
-export function countWrongForRound(level: JlptLevel, round: QuizRound): number {
-  const records = readWrongRecords().filter((r) => r.level === level)
+export function countWrongForRound(
+  level: JlptLevel,
+  round: QuizRound,
+  bank: GrammarBank = 'basic',
+): number {
+  const records = readWrongRecords().filter((r) => r.level === level && r.bank === bank)
   if (round === 'all') return records.length
   return records.filter((r) => roundFromQuestionId(r.questionId) === round).length
 }

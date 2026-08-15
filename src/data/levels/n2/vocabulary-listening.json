@@ -1,0 +1,843 @@
+[
+  {
+    "word": "都合",
+    "reading": "つごう",
+    "pos": "名词",
+    "meaning": "情况；方便",
+    "example": {
+      "japanese": "明日は都合が悪いです。",
+      "chinese": "我明天不方便。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0001",
+    "index": 1
+  },
+  {
+    "word": "予定",
+    "reading": "よてい",
+    "pos": "名词",
+    "meaning": "预定",
+    "example": {
+      "japanese": "予定が変わった。",
+      "chinese": "计划有变。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0002",
+    "index": 2
+  },
+  {
+    "id": "n2-vl-0003",
+    "index": 3,
+    "level": "N2",
+    "word": "変更",
+    "reading": "へんこう",
+    "pos": "名词",
+    "meaning": "变更",
+    "example": {
+      "japanese": "会議の日程に変更があります。",
+      "chinese": "会议日程有变更。"
+    }
+  },
+  {
+    "id": "n2-vl-0004",
+    "index": 4,
+    "level": "N2",
+    "word": "申し込む",
+    "reading": "もうしこむ",
+    "pos": "动词（五段・他动词）",
+    "meaning": "预约；申请；报名",
+    "example": {
+      "japanese": "講座に申し込む。",
+      "chinese": "报名参加讲座。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "word": "予約",
+    "reading": "よやく",
+    "pos": "名词",
+    "meaning": "预约，预定",
+    "example": {
+      "japanese": "レストランを予約した。",
+      "chinese": "预订了餐厅。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0005",
+    "index": 5
+  },
+  {
+    "word": "受付",
+    "reading": "うけつけ",
+    "pos": "名词",
+    "meaning": "接待，接待处；挂号处",
+    "example": {
+      "japanese": "受付で名前を書きます。",
+      "chinese": "在接待处写名字。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0006",
+    "index": 6
+  },
+  {
+    "word": "窓口",
+    "reading": "まどぐち",
+    "pos": "名词",
+    "meaning": "窗口",
+    "example": {
+      "japanese": "三番窓口で聞いてください。",
+      "chinese": "请到三号窗口问。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0007",
+    "index": 7
+  },
+  {
+    "word": "案内",
+    "reading": "あんない",
+    "pos": "名词",
+    "meaning": "引导，领路；通知",
+    "example": {
+      "japanese": "駅まで私が案内します。",
+      "chinese": "我带你去车站。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0008",
+    "index": 8
+  },
+  {
+    "word": "連絡",
+    "reading": "れんらく",
+    "pos": "名词",
+    "meaning": "联络",
+    "example": {
+      "japanese": "着いたら連絡してください。",
+      "chinese": "到了请联系我。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0009",
+    "index": 9
+  },
+  {
+    "id": "n2-vl-0010",
+    "index": 10,
+    "level": "N2",
+    "word": "伝言",
+    "reading": "でんごん",
+    "pos": "名词",
+    "meaning": "传言；口信",
+    "example": {
+      "japanese": "留守なら伝言をお願いします。",
+      "chinese": "如果不在，请帮我留个口信。"
+    }
+  },
+  {
+    "word": "待ち合わせ",
+    "reading": "まちあわせ",
+    "pos": "名词",
+    "meaning": "等候，约会",
+    "example": {
+      "japanese": "駅前で友人と待ち合わせをした。",
+      "chinese": "我和朋友在车站前碰面。"
+    },
+    "id": "n2-vl-0011",
+    "index": 11,
+    "level": "N2"
+  },
+  {
+    "id": "n2-vl-0012",
+    "index": 12,
+    "level": "N2",
+    "word": "延期",
+    "reading": "えんき",
+    "pos": "名词",
+    "meaning": "延期",
+    "example": {
+      "japanese": "雨のため試合は一週間延期になった。",
+      "chinese": "由于下雨，比赛延期了一周。"
+    }
+  },
+  {
+    "word": "中止",
+    "reading": "ちゅうし",
+    "pos": "名词",
+    "meaning": "中止",
+    "example": {
+      "japanese": "雨で試合が中止になった。",
+      "chinese": "比赛因下雨而取消了。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0013",
+    "index": 13
+  },
+  {
+    "id": "n2-vl-0014",
+    "index": 14,
+    "level": "N2",
+    "word": "出張",
+    "reading": "しゅっちょう",
+    "pos": "名词",
+    "meaning": "出差",
+    "example": {
+      "japanese": "来週大阪へ出張する。",
+      "chinese": "下周去大阪出差。"
+    }
+  },
+  {
+    "word": "残業",
+    "reading": "ざんぎょう",
+    "pos": "名词",
+    "meaning": "加班",
+    "example": {
+      "japanese": "今夜は残業で遅くなる。",
+      "chinese": "今晚加班会晚回家。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0015",
+    "index": 15
+  },
+  {
+    "id": "n2-vl-0016",
+    "index": 16,
+    "level": "N2",
+    "word": "休憩",
+    "reading": "きゅうけい",
+    "pos": "名词",
+    "meaning": "休息，小憩",
+    "example": {
+      "japanese": "午後三時に十分休憩しましょう。",
+      "chinese": "下午三点休息十分钟吧。"
+    }
+  },
+  {
+    "id": "n2-vl-0017",
+    "index": 17,
+    "level": "N2",
+    "word": "打ち合わせ",
+    "reading": "うちあわせ",
+    "pos": "名词",
+    "meaning": "事先商量",
+    "example": {
+      "japanese": "午後に企画の打ち合わせをする。",
+      "chinese": "下午要商量企划方案。"
+    }
+  },
+  {
+    "word": "資料",
+    "reading": "しりょう",
+    "pos": "名词",
+    "meaning": "资料",
+    "example": {
+      "japanese": "旅行の資料を集めている。",
+      "chinese": "正在收集旅行资料。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0018",
+    "index": 18
+  },
+  {
+    "id": "n2-vl-0019",
+    "index": 19,
+    "level": "N2",
+    "word": "提出",
+    "reading": "ていしゅつ",
+    "pos": "名词",
+    "meaning": "提出；提交",
+    "example": {
+      "japanese": "レポートを金曜日までに提出する。",
+      "chinese": "我会在周五前提交报告。"
+    }
+  },
+  {
+    "word": "締め切り",
+    "reading": "しめきり",
+    "pos": "名词",
+    "meaning": "截止，截止日期",
+    "example": {
+      "japanese": "レポートの締め切りは金曜日だ。",
+      "chinese": "报告截止日是周五。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0020",
+    "index": 20
+  },
+  {
+    "word": "間に合う",
+    "reading": "まにあう",
+    "pos": "动词（五段・自动词）",
+    "meaning": "赶得上，来得及",
+    "example": {
+      "japanese": "急げば電車に間に合う。",
+      "chinese": "快一点就赶得上电车。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0021",
+    "index": 21,
+    "transitivity": "自动词"
+  },
+  {
+    "word": "足りる",
+    "reading": "たりる",
+    "pos": "动词（一段・自动词）",
+    "meaning": "足够，值得",
+    "example": {
+      "japanese": "これで足りる。",
+      "chinese": "这些就够了。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0022",
+    "index": 22,
+    "transitivity": "自动词"
+  },
+  {
+    "word": "込む",
+    "reading": "こむ",
+    "pos": "动词（五段・自动词）",
+    "meaning": "进入；非常",
+    "example": {
+      "japanese": "朝の電車はよく込む。",
+      "chinese": "早上电车经常很挤。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0023",
+    "index": 23,
+    "transitivity": "自动词"
+  },
+  {
+    "word": "空く",
+    "reading": "あく",
+    "pos": "动词（五段・自动词）",
+    "meaning": "空着，闲着；有空隙",
+    "example": {
+      "japanese": "午後なら席が空く。",
+      "chinese": "下午的话座位会空出来。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0024",
+    "index": 24,
+    "transitivity": "自动词"
+  },
+  {
+    "word": "故障",
+    "reading": "こしょう",
+    "pos": "名词",
+    "meaning": "故障",
+    "example": {
+      "japanese": "車の故障で会社に遅れた。",
+      "chinese": "因为汽车故障，我上班迟到了。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0025",
+    "index": 25
+  },
+  {
+    "id": "n2-vl-0026",
+    "index": 26,
+    "level": "N2",
+    "word": "修理",
+    "reading": "しゅうり",
+    "pos": "名词",
+    "meaning": "修理",
+    "example": {
+      "japanese": "自転車を修理する。",
+      "chinese": "修理自行车。"
+    }
+  },
+  {
+    "id": "n2-vl-0027",
+    "index": 27,
+    "level": "N2",
+    "word": "交換",
+    "reading": "こうかん",
+    "pos": "名词",
+    "meaning": "交换",
+    "example": {
+      "japanese": "友達とプレゼントを交換した。",
+      "chinese": "我和朋友交换了礼物。"
+    }
+  },
+  {
+    "id": "n2-vl-0028",
+    "index": 28,
+    "level": "N2",
+    "word": "遠慮",
+    "reading": "えんりょ",
+    "pos": "名词",
+    "meaning": "客气；深谋远虑；谢绝",
+    "example": {
+      "japanese": "遠慮しないで、もっと食べてください。",
+      "chinese": "别客气，请再多吃一点。"
+    }
+  },
+  {
+    "word": "構う",
+    "reading": "かまう",
+    "pos": "动词（五段・自动词）",
+    "meaning": "与某事构成关系；照顾；干涉",
+    "example": {
+      "japanese": "小さいことを構うな。",
+      "chinese": "别在意小事。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0029",
+    "index": 29,
+    "transitivity": "自动词"
+  },
+  {
+    "word": "実は",
+    "reading": "じつは",
+    "pos": "副词",
+    "meaning": "其实，事实上",
+    "example": {
+      "japanese": "実は、今日は休みたい。",
+      "chinese": "其实今天想请假。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0030",
+    "index": 30
+  },
+  {
+    "word": "ところで",
+    "reading": "ところで",
+    "pos": "接续词",
+    "meaning": "对了；话说（转换话题）",
+    "example": {
+      "japanese": "ところで、次の予定は？",
+      "chinese": "对了，接下来有什么安排？"
+    },
+    "level": "N2",
+    "id": "n2-vl-0031",
+    "index": 31
+  },
+  {
+    "word": "なるほど",
+    "reading": "なるほど",
+    "pos": "副词",
+    "meaning": "就是，的确是；原来如此",
+    "example": {
+      "japanese": "なるほど、そういうことか。",
+      "chinese": "原来如此，是这么回事。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0032",
+    "index": 32
+  },
+  {
+    "word": "確か",
+    "reading": "たしか",
+    "pos": "副词",
+    "meaning": "确实；的确",
+    "example": {
+      "japanese": "確か、駅の前だった。",
+      "chinese": "我记得是在车站前。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0033",
+    "index": 33
+  },
+  {
+    "word": "やっぱり",
+    "reading": "やっぱり",
+    "pos": "副词",
+    "meaning": "仍然，依然，还是；毕竟",
+    "example": {
+      "japanese": "やっぱり雨が降りました。",
+      "chinese": "果然下雨了。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0034",
+    "index": 34
+  },
+  {
+    "word": "できるだけ",
+    "reading": "できるだけ",
+    "pos": "副词",
+    "meaning": "尽可能",
+    "example": {
+      "japanese": "できるだけ早く連絡します。",
+      "chinese": "我会尽快联系。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0035",
+    "index": 35
+  },
+  {
+    "word": "なるべく",
+    "reading": "なるべく",
+    "pos": "副词",
+    "meaning": "尽量，尽可能",
+    "example": {
+      "japanese": "なるべく歩いて行きたい。",
+      "chinese": "尽量想走着去。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0036",
+    "index": 36
+  },
+  {
+    "word": "必ず",
+    "reading": "かならず",
+    "pos": "副词",
+    "meaning": "必定，必然",
+    "example": {
+      "japanese": "出発前に必ず確認する。",
+      "chinese": "出发前一定要确认。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0037",
+    "index": 37
+  },
+  {
+    "id": "n2-vl-0038",
+    "index": 38,
+    "level": "N2",
+    "word": "絶対",
+    "reading": "ぜったい",
+    "pos": "副词",
+    "meaning": "绝对；一定",
+    "example": {
+      "japanese": "絶対に忘れない。",
+      "chinese": "绝对不会忘。"
+    }
+  },
+  {
+    "word": "多分",
+    "reading": "たぶん",
+    "pos": "副词",
+    "meaning": "可能，也许",
+    "example": {
+      "japanese": "明日は多分晴れます。",
+      "chinese": "明天大概会放晴。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0039",
+    "index": 39
+  },
+  {
+    "word": "きっと",
+    "reading": "きっと",
+    "pos": "副词",
+    "meaning": "肯定",
+    "example": {
+      "japanese": "明日はきっと晴れる。",
+      "chinese": "明天一定会放晴。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0040",
+    "index": 40
+  },
+  {
+    "word": "もし",
+    "reading": "もし",
+    "pos": "副词",
+    "meaning": "如果",
+    "example": {
+      "japanese": "もし遅れそうなら連絡して。",
+      "chinese": "如果可能迟到就联系我。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0041",
+    "index": 41
+  },
+  {
+    "id": "n2-vl-0042",
+    "index": 42,
+    "level": "N2",
+    "word": "わざわざ",
+    "reading": "わざわざ",
+    "pos": "副词",
+    "meaning": "特意，特地",
+    "example": {
+      "japanese": "わざわざ来てくれてありがとう。",
+      "chinese": "谢谢你特意过来。"
+    }
+  },
+  {
+    "word": "代わり",
+    "reading": "かわり",
+    "pos": "名词",
+    "meaning": "代替，替代",
+    "example": {
+      "japanese": "母の代わりに料理する。",
+      "chinese": "代替妈妈做饭。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0043",
+    "index": 43
+  },
+  {
+    "id": "n2-vl-0044",
+    "index": 44,
+    "level": "N2",
+    "word": "担当",
+    "reading": "たんとう",
+    "pos": "名词",
+    "meaning": "担任；负责",
+    "example": {
+      "japanese": "この件の担当は田中さんです。",
+      "chinese": "这件事的负责人是田中。"
+    }
+  },
+  {
+    "id": "n2-vl-0045",
+    "index": 45,
+    "level": "N2",
+    "word": "確認",
+    "reading": "かくにん",
+    "pos": "名词",
+    "meaning": "确认",
+    "example": {
+      "japanese": "出発前に持ち物を確認してください。",
+      "chinese": "出发前请确认随身物品。"
+    }
+  },
+  {
+    "id": "n2-vl-0046",
+    "index": 46,
+    "level": "N2",
+    "word": "検討",
+    "reading": "けんとう",
+    "pos": "名词",
+    "meaning": "研究，讨论",
+    "example": {
+      "japanese": "案を検討する。",
+      "chinese": "讨论方案。"
+    }
+  },
+  {
+    "word": "相談",
+    "reading": "そうだん",
+    "pos": "名词",
+    "meaning": "商量",
+    "example": {
+      "japanese": "母に相談してみます。",
+      "chinese": "我试着和妈妈商量。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0047",
+    "index": 47
+  },
+  {
+    "word": "失礼",
+    "reading": "しつれい",
+    "pos": "名词",
+    "meaning": "失礼",
+    "example": {
+      "japanese": "遅れて失礼しました。",
+      "chinese": "迟到了，失礼了。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0048",
+    "index": 48
+  },
+  {
+    "word": "遅れる",
+    "reading": "おくれる",
+    "pos": "动词（一段・自动词）",
+    "meaning": "迟到；交通工具晚点；表慢了",
+    "example": {
+      "japanese": "電車が遅れることもある。",
+      "chinese": "电车有时会晚点。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0049",
+    "index": 49,
+    "transitivity": "自动词"
+  },
+  {
+    "word": "急ぐ",
+    "reading": "いそぐ",
+    "pos": "动词（五段・自动词）",
+    "meaning": "赶时间",
+    "example": {
+      "japanese": "遅刻しそうなので急ぐ。",
+      "chinese": "快要迟到了，所以赶紧。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0050",
+    "index": 50,
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vl-0051",
+    "index": 51,
+    "level": "N2",
+    "word": "混雑",
+    "reading": "こんざつ",
+    "pos": "名词",
+    "meaning": "混乱；拥挤",
+    "example": {
+      "japanese": "電車が混雑している。",
+      "chinese": "电车很拥挤。"
+    }
+  },
+  {
+    "id": "n2-vl-0052",
+    "index": 52,
+    "level": "N2",
+    "word": "割引",
+    "reading": "わりびき",
+    "pos": "名词",
+    "meaning": "打折，减价",
+    "example": {
+      "japanese": "学生は入場料が二割引です。",
+      "chinese": "学生门票打八折。"
+    }
+  },
+  {
+    "word": "料金",
+    "reading": "りょうきん",
+    "pos": "名词",
+    "meaning": "费用",
+    "example": {
+      "japanese": "電車の料金はいくらですか。",
+      "chinese": "电车费用是多少？"
+    },
+    "level": "N2",
+    "id": "n2-vl-0053",
+    "index": 53
+  },
+  {
+    "id": "n2-vl-0054",
+    "index": 54,
+    "level": "N2",
+    "word": "直接",
+    "reading": "ちょくせつ",
+    "pos": "副词・名词",
+    "meaning": "直接",
+    "example": {
+      "japanese": "本人に直接聞いてください。",
+      "chinese": "请直接问本人。"
+    }
+  },
+  {
+    "word": "別々",
+    "reading": "べつべつ",
+    "pos": "名词",
+    "meaning": "各自，分别",
+    "example": {
+      "japanese": "会計は別々にお願いします。",
+      "chinese": "请分别结账。"
+    },
+    "id": "n2-vl-0055",
+    "index": 55,
+    "level": "N2"
+  },
+  {
+    "word": "一緒",
+    "reading": "いっしょ",
+    "pos": "副词・名词",
+    "meaning": "一起",
+    "example": {
+      "japanese": "一緒に行きましょう。",
+      "chinese": "一起去吧。"
+    },
+    "level": "N2",
+    "id": "n2-vl-0056",
+    "index": 56
+  },
+  {
+    "id": "n2-vl-0057",
+    "index": 57,
+    "level": "N2",
+    "word": "満員",
+    "reading": "まんいん",
+    "pos": "名词",
+    "meaning": "满员",
+    "example": {
+      "japanese": "電車が満員で乗れなかった。",
+      "chinese": "电车满员，没挤上去。"
+    }
+  },
+  {
+    "id": "n2-vl-0058",
+    "index": 58,
+    "level": "N2",
+    "word": "申し訳ない",
+    "reading": "もうしわけない",
+    "pos": "い形容词",
+    "meaning": "感觉对不住的，抱歉的",
+    "example": {
+      "japanese": "遅れて、申し訳ない。",
+      "chinese": "迟到了，很抱歉。"
+    }
+  },
+  {
+    "id": "n2-vl-0059",
+    "index": 59,
+    "level": "N2",
+    "word": "領収書",
+    "reading": "りょうしゅうしょ",
+    "pos": "名词",
+    "meaning": "发票",
+    "example": {
+      "japanese": "領収書をください。",
+      "chinese": "请给我发票。"
+    }
+  },
+  {
+    "id": "n2-vl-0060",
+    "index": 60,
+    "level": "N2",
+    "word": "あいにく",
+    "reading": "あいにく",
+    "pos": "副词・な形容词",
+    "meaning": "不巧；遗憾",
+    "example": {
+      "japanese": "あいにく席が空いていません。",
+      "chinese": "不巧没有空位。"
+    }
+  },
+  {
+    "id": "n2-vl-0061",
+    "index": 61,
+    "level": "N2",
+    "word": "とりあえず",
+    "reading": "とりあえず",
+    "pos": "副词",
+    "meaning": "首先；暂且",
+    "example": {
+      "japanese": "とりあえず連絡しておきます。",
+      "chinese": "我先联系一下。"
+    }
+  },
+  {
+    "id": "n2-vl-0062",
+    "index": 62,
+    "level": "N2",
+    "word": "せっかく",
+    "reading": "せっかく",
+    "pos": "副词・名词",
+    "meaning": "特意；好不容易",
+    "example": {
+      "japanese": "せっかく来たのに、会えなかった。",
+      "chinese": "好不容易来了，却没见到。"
+    }
+  },
+  {
+    "id": "n2-vl-0063",
+    "index": 63,
+    "level": "N2",
+    "word": "かえって",
+    "reading": "かえって",
+    "pos": "副词",
+    "meaning": "反而；反倒",
+    "example": {
+      "japanese": "急いだから、かえって遅くなった。",
+      "chinese": "因为赶时间，反而更晚了。"
+    }
+  },
+  {
+    "id": "n2-vl-0064",
+    "index": 64,
+    "level": "N2",
+    "word": "お願い",
+    "reading": "おねがい",
+    "pos": "名词・サ变动词",
+    "meaning": "拜托；请求",
+    "example": {
+      "japanese": "一つお願いがあります。",
+      "chinese": "有件事想拜托。"
+    },
+    "transitivity": "他动词"
+  }
+]
