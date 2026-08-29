@@ -110,7 +110,7 @@ export default function VocabularyPractice() {
                   return (
                     <Link
                       key={track}
-                      to={`/vocab-practice/${vocabTrackToPath(track)}/${vocabLevelToPath(level)}?fresh=1`}
+                      to={`/vocab-practice/${vocabTrackToPath(track)}/${vocabLevelToPath(level)}`}
                       className={`practice-mode-card ${recommended ? 'recommended' : ''}`}
                     >
                       {recommended && <span className="practice-recommend">推荐</span>}

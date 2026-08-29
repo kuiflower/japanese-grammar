@@ -83,7 +83,7 @@ export default function Practice() {
                   rounds.map(({ round, desc: roundDesc, recommended }) => (
                     <Link
                       key={round}
-                      to={grammarPracticePath(level, round, bank, 'fresh')}
+                      to={grammarPracticePath(level, round, bank)}
                       className={`practice-mode-card ${recommended ? 'recommended' : ''}`}
                     >
                       {recommended && <span className="practice-recommend">推荐</span>}

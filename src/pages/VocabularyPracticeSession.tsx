@@ -1,11 +1,14 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, Navigate, useParams, useSearchParams } from 'react-router-dom'
 import VocabQuizCard, { type VocabStepAnswer } from '@/components/vocab/VocabQuizCard'
+import PracticeResumePrompt from '@/components/practice/PracticeResumePrompt'
 import { getVocabQuestionsByLevel } from '@/data/vocab-quiz'
 import {
   addVocabUnfamiliarQuestion,
   addVocabWrongQuestion,
   clearVocabCheckpoint,
+  formatRelativeTime,
+  formatVocabProgress,
   getVocabCheckpoint,
   removeVocabUnfamiliarQuestion,
   removeVocabWrongQuestion,
@@ -37,6 +40,8 @@ interface VocabularyPracticeSessionProps {
   mode?: 'practice' | 'wrong' | 'unfamiliar'
 }
 
+type StartMode = 'pending' | 'resume' | 'fresh'
+
 export default function VocabularyPracticeSession({
   mode = 'practice',
 }: VocabularyPracticeSessionProps) {
@@ -64,11 +69,30 @@ export default function VocabularyPracticeSession({
   const [wrongTrail, setWrongTrail] = useState<VocabCompositeQuestion[]>([])
   const [wrongTrailPos, setWrongTrailPos] = useState(0)
   const wrongInitialCountRef = useRef(0)
-
-  const sessionKey = `${mode}-${track}-${level}-${fresh}-${resume}-${retryKey}`
+  const [startMode, setStartMode] = useState<StartMode | null>(null)
 
   useEffect(() => {
     if (!level || !track) return
+    if (mode !== 'practice') {
+      setStartMode('fresh')
+      return
+    }
+    if (fresh) {
+      setStartMode('fresh')
+      return
+    }
+    if (resume) {
+      setStartMode('resume')
+      return
+    }
+    setStartMode(getVocabCheckpoint(level, track) ? 'pending' : 'fresh')
+  }, [level, track, mode, fresh, resume, retryKey])
+
+  const sessionKey = `${mode}-${track}-${level}-${startMode}-${retryKey}`
+
+  useEffect(() => {
+    if (!level || !track) return
+    if (mode === 'practice' && (startMode === null || startMode === 'pending')) return
 
     setReady(false)
     setFinished(false)
@@ -98,7 +122,7 @@ export default function VocabularyPracticeSession({
 
     const ordered = getVocabQuestionsByLevel(level, track)
 
-    if (resume && !fresh) {
+    if (startMode === 'resume') {
       const cp = getVocabCheckpoint(level, track)
       if (cp) {
         const restored = resolveVocabQuestions(cp.questionIds, level, track)
@@ -126,7 +150,7 @@ export default function VocabularyPracticeSession({
     setCorrectCount(0)
     correctCountRef.current = 0
     setReady(true)
-  }, [sessionKey, level, track, mode, fresh, resume, retryKey])
+  }, [sessionKey, level, track, mode, startMode, retryKey])
 
   if (!track) {
     return <Navigate to="/learn/vocabulary" replace />
@@ -156,6 +180,23 @@ export default function VocabularyPracticeSession({
         </Link>
       </div>
     )
+  }
+
+  if (mode === 'practice' && startMode === 'pending') {
+    const checkpoint = getVocabCheckpoint(level, track)
+    if (checkpoint) {
+      return (
+        <PracticeResumePrompt
+          title={`${VOCAB_TRACK_LABELS[track]} · ${VOCAB_LEVEL_LABELS[level]}`}
+          progress={formatVocabProgress(checkpoint)}
+          updatedAt={formatRelativeTime(checkpoint.updatedAt)}
+          onResume={() => setStartMode('resume')}
+          onFresh={() => setStartMode('fresh')}
+          backLink="/vocab-practice"
+          backLabel="← 返回练习"
+        />
+      )
+    }
   }
 
   if (!ready) {

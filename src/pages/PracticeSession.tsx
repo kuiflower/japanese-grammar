@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, useParams, useSearchParams } from 'react-router-dom'
 import QuizCard from '@/components/quiz/QuizCard'
+import PracticeResumePrompt from '@/components/practice/PracticeResumePrompt'
 import {
   filterQuestions,
   getQuestionsByLevel,
@@ -10,6 +11,8 @@ import {
   addUnfamiliarQuestion,
   addWrongQuestion,
   clearCheckpoint,
+  formatProgress,
+  formatRelativeTime,
   getCheckpoint,
   removeUnfamiliarQuestion,
   removeWrongQuestion,
@@ -66,6 +69,8 @@ interface PracticeSessionProps {
   mode?: 'practice' | 'wrong' | 'unfamiliar'
 }
 
+type StartMode = 'pending' | 'resume' | 'fresh'
+
 export default function PracticeSession({ mode = 'practice' }: PracticeSessionProps) {
   const { bank: bankParam, level: levelParam } = useParams<{
     bank?: string
@@ -94,11 +99,30 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
   const [wrongTrail, setWrongTrail] = useState<QuizQuestion[]>([])
   const [wrongTrailPos, setWrongTrailPos] = useState(0)
   const wrongInitialCountRef = useRef(0)
-
-  const sessionKey = `${mode}-${bank}-${level}-${round}-${fresh}-${resume}-${retryKey}`
+  const [startMode, setStartMode] = useState<StartMode | null>(null)
 
   useEffect(() => {
     if (!level || !bank) return
+    if (mode !== 'practice') {
+      setStartMode('fresh')
+      return
+    }
+    if (fresh) {
+      setStartMode('fresh')
+      return
+    }
+    if (resume) {
+      setStartMode('resume')
+      return
+    }
+    setStartMode(getCheckpoint(level, round, bank) ? 'pending' : 'fresh')
+  }, [level, bank, round, mode, fresh, resume, retryKey])
+
+  const sessionKey = `${mode}-${bank}-${level}-${round}-${startMode}-${retryKey}`
+
+  useEffect(() => {
+    if (!level || !bank) return
+    if (mode === 'practice' && (startMode === null || startMode === 'pending')) return
 
     setReady(false)
     setFinished(false)
@@ -127,7 +151,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
     }
 
     const filtered = filterQuestions(getQuestionsByLevel(level, bank), round)
-    const cp = resume && !fresh ? getCheckpoint(level, round, bank) : null
+    const cp = startMode === 'resume' ? getCheckpoint(level, round, bank) : null
 
     let sessionQuestions: QuizQuestion[]
     let startIndex = 0
@@ -174,7 +198,7 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
     setCorrectCount(startCorrect)
     correctCountRef.current = startCorrect
     setReady(true)
-  }, [sessionKey, level, bank, mode, round, fresh, resume, retryKey])
+  }, [sessionKey, level, bank, mode, round, startMode, retryKey])
 
   const isBankMode = mode === 'wrong' || mode === 'unfamiliar'
   const current = isBankMode ? wrongTrail[wrongTrailPos] : questions[index]
@@ -210,6 +234,23 @@ export default function PracticeSession({ mode = 'practice' }: PracticeSessionPr
         </Link>
       </div>
     )
+  }
+
+  if (mode === 'practice' && startMode === 'pending') {
+    const checkpoint = getCheckpoint(level, round, bank)
+    if (checkpoint) {
+      return (
+        <PracticeResumePrompt
+          title={`${bank !== 'basic' ? `${GRAMMAR_BANK_LABELS[bank]} · ` : ''}${LEVEL_LABELS[level]} · ${ROUND_LABELS[round]}`}
+          progress={formatProgress(checkpoint)}
+          updatedAt={formatRelativeTime(checkpoint.updatedAt)}
+          onResume={() => setStartMode('resume')}
+          onFresh={() => setStartMode('fresh')}
+          backLink="/practice"
+          backLabel="← 返回练习"
+        />
+      )
+    }
   }
 
   if (!ready) {

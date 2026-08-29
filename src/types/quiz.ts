@@ -80,13 +80,15 @@ export function grammarPracticePath(
   level: JlptLevel,
   round: QuizRound,
   bank: GrammarBank = 'basic',
-  extra: 'fresh' | 'resume' = 'fresh',
+  extra?: 'fresh' | 'resume',
 ): string {
   const base =
     bank === 'basic'
       ? `/practice/${levelToPath(level)}`
       : `/practice/${bank}/${levelToPath(level)}`
-  return `${base}?round=${round}&${extra}=1`
+  const query = `round=${round}`
+  if (!extra) return `${base}?${query}`
+  return `${base}?${query}&${extra}=1`
 }
 
 export function grammarWrongPath(
