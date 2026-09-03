@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, Navigate, useParams, useSearchParams } from 'react-router-dom'
 import VocabQuizCard, { type VocabStepAnswer } from '@/components/vocab/VocabQuizCard'
 import PracticeResumePrompt from '@/components/practice/PracticeResumePrompt'
-import { getVocabQuestionsByLevel } from '@/data/vocab-quiz'
+import { getVocabQuestionsByLevel, shuffleVocabQuestions } from '@/data/vocab-quiz'
 import {
   addVocabUnfamiliarQuestion,
   addVocabWrongQuestion,
@@ -137,15 +137,16 @@ export default function VocabularyPracticeSession({
       }
     }
 
+    const sessionQuestions = shuffleVocabQuestions(ordered)
     saveVocabCheckpoint({
       track,
       level,
-      questionIds: ordered.map((q) => q.id),
+      questionIds: sessionQuestions.map((q) => q.id),
       currentIndex: 0,
       correctCount: 0,
       updatedAt: Date.now(),
     })
-    setQuestions(ordered)
+    setQuestions(sessionQuestions)
     setIndex(0)
     setCorrectCount(0)
     correctCountRef.current = 0
