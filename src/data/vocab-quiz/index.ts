@@ -26,18 +26,6 @@ export function getVocabQuestionsByLevel(
   return loadQuestions(level, track)
 }
 
-/** 新开一轮时打乱词序，避免全套词表按词性成块导致前半段全是名词 */
-export function shuffleVocabQuestions(
-  questions: VocabCompositeQuestion[],
-): VocabCompositeQuestion[] {
-  const copy = [...questions]
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[copy[i], copy[j]] = [copy[j]!, copy[i]!]
-  }
-  return copy
-}
-
 export function resolveVocabQuestionsByIds(
   ids: string[],
   level: VocabLevel,

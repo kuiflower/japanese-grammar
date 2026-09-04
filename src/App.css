@@ -1369,6 +1369,46 @@
   font-variant-numeric: tabular-nums;
 }
 
+.quiz-jump {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 0.85rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.quiz-jump label {
+  flex-shrink: 0;
+}
+
+.quiz-jump input {
+  width: 4.5rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+.quiz-jump input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.quiz-jump-total {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.quiz-jump-btn {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
 .quiz-elapsed,
 .quiz-elapsed-spacer {
   margin: 0;

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, Navigate, useParams, useSearchParams } from 'react-router-dom'
 import VocabQuizCard, { type VocabStepAnswer } from '@/components/vocab/VocabQuizCard'
 import PracticeResumePrompt from '@/components/practice/PracticeResumePrompt'
-import { getVocabQuestionsByLevel, shuffleVocabQuestions } from '@/data/vocab-quiz'
+import { getVocabQuestionsByLevel } from '@/data/vocab-quiz'
 import {
   addVocabUnfamiliarQuestion,
   addVocabWrongQuestion,
@@ -70,6 +70,7 @@ export default function VocabularyPracticeSession({
   const [wrongTrailPos, setWrongTrailPos] = useState(0)
   const wrongInitialCountRef = useRef(0)
   const [startMode, setStartMode] = useState<StartMode | null>(null)
+  const [jumpInput, setJumpInput] = useState('')
 
   useEffect(() => {
     if (!level || !track) return
@@ -137,21 +138,26 @@ export default function VocabularyPracticeSession({
       }
     }
 
-    const sessionQuestions = shuffleVocabQuestions(ordered)
     saveVocabCheckpoint({
       track,
       level,
-      questionIds: sessionQuestions.map((q) => q.id),
+      questionIds: ordered.map((q) => q.id),
       currentIndex: 0,
       correctCount: 0,
       updatedAt: Date.now(),
     })
-    setQuestions(sessionQuestions)
+    setQuestions(ordered)
     setIndex(0)
     setCorrectCount(0)
     correctCountRef.current = 0
     setReady(true)
   }, [sessionKey, level, track, mode, startMode, retryKey])
+
+  useEffect(() => {
+    if (mode === 'practice' && ready && !finished) {
+      setJumpInput(String(index + 1))
+    }
+  }, [mode, ready, finished, index])
 
   if (!track) {
     return <Navigate to="/learn/vocabulary" replace />
@@ -171,6 +177,32 @@ export default function VocabularyPracticeSession({
     poolIndex >= questions.length - 1
   const backLink = isBankMode ? '/learn/vocabulary' : '/vocab-practice'
   const backLabel = isBankMode ? '← 首页' : '← 返回'
+
+  const jumpToQuestion = (raw: string) => {
+    if (!level || mode !== 'practice' || questions.length === 0) return
+    const parsed = Number.parseInt(raw.trim(), 10)
+    if (!Number.isFinite(parsed)) return
+    const target = Math.min(Math.max(parsed, 1), questions.length) - 1
+    if (target === index) {
+      setJumpInput(String(target + 1))
+      return
+    }
+    saveVocabCheckpoint({
+      track,
+      level,
+      questionIds: questions.map((q) => q.id),
+      currentIndex: target,
+      correctCount: correctCountRef.current,
+      updatedAt: Date.now(),
+    })
+    const targetQuestion = questions[target]
+    const record = targetQuestion
+      ? answerLogRef.current.get(targetQuestion.id)
+      : undefined
+    lastAnswerCorrect.current = record?.correct ?? false
+    setIndex(target)
+    setJumpInput(String(target + 1))
+  }
 
   if (!level || !VOCAB_LEVELS.includes(level)) {
     return (
@@ -315,6 +347,31 @@ export default function VocabularyPracticeSession({
       )}
       {mode === 'unfamiliar' && (
         <p className="session-mode-hint">限时内答完三关即熟悉并移除</p>
+      )}
+      {mode === 'practice' && (
+        <form
+          className="quiz-jump"
+          onSubmit={(e) => {
+            e.preventDefault()
+            jumpToQuestion(jumpInput)
+          }}
+        >
+          <label htmlFor="vocab-quiz-jump">跳转到</label>
+          <input
+            id="vocab-quiz-jump"
+            type="number"
+            inputMode="numeric"
+            min={1}
+            max={questions.length}
+            value={jumpInput}
+            onChange={(e) => setJumpInput(e.target.value)}
+            aria-label={`跳转到第几题，共 ${questions.length} 题`}
+          />
+          <span className="quiz-jump-total">/ {questions.length}</span>
+          <button type="submit" className="btn btn-secondary quiz-jump-btn">
+            跳转
+          </button>
+        </form>
       )}
       <VocabQuizCard
         key={`${current.id}@${displayIndex}`}
