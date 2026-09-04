@@ -15634,8 +15634,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "死心；断念；放弃",
     "example": {
-      "japanese": "丁寧に諦める。",
-      "chinese": "仔细地死心。"
+      "japanese": "途中で諦めるのはまだ早い。",
+      "chinese": "中途放弃还为时过早。"
     },
     "transitivity": "他动词"
   },
@@ -15690,8 +15690,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "替人保管；掌管",
     "example": {
-      "japanese": "静かに預かる。",
-      "chinese": "安静地替人保管。"
+      "japanese": "友達の荷物を預かる。",
+      "chinese": "替朋友保管行李。"
     },
     "transitivity": "他动词"
   },
@@ -15704,8 +15704,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "寄存，存放；委托",
     "example": {
-      "japanese": "丁寧に預ける。",
-      "chinese": "仔细地寄存。"
+      "japanese": "ホテルに荷物を預ける。",
+      "chinese": "把行李寄存在酒店。"
     },
     "transitivity": "他动词"
   },
@@ -15746,8 +15746,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "变得暖和；心里感到温暖",
     "example": {
-      "japanese": "そろそろ温まる。",
-      "chinese": "差不多该变得暖和了。"
+      "japanese": "ストーブの前で体が温まる。",
+      "chinese": "在暖炉前身体暖和起来。"
     },
     "transitivity": "自动词"
   },
@@ -15760,8 +15760,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "加热；使变暖",
     "example": {
-      "japanese": "これから暖める/温める。",
-      "chinese": "接下来加热。"
+      "japanese": "スープを暖める/温める。",
+      "chinese": "把汤加热。"
     },
     "transitivity": "他动词"
   },
@@ -15774,8 +15774,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "大面积地接触；相当于；命中，猜中",
     "example": {
-      "japanese": "うまく当たる。",
-      "chinese": "顺利地大面积地接触。"
+      "japanese": "宝くじに当たる。",
+      "chinese": "彩票中奖了。"
     },
     "transitivity": "自动词"
   },
@@ -15788,8 +15788,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "（使）大面积地接触；猜；贴（在耳边等）",
     "example": {
-      "japanese": "静かに当てる。",
-      "chinese": "安静地大面积地接触。"
+      "japanese": "耳に受話器を当てる。",
+      "chinese": "把听筒贴到耳边。"
     },
     "transitivity": "他动词"
   },
@@ -15802,8 +15802,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "寄给；发给",
     "example": {
-      "japanese": "静かに宛てる。",
-      "chinese": "安静地寄给。"
+      "japanese": "手紙を友人に宛てる。",
+      "chinese": "把信寄给朋友。"
     },
     "transitivity": "他动词"
   },
@@ -15816,8 +15816,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "溢出；人多；充满",
     "example": {
-      "japanese": "うまく溢れる。",
-      "chinese": "顺利地溢出。"
+      "japanese": "川の水が堤防から溢れる。",
+      "chinese": "河水从堤坝溢出。"
     },
     "transitivity": "自动词"
   },
@@ -15830,8 +15830,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "撒娇；耍赖；不客气",
     "example": {
-      "japanese": "うまく甘える。",
-      "chinese": "顺利地撒娇。"
+      "japanese": "子どもが親に甘える。",
+      "chinese": "孩子向父母撒娇。"
     },
     "transitivity": "自动词"
   },
@@ -15844,8 +15844,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "娇惯，纵容，放任",
     "example": {
-      "japanese": "丁寧に甘やかす。",
-      "chinese": "仔细地娇惯。"
+      "japanese": "親が子どもを甘やかす。",
+      "chinese": "父母娇惯孩子。"
     },
     "transitivity": "他动词"
   },
@@ -15858,8 +15858,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "多余，剩余；过于",
     "example": {
-      "japanese": "うまく余る。",
-      "chinese": "顺利地多余。"
+      "japanese": "予算が余る。",
+      "chinese": "预算有结余。"
     },
     "transitivity": "自动词"
   },
@@ -15900,8 +15900,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "争（吵，论，执）",
     "example": {
-      "japanese": "もう一度争う。",
-      "chinese": "再争（吵一次。"
+      "japanese": "兄弟がおもちゃを争う。",
+      "chinese": "兄弟俩争抢玩具。"
     },
     "transitivity": "他动词"
   },
@@ -15928,8 +15928,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "让……改变，重新",
     "example": {
-      "japanese": "もう一度改める。",
-      "chinese": "再让……改变一次。"
+      "japanese": "悪い癖を改める。",
+      "chinese": "改正坏习惯。"
     },
     "transitivity": "他动词"
   },
@@ -15956,8 +15956,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "让……显现，体现，出现",
     "example": {
-      "japanese": "丁寧に現す。",
-      "chinese": "仔细地让……显现。"
+      "japanese": "彼は突然姿を現す。",
+      "chinese": "他突然现身。"
     },
     "transitivity": "他动词"
   },
@@ -16012,8 +16012,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "让……合起来，合并，加在一起",
     "example": {
-      "japanese": "静かに合わせる。",
-      "chinese": "安静地让……合起来。"
+      "japanese": "時計の針を合わせる。",
+      "chinese": "把表针拨准。"
     },
     "transitivity": "他动词"
   },
@@ -16040,8 +16040,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "说过头，说过火的话",
     "example": {
-      "japanese": "静かに言い過ぎる。",
-      "chinese": "安静地说过头。"
+      "japanese": "つい言い過ぎる。",
+      "chinese": "一不小心说过头了。"
     },
     "transitivity": "他动词"
   },
@@ -16054,8 +16054,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "重新说",
     "example": {
-      "japanese": "静かに言い直す。",
-      "chinese": "安静地重新说。"
+      "japanese": "発音を言い直す。",
+      "chinese": "把发音重新说一遍。"
     },
     "transitivity": "他动词"
   },
@@ -16068,8 +16068,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "疼痛；心痛",
     "example": {
-      "japanese": "静かに痛む。",
-      "chinese": "安静地疼痛。"
+      "japanese": "歯が痛む。",
+      "chinese": "牙疼。"
     },
     "transitivity": "自动词"
   },
@@ -16082,8 +16082,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "（蔬菜、水果、头发）损伤；伤心",
     "example": {
-      "japanese": "静かに傷む。",
-      "chinese": "安静地损伤。"
+      "japanese": "夏に果物が傷む。",
+      "chinese": "夏天水果容易坏。"
     },
     "transitivity": "自动词"
   },
@@ -16124,8 +16124,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "（放油）炒",
     "example": {
-      "japanese": "静かに炒める。",
-      "chinese": "安静地炒。"
+      "japanese": "野菜を炒める。",
+      "chinese": "炒蔬菜。"
     },
     "transitivity": "他动词"
   },
@@ -16138,8 +16138,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "至，到达；到来，来临；达到",
     "example": {
-      "japanese": "静かに至る。",
-      "chinese": "安静地至。"
+      "japanese": "結論に至る。",
+      "chinese": "得出结论。"
     },
     "transitivity": "自动词"
   },
@@ -16152,8 +16152,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "讨厌；不愿意",
     "example": {
-      "japanese": "すぐに嫌がる。",
-      "chinese": "马上讨厌。"
+      "japanese": "子どもが野菜を嫌がる。",
+      "chinese": "孩子讨厌吃蔬菜。"
     },
     "transitivity": "他动词"
   },
@@ -16166,8 +16166,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "把……替换；把……更换",
     "example": {
-      "japanese": "丁寧に入れ替える。",
-      "chinese": "替换。"
+      "japanese": "電池を入れ替える。",
+      "chinese": "更换电池。"
     },
     "transitivity": "他动词"
   },
@@ -16180,8 +16180,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "替换；更换",
     "example": {
-      "japanese": "そろそろ入れ替わる。",
-      "chinese": "差不多该替换了。"
+      "japanese": "選手が入れ替わる。",
+      "chinese": "选手进行轮换。"
     },
     "transitivity": "自动词"
   },
@@ -16194,8 +16194,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "浮上来；浮现出（表情、心情、想法）",
     "example": {
-      "japanese": "うまく浮かぶ。",
-      "chinese": "顺利地浮上来。"
+      "japanese": "湖に月が浮かぶ。",
+      "chinese": "月亮浮现在湖面上。"
     },
     "transitivity": "自动词"
   },
@@ -16222,8 +16222,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "失去，丧失；错过",
     "example": {
-      "japanese": "すぐに失う。",
-      "chinese": "马上失去。"
+      "japanese": "財布を失う。",
+      "chinese": "把钱包弄丢了。"
     },
     "transitivity": "他动词"
   },
@@ -16250,8 +16250,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "使变淡；稀释",
     "example": {
-      "japanese": "もう一度薄める。",
-      "chinese": "再使变淡一次。"
+      "japanese": "ジュースを水で薄める。",
+      "chinese": "用水把果汁稀释。"
     },
     "transitivity": "他动词"
   },
@@ -16264,8 +16264,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "怀疑，猜疑",
     "example": {
-      "japanese": "静かに疑う。",
-      "chinese": "安静地怀疑。"
+      "japanese": "彼の言葉を疑う。",
+      "chinese": "怀疑他的话。"
     },
     "transitivity": "他动词"
   },
@@ -16278,8 +16278,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "让……互相碰撞；事前商量",
     "example": {
-      "japanese": "もう一度打ち合わせる。",
-      "chinese": "再让……互相碰撞一次。"
+      "japanese": "会議の日程を打ち合わせる。",
+      "chinese": "事先商量会议日程。"
     },
     "transitivity": "他动词"
   },
@@ -16292,8 +16292,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "否认；打消（疑虑等）",
     "example": {
-      "japanese": "すぐに打ち消す。",
-      "chinese": "马上否认。"
+      "japanese": "噂を打ち消す。",
+      "chinese": "辟谣否认传闻。"
     },
     "transitivity": "他动词"
   },
@@ -16306,8 +16306,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "抄写",
     "example": {
-      "japanese": "静かに写す。",
-      "chinese": "安静地抄写。"
+      "japanese": "ノートに黒板を写す。",
+      "chinese": "把黑板上的内容抄到笔记本上。"
     },
     "transitivity": "他动词"
   },
@@ -16320,8 +16320,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "拍照；反映",
     "example": {
-      "japanese": "静かに映す。",
-      "chinese": "安静地拍照。"
+      "japanese": "水面が空を映す。",
+      "chinese": "水面映出天空。"
     },
     "transitivity": "他动词"
   },
@@ -16334,8 +16334,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "诉说；诉讼",
     "example": {
-      "japanese": "すぐに訴える。",
-      "chinese": "马上诉说。"
+      "japanese": "不便さを会社に訴える。",
+      "chinese": "向公司反映不便之处。"
     },
     "transitivity": "他动词"
   },
@@ -16376,8 +16376,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "埋入",
     "example": {
-      "japanese": "すぐに埋め込む。",
-      "chinese": "马上埋入。"
+      "japanese": "床にケーブルを埋め込む。",
+      "chinese": "把电缆埋入地板。"
     },
     "transitivity": "他动词"
   },
@@ -16418,8 +16418,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "把……埋起来，掩埋；填补，弥补",
     "example": {
-      "japanese": "すぐに埋める。",
-      "chinese": "埋起来。"
+      "japanese": "穴を土で埋める。",
+      "chinese": "用土把坑填上。"
     },
     "transitivity": "他动词"
   },
@@ -16474,8 +16474,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "卖出；开始卖，发售，上市；甩卖",
     "example": {
-      "japanese": "すぐに売り出す。",
-      "chinese": "马上卖出。"
+      "japanese": "新曲を売り出す。",
+      "chinese": "推出新歌发售。"
     },
     "transitivity": "他动词"
   },
@@ -16488,8 +16488,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "卖得好，畅销；有人气；出名",
     "example": {
-      "japanese": "そろそろ売れる。",
-      "chinese": "差不多该卖得好了。"
+      "japanese": "新商品がよく売れる。",
+      "chinese": "新产品很畅销。"
     },
     "transitivity": "自动词"
   },
@@ -16502,8 +16502,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "盖上，覆盖，遮盖",
     "example": {
-      "japanese": "すぐに覆う。",
-      "chinese": "马上盖上。"
+      "japanese": "布団で体を覆う。",
+      "chinese": "用被子盖住身体。"
     },
     "transitivity": "他动词"
   },
@@ -16530,8 +16530,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "侵犯；侵占",
     "example": {
-      "japanese": "静かに侵す。",
-      "chinese": "安静地侵犯。"
+      "japanese": "プライバシーを侵す。",
+      "chinese": "侵犯隐私。"
     },
     "transitivity": "他动词"
   },
@@ -16544,8 +16544,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "不顾；侵袭",
     "example": {
-      "japanese": "丁寧に冒す。",
-      "chinese": "仔细地不顾。"
+      "japanese": "危険を冒す。",
+      "chinese": "不顾危险。"
     },
     "transitivity": "他动词"
   },
@@ -16558,8 +16558,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "举行；实行",
     "example": {
-      "japanese": "丁寧に行う。",
-      "chinese": "仔细地举行。"
+      "japanese": "実験を行う。",
+      "chinese": "进行实验。"
     },
     "transitivity": "他动词"
   },
@@ -16572,8 +16572,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "压住，摁住",
     "example": {
-      "japanese": "もう一度押える。",
-      "chinese": "再压住一次。"
+      "japanese": "帽子が飛ばないように押える。",
+      "chinese": "按住帽子以免被吹走。"
     },
     "transitivity": "他动词"
   },
@@ -16586,8 +16586,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "控制（事态、情绪）；提炼（要点）",
     "example": {
-      "japanese": "静かに抑える。",
-      "chinese": "安静地控制。"
+      "japanese": "怒りを抑える。",
+      "chinese": "控制住怒气。"
     },
     "transitivity": "他动词"
   },
@@ -16600,8 +16600,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "（能够）收纳；收入",
     "example": {
-      "japanese": "静かに収まる。",
-      "chinese": "安静地收纳。"
+      "japanese": "書類が箱に収まる。",
+      "chinese": "文件正好收进盒子里。"
     },
     "transitivity": "自动词"
   },
@@ -16614,8 +16614,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "收纳（税金）；（能够）纳入",
     "example": {
-      "japanese": "そろそろ納まる。",
-      "chinese": "差不多该收纳了。"
+      "japanese": "税金が無事に納まる。",
+      "chinese": "税款顺利入库。"
     },
     "transitivity": "自动词"
   },
@@ -16628,8 +16628,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "（得到）治理；平息",
     "example": {
-      "japanese": "そろそろ治まる。",
-      "chinese": "差不多该治理了。"
+      "japanese": "痛みが治まる。",
+      "chinese": "疼痛平息了。"
     },
     "transitivity": "自动词"
   },
@@ -16642,8 +16642,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "（能够）修理；修养",
     "example": {
-      "japanese": "静かに修まる。",
-      "chinese": "安静地修理。"
+      "japanese": "素行が修まる。",
+      "chinese": "品行端正起来。"
     },
     "transitivity": "自动词"
   },
@@ -16670,8 +16670,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "纳税",
     "example": {
-      "japanese": "静かに納める。",
-      "chinese": "安静地纳税。"
+      "japanese": "毎年ちゃんと税金を納める。",
+      "chinese": "每年都按时纳税。"
     },
     "transitivity": "他动词"
   },
@@ -16684,8 +16684,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "治理",
     "example": {
-      "japanese": "静かに治める。",
-      "chinese": "安静地治理。"
+      "japanese": "国を治める。",
+      "chinese": "治理国家。"
     },
     "transitivity": "他动词"
   },
@@ -16710,10 +16710,10 @@
     "word": "恐れる",
     "reading": "おそれる",
     "pos": "动词",
-    "meaning": "自、他下一害怕，畏惧",
+    "meaning": "害怕，畏惧",
     "example": {
-      "japanese": "今日は恐れる。",
-      "chinese": "今天自、他下一害怕。"
+      "japanese": "失敗を恐れる。",
+      "chinese": "害怕失败。"
     }
   },
   {
@@ -16725,8 +16725,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "断念，死心",
     "example": {
-      "japanese": "丁寧に思い切る。",
-      "chinese": "仔细地断念。"
+      "japanese": "留学を思い切る。",
+      "chinese": "断了留学的念头。"
     },
     "transitivity": "他动词"
   },
@@ -16739,8 +16739,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "认定，确信，深信，以为；认死理，想法执拗",
     "example": {
-      "japanese": "うまく思い込む。",
-      "chinese": "顺利地认定。"
+      "japanese": "彼は自分が正しいと思い込む。",
+      "chinese": "他认定自己是对的。"
     },
     "transitivity": "自动词"
   },
@@ -16753,8 +16753,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "过虑，想得过多",
     "example": {
-      "japanese": "すぐに思い過ごす。",
-      "chinese": "马上过虑。"
+      "japanese": "彼の態度を思い過ごす。",
+      "chinese": "对他的态度想多了。"
     },
     "transitivity": "他动词"
   },
@@ -16767,8 +16767,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "想出，想出来",
     "example": {
-      "japanese": "もう一度思い出す。",
-      "chinese": "再想出一次。"
+      "japanese": "子どものころを思い出す。",
+      "chinese": "想起小时候的事。"
     },
     "transitivity": "他动词"
   },
@@ -16795,8 +16795,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "使达到；使涉及",
     "example": {
-      "japanese": "もう一度及ぼす。",
-      "chinese": "再使达到一次。"
+      "japanese": "環境に影響を及ぼす。",
+      "chinese": "给环境带来影响。"
     },
     "transitivity": "他动词"
   },
@@ -16823,8 +16823,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "限定；极限；限于",
     "example": {
-      "japanese": "もう一度限る。",
-      "chinese": "再限定一次。"
+      "japanese": "入場者を百人に限る。",
+      "chinese": "把入场人数限定在一百人。"
     },
     "transitivity": "他动词"
   },
@@ -16837,8 +16837,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "缺少，欠缺",
     "example": {
-      "japanese": "すぐに欠く。",
-      "chinese": "马上缺少。"
+      "japanese": "常識を欠く。",
+      "chinese": "缺乏常识。"
     },
     "transitivity": "他动词"
   },
@@ -16851,8 +16851,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "闻，嗅",
     "example": {
-      "japanese": "すぐに嗅ぐ。",
-      "chinese": "马上闻。"
+      "japanese": "花の香りを嗅ぐ。",
+      "chinese": "闻花香。"
     },
     "transitivity": "他动词"
   },
@@ -16865,8 +16865,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "把……藏起来；隐藏；隐瞒",
     "example": {
-      "japanese": "すぐに隠す。",
-      "chinese": "藏起来。"
+      "japanese": "プレゼントを棚の後ろに隠す。",
+      "chinese": "把礼物藏在架子后面。"
     },
     "transitivity": "他动词"
   },
@@ -16879,8 +16879,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "隐藏，躲藏",
     "example": {
-      "japanese": "静かに隠れる。",
-      "chinese": "安静地隐藏。"
+      "japanese": "子どもがカーテンの後ろに隠れる。",
+      "chinese": "孩子躲在窗帘后面。"
     },
     "transitivity": "自动词"
   },
@@ -16919,10 +16919,10 @@
     "word": "稼ぐ",
     "reading": "かせぐ",
     "pos": "动词",
-    "meaning": "自、他五挣钱",
+    "meaning": "挣钱，赚钱",
     "example": {
-      "japanese": "もう一度稼ぐ。",
-      "chinese": "再自、他五挣钱一次。"
+      "japanese": "アルバイトで稼ぐ。",
+      "chinese": "靠打工挣钱。"
     }
   },
   {
@@ -16934,8 +16934,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "数，数数；列举",
     "example": {
-      "japanese": "もう一度数える。",
-      "chinese": "再数一次。"
+      "japanese": "お金を数える。",
+      "chinese": "数钱。"
     },
     "transitivity": "他动词"
   },
@@ -16962,8 +16962,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "使坚固；使坚守；使坚定",
     "example": {
-      "japanese": "すぐに固める。",
-      "chinese": "马上使坚固。"
+      "japanese": "決意を固める。",
+      "chinese": "下定决心。"
     },
     "transitivity": "他动词"
   },
@@ -16976,8 +16976,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "悲哀，悲伤，忧伤",
     "example": {
-      "japanese": "すぐに哀しむ。",
-      "chinese": "马上悲哀。"
+      "japanese": "友の死を哀しむ。",
+      "chinese": "为朋友的去世而悲伤。"
     },
     "transitivity": "他动词"
   },
@@ -16990,8 +16990,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "疼爱",
     "example": {
-      "japanese": "もう一度可愛がる。",
-      "chinese": "再疼爱一次。"
+      "japanese": "祖父が孫を可愛がる。",
+      "chinese": "祖父疼爱孙子。"
     },
     "transitivity": "他动词"
   },
@@ -17016,10 +17016,10 @@
     "word": "感じる",
     "reading": "かんじる",
     "pos": "动词",
-    "meaning": "自、他上一感觉；感触",
+    "meaning": "感觉；感触",
     "example": {
-      "japanese": "これから感じる。",
-      "chinese": "接下来自、他上一感觉。"
+      "japanese": "寒さを感じる。",
+      "chinese": "感觉到寒冷。"
     }
   },
   {
@@ -17031,8 +17031,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "换衣服",
     "example": {
-      "japanese": "丁寧に着替える。",
-      "chinese": "仔细地换衣服。"
+      "japanese": "制服に着替える。",
+      "chinese": "换上制服。"
     },
     "transitivity": "他动词"
   },
@@ -17059,8 +17059,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "重新问；再听一遍",
     "example": {
-      "japanese": "静かに聞き直す。",
-      "chinese": "安静地重新问。"
+      "japanese": "住所を聞き直す。",
+      "chinese": "把住址再问一遍。"
     },
     "transitivity": "他动词"
   },
@@ -17073,8 +17073,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "当作耳旁风",
     "example": {
-      "japanese": "静かに聞き流す。",
-      "chinese": "安静地当作耳旁风。"
+      "japanese": "悪口は聞き流す。",
+      "chinese": "坏话就当耳旁风。"
     },
     "transitivity": "他动词"
   },
@@ -17087,8 +17087,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "听惯",
     "example": {
-      "japanese": "すぐに聞き慣れる。",
-      "chinese": "马上听惯。"
+      "japanese": "その曲には聞き慣れる。",
+      "chinese": "那首歌已经听熟了。"
     },
     "transitivity": "他动词"
   },
@@ -17101,8 +17101,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "有效，奏效",
     "example": {
-      "japanese": "うまく効く。",
-      "chinese": "顺利地有效。"
+      "japanese": "この薬はよく効く。",
+      "chinese": "这药很有效。"
     },
     "transitivity": "自动词"
   },
@@ -17143,8 +17143,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "禁止",
     "example": {
-      "japanese": "丁寧に禁じる。",
-      "chinese": "仔细地禁止。"
+      "japanese": "喫煙を禁じる。",
+      "chinese": "禁止吸烟。"
     },
     "transitivity": "他动词"
   },
@@ -17157,8 +17157,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "吃；花费；取胜",
     "example": {
-      "japanese": "丁寧に食う。",
-      "chinese": "仔细地吃。"
+      "japanese": "昼ごはんを食う。",
+      "chinese": "吃午饭。"
     },
     "transitivity": "他动词"
   },
@@ -17171,8 +17171,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "腐烂；腐蚀；堕落",
     "example": {
-      "japanese": "静かに腐る。",
-      "chinese": "安静地腐烂。"
+      "japanese": "夏に食べ物が腐る。",
+      "chinese": "夏天食物容易腐烂。"
     },
     "transitivity": "自动词"
   },
@@ -17185,8 +17185,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "弄成碎小的状态；使凌乱；拆",
     "example": {
-      "japanese": "もう一度崩す。",
-      "chinese": "再弄成碎小的状态一次。"
+      "japanese": "古い壁を崩す。",
+      "chinese": "拆掉旧墙。"
     },
     "transitivity": "他动词"
   },
@@ -17199,8 +17199,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "让……下；赐予；实行",
     "example": {
-      "japanese": "丁寧に下す。",
-      "chinese": "仔细地让……下。"
+      "japanese": "命令を下す。",
+      "chinese": "下达命令。"
     },
     "transitivity": "他动词"
   },
@@ -17227,8 +17227,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "发，分发；分配",
     "example": {
-      "japanese": "静かに配る。",
-      "chinese": "安静地发。"
+      "japanese": "チラシを配る。",
+      "chinese": "分发传单。"
     },
     "transitivity": "他动词"
   },
@@ -17255,8 +17255,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "把……组装好",
     "example": {
-      "japanese": "静かに組み上げる。",
-      "chinese": "组装好。"
+      "japanese": "模型を組み上げる。",
+      "chinese": "把模型组装好。"
     },
     "transitivity": "他动词"
   },
@@ -17269,8 +17269,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "组合，编在一起",
     "example": {
-      "japanese": "静かに組み合わせる。",
-      "chinese": "安静地组合。"
+      "japanese": "色を組み合わせる。",
+      "chinese": "把颜色搭配组合。"
     },
     "transitivity": "他动词"
   },
@@ -17283,8 +17283,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "组装",
     "example": {
-      "japanese": "丁寧に組み立てる。",
-      "chinese": "仔细地组装。"
+      "japanese": "家具を組み立てる。",
+      "chinese": "组装家具。"
     },
     "transitivity": "他动词"
   },
@@ -17295,10 +17295,10 @@
     "word": "組む",
     "reading": "くむ",
     "pos": "动词",
-    "meaning": "自、他五交叉；组装；组成（一组）",
+    "meaning": "交叉；组装；组成（一组）",
     "example": {
-      "japanese": "今日は組む。",
-      "chinese": "今天自、他五交叉。"
+      "japanese": "腕を組む。",
+      "chinese": "交叉双臂。"
     }
   },
   {
@@ -17324,8 +17324,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "发狂，发疯；机器出故障；钟表不准",
     "example": {
-      "japanese": "うまく狂う。",
-      "chinese": "顺利地发狂。"
+      "japanese": "時計が狂う。",
+      "chinese": "钟表走不准了。"
     },
     "transitivity": "自动词"
   },
@@ -17338,8 +17338,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "痛苦",
     "example": {
-      "japanese": "うまく苦しむ。",
-      "chinese": "顺利地痛苦。"
+      "japanese": "病気で苦しむ。",
+      "chinese": "因生病而痛苦。"
     },
     "transitivity": "自动词"
   },
@@ -17352,8 +17352,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "折磨，使痛苦",
     "example": {
-      "japanese": "丁寧に苦しめる。",
-      "chinese": "仔细地折磨。"
+      "japanese": "心ない言葉が人を苦しめる。",
+      "chinese": "无情的话折磨人。"
     },
     "transitivity": "他动词"
   },
@@ -17366,8 +17366,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "把……加上，增加",
     "example": {
-      "japanese": "静かに加える。",
-      "chinese": "加上。"
+      "japanese": "砂糖を加える。",
+      "chinese": "加入砂糖。"
     },
     "transitivity": "他动词"
   },
@@ -17408,8 +17408,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "越过；超过；胜过",
     "example": {
-      "japanese": "そろそろ超える。",
-      "chinese": "差不多该越过了。"
+      "japanese": "気温が三十度を超える。",
+      "chinese": "气温超过三十度。"
     },
     "transitivity": "自动词"
   },
@@ -17422,8 +17422,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "冻上，冻住，结冰",
     "example": {
-      "japanese": "そろそろ凍る。",
-      "chinese": "差不多该冻上了。"
+      "japanese": "湖が凍る。",
+      "chinese": "湖面结冰了。"
     },
     "transitivity": "自动词"
   },
@@ -17448,10 +17448,10 @@
     "word": "越す",
     "reading": "こす",
     "pos": "动词",
-    "meaning": "自、他五越过，跨过；胜过；超过",
+    "meaning": "越过，跨过；胜过；超过",
     "example": {
-      "japanese": "今日は越す。",
-      "chinese": "今天自、他五越过。"
+      "japanese": "山を越す。",
+      "chinese": "越过山岭。"
     }
   },
   {
@@ -17463,8 +17463,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "谢绝，拒绝",
     "example": {
-      "japanese": "丁寧に断る。",
-      "chinese": "仔细地谢绝。"
+      "japanese": "誘いを断る。",
+      "chinese": "拒绝邀请。"
     },
     "transitivity": "他动词"
   },
@@ -17477,8 +17477,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "喜好",
     "example": {
-      "japanese": "丁寧に好む。",
-      "chinese": "仔细地喜好。"
+      "japanese": "甘い物を好む。",
+      "chinese": "喜欢甜食。"
     },
     "transitivity": "他动词"
   },
@@ -17491,8 +17491,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "填入；包含（意思、心意、感情、爱等）；用心",
     "example": {
-      "japanese": "もう一度込める。",
-      "chinese": "再填入一次。"
+      "japanese": "料理に愛情を込める。",
+      "chinese": "把爱意倾注到料理里。"
     },
     "transitivity": "他动词"
   },
@@ -17505,8 +17505,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "跌倒；滚动",
     "example": {
-      "japanese": "そろそろ転ぶ。",
-      "chinese": "差不多该跌倒了。"
+      "japanese": "氷で足を滑らせて転ぶ。",
+      "chinese": "在冰上脚下一滑摔倒了。"
     },
     "transitivity": "自动词"
   },
@@ -17519,8 +17519,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "找出，发现",
     "example": {
-      "japanese": "丁寧に探し出す。",
-      "chinese": "仔细地找出。"
+      "japanese": "書類の中から証拠を探し出す。",
+      "chinese": "从文件中找出证据。"
     },
     "transitivity": "他动词"
   },
@@ -17533,8 +17533,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "避开；避免；逃避",
     "example": {
-      "japanese": "すぐに避ける。",
-      "chinese": "马上避开。"
+      "japanese": "危険を避ける。",
+      "chinese": "避开危险。"
     },
     "transitivity": "他动词"
   },
@@ -17547,8 +17547,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "插入",
     "example": {
-      "japanese": "すぐに差し込む。",
-      "chinese": "马上插入。"
+      "japanese": "コンセントにプラグを差し込む。",
+      "chinese": "把插头插入插座。"
     },
     "transitivity": "他动词"
   },
@@ -17561,8 +17561,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "射入",
     "example": {
-      "japanese": "すぐに射し込む。",
-      "chinese": "马上射入。"
+      "japanese": "窓から朝日が射し込む。",
+      "chinese": "晨光从窗户射进来。"
     },
     "transitivity": "他动词"
   },
@@ -17603,8 +17603,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "变冷；睡醒；醒悟",
     "example": {
-      "japanese": "静かに冷める。",
-      "chinese": "安静地变冷。"
+      "japanese": "お茶が冷める。",
+      "chinese": "茶凉了。"
     },
     "transitivity": "自动词"
   },
@@ -17617,8 +17617,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "变得安静",
     "example": {
-      "japanese": "静かに静まる。",
-      "chinese": "安静地变得安静。"
+      "japanese": "会場が静まる。",
+      "chinese": "会场安静下来。"
     },
     "transitivity": "自动词"
   },
@@ -17631,8 +17631,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "下沉；太阳落山；忧郁",
     "example": {
-      "japanese": "うまく沈む。",
-      "chinese": "顺利地下沉。"
+      "japanese": "夕日が海に沈む。",
+      "chinese": "夕阳沉入海中。"
     },
     "transitivity": "自动词"
   },
@@ -17645,8 +17645,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "使下沉",
     "example": {
-      "japanese": "丁寧に沈める。",
-      "chinese": "仔细地使下沉。"
+      "japanese": "船を湖に沈める。",
+      "chinese": "把船沉入湖底。"
     },
     "transitivity": "他动词"
   },
@@ -17659,8 +17659,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "使安静，平静；平息",
     "example": {
-      "japanese": "これから静める/鎮める。",
-      "chinese": "接下来使安静。"
+      "japanese": "心を静める/鎮める。",
+      "chinese": "让心情平静下来。"
     },
     "transitivity": "他动词"
   },
@@ -17673,8 +17673,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "服从；跟随；随着",
     "example": {
-      "japanese": "そろそろ従う。",
-      "chinese": "差不多该服从了。"
+      "japanese": "指示に従う。",
+      "chinese": "服从指示。"
     },
     "transitivity": "自动词"
   },
@@ -17687,8 +17687,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "亲近；习惯",
     "example": {
-      "japanese": "静かに親しむ。",
-      "chinese": "安静地亲近。"
+      "japanese": "自然に親しむ。",
+      "chinese": "亲近自然。"
     },
     "transitivity": "自动词"
   },
@@ -17729,8 +17729,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "占有，占领；取得（第几名）",
     "example": {
-      "japanese": "丁寧に占める。",
-      "chinese": "仔细地占有。"
+      "japanese": "この席が部屋の半分を占める。",
+      "chinese": "这个座位占了房间的一半。"
     },
     "transitivity": "他动词"
   },
@@ -17743,8 +17743,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "说话，聊天；唠叨",
     "example": {
-      "japanese": "すぐに喋る。",
-      "chinese": "马上说话。"
+      "japanese": "友人と楽しく喋る。",
+      "chinese": "和朋友愉快地聊天。"
     },
     "transitivity": "他动词"
   },
@@ -17771,8 +17771,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "救助，挽救，拯救",
     "example": {
-      "japanese": "もう一度救う。",
-      "chinese": "再救助一次。"
+      "japanese": "溺れた人を救う。",
+      "chinese": "救起溺水的人。"
     },
     "transitivity": "他动词"
   },
@@ -17785,8 +17785,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "使向前进，推进",
     "example": {
-      "japanese": "静かに進める。",
-      "chinese": "安静地使向前进。"
+      "japanese": "計画を進める。",
+      "chinese": "推进计划。"
     },
     "transitivity": "他动词"
   },
@@ -17813,8 +17813,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "把位置错开；挪动，移动",
     "example": {
-      "japanese": "もう一度ずらす。",
-      "chinese": "再把位置错开一次。"
+      "japanese": "予定を一日ずらす。",
+      "chinese": "把预定往后挪一天。"
     },
     "transitivity": "他动词"
   },
@@ -17855,8 +17855,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "研磨",
     "example": {
-      "japanese": "もう一度磨る。",
-      "chinese": "再研磨一次。"
+      "japanese": "レンズを磨る。",
+      "chinese": "研磨镜片。"
     },
     "transitivity": "他动词"
   },
@@ -17869,8 +17869,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "用木棒磨碎，研碎",
     "example": {
-      "japanese": "静かに擂る。",
-      "chinese": "安静地用木棒磨碎。"
+      "japanese": "ごまを擂る。",
+      "chinese": "把芝麻研碎。"
     },
     "transitivity": "他动词"
   },
@@ -17883,8 +17883,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "印刷",
     "example": {
-      "japanese": "もう一度刷る。",
-      "chinese": "再印刷一次。"
+      "japanese": "名刺を刷る。",
+      "chinese": "印刷名片。"
     },
     "transitivity": "他动词"
   },
@@ -17897,8 +17897,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "位置错开；离题",
     "example": {
-      "japanese": "そろそろずれる。",
-      "chinese": "差不多该位置错开了。"
+      "japanese": "話が本題からずれる。",
+      "chinese": "话题偏离了正题。"
     },
     "transitivity": "自动词"
   },
@@ -17953,8 +17953,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "成长，发育；进步",
     "example": {
-      "japanese": "そろそろ育つ。",
-      "chinese": "差不多该成长了。"
+      "japanese": "子どもがすくすく育つ。",
+      "chinese": "孩子茁壮成长。"
     },
     "transitivity": "自动词"
   },
@@ -17967,8 +17967,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "教育；培养；养孩子",
     "example": {
-      "japanese": "丁寧に育てる。",
-      "chinese": "仔细地教育。"
+      "japanese": "親が子どもを育てる。",
+      "chinese": "父母抚养孩子。"
     },
     "transitivity": "他动词"
   },
@@ -17995,8 +17995,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "使染上颜色；沾染上（恶习）",
     "example": {
-      "japanese": "もう一度染める。",
-      "chinese": "再使染上颜色一次。"
+      "japanese": "布を青く染める。",
+      "chinese": "把布染成蓝色。"
     },
     "transitivity": "他动词"
   },
@@ -18009,8 +18009,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "剃，刮",
     "example": {
-      "japanese": "すぐに剃る。",
-      "chinese": "马上剃。"
+      "japanese": "髭を剃る。",
+      "chinese": "刮胡子。"
     },
     "transitivity": "他动词"
   },
@@ -18023,8 +18023,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "汇集，聚集；齐全；成套",
     "example": {
-      "japanese": "うまく揃う。",
-      "chinese": "顺利地汇集。"
+      "japanese": "メンバーが揃う。",
+      "chinese": "成员到齐了。"
     },
     "transitivity": "自动词"
   },
@@ -18037,8 +18037,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "使汇集，使聚集；使齐全；使成套",
     "example": {
-      "japanese": "すぐに揃える。",
-      "chinese": "马上使汇集。"
+      "japanese": "靴を揃える。",
+      "chinese": "把鞋子摆整齐。"
     },
     "transitivity": "他动词"
   },
@@ -18065,8 +18065,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "忍耐，承受，经得住",
     "example": {
-      "japanese": "これから耐える/堪える。",
-      "chinese": "接下来忍耐。"
+      "japanese": "寒さに耐える/堪える。",
+      "chinese": "忍受寒冷。"
     },
     "transitivity": "自动词"
   },
@@ -18079,8 +18079,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "变高，得到提高，增高",
     "example": {
-      "japanese": "うまく高まる。",
-      "chinese": "顺利地变高。"
+      "japanese": "関心への関心が高まる。",
+      "chinese": "对问题的关注高涨。"
     },
     "transitivity": "自动词"
   },
@@ -18093,8 +18093,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "使提高，使增加",
     "example": {
-      "japanese": "丁寧に高める。",
-      "chinese": "仔细地使提高。"
+      "japanese": "技術力を高める。",
+      "chinese": "提高技术能力。"
     },
     "transitivity": "他动词"
   },
@@ -18121,8 +18121,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "焚烧",
     "example": {
-      "japanese": "静かに焚く。",
-      "chinese": "安静地焚烧。"
+      "japanese": "落ち葉を焚く。",
+      "chinese": "焚烧落叶。"
     },
     "transitivity": "他动词"
   },
@@ -18149,8 +18149,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "互相拿出，大家出（钱、物等）",
     "example": {
-      "japanese": "すぐに出し合う。",
-      "chinese": "马上互相拿出。"
+      "japanese": "旅費を出し合う。",
+      "chinese": "一起分担旅费。"
     },
     "transitivity": "他动词"
   },
@@ -18163,8 +18163,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "确认，核实",
     "example": {
-      "japanese": "すぐに確かめる。",
-      "chinese": "马上确认。"
+      "japanese": "予約の時間を確かめる。",
+      "chinese": "确认预约时间。"
     },
     "transitivity": "他动词"
   },
@@ -18191,8 +18191,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "叠；收拾；藏在心里",
     "example": {
-      "japanese": "もう一度畳む。",
-      "chinese": "再叠一次。"
+      "japanese": "布団を畳む。",
+      "chinese": "叠被子。"
     },
     "transitivity": "他动词"
   },
@@ -18219,8 +18219,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "断绝；停止，中断；切断",
     "example": {
-      "japanese": "もう一度断つ。",
-      "chinese": "再断绝一次。"
+      "japanese": "酒を断つ。",
+      "chinese": "戒酒。"
     },
     "transitivity": "他动词"
   },
@@ -18233,8 +18233,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "出发",
     "example": {
-      "japanese": "うまく発つ。",
-      "chinese": "顺利地出发。"
+      "japanese": "朝早く旅に発つ。",
+      "chinese": "一大早就动身出发。"
     },
     "transitivity": "自动词"
   },
@@ -18247,8 +18247,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "比喻；举例",
     "example": {
-      "japanese": "丁寧に喩える。",
-      "chinese": "仔细地比喻。"
+      "japanese": "人生を旅に喩える。",
+      "chinese": "把人生比作旅行。"
     },
     "transitivity": "他动词"
   },
@@ -18261,8 +18261,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "欺骗",
     "example": {
-      "japanese": "すぐに騙す。",
-      "chinese": "马上欺骗。"
+      "japanese": "人を騙すのはよくない。",
+      "chinese": "骗人是不好的。"
     },
     "transitivity": "他动词"
   },
@@ -18289,8 +18289,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "积攒，攒钱",
     "example": {
-      "japanese": "静かに貯まる。",
-      "chinese": "安静地积攒。"
+      "japanese": "給料が口座に貯まる。",
+      "chinese": "工资在账户里积攒起来。"
     },
     "transitivity": "自动词"
   },
@@ -18331,8 +18331,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "尝试",
     "example": {
-      "japanese": "静かに試す。",
-      "chinese": "安静地尝试。"
+      "japanese": "新しい方法を試す。",
+      "chinese": "尝试新方法。"
     },
     "transitivity": "他动词"
   },
@@ -18345,8 +18345,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "使积攒，使积存",
     "example": {
-      "japanese": "もう一度溜める。",
-      "chinese": "再使积攒一次。"
+      "japanese": "雨水を桶に溜める。",
+      "chinese": "把雨水积存在桶里。"
     },
     "transitivity": "他动词"
   },
@@ -18373,8 +18373,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "保持",
     "example": {
-      "japanese": "もう一度保つ。",
-      "chinese": "再保持一次。"
+      "japanese": "健康を保つ。",
+      "chinese": "保持健康。"
     },
     "transitivity": "他动词"
   },
@@ -18401,8 +18401,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "使垂下",
     "example": {
-      "japanese": "丁寧に垂らす。",
-      "chinese": "仔细地使垂下。"
+      "japanese": "カーテンを垂らす。",
+      "chinese": "把窗帘垂下来。"
     },
     "transitivity": "他动词"
   },
@@ -18427,10 +18427,10 @@
     "word": "垂れる",
     "reading": "たれる",
     "pos": "动词",
-    "meaning": "自、他下一耷拉，下垂；悬垂",
+    "meaning": "耷拉，下垂；滴落",
     "example": {
-      "japanese": "一人で垂れる。",
-      "chinese": "一个人自、他下一耷拉。"
+      "japanese": "木の枝から雨粒が垂れる。",
+      "chinese": "雨珠从树枝上滴落。"
     }
   },
   {
@@ -18484,8 +18484,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "使缩小，使收缩",
     "example": {
-      "japanese": "もう一度縮める。",
-      "chinese": "再使缩小一次。"
+      "japanese": "文章を短く縮める。",
+      "chinese": "把文章缩短。"
     },
     "transitivity": "他动词"
   },
@@ -18498,8 +18498,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "撒；驱散，使分散",
     "example": {
-      "japanese": "すぐに散らす。",
-      "chinese": "马上撒。"
+      "japanese": "風が花びらを散らす。",
+      "chinese": "风把花瓣吹散。"
     },
     "transitivity": "他动词"
   },
@@ -18512,8 +18512,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "（花）凋谢，（花、雪等）落下",
     "example": {
-      "japanese": "そろそろ散る。",
-      "chinese": "差不多该凋谢了。"
+      "japanese": "桜の花が散る。",
+      "chinese": "樱花飘落。"
     },
     "transitivity": "自动词"
   },
@@ -18524,10 +18524,10 @@
     "word": "通じる",
     "reading": "つうじる",
     "pos": "动词",
-    "meaning": "自、他上一通过；通往；意思传达到",
+    "meaning": "通过；通往；意思传达到",
     "example": {
-      "japanese": "一人で通じる。",
-      "chinese": "一个人自、他上一通过。"
+      "japanese": "この道は駅に通じる。",
+      "chinese": "这条路通向车站。"
     }
   },
   {
@@ -18553,8 +18553,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "区分使用",
     "example": {
-      "japanese": "静かに使い分ける。",
-      "chinese": "安静地区分使用。"
+      "japanese": "場面に応じて言葉を使い分ける。",
+      "chinese": "按场合区分使用措辞。"
     },
     "transitivity": "他动词"
   },
@@ -18567,8 +18567,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "抓，抓住；掌握",
     "example": {
-      "japanese": "もう一度掴む。",
-      "chinese": "再抓一次。"
+      "japanese": "チャンスを掴む。",
+      "chinese": "抓住机会。"
     },
     "transitivity": "他动词"
   },
@@ -18581,8 +18581,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "浸泡",
     "example": {
-      "japanese": "そろそろ漬かる。",
-      "chinese": "差不多该浸泡了。"
+      "japanese": "大根が味噌に漬かる。",
+      "chinese": "萝卜浸泡在味噌里。"
     },
     "transitivity": "自动词"
   },
@@ -18609,8 +18609,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "就；就座，就位；就职",
     "example": {
-      "japanese": "そろそろ就く。",
-      "chinese": "差不多该就了。"
+      "japanese": "新しい職に就く。",
+      "chinese": "就任新职。"
     },
     "transitivity": "自动词"
   },
@@ -18637,8 +18637,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "连接；继承",
     "example": {
-      "japanese": "静かに継ぐ。",
-      "chinese": "安静地连接。"
+      "japanese": "父の仕事を継ぐ。",
+      "chinese": "继承父亲的工作。"
     },
     "transitivity": "他动词"
   },
@@ -18665,8 +18665,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "开始做；做出来；发明",
     "example": {
-      "japanese": "丁寧に作り出す。",
-      "chinese": "仔细地开始做。"
+      "japanese": "新しい製品を作り出す。",
+      "chinese": "制造出新产品。"
     },
     "transitivity": "他动词"
   },
@@ -18693,8 +18693,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "使就座；就职；使从事",
     "example": {
-      "japanese": "丁寧に就ける。",
-      "chinese": "仔细地使就座。"
+      "japanese": "彼を重要な役に就ける。",
+      "chinese": "让他就任重要职务。"
     },
     "transitivity": "他动词"
   },
@@ -18721,8 +18721,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "佩戴；系上；贴近",
     "example": {
-      "japanese": "静かに着ける。",
-      "chinese": "安静地佩戴。"
+      "japanese": "シートベルトを着ける。",
+      "chinese": "系上安全带。"
     },
     "transitivity": "他动词"
   },
@@ -18735,8 +18735,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "通知，告诉，告知；传说；传授，传入",
     "example": {
-      "japanese": "うまく伝わる。",
-      "chinese": "顺利地通知。"
+      "japanese": "ニュースが全国に伝わる。",
+      "chinese": "消息传到全国。"
     },
     "transitivity": "自动词"
   },
@@ -18777,8 +18777,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "连接（在一起成为一条长线）；系，拴",
     "example": {
-      "japanese": "すぐに繋げる。",
-      "chinese": "马上连接。"
+      "japanese": "二つの文章を繋げる。",
+      "chinese": "把两篇文章连接起来。"
     },
     "transitivity": "他动词"
   },
@@ -18833,8 +18833,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "加强，增强",
     "example": {
-      "japanese": "もう一度強める。",
-      "chinese": "再加强一次。"
+      "japanese": "協力関係を強める。",
+      "chinese": "加强合作关系。"
     },
     "transitivity": "他动词"
   },
@@ -18861,8 +18861,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "放手",
     "example": {
-      "japanese": "すぐに手放す。",
-      "chinese": "马上放手。"
+      "japanese": "長年の趣味を手放す。",
+      "chinese": "放弃多年的爱好。"
     },
     "transitivity": "他动词"
   },
@@ -18875,8 +18875,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "迎接",
     "example": {
-      "japanese": "丁寧に出迎える。",
-      "chinese": "仔细地迎接。"
+      "japanese": "空港で家族を出迎える。",
+      "chinese": "在机场迎接家人。"
     },
     "transitivity": "他动词"
   },
@@ -18889,8 +18889,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "亲手交给",
     "example": {
-      "japanese": "静かに手渡す。",
-      "chinese": "安静地亲手交给。"
+      "japanese": "書類を相手に手渡す。",
+      "chinese": "把文件亲手交给对方。"
     },
     "transitivity": "他动词"
   },
@@ -18903,8 +18903,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "使溶解；使融化",
     "example": {
-      "japanese": "もう一度解かす。",
-      "chinese": "再使溶解一次。"
+      "japanese": "氷を湯で解かす。",
+      "chinese": "用热水把冰化开。"
     },
     "transitivity": "他动词"
   },
@@ -18917,8 +18917,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "解开；解题",
     "example": {
-      "japanese": "丁寧に解く。",
-      "chinese": "仔细地解开。"
+      "japanese": "難しい問題を解く。",
+      "chinese": "解答难题。"
     },
     "transitivity": "他动词"
   },
@@ -18931,8 +18931,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "使溶解；使溶化",
     "example": {
-      "japanese": "すぐに溶く。",
-      "chinese": "马上使溶解。"
+      "japanese": "小麦粉を水で溶く。",
+      "chinese": "用水把面粉化开。"
     },
     "transitivity": "他动词"
   },
@@ -18959,8 +18959,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "解开",
     "example": {
-      "japanese": "静かに解ける。",
-      "chinese": "安静地解开。"
+      "japanese": "靴のひもが解ける。",
+      "chinese": "鞋带松开了。"
     },
     "transitivity": "自动词"
   },
@@ -18973,8 +18973,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "融化",
     "example": {
-      "japanese": "そろそろ融ける。",
-      "chinese": "差不多该融化了。"
+      "japanese": "雪が春の陽だまりで融ける。",
+      "chinese": "雪在春天的阳光下融化。"
     },
     "transitivity": "自动词"
   },
@@ -18987,8 +18987,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "熔化",
     "example": {
-      "japanese": "そろそろ熔ける。",
-      "chinese": "差不多该熔化了。"
+      "japanese": "鉄が高温で熔ける。",
+      "chinese": "铁在高温下熔化。"
     },
     "transitivity": "自动词"
   },
@@ -19001,8 +19001,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "到达；完成，实现",
     "example": {
-      "japanese": "すぐに遂げる。",
-      "chinese": "马上到达。"
+      "japanese": "目的を遂げる。",
+      "chinese": "达成目的。"
     },
     "transitivity": "他动词"
   },
@@ -19015,8 +19015,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "收到；（考虑）周到",
     "example": {
-      "japanese": "静かに届く。",
-      "chinese": "安静地收到。"
+      "japanese": "荷物が無事に届く。",
+      "chinese": "包裹顺利送达。"
     },
     "transitivity": "自动词"
   },
@@ -19029,8 +19029,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "整齐；端正",
     "example": {
-      "japanese": "静かに整う。",
-      "chinese": "安静地整齐。"
+      "japanese": "準備が整う。",
+      "chinese": "准备就绪。"
     },
     "transitivity": "自动词"
   },
@@ -19043,8 +19043,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "准备齐全",
     "example": {
-      "japanese": "もう一度整える。",
-      "chinese": "再准备齐全一次。"
+      "japanese": "身なりを整える。",
+      "chinese": "整理仪容。"
     },
     "transitivity": "他动词"
   },
@@ -19057,8 +19057,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "使停滞，使停留",
     "example": {
-      "japanese": "丁寧に留める。",
-      "chinese": "仔细地使停滞。"
+      "japanese": "足をその場に留める。",
+      "chinese": "把脚步停在原地。"
     },
     "transitivity": "他动词"
   },
@@ -19085,8 +19085,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "冲进，闯进，跳入",
     "example": {
-      "japanese": "そろそろ飛び込む。",
-      "chinese": "差不多该冲进了。"
+      "japanese": "プールに飛び込む。",
+      "chinese": "跳进泳池。"
     },
     "transitivity": "自动词"
   },
@@ -19099,8 +19099,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "取出，拿出",
     "example": {
-      "japanese": "丁寧に取り出す。",
-      "chinese": "仔细地取出。"
+      "japanese": "ポケットから財布を取り出す。",
+      "chinese": "从口袋里拿出钱包。"
     },
     "transitivity": "他动词"
   },
@@ -19113,8 +19113,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "取消",
     "example": {
-      "japanese": "丁寧に取り消す。",
-      "chinese": "仔细地取消。"
+      "japanese": "予約を取り消す。",
+      "chinese": "取消预约。"
     },
     "transitivity": "他动词"
   },
@@ -19127,8 +19127,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "使流动，冲；传播",
     "example": {
-      "japanese": "もう一度流す。",
-      "chinese": "再使流动一次。"
+      "japanese": "涙を流す。",
+      "chinese": "流泪。"
     },
     "transitivity": "他动词"
   },
@@ -19141,8 +19141,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "流淌，流动；流逝",
     "example": {
-      "japanese": "そろそろ流れる。",
-      "chinese": "差不多该流淌了。"
+      "japanese": "川の水が静かに流れる。",
+      "chinese": "河水静静地流淌。"
     },
     "transitivity": "自动词"
   },
@@ -19155,8 +19155,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "使烦恼，困扰",
     "example": {
-      "japanese": "すぐに悩ます。",
-      "chinese": "马上使烦恼。"
+      "japanese": "騒音が夜の眠りを悩ます。",
+      "chinese": "噪音搅扰夜间的睡眠。"
     },
     "transitivity": "他动词"
   },
@@ -19169,8 +19169,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "烦恼，痛苦",
     "example": {
-      "japanese": "そろそろ悩む。",
-      "chinese": "差不多该烦恼了。"
+      "japanese": "進路のことで悩む。",
+      "chinese": "为前途而烦恼。"
     },
     "transitivity": "自动词"
   },
@@ -19197,8 +19197,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "驯养",
     "example": {
-      "japanese": "静かに馴らす。",
-      "chinese": "安静地驯养。"
+      "japanese": "野生の馬を馴らす。",
+      "chinese": "驯服野马。"
     },
     "transitivity": "他动词"
   },
@@ -19239,8 +19239,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "散发出香味；映照得美丽；生机勃勃",
     "example": {
-      "japanese": "そろそろ匂う。",
-      "chinese": "差不多该散发出香味了。"
+      "japanese": "台所からご飯が匂う。",
+      "chinese": "厨房里飘来饭香。"
     },
     "transitivity": "自动词"
   },
@@ -19253,8 +19253,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "握，攥；掌握",
     "example": {
-      "japanese": "静かに握る。",
-      "chinese": "安静地握。"
+      "japanese": "ハンドルを握る。",
+      "chinese": "握住方向盘。"
     },
     "transitivity": "他动词"
   },
@@ -19279,10 +19279,10 @@
     "word": "抜く",
     "reading": "ぬく",
     "pos": "动词",
-    "meaning": "自、他五拔掉，除掉；省略；超过",
+    "meaning": "拔掉，除掉；省略；超过",
     "example": {
-      "japanese": "これから抜く。",
-      "chinese": "接下来自、他五拔掉。"
+      "japanese": "庭の雑草を抜く。",
+      "chinese": "拔掉院子里的杂草。"
     }
   },
   {
@@ -19294,8 +19294,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "睡着",
     "example": {
-      "japanese": "静かに寝付く。",
-      "chinese": "安静地睡着。"
+      "japanese": "赤ちゃんがやっと寝付く。",
+      "chinese": "宝宝终于睡着了。"
     },
     "transitivity": "自动词"
   },
@@ -19308,8 +19308,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "以某物为目标；伺机",
     "example": {
-      "japanese": "丁寧に狙う。",
-      "chinese": "仔细地以某物为目标。"
+      "japanese": "優勝を狙う。",
+      "chinese": "以夺冠为目标。"
     },
     "transitivity": "他动词"
   },
@@ -19336,8 +19336,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "除去；除了",
     "example": {
-      "japanese": "すぐに除く。",
-      "chinese": "马上除去。"
+      "japanese": "候補から彼を除く。",
+      "chinese": "从候选人中排除他。"
     },
     "transitivity": "他动词"
   },
@@ -19392,8 +19392,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "坐过站",
     "example": {
-      "japanese": "うまく乗り過ごす。",
-      "chinese": "顺利地坐过站。"
+      "japanese": "居眠りをして駅を乗り過ごす。",
+      "chinese": "打瞌睡坐过了站。"
     },
     "transitivity": "自动词"
   },
@@ -19420,8 +19420,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "测量；计算；称量",
     "example": {
-      "japanese": "これから計る/測る/量る。",
-      "chinese": "接下来测量。"
+      "japanese": "体温を計る/測る/量る。",
+      "chinese": "测量体温。"
     },
     "transitivity": "他动词"
   },
@@ -19448,8 +19448,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "吐；吐露（心声等）",
     "example": {
-      "japanese": "もう一度吐く。",
-      "chinese": "再吐一次。"
+      "japanese": "本音を吐く。",
+      "chinese": "吐露真心话。"
     },
     "transitivity": "他动词"
   },
@@ -19462,8 +19462,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "夹住；夹在双方中间；夹杂",
     "example": {
-      "japanese": "静かに挟まる。",
-      "chinese": "安静地夹住。"
+      "japanese": "ドアに指が挟まる。",
+      "chinese": "手指被门夹住了。"
     },
     "transitivity": "自动词"
   },
@@ -19476,8 +19476,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "夹；插（东西），插（嘴）",
     "example": {
-      "japanese": "静かに挟む。",
-      "chinese": "安静地夹。"
+      "japanese": "本に栞を挟む。",
+      "chinese": "在书里夹上书签。"
     },
     "transitivity": "他动词"
   },
@@ -19490,8 +19490,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "完成，实现",
     "example": {
-      "japanese": "もう一度果たす。",
-      "chinese": "再完成一次。"
+      "japanese": "責任を果たす。",
+      "chinese": "履行责任。"
     },
     "transitivity": "他动词"
   },
@@ -19518,8 +19518,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "搭话，攀谈；开始说话",
     "example": {
-      "japanese": "静かに話しかける。",
-      "chinese": "安静地搭话。"
+      "japanese": "道で知らない人に話しかける。",
+      "chinese": "在路上跟陌生人搭话。"
     },
     "transitivity": "他动词"
   },
@@ -19546,8 +19546,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "陷入，掉进（陷阱）；吻合；迷上（做某事）",
     "example": {
-      "japanese": "そろそろ嵌まる。",
-      "chinese": "差不多该陷入了。"
+      "japanese": "ゲームに嵌まる。",
+      "chinese": "迷上了游戏。"
     },
     "transitivity": "自动词"
   },
@@ -19560,8 +19560,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "镶嵌；戴上（手套、戒指等）；设圈套",
     "example": {
-      "japanese": "静かに嵌める。",
-      "chinese": "安静地镶嵌。"
+      "japanese": "指輪を指に嵌める。",
+      "chinese": "把戒指戴到手指上。"
     },
     "transitivity": "他动词"
   },
@@ -19574,8 +19574,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "冰镇；冷静",
     "example": {
-      "japanese": "静かに冷やす。",
-      "chinese": "安静地冰镇。"
+      "japanese": "ビールを冷蔵庫で冷やす。",
+      "chinese": "把啤酒放进冰箱冰镇。"
     },
     "transitivity": "他动词"
   },
@@ -19602,8 +19602,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "铺展、摊开（折叠的东西）；伸开（双手）；拓宽（道路）",
     "example": {
-      "japanese": "静かに広げる。",
-      "chinese": "安静地铺展、摊开。"
+      "japanese": "地図を机に広げる。",
+      "chinese": "把地图摊开在桌上。"
     },
     "transitivity": "他动词"
   },
@@ -19616,8 +19616,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "传播，扩散",
     "example": {
-      "japanese": "うまく広まる。",
-      "chinese": "顺利地传播。"
+      "japanese": "噂が町に広まる。",
+      "chinese": "传闻在镇上传开。"
     },
     "transitivity": "自动词"
   },
@@ -19630,8 +19630,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "传播（消息、传言）；推广，普及；扩大（范围）",
     "example": {
-      "japanese": "丁寧に広める。",
-      "chinese": "仔细地传播。"
+      "japanese": "新しい技術を広める。",
+      "chinese": "推广新技术。"
     },
     "transitivity": "他动词"
   },
@@ -19658,8 +19658,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "使加深；使深化",
     "example": {
-      "japanese": "もう一度深める。",
-      "chinese": "再使加深一次。"
+      "japanese": "理解を深める。",
+      "chinese": "加深理解。"
     },
     "transitivity": "他动词"
   },
@@ -19672,8 +19672,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "含有（东西）；包含（成分、要素、性质、费用等）",
     "example": {
-      "japanese": "静かに含む。",
-      "chinese": "安静地含有。"
+      "japanese": "この薬はカフェインを含む。",
+      "chinese": "这种药含有咖啡因。"
     },
     "transitivity": "他动词"
   },
@@ -19700,8 +19700,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "经过；经历",
     "example": {
-      "japanese": "うまく経る。",
-      "chinese": "顺利地经过。"
+      "japanese": "長い年月を経る。",
+      "chinese": "经过漫长岁月。"
     },
     "transitivity": "自动词"
   },
@@ -19714,8 +19714,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "晾，晒；干（杯）",
     "example": {
-      "japanese": "丁寧に干す。",
-      "chinese": "仔细地晾。"
+      "japanese": "洗濯物を外で干す。",
+      "chinese": "在外面晾洗衣物。"
     },
     "transitivity": "他动词"
   },
@@ -19756,8 +19756,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "把……搅拌",
     "example": {
-      "japanese": "丁寧に交ぜる。",
-      "chinese": "搅拌。"
+      "japanese": "サラダにドレッシングを交ぜる。",
+      "chinese": "把调味汁拌进沙拉。"
     },
     "transitivity": "他动词"
   },
@@ -19770,8 +19770,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "等候会面，等人",
     "example": {
-      "japanese": "もう一度待ち合わせる。",
-      "chinese": "再等候会面一次。"
+      "japanese": "駅の改札で待ち合わせる。",
+      "chinese": "在车站检票口等人。"
     },
     "transitivity": "他动词"
   },
@@ -19784,8 +19784,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "集中；统一，一致；成形",
     "example": {
-      "japanese": "そろそろ纏まる。",
-      "chinese": "差不多该集中了。"
+      "japanese": "意見が纏まる。",
+      "chinese": "意见统一了。"
     },
     "transitivity": "自动词"
   },
@@ -19798,8 +19798,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "把……汇集，汇总；整理；总结",
     "example": {
-      "japanese": "静かに纏める。",
-      "chinese": "汇集。"
+      "japanese": "資料を纏める。",
+      "chinese": "整理汇总资料。"
     },
     "transitivity": "他动词"
   },
@@ -19812,8 +19812,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "（自发地）学习",
     "example": {
-      "japanese": "もう一度学ぶ。",
-      "chinese": "再学习一次。"
+      "japanese": "独学で英語を学ぶ。",
+      "chinese": "自学英语。"
     },
     "transitivity": "他动词"
   },
@@ -19826,8 +19826,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "招待，邀请；招致",
     "example": {
-      "japanese": "もう一度招く。",
-      "chinese": "再招待一次。"
+      "japanese": "友人を家に招く。",
+      "chinese": "邀请朋友来家里。"
     },
     "transitivity": "他动词"
   },
@@ -19840,8 +19840,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "模仿",
     "example": {
-      "japanese": "静かに真似る。",
-      "chinese": "安静地模仿。"
+      "japanese": "鳥の鳴き声を真似る。",
+      "chinese": "模仿鸟叫。"
     },
     "transitivity": "他动词"
   },
@@ -19854,8 +19854,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "守护，保护；保守；遵守",
     "example": {
-      "japanese": "もう一度守る。",
-      "chinese": "再守护一次。"
+      "japanese": "約束を守る。",
+      "chinese": "遵守约定。"
     },
     "transitivity": "他动词"
   },
@@ -19896,8 +19896,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "承认，认可，认同",
     "example": {
-      "japanese": "静かに認める。",
-      "chinese": "安静地承认。"
+      "japanese": "自分のミスを認める。",
+      "chinese": "承认自己的失误。"
     },
     "transitivity": "他动词"
   },
@@ -19908,10 +19908,10 @@
     "word": "見直す",
     "reading": "みなおす",
     "pos": "动词",
-    "meaning": "自、他五重新看；重新看待，另眼看待",
+    "meaning": "重新看；重新看待，另眼看待",
     "example": {
-      "japanese": "もう一度見直す。",
-      "chinese": "再自、他五重新看一次。"
+      "japanese": "答案をもう一度見直す。",
+      "chinese": "再检查一遍答卷。"
     }
   },
   {
@@ -19923,8 +19923,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "把……看作……",
     "example": {
-      "japanese": "これから見なす/見做す/看做す。",
-      "chinese": "看作……。"
+      "japanese": "彼を専門家と見なす/見做す/看做す。",
+      "chinese": "把他看作专家。"
     },
     "transitivity": "他动词"
   },
@@ -19951,8 +19951,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "面对面",
     "example": {
-      "japanese": "そろそろ向かい合う。",
-      "chinese": "差不多该面对面了。"
+      "japanese": "二人はテーブルを挟んで向かい合う。",
+      "chinese": "两人隔着桌子面对面坐着。"
     },
     "transitivity": "自动词"
   },
@@ -19977,10 +19977,10 @@
     "word": "向ける",
     "reading": "むける",
     "pos": "动词",
-    "meaning": "自、他下一面向，朝向；派遣",
+    "meaning": "面向，朝向；派遣",
     "example": {
-      "japanese": "今日は向ける。",
-      "chinese": "今天自、他下一面向。"
+      "japanese": "視線を窓の外に向ける。",
+      "chinese": "把视线转向窗外。"
     }
   },
   {
@@ -19990,10 +19990,10 @@
     "word": "結ぶ",
     "reading": "むすぶ",
     "pos": "动词",
-    "meaning": "自、他五连接；系，扎，捆；约定",
+    "meaning": "连接；系，扎，捆；约定",
     "example": {
-      "japanese": "これから結ぶ。",
-      "chinese": "接下来自、他五连接。"
+      "japanese": "靴のひもを結ぶ。",
+      "chinese": "系鞋带。"
     }
   },
   {
@@ -20047,8 +20047,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "以……为目标",
     "example": {
-      "japanese": "もう一度目指す。",
-      "chinese": "再以……为目标一次。"
+      "japanese": "医者を目指す。",
+      "chinese": "以成为医生为目标。"
     },
     "transitivity": "他动词"
   },
@@ -20089,8 +20089,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "预约；申请；报名",
     "example": {
-      "japanese": "もう一度申し込む。",
-      "chinese": "再预约一次。"
+      "japanese": "旅行のツアーに申し込む。",
+      "chinese": "报名参加旅行团。"
     },
     "transitivity": "他动词"
   },
@@ -20103,8 +20103,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "燃烧，着火；热情洋溢",
     "example": {
-      "japanese": "そろそろ燃える。",
-      "chinese": "差不多该燃烧了。"
+      "japanese": "落ち葉が燃える。",
+      "chinese": "落叶燃烧起来。"
     },
     "transitivity": "自动词"
   },
@@ -20131,8 +20131,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "搬运（东西）",
     "example": {
-      "japanese": "丁寧に持ち運ぶ。",
-      "chinese": "仔细地搬运。"
+      "japanese": "荷物を二階へ持ち運ぶ。",
+      "chinese": "把行李搬到二楼。"
     },
     "transitivity": "他动词"
   },
@@ -20145,8 +20145,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "受欢迎",
     "example": {
-      "japanese": "そろそろ持てる。",
-      "chinese": "差不多该受欢迎了。"
+      "japanese": "彼はクラスでとても持てる。",
+      "chinese": "他在班里很受欢迎。"
     },
     "transitivity": "自动词"
   },
@@ -20159,8 +20159,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "把……归还到原地",
     "example": {
-      "japanese": "静かに戻す。",
-      "chinese": "归还到原地。"
+      "japanese": "借りた本を図書館に戻す。",
+      "chinese": "把借的书还回图书馆。"
     },
     "transitivity": "他动词"
   },
@@ -20173,8 +20173,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "寻求；需求；要求",
     "example": {
-      "japanese": "すぐに求める。",
-      "chinese": "马上寻求。"
+      "japanese": "助けを求める。",
+      "chinese": "寻求帮助。"
     },
     "transitivity": "他动词"
   },
@@ -20187,8 +20187,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "讲述（故事）",
     "example": {
-      "japanese": "静かに物語る。",
-      "chinese": "安静地讲述。"
+      "japanese": "祖父が昔の話を物語る。",
+      "chinese": "祖父讲述从前的故事。"
     },
     "transitivity": "他动词"
   },
@@ -20201,8 +20201,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "把……燃烧",
     "example": {
-      "japanese": "すぐに燃やす。",
-      "chinese": "燃烧。"
+      "japanese": "落ち葉を燃やす。",
+      "chinese": "烧掉落叶。"
     },
     "transitivity": "他动词"
   },
@@ -20215,8 +20215,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "把……泄漏；把……遗漏",
     "example": {
-      "japanese": "すぐに漏らす。",
-      "chinese": "泄漏。"
+      "japanese": "秘密を漏らす。",
+      "chinese": "泄露秘密。"
     },
     "transitivity": "他动词"
   },
@@ -20243,8 +20243,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "（液体、气体、光、音、信息、秘密等）泄露；（情绪等）流露",
     "example": {
-      "japanese": "静かに漏れる。",
-      "chinese": "安静地泄露。"
+      "japanese": "秘密が外に漏れる。",
+      "chinese": "秘密泄露出去。"
     },
     "transitivity": "自动词"
   },
@@ -20285,8 +20285,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "烤好，烤熟；晒黑；天空变红",
     "example": {
-      "japanese": "そろそろ焼ける。",
-      "chinese": "差不多该烤好了。"
+      "japanese": "パンがオーブンで焼ける。",
+      "chinese": "面包在烤箱里烤好了。"
     },
     "transitivity": "自动词"
   },
@@ -20299,8 +20299,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "得到休息",
     "example": {
-      "japanese": "うまく休まる。",
-      "chinese": "顺利地得到休息。"
+      "japanese": "温泉で心が休まる。",
+      "chinese": "泡温泉让心情得到休息。"
     },
     "transitivity": "自动词"
   },
@@ -20313,8 +20313,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "使身心休息",
     "example": {
-      "japanese": "丁寧に休める。",
-      "chinese": "仔细地使身心休息。"
+      "japanese": "疲れた体を休める。",
+      "chinese": "让疲惫的身体休息。"
     },
     "transitivity": "他动词"
   },
@@ -20327,8 +20327,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "弄破，撕破；打破；破坏",
     "example": {
-      "japanese": "もう一度破る。",
-      "chinese": "再弄破一次。"
+      "japanese": "約束を破る。",
+      "chinese": "违背约定。"
     },
     "transitivity": "他动词"
   },
@@ -20341,8 +20341,8 @@
     "pos": "动词（一段・自动词）",
     "meaning": "破裂，破损；破灭",
     "example": {
-      "japanese": "そろそろ破れる。",
-      "chinese": "差不多该破裂了。"
+      "japanese": "袋が破れる。",
+      "chinese": "袋子破了。"
     },
     "transitivity": "自动词"
   },
@@ -20355,8 +20355,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "煮（饺子、面条等）；焯",
     "example": {
-      "japanese": "丁寧に茹でる。",
-      "chinese": "仔细地煮。"
+      "japanese": "卵を茹でる。",
+      "chinese": "煮鸡蛋。"
     },
     "transitivity": "他动词"
   },
@@ -20369,8 +20369,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "用手指；指向",
     "example": {
-      "japanese": "静かに指す。",
-      "chinese": "安静地用手指。"
+      "japanese": "地図の場所を指す。",
+      "chinese": "用手指着地图上的位置。"
     },
     "transitivity": "他动词"
   },
@@ -20381,10 +20381,10 @@
     "word": "夢見る",
     "reading": "ゆめみる",
     "pos": "动词",
-    "meaning": "自、他上一做梦；梦想……",
+    "meaning": "做梦；梦想……",
     "example": {
-      "japanese": "もう一度夢見る。",
-      "chinese": "再自、他上一做梦一次。"
+      "japanese": "将来の成功を夢見る。",
+      "chinese": "梦想将来的成功。"
     }
   },
   {
@@ -20424,8 +20424,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "让开，避开，躲避",
     "example": {
-      "japanese": "丁寧に除ける。",
-      "chinese": "仔细地让开。"
+      "japanese": "水たまりを除ける。",
+      "chinese": "躲开水坑。"
     },
     "transitivity": "他动词"
   },
@@ -20438,8 +20438,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "横穿",
     "example": {
-      "japanese": "もう一度横切る。",
-      "chinese": "再横穿一次。"
+      "japanese": "通りを横切る。",
+      "chinese": "横穿马路。"
     },
     "transitivity": "他动词"
   },
@@ -20450,10 +20450,10 @@
     "word": "寄せる",
     "reading": "よせる",
     "pos": "动词",
-    "meaning": "自、他下一把……靠近；让……集中；投靠",
+    "meaning": "使靠近；使集中；投靠",
     "example": {
-      "japanese": "一人で寄せる。",
-      "chinese": "自、他下一靠近。"
+      "japanese": "船を岸に寄せる。",
+      "chinese": "让船靠岸。"
     }
   },
   {
@@ -20465,8 +20465,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "把……叫出来；邀请",
     "example": {
-      "japanese": "すぐに呼び出す。",
-      "chinese": "叫出来。"
+      "japanese": "受付で担当者を呼び出す。",
+      "chinese": "在前台叫出负责人。"
     },
     "transitivity": "他动词"
   },
@@ -20479,8 +20479,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "变弱，衰弱",
     "example": {
-      "japanese": "そろそろ弱まる。",
-      "chinese": "差不多该变弱了。"
+      "japanese": "風が弱まる。",
+      "chinese": "风变弱了。"
     },
     "transitivity": "自动词"
   },
@@ -20493,8 +20493,8 @@
     "pos": "动词（一段・他动词）",
     "meaning": "使变弱，使减弱",
     "example": {
-      "japanese": "静かに弱める。",
-      "chinese": "安静地使变弱。"
+      "japanese": "音量を弱める。",
+      "chinese": "把音量调小。"
     },
     "transitivity": "他动词"
   },
@@ -20507,8 +20507,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "（视力、腿脚、气力等）衰弱；为难，尴尬",
     "example": {
-      "japanese": "うまく弱る。",
-      "chinese": "顺利地衰弱。"
+      "japanese": "足腰が弱る。",
+      "chinese": "腰腿变得虚弱。"
     },
     "transitivity": "自动词"
   },
@@ -20535,8 +20535,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "打折，减价",
     "example": {
-      "japanese": "もう一度割り引く。",
-      "chinese": "再打折一次。"
+      "japanese": "定価から二割割り引く。",
+      "chinese": "按定价打八折。"
     },
     "transitivity": "他动词"
   },
