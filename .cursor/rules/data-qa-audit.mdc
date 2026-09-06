@@ -34,7 +34,7 @@ alwaysApply: false
 
 1. 改数据 → 跑审计 → ERR=0
 2. `npm run build`
-3. 用户要求时再 commit / 部署
+3. commit + push `main`（用户明确叫停则除外；见 `agent-workflow`）
 
 ## 全套单词烂句策略
 

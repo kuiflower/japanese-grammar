@@ -2,6 +2,8 @@
 
 A personal JLPT grammar & vocabulary practice app (React + Vite).
 
+Agent / 换账号接手：先读 [`AGENTS.md`](./AGENTS.md) 与 [`.cursor/rules/`](./.cursor/rules/)。
+
 ## Local development
 
 ```bash

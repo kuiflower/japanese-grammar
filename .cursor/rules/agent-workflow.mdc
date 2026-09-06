@@ -1,0 +1,32 @@
+---
+description: Agent 沟通与提交流程（换账号也能对齐）
+alwaysApply: true
+---
+
+# Agent 工作流
+
+## 沟通
+
+- 始终用**简体中文**回复用户
+- 直接、简洁；长文先给结论
+
+## 改完即同步
+
+除非用户明确说先别提交 / 先别推：
+
+1. `npm run build`（改代码或数据后）
+2. `git add` 相关文件 → `commit`（说明为什么）
+3. `git push origin HEAD`（当前为 `main`）
+
+## Git 安全
+
+- 不更新 git config
+- 不 force push、不 `reset --hard`、不跳过 hooks（除非用户明确要求）
+- 不擅自 `commit --amend`（除非符合用户 amend 条件）
+- 不把 `.env`、密钥提交进库
+
+## 实现偏好
+
+- 只改任务需要的文件；不顺手大重构、不乱加文档
+- 数据修正：**直接改正式 JSON**，禁止旁路脚本/叠加层（详见 `project-data-architecture`）
+- 前端改动：沿用现有页面与样式模式
