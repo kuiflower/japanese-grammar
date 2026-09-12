@@ -65,4 +65,5 @@ src/pages/VocabularyPracticeSession.tsx  # 含题号跳转
 
 - 始终用简体中文回复
 - 用户未禁止时：改完自动 commit + push
-- 不 force push、不改 git config、不擅自 amend
+- 不 force push、不改 git config、不擅自 amend 
+
