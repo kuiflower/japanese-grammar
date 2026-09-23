@@ -4255,5 +4255,19 @@
       "chinese": "资料终于做完了。"
     },
     "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vr-0322",
+    "index": 322,
+    "level": "N2",
+    "word": "こびりつく",
+    "reading": "こびりつく",
+    "pos": "动词（五段・自动词）",
+    "meaning": "牢牢黏住；挥之不去",
+    "example": {
+      "japanese": "嫌な記憶が頭にこびりつく。",
+      "chinese": "不快的记忆在脑子里挥之不去。"
+    },
+    "transitivity": "自动词"
   }
 ]

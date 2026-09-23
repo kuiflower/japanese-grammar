@@ -3218,5 +3218,19 @@
       "japanese": "他者の立場を尊重する。",
       "chinese": "尊重他人的立场。"
     }
+  },
+  {
+    "id": "n2-vl-0246",
+    "index": 246,
+    "level": "N2",
+    "word": "問う",
+    "reading": "とう",
+    "pos": "动词（五段・他动词）",
+    "meaning": "询问；追究",
+    "example": {
+      "japanese": "責任の所在を問う。",
+      "chinese": "追究责任在谁。"
+    },
+    "transitivity": "他动词"
   }
 ]
