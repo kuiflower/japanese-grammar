@@ -4269,5 +4269,511 @@
       "chinese": "不快的记忆在脑子里挥之不去。"
     },
     "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vr-0323",
+    "index": 323,
+    "level": "N2",
+    "word": "ジャム",
+    "reading": "ジャム",
+    "pos": "名词",
+    "meaning": "果酱",
+    "example": {
+      "japanese": "パンにイチゴのジャムを塗る。",
+      "chinese": "往面包上涂草莓酱。"
+    }
+  },
+  {
+    "id": "n2-vr-0324",
+    "index": 324,
+    "level": "N2",
+    "word": "検討",
+    "reading": "けんとう",
+    "pos": "名词・サ变动词",
+    "meaning": "研究，讨论",
+    "example": {
+      "japanese": "新しい案を検討する。",
+      "chinese": "讨论新方案。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vr-0325",
+    "index": 325,
+    "level": "N2",
+    "word": "予定どおり",
+    "reading": "よていどおり",
+    "pos": "副词",
+    "meaning": "按预定，如期",
+    "example": {
+      "japanese": "工事は予定どおりに終わった。",
+      "chinese": "工程如期结束了。"
+    }
+  },
+  {
+    "id": "n2-vr-0326",
+    "index": 326,
+    "level": "N2",
+    "word": "サンプル",
+    "reading": "サンプル",
+    "pos": "名词",
+    "meaning": "样品，样本",
+    "example": {
+      "japanese": "化粧品のサンプルをもらった。",
+      "chinese": "拿到了化妆品样品。"
+    }
+  },
+  {
+    "id": "n2-vr-0327",
+    "index": 327,
+    "level": "N2",
+    "word": "たびたび",
+    "reading": "たびたび",
+    "pos": "副词",
+    "meaning": "屡次，经常",
+    "example": {
+      "japanese": "彼は会議にたびたび遅れる。",
+      "chinese": "他开会经常迟到。"
+    }
+  },
+  {
+    "id": "n2-vr-0328",
+    "index": 328,
+    "level": "N2",
+    "word": "そこから先",
+    "reading": "そこからさき",
+    "pos": "短语",
+    "meaning": "从那之后，再往前",
+    "example": {
+      "japanese": "地図はここまでで、そこから先は自分で聞く。",
+      "chinese": "地图只到这里，再往前得自己问。"
+    }
+  },
+  {
+    "id": "n2-vr-0329",
+    "index": 329,
+    "level": "N2",
+    "word": "聞き手",
+    "reading": "ききて",
+    "pos": "名词",
+    "meaning": "听的人，听众",
+    "example": {
+      "japanese": "話し手だけでなく聞き手の反応も大切だ。",
+      "chinese": "不只是说话的人，听的人的反应也很重要。"
+    }
+  },
+  {
+    "id": "n2-vr-0330",
+    "index": 330,
+    "level": "N2",
+    "word": "委ねる",
+    "reading": "ゆだねる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "委托，交给",
+    "example": {
+      "japanese": "最終判断を専門家に委ねる。",
+      "chinese": "把最终判断交给专家。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vr-0331",
+    "index": 331,
+    "level": "N2",
+    "word": "空想",
+    "reading": "くうそう",
+    "pos": "名词",
+    "meaning": "空想，幻想",
+    "example": {
+      "japanese": "それは現実ではなく彼自身の空想だ。",
+      "chinese": "那不是现实，而是他自己的幻想。"
+    }
+  },
+  {
+    "id": "n2-vr-0332",
+    "index": 332,
+    "level": "N2",
+    "word": "ボリューム",
+    "reading": "ボリューム",
+    "pos": "名词",
+    "meaning": "音量；分量",
+    "example": {
+      "japanese": "テレビのボリュームを下げる。",
+      "chinese": "把电视音量调低。"
+    }
+  },
+  {
+    "id": "n2-vr-0333",
+    "index": 333,
+    "level": "N2",
+    "word": "ながら聴き",
+    "reading": "ながらぎき",
+    "pos": "名词",
+    "meaning": "边做别的事边听",
+    "example": {
+      "japanese": "運転中のながら聴きは危ない。",
+      "chinese": "开车时边开边听很危险。"
+    }
+  },
+  {
+    "id": "n2-vr-0334",
+    "index": 334,
+    "level": "N2",
+    "word": "浮かびだす",
+    "reading": "うかびだす",
+    "pos": "动词（五段・自动词）",
+    "meaning": "浮现出来",
+    "example": {
+      "japanese": "古い記憶が急に浮かびだす。",
+      "chinese": "旧时的记忆忽然浮现出来。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vr-0335",
+    "index": 335,
+    "level": "N2",
+    "word": "月々",
+    "reading": "つきづき",
+    "pos": "副词",
+    "meaning": "每月",
+    "example": {
+      "japanese": "家賃は月々八万円だ。",
+      "chinese": "房租每月八万日元。"
+    }
+  },
+  {
+    "id": "n2-vr-0336",
+    "index": 336,
+    "level": "N2",
+    "word": "廃止",
+    "reading": "はいし",
+    "pos": "名词・サ变动词",
+    "meaning": "废除，废止",
+    "example": {
+      "japanese": "古い規則を廃止する。",
+      "chinese": "废除旧规则。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vr-0337",
+    "index": 337,
+    "level": "N2",
+    "word": "フェブ",
+    "reading": "フェブ",
+    "pos": "名词",
+    "meaning": "会员服务名称",
+    "example": {
+      "japanese": "フェブの会員になると割引が受けられる。",
+      "chinese": "成为该会员服务的会员后可以享受折扣。"
+    }
+  },
+  {
+    "id": "n2-vr-0338",
+    "index": 338,
+    "level": "N2",
+    "word": "引き続き",
+    "reading": "ひきつづき",
+    "pos": "副词",
+    "meaning": "继续，接着",
+    "example": {
+      "japanese": "引き続きよろしくお願いいたします。",
+      "chinese": "还请继续多多关照。"
+    }
+  },
+  {
+    "id": "n2-vr-0339",
+    "index": 339,
+    "level": "N2",
+    "word": "協力",
+    "reading": "きょうりょく",
+    "pos": "名词・サ变动词",
+    "meaning": "合作，协助",
+    "example": {
+      "japanese": "近隣の住民が災害復旧に協力する。",
+      "chinese": "附近居民协助灾后重建。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vr-0340",
+    "index": 340,
+    "level": "N2",
+    "word": "影響を与えあう",
+    "reading": "えいきょうをあたえあう",
+    "pos": "动词短语",
+    "meaning": "互相施加影响",
+    "example": {
+      "japanese": "二つの文化が長い年月影響を与えあう。",
+      "chinese": "两种文化长年互相影响。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vr-0341",
+    "index": 341,
+    "level": "N2",
+    "word": "余裕",
+    "reading": "よゆう",
+    "pos": "名词",
+    "meaning": "富余，从容",
+    "example": {
+      "japanese": "出発まで時間に余裕がある。",
+      "chinese": "离出发时间还很充裕。"
+    }
+  },
+  {
+    "id": "n2-vr-0342",
+    "index": 342,
+    "level": "N2",
+    "word": "守りに入る",
+    "reading": "まもりにはいる",
+    "pos": "惯用句",
+    "meaning": "转入守势，变得保守",
+    "example": {
+      "japanese": "点が入ると急に守りに入る。",
+      "chinese": "一得分就忽然转入守势。"
+    }
+  },
+  {
+    "id": "n2-vr-0343",
+    "index": 343,
+    "level": "N2",
+    "word": "成す",
+    "reading": "なす",
+    "pos": "动词（五段・他动词）",
+    "meaning": "做成，构成，完成",
+    "example": {
+      "japanese": "長年の努力で事業を成す。",
+      "chinese": "凭多年努力做成事业。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vr-0344",
+    "index": 344,
+    "level": "N2",
+    "word": "根元",
+    "reading": "ねもと",
+    "pos": "名词",
+    "meaning": "根部，根基",
+    "example": {
+      "japanese": "木の根元に花を植える。",
+      "chinese": "在树根旁种花。"
+    }
+  },
+  {
+    "id": "n2-vr-0345",
+    "index": 345,
+    "level": "N2",
+    "word": "支える",
+    "reading": "ささえる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "支持，支撑",
+    "example": {
+      "japanese": "柱が屋根を支える。",
+      "chinese": "柱子支撑着屋顶。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vr-0346",
+    "index": 346,
+    "level": "N2",
+    "word": "不可欠",
+    "reading": "ふかけつ",
+    "pos": "な形容词",
+    "meaning": "不可缺少",
+    "example": {
+      "japanese": "信頼は仕事に不可欠だ。",
+      "chinese": "信任对工作不可或缺。"
+    }
+  },
+  {
+    "id": "n2-vr-0347",
+    "index": 347,
+    "level": "N2",
+    "word": "固定",
+    "reading": "こてい",
+    "pos": "名词・サ变动词",
+    "meaning": "固定",
+    "example": {
+      "japanese": "棚を壁に固定する。",
+      "chinese": "把架子固定在墙上。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vr-0348",
+    "index": 348,
+    "level": "N2",
+    "word": "頑丈",
+    "reading": "がんじょう",
+    "pos": "な形容词",
+    "meaning": "坚固，结实",
+    "example": {
+      "japanese": "この机は頑丈で長く使える。",
+      "chinese": "这张桌子很结实，可以用很久。"
+    }
+  },
+  {
+    "id": "n2-vr-0349",
+    "index": 349,
+    "level": "N2",
+    "word": "頭骨",
+    "reading": "とうこつ",
+    "pos": "名词",
+    "meaning": "头骨，颅骨",
+    "example": {
+      "japanese": "頭骨は脳を守っている。",
+      "chinese": "头骨保护着大脑。"
+    }
+  },
+  {
+    "id": "n2-vr-0350",
+    "index": 350,
+    "level": "N2",
+    "word": "むきむき",
+    "reading": "むきむき",
+    "pos": "な形容词",
+    "meaning": "肌肉结实、紧绷",
+    "example": {
+      "japanese": "筋トレで腕がむきむきになった。",
+      "chinese": "练肌肉后胳膊变得很结实。"
+    }
+  },
+  {
+    "id": "n2-vr-0351",
+    "index": 351,
+    "level": "N2",
+    "word": "賢い",
+    "reading": "かしこい",
+    "pos": "い形容词",
+    "meaning": "聪明",
+    "example": {
+      "japanese": "賢い選択をする。",
+      "chinese": "做出聪明的选择。"
+    }
+  },
+  {
+    "id": "n2-vr-0352",
+    "index": 352,
+    "level": "N2",
+    "word": "豊か",
+    "reading": "ゆたか",
+    "pos": "な形容词",
+    "meaning": "丰富，富裕",
+    "example": {
+      "japanese": "この村は自然が豊かだ。",
+      "chinese": "这个村子自然很丰富。"
+    }
+  },
+  {
+    "id": "n2-vr-0353",
+    "index": 353,
+    "level": "N2",
+    "word": "知能",
+    "reading": "ちのう",
+    "pos": "名词",
+    "meaning": "智力，智能",
+    "example": {
+      "japanese": "遊びを通して子供の知能を伸ばす。",
+      "chinese": "通过玩耍发展孩子的智力。"
+    }
+  },
+  {
+    "id": "n2-vr-0354",
+    "index": 354,
+    "level": "N2",
+    "word": "象徴",
+    "reading": "しょうちょう",
+    "pos": "名词",
+    "meaning": "象征",
+    "example": {
+      "japanese": "ハトは平和の象徴だ。",
+      "chinese": "鸽子是和平的象征。"
+    }
+  },
+  {
+    "id": "n2-vr-0355",
+    "index": 355,
+    "level": "N2",
+    "word": "補う",
+    "reading": "おぎなう",
+    "pos": "动词（五段・他动词）",
+    "meaning": "补充；弥补",
+    "example": {
+      "japanese": "睡眠不足を散歩で補う。",
+      "chinese": "用散步来弥补睡眠不足。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vr-0356",
+    "index": 356,
+    "level": "N2",
+    "word": "まだまだ",
+    "reading": "まだまだ",
+    "pos": "副词",
+    "meaning": "还远，还差得远",
+    "example": {
+      "japanese": "一人前になるにはまだまだだ。",
+      "chinese": "要独当一面还差得远。"
+    }
+  },
+  {
+    "id": "n2-vr-0357",
+    "index": 357,
+    "level": "N2",
+    "word": "分析",
+    "reading": "ぶんせき",
+    "pos": "名词・サ变动词",
+    "meaning": "分析",
+    "example": {
+      "japanese": "実験のデータを分析する。",
+      "chinese": "分析实验数据。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vr-0358",
+    "index": 358,
+    "level": "N2",
+    "word": "以降",
+    "reading": "いこう",
+    "pos": "名词",
+    "meaning": "……之后",
+    "example": {
+      "japanese": "来月以降は新しい料金になる。",
+      "chinese": "下月以后实行新资费。"
+    }
+  },
+  {
+    "id": "n2-vr-0359",
+    "index": 359,
+    "level": "N2",
+    "word": "及ぶ",
+    "reading": "およぶ",
+    "pos": "动词（五段・自动词）",
+    "meaning": "达到，波及",
+    "example": {
+      "japanese": "被害は広い範囲に及ぶ。",
+      "chinese": "灾害波及很广的范围。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vr-0360",
+    "index": 360,
+    "level": "N2",
+    "word": "もったいない",
+    "reading": "もったいない",
+    "pos": "い形容词",
+    "meaning": "浪费；可惜；过分；不敢当",
+    "example": {
+      "japanese": "まだ着られる服を捨てるのはもったいない。",
+      "chinese": "还能穿的衣服扔掉太可惜。"
+    }
   }
 ]

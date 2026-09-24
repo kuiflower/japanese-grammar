@@ -3232,5 +3232,98 @@
       "chinese": "追究责任在谁。"
     },
     "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vl-0247",
+    "index": 247,
+    "level": "N2",
+    "word": "石けん",
+    "reading": "せっけん",
+    "pos": "名词",
+    "meaning": "肥皂",
+    "example": {
+      "japanese": "手を石けんで洗う。",
+      "chinese": "用肥皂洗手。"
+    }
+  },
+  {
+    "id": "n2-vl-0248",
+    "index": 248,
+    "level": "N2",
+    "word": "合わせる",
+    "reading": "あわせる",
+    "pos": "动词（五段・他动词）",
+    "meaning": "使一致；配合；合并；对照",
+    "example": {
+      "japanese": "時計を正しい時刻に合わせる。",
+      "chinese": "把表调到正确时刻。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vl-0249",
+    "index": 249,
+    "level": "N2",
+    "word": "メリット",
+    "reading": "メリット",
+    "pos": "名词",
+    "meaning": "优点，好处",
+    "example": {
+      "japanese": "在宅勤務のメリットは通勤時間が省けることだ。",
+      "chinese": "居家办公的好处是能省掉通勤时间。"
+    }
+  },
+  {
+    "id": "n2-vl-0250",
+    "index": 250,
+    "level": "N2",
+    "word": "田舎",
+    "reading": "いなか",
+    "pos": "名词",
+    "meaning": "乡下，农村",
+    "example": {
+      "japanese": "夏休みは田舎の祖父母の家で過ごす。",
+      "chinese": "暑假在乡下祖父母家过。"
+    }
+  },
+  {
+    "id": "n2-vl-0251",
+    "index": 251,
+    "level": "N2",
+    "word": "触れる",
+    "reading": "ふれる",
+    "pos": "动词（一段・自动词）",
+    "meaning": "碰，触；提及",
+    "example": {
+      "japanese": "展示物に手で触れる。",
+      "chinese": "用手去碰展品。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vl-0252",
+    "index": 252,
+    "level": "N2",
+    "word": "先ほど",
+    "reading": "さきほど",
+    "pos": "副词",
+    "meaning": "刚才",
+    "example": {
+      "japanese": "先ほどお伝えした内容を確認してください。",
+      "chinese": "请确认刚才告知的内容。"
+    }
+  },
+  {
+    "id": "n2-vl-0253",
+    "index": 253,
+    "level": "N2",
+    "word": "主に",
+    "reading": "おもに",
+    "pos": "副词",
+    "meaning": "主要",
+    "example": {
+      "japanese": "この店の客は主に学生だ。",
+      "chinese": "这家店的客人主要是学生。"
+    }
   }
 ]
