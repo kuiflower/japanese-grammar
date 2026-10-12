@@ -3325,5 +3325,928 @@
       "japanese": "この店の客は主に学生だ。",
       "chinese": "这家店的客人主要是学生。"
     }
+  },
+  {
+    "id": "n2-vl-0254",
+    "index": 254,
+    "level": "N2",
+    "word": "納得",
+    "reading": "なっとく",
+    "pos": "名词・サ变动词",
+    "meaning": "理解并接受，信服",
+    "example": {
+      "japanese": "説明を聞いて納得する。",
+      "chinese": "听完说明后表示信服。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vl-0255",
+    "index": 255,
+    "level": "N2",
+    "word": "小麦粉",
+    "reading": "こむぎこ",
+    "pos": "名词",
+    "meaning": "小麦粉",
+    "example": {
+      "japanese": "小麦粉でパンを作る。",
+      "chinese": "用小麦粉做面包。"
+    }
+  },
+  {
+    "id": "n2-vl-0256",
+    "index": 256,
+    "level": "N2",
+    "word": "価格",
+    "reading": "かかく",
+    "pos": "名词",
+    "meaning": "价格",
+    "example": {
+      "japanese": "原油の価格が上がった。",
+      "chinese": "原油价格上涨了。"
+    }
+  },
+  {
+    "id": "n2-vl-0257",
+    "index": 257,
+    "level": "N2",
+    "word": "抵抗",
+    "reading": "ていこう",
+    "pos": "名词",
+    "meaning": "抵抗；抵触",
+    "example": {
+      "japanese": "新しい制度に抵抗を感じる。",
+      "chinese": "对新制度感到抵触。"
+    }
+  },
+  {
+    "id": "n2-vl-0258",
+    "index": 258,
+    "level": "N2",
+    "word": "経費",
+    "reading": "けいひ",
+    "pos": "名词",
+    "meaning": "经费，开销",
+    "example": {
+      "japanese": "出張の経費を精算する。",
+      "chinese": "结算出差经费。"
+    }
+  },
+  {
+    "id": "n2-vl-0259",
+    "index": 259,
+    "level": "N2",
+    "word": "受け入れる",
+    "reading": "うけいれる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "接受，接纳",
+    "example": {
+      "japanese": "新しい提案を受け入れる。",
+      "chinese": "接受新提案。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vl-0260",
+    "index": 260,
+    "level": "N2",
+    "word": "沿う",
+    "reading": "そう",
+    "pos": "动词（五段・自动词）",
+    "meaning": "沿着；依照",
+    "example": {
+      "japanese": "川に沿う道を歩く。",
+      "chinese": "沿着河边的路走。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vl-0261",
+    "index": 261,
+    "level": "N2",
+    "word": "ぴったり",
+    "reading": "ぴったり",
+    "pos": "副词・な形容词",
+    "meaning": "正合适，严丝合缝",
+    "example": {
+      "japanese": "この靴はサイズがぴったりだ。",
+      "chinese": "这双鞋尺码正合适。"
+    }
+  },
+  {
+    "id": "n2-vl-0262",
+    "index": 262,
+    "level": "N2",
+    "word": "自体",
+    "reading": "じたい",
+    "pos": "名词",
+    "meaning": "本身",
+    "example": {
+      "japanese": "問題は方法自体にある。",
+      "chinese": "问题在方法本身。"
+    }
+  },
+  {
+    "id": "n2-vl-0263",
+    "index": 263,
+    "level": "N2",
+    "word": "かご",
+    "reading": "かご",
+    "pos": "名词",
+    "meaning": "篮子",
+    "example": {
+      "japanese": "果物をかごに入れる。",
+      "chinese": "把水果放进篮子。"
+    }
+  },
+  {
+    "id": "n2-vl-0264",
+    "index": 264,
+    "level": "N2",
+    "word": "畳む",
+    "reading": "たたむ",
+    "pos": "动词（五段・他动词）",
+    "meaning": "叠，折叠",
+    "example": {
+      "japanese": "使い終わった布団を畳む。",
+      "chinese": "把用完的被子叠好。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vl-0265",
+    "index": 265,
+    "level": "N2",
+    "word": "コンパクト",
+    "reading": "コンパクト",
+    "pos": "な形容词",
+    "meaning": "小巧紧凑",
+    "example": {
+      "japanese": "このカメラはコンパクトで持ちやすい。",
+      "chinese": "这台相机小巧，好带。"
+    }
+  },
+  {
+    "id": "n2-vl-0266",
+    "index": 266,
+    "level": "N2",
+    "word": "アウトドア",
+    "reading": "アウトドア",
+    "pos": "名词",
+    "meaning": "户外，野外",
+    "example": {
+      "japanese": "週末はアウトドアを楽しむ。",
+      "chinese": "周末享受户外活动。"
+    }
+  },
+  {
+    "id": "n2-vl-0267",
+    "index": 267,
+    "level": "N2",
+    "word": "適する",
+    "reading": "てきする",
+    "pos": "动词（サ变・自动词）",
+    "meaning": "适合",
+    "example": {
+      "japanese": "この仕事に適する人を探す。",
+      "chinese": "寻找适合这份工作的人。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vl-0268",
+    "index": 268,
+    "level": "N2",
+    "word": "凹凸",
+    "reading": "おうとつ",
+    "pos": "名词",
+    "meaning": "凹凸，不平",
+    "example": {
+      "japanese": "道の凹凸で自転車が揺れる。",
+      "chinese": "因为路面凹凸，自行车晃动。"
+    }
+  },
+  {
+    "id": "n2-vl-0269",
+    "index": 269,
+    "level": "N2",
+    "word": "振動",
+    "reading": "しんどう",
+    "pos": "名词",
+    "meaning": "振动",
+    "example": {
+      "japanese": "電車の振動で眠れない。",
+      "chinese": "因为电车振动而睡不着。"
+    }
+  },
+  {
+    "id": "n2-vl-0270",
+    "index": 270,
+    "level": "N2",
+    "word": "川沿い",
+    "reading": "かわぞい",
+    "pos": "名词",
+    "meaning": "河边，沿河",
+    "example": {
+      "japanese": "川沿いをゆっくり散歩する。",
+      "chinese": "沿着河边慢慢散步。"
+    }
+  },
+  {
+    "id": "n2-vl-0271",
+    "index": 271,
+    "level": "N2",
+    "word": "奥",
+    "reading": "おく",
+    "pos": "名词",
+    "meaning": "里头，深处",
+    "example": {
+      "japanese": "店の奥に倉庫がある。",
+      "chinese": "店的里头有仓库。"
+    }
+  },
+  {
+    "id": "n2-vl-0272",
+    "index": 272,
+    "level": "N2",
+    "word": "折りたたむ",
+    "reading": "おりたたむ",
+    "pos": "动词（五段・他动词）",
+    "meaning": "折叠",
+    "example": {
+      "japanese": "地図を小さく折りたたむ。",
+      "chinese": "把地图折小。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vl-0273",
+    "index": 273,
+    "level": "N2",
+    "word": "当日",
+    "reading": "とうじつ",
+    "pos": "名词",
+    "meaning": "当天",
+    "example": {
+      "japanese": "当日は受付が混む。",
+      "chinese": "当天接待处会很挤。"
+    }
+  },
+  {
+    "id": "n2-vl-0274",
+    "index": 274,
+    "level": "N2",
+    "word": "文房具",
+    "reading": "ぶんぼうぐ",
+    "pos": "名词",
+    "meaning": "文具",
+    "example": {
+      "japanese": "文房具を机の引き出しに入れた。",
+      "chinese": "把文具放进桌子抽屉。"
+    }
+  },
+  {
+    "id": "n2-vl-0275",
+    "index": 275,
+    "level": "N2",
+    "word": "早速",
+    "reading": "さっそく",
+    "pos": "副词",
+    "meaning": "马上，立刻",
+    "example": {
+      "japanese": "早速返事を書いて送った。",
+      "chinese": "立刻写好回信寄出了。"
+    }
+  },
+  {
+    "id": "n2-vl-0276",
+    "index": 276,
+    "level": "N2",
+    "word": "大まかな",
+    "reading": "おおまかな",
+    "pos": "な形容词",
+    "meaning": "大致的，粗略的",
+    "example": {
+      "japanese": "大まかな予定を先に立てる。",
+      "chinese": "先订一个大致的计划。"
+    }
+  },
+  {
+    "id": "n2-vl-0277",
+    "index": 277,
+    "level": "N2",
+    "word": "間隔",
+    "reading": "かんかく",
+    "pos": "名词",
+    "meaning": "间隔，间距",
+    "example": {
+      "japanese": "前の車との間隔を保つ。",
+      "chinese": "与前车保持间距。"
+    }
+  },
+  {
+    "id": "n2-vl-0278",
+    "index": 278,
+    "level": "N2",
+    "word": "仕方ない",
+    "reading": "しかたない",
+    "pos": "い形容词",
+    "meaning": "没办法",
+    "example": {
+      "japanese": "遅れたのは仕方ない。",
+      "chinese": "迟到也没办法。"
+    }
+  },
+  {
+    "id": "n2-vl-0279",
+    "index": 279,
+    "level": "N2",
+    "word": "杖",
+    "reading": "つえ",
+    "pos": "名词",
+    "meaning": "拐杖",
+    "example": {
+      "japanese": "祖父は杖をついて歩く。",
+      "chinese": "祖父拄着拐杖走路。"
+    }
+  },
+  {
+    "id": "n2-vl-0280",
+    "index": 280,
+    "level": "N2",
+    "word": "厳禁",
+    "reading": "げんきん",
+    "pos": "名词",
+    "meaning": "严禁",
+    "example": {
+      "japanese": "車内での喫煙は厳禁だ。",
+      "chinese": "车内严禁吸烟。"
+    }
+  },
+  {
+    "id": "n2-vl-0281",
+    "index": 281,
+    "level": "N2",
+    "word": "トレーニング",
+    "reading": "トレーニング",
+    "pos": "名词・サ变动词",
+    "meaning": "训练",
+    "example": {
+      "japanese": "毎日トレーニングする。",
+      "chinese": "每天训练。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vl-0282",
+    "index": 282,
+    "level": "N2",
+    "word": "スタンプ",
+    "reading": "スタンプ",
+    "pos": "名词",
+    "meaning": "印章，戳记",
+    "example": {
+      "japanese": "パスポートにスタンプを押す。",
+      "chinese": "在护照上盖章。"
+    }
+  },
+  {
+    "id": "n2-vl-0283",
+    "index": 283,
+    "level": "N2",
+    "word": "レクリエーション",
+    "reading": "レクリエーション",
+    "pos": "名词",
+    "meaning": "娱乐消遣，文娱活动",
+    "example": {
+      "japanese": "社員旅行でレクリエーションをした。",
+      "chinese": "员工旅行时做了文娱活动。"
+    }
+  },
+  {
+    "id": "n2-vl-0284",
+    "index": 284,
+    "level": "N2",
+    "word": "クイズ",
+    "reading": "クイズ",
+    "pos": "名词",
+    "meaning": "问答游戏，测验",
+    "example": {
+      "japanese": "休憩時間にクイズを出す。",
+      "chinese": "休息时间出问答游戏。"
+    }
+  },
+  {
+    "id": "n2-vl-0285",
+    "index": 285,
+    "level": "N2",
+    "word": "試作",
+    "reading": "しさく",
+    "pos": "名词・サ变动词",
+    "meaning": "试做，试制",
+    "example": {
+      "japanese": "新しい料理を試作する。",
+      "chinese": "试做新菜。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vl-0286",
+    "index": 286,
+    "level": "N2",
+    "word": "おかず",
+    "reading": "おかず",
+    "pos": "名词",
+    "meaning": "配菜",
+    "example": {
+      "japanese": "今日のおかずは焼き魚だ。",
+      "chinese": "今天的配菜是烤鱼。"
+    }
+  },
+  {
+    "id": "n2-vl-0287",
+    "index": 287,
+    "level": "N2",
+    "word": "ボランティア",
+    "reading": "ボランティア",
+    "pos": "名词",
+    "meaning": "志愿者",
+    "example": {
+      "japanese": "週末にボランティアとして活動する。",
+      "chinese": "周末作为志愿者活动。"
+    }
+  },
+  {
+    "id": "n2-vl-0288",
+    "index": 288,
+    "level": "N2",
+    "word": "雑草",
+    "reading": "ざっそう",
+    "pos": "名词",
+    "meaning": "杂草",
+    "example": {
+      "japanese": "庭の雑草を抜く。",
+      "chinese": "拔院子里的杂草。"
+    }
+  },
+  {
+    "id": "n2-vl-0289",
+    "index": 289,
+    "level": "N2",
+    "word": "売り出す",
+    "reading": "うりだす",
+    "pos": "动词（五段・他动词）",
+    "meaning": "上市销售",
+    "example": {
+      "japanese": "新商品を来月売り出す。",
+      "chinese": "下月推出新产品销售。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vl-0290",
+    "index": 290,
+    "level": "N2",
+    "word": "真っ先",
+    "reading": "まっさき",
+    "pos": "名词",
+    "meaning": "最先",
+    "example": {
+      "japanese": "彼が真っ先に手を挙げた。",
+      "chinese": "他最先举起了手。"
+    }
+  },
+  {
+    "id": "n2-vl-0291",
+    "index": 291,
+    "level": "N2",
+    "word": "目につく",
+    "reading": "めにつく",
+    "pos": "动词短语",
+    "meaning": "映入眼帘，显眼",
+    "example": {
+      "japanese": "赤い看板が遠くから目につく。",
+      "chinese": "红色招牌老远就很显眼。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vl-0292",
+    "index": 292,
+    "level": "N2",
+    "word": "飛び回る",
+    "reading": "とびまわる",
+    "pos": "动词（五段・自动词）",
+    "meaning": "四处跑，飞来飞去",
+    "example": {
+      "japanese": "子供が庭を飛び回る。",
+      "chinese": "孩子在院子里跑来跑去。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vl-0293",
+    "index": 293,
+    "level": "N2",
+    "word": "アピール",
+    "reading": "アピール",
+    "pos": "名词・サ变动词",
+    "meaning": "呼吁；展示吸引力",
+    "example": {
+      "japanese": "商品の魅力をアピールする。",
+      "chinese": "宣传商品的魅力。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vl-0294",
+    "index": 294,
+    "level": "N2",
+    "word": "あくび",
+    "reading": "あくび",
+    "pos": "名词",
+    "meaning": "哈欠",
+    "example": {
+      "japanese": "授業中にあくびをする。",
+      "chinese": "上课时打哈欠。"
+    }
+  },
+  {
+    "id": "n2-vl-0295",
+    "index": 295,
+    "level": "N2",
+    "word": "しっぽ",
+    "reading": "しっぽ",
+    "pos": "名词",
+    "meaning": "尾巴",
+    "example": {
+      "japanese": "犬がしっぽを振る。",
+      "chinese": "狗摇尾巴。"
+    }
+  },
+  {
+    "id": "n2-vl-0296",
+    "index": 296,
+    "level": "N2",
+    "word": "はてな",
+    "reading": "はてな",
+    "pos": "感叹词",
+    "meaning": "咦，奇怪（疑惑）",
+    "example": {
+      "japanese": "彼ははてなと考え込んだ。",
+      "chinese": "他疑惑地陷入了沉思。"
+    }
+  },
+  {
+    "id": "n2-vl-0297",
+    "index": 297,
+    "level": "N2",
+    "word": "心を奪われる",
+    "reading": "こころをうばわれる",
+    "pos": "惯用句",
+    "meaning": "被深深吸引",
+    "example": {
+      "japanese": "夕日の景色に心を奪われる。",
+      "chinese": "被夕阳景色深深吸引。"
+    }
+  },
+  {
+    "id": "n2-vl-0298",
+    "index": 298,
+    "level": "N2",
+    "word": "巡る",
+    "reading": "めぐる",
+    "pos": "动词（五段・自动词）",
+    "meaning": "巡回；环绕",
+    "example": {
+      "japanese": "各地の神社を巡る。",
+      "chinese": "巡回各地神社。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vl-0299",
+    "index": 299,
+    "level": "N2",
+    "word": "眺める",
+    "reading": "ながめる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "眺望",
+    "example": {
+      "japanese": "窓から海を眺める。",
+      "chinese": "从窗户眺望大海。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vl-0300",
+    "index": 300,
+    "level": "N2",
+    "word": "穏やか",
+    "reading": "おだやか",
+    "pos": "な形容词",
+    "meaning": "平稳，温和",
+    "example": {
+      "japanese": "今日の海は穏やかだ。",
+      "chinese": "今天的海很平静。"
+    }
+  },
+  {
+    "id": "n2-vl-0301",
+    "index": 301,
+    "level": "N2",
+    "word": "愛着",
+    "reading": "あいちゃく",
+    "pos": "名词",
+    "meaning": "眷恋，依恋",
+    "example": {
+      "japanese": "古い自転車に愛着がある。",
+      "chinese": "对旧自行车很有感情。"
+    }
+  },
+  {
+    "id": "n2-vl-0302",
+    "index": 302,
+    "level": "N2",
+    "word": "思い描く",
+    "reading": "おもいえがく",
+    "pos": "动词（五段・他动词）",
+    "meaning": "想象，设想",
+    "example": {
+      "japanese": "将来の自分を思い描く。",
+      "chinese": "想象未来的自己。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vl-0303",
+    "index": 303,
+    "level": "N2",
+    "word": "マーク",
+    "reading": "マーク",
+    "pos": "名词・サ变动词",
+    "meaning": "标记；记号",
+    "example": {
+      "japanese": "誤りを赤ペンでマークする。",
+      "chinese": "用红笔标出错误。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vl-0304",
+    "index": 304,
+    "level": "N2",
+    "word": "湧く",
+    "reading": "わく",
+    "pos": "动词（五段・自动词）",
+    "meaning": "涌出，涌现",
+    "example": {
+      "japanese": "山の麓で温泉が湧く。",
+      "chinese": "山脚下涌出温泉。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vl-0305",
+    "index": 305,
+    "level": "N2",
+    "word": "描く",
+    "reading": "えがく",
+    "pos": "动词（五段・他动词）",
+    "meaning": "画；描绘",
+    "example": {
+      "japanese": "山の景色を絵に描く。",
+      "chinese": "把山景画进画里。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vl-0306",
+    "index": 306,
+    "level": "N2",
+    "word": "グミ",
+    "reading": "グミ",
+    "pos": "名词",
+    "meaning": "软糖",
+    "example": {
+      "japanese": "イチゴ味のグミを食べる。",
+      "chinese": "吃草莓味软糖。"
+    }
+  },
+  {
+    "id": "n2-vl-0307",
+    "index": 307,
+    "level": "N2",
+    "word": "放課後",
+    "reading": "ほうかご",
+    "pos": "名词",
+    "meaning": "放学后",
+    "example": {
+      "japanese": "放課後に部活がある。",
+      "chinese": "放学后有社团活动。"
+    }
+  },
+  {
+    "id": "n2-vl-0308",
+    "index": 308,
+    "level": "N2",
+    "word": "お小遣い",
+    "reading": "おこづかい",
+    "pos": "名词",
+    "meaning": "零花钱",
+    "example": {
+      "japanese": "お小遣いで本を買う。",
+      "chinese": "用零花钱买书。"
+    }
+  },
+  {
+    "id": "n2-vl-0309",
+    "index": 309,
+    "level": "N2",
+    "word": "駆け寄る",
+    "reading": "かけよる",
+    "pos": "动词（五段・自动词）",
+    "meaning": "跑过来，跑近",
+    "example": {
+      "japanese": "子供が母親に駆け寄る。",
+      "chinese": "孩子向母亲跑过去。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vl-0310",
+    "index": 310,
+    "level": "N2",
+    "word": "活躍",
+    "reading": "かつやく",
+    "pos": "名词・サ变动词",
+    "meaning": "活跃，大显身手",
+    "example": {
+      "japanese": "若手が試合で活躍する。",
+      "chinese": "年轻人在比赛中大显身手。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vl-0311",
+    "index": 311,
+    "level": "N2",
+    "word": "土",
+    "reading": "つち",
+    "pos": "名词",
+    "meaning": "土，泥土",
+    "example": {
+      "japanese": "畑の土が乾いている。",
+      "chinese": "田里的土干了。"
+    }
+  },
+  {
+    "id": "n2-vl-0312",
+    "index": 312,
+    "level": "N2",
+    "word": "田んぼ",
+    "reading": "たんぼ",
+    "pos": "名词",
+    "meaning": "水田",
+    "example": {
+      "japanese": "春になると田んぼに水を入れる。",
+      "chinese": "一到春天就往水田里放水。"
+    }
+  },
+  {
+    "id": "n2-vl-0313",
+    "index": 313,
+    "level": "N2",
+    "word": "米作り",
+    "reading": "こめづくり",
+    "pos": "名词",
+    "meaning": "种稻，稻作",
+    "example": {
+      "japanese": "この村は米作りが盛んだ。",
+      "chinese": "这个村子稻作很盛。"
+    }
+  },
+  {
+    "id": "n2-vl-0314",
+    "index": 314,
+    "level": "N2",
+    "word": "取り組む",
+    "reading": "とりくむ",
+    "pos": "动词（五段・自动词）",
+    "meaning": "致力于，着手",
+    "example": {
+      "japanese": "環境問題に取り組む。",
+      "chinese": "致力于环境问题。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vl-0315",
+    "index": 315,
+    "level": "N2",
+    "word": "収穫",
+    "reading": "しゅうかく",
+    "pos": "名词・サ变动词",
+    "meaning": "收成，收获",
+    "example": {
+      "japanese": "秋に稲を収穫する。",
+      "chinese": "秋天收割水稻。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vl-0316",
+    "index": 316,
+    "level": "N2",
+    "word": "濁る",
+    "reading": "にごる",
+    "pos": "动词（五段・自动词）",
+    "meaning": "变浑浊",
+    "example": {
+      "japanese": "雨で川の水が濁る。",
+      "chinese": "因为下雨，河水变浑。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vl-0317",
+    "index": 317,
+    "level": "N2",
+    "word": "生える",
+    "reading": "はえる",
+    "pos": "动词（一段・自动词）",
+    "meaning": "长出",
+    "example": {
+      "japanese": "子どもの歯が生える。",
+      "chinese": "孩子长牙了。"
+    },
+    "transitivity": "自动词"
+  },
+  {
+    "id": "n2-vl-0318",
+    "index": 318,
+    "level": "N2",
+    "word": "取り除く",
+    "reading": "とりのぞく",
+    "pos": "动词（五段・他动词）",
+    "meaning": "除掉，排除",
+    "example": {
+      "japanese": "服の汚れを取り除く。",
+      "chinese": "去掉衣服上的污渍。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vl-0319",
+    "index": 319,
+    "level": "N2",
+    "word": "取り入れる",
+    "reading": "とりいれる",
+    "pos": "动词（一段・他动词）",
+    "meaning": "引进，采用；收进",
+    "example": {
+      "japanese": "新しい技術を取り入れる。",
+      "chinese": "引进新技术。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vl-0320",
+    "index": 320,
+    "level": "N2",
+    "word": "手間",
+    "reading": "てま",
+    "pos": "名词",
+    "meaning": "工夫，劳力，麻烦",
+    "example": {
+      "japanese": "この料理は手間がかかる。",
+      "chinese": "这道菜很费工夫。"
+    }
+  },
+  {
+    "id": "n2-vl-0321",
+    "index": 321,
+    "level": "N2",
+    "word": "腹痛",
+    "reading": "ふくつう",
+    "pos": "名词",
+    "meaning": "腹痛",
+    "example": {
+      "japanese": "夜中に腹痛で目が覚めた。",
+      "chinese": "半夜因腹痛醒来。"
+    }
+  },
+  {
+    "id": "n2-vl-0322",
+    "index": 322,
+    "level": "N2",
+    "word": "おかゆ",
+    "reading": "おかゆ",
+    "pos": "名词",
+    "meaning": "粥",
+    "example": {
+      "japanese": "風邪のときはおかゆを食べる。",
+      "chinese": "感冒时喝粥。"
+    }
   }
 ]
