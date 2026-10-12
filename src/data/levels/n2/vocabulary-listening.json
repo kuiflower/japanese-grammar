@@ -4248,5 +4248,85 @@
       "japanese": "風邪のときはおかゆを食べる。",
       "chinese": "感冒时喝粥。"
     }
+  },
+  {
+    "id": "n2-vl-0323",
+    "index": 323,
+    "level": "N2",
+    "word": "奨学金",
+    "reading": "しょうがくきん",
+    "pos": "名词",
+    "meaning": "奖学金",
+    "example": {
+      "japanese": "大学の奨学金に応募する。",
+      "chinese": "申请大学的奖学金。"
+    }
+  },
+  {
+    "id": "n2-vl-0324",
+    "index": 324,
+    "level": "N2",
+    "word": "申請",
+    "reading": "しんせい",
+    "pos": "名词・サ变动词",
+    "meaning": "申请",
+    "example": {
+      "japanese": "ビザの延長を申請する。",
+      "chinese": "申请延长签证。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vl-0325",
+    "index": 325,
+    "level": "N2",
+    "word": "期限",
+    "reading": "きげん",
+    "pos": "名词",
+    "meaning": "期限，截止日期",
+    "example": {
+      "japanese": "提出の期限は金曜日だ。",
+      "chinese": "提交截止日期是星期五。"
+    }
+  },
+  {
+    "id": "n2-vl-0326",
+    "index": 326,
+    "level": "N2",
+    "word": "受験する",
+    "reading": "じゅけんする",
+    "pos": "动词（サ变・他动词）",
+    "meaning": "报考，应试",
+    "example": {
+      "japanese": "来年N2を受験する。",
+      "chinese": "明年报考 N2。"
+    },
+    "transitivity": "他动词"
+  },
+  {
+    "id": "n2-vl-0327",
+    "index": 327,
+    "level": "N2",
+    "word": "定食",
+    "reading": "ていしょく",
+    "pos": "名词",
+    "meaning": "套餐",
+    "example": {
+      "japanese": "昼は魚の定食を頼む。",
+      "chinese": "午饭点鱼套餐。"
+    }
+  },
+  {
+    "id": "n2-vl-0328",
+    "index": 328,
+    "level": "N2",
+    "word": "食べきれない",
+    "reading": "たべきれない",
+    "pos": "惯用句",
+    "meaning": "吃不完",
+    "example": {
+      "japanese": "量が多くて食べきれない。",
+      "chinese": "量太多，吃不完。"
+    }
   }
 ]
