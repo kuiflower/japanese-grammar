@@ -2556,7 +2556,7 @@
     "index": 195,
     "level": "N2",
     "word": "プライベート",
-    "reading": "ぷらいべーと",
+    "reading": "プライベート",
     "pos": "名词",
     "meaning": "私人（生活）",
     "example": {
@@ -2571,7 +2571,7 @@
     "word": "ゲスト",
     "reading": "ゲスト",
     "pos": "名词",
-    "meaning": "客人",
+    "meaning": "嘉宾，客人",
     "example": {
       "japanese": "今日の番組のゲストは作家だ。",
       "chinese": "今天节目的嘉宾是作家。"
@@ -2834,8 +2834,8 @@
     "pos": "拟声拟态词",
     "meaning": "舒畅，清爽",
     "example": {
-      "japanese": "急にすっきりした。",
-      "chinese": "突然清爽了。"
+      "japanese": "朝の空気を吸ったら頭がすっきりした。",
+      "chinese": "吸了早晨的空气，脑袋清爽了。"
     }
   },
   {
@@ -2895,7 +2895,7 @@
     "index": 221,
     "level": "N2",
     "word": "ピンチ",
-    "reading": "ぴんち",
+    "reading": "ピンチ",
     "pos": "名词",
     "meaning": "危机，困境",
     "example": {
@@ -2949,7 +2949,7 @@
     "word": "整える",
     "reading": "ととのえる",
     "pos": "动词（一段・他动词）",
-    "meaning": "准备齐全",
+    "meaning": "整理，备齐，调整",
     "example": {
       "japanese": "出発前に服装を整える。",
       "chinese": "出发前把衣服整理好。"
@@ -3002,12 +3002,13 @@
     "level": "N2",
     "word": "研修",
     "reading": "けんしゅう",
-    "pos": "名词",
-    "meaning": "钻研，研究",
+    "pos": "名词・サ变动词",
+    "meaning": "研修，培训",
     "example": {
       "japanese": "新入社員は大阪で一週間の研修を受ける。",
       "chinese": "新员工将在大阪接受一周的培训。"
-    }
+    },
+    "transitivity": "自动词"
   },
   {
     "id": "n2-vl-0230",
@@ -3041,7 +3042,7 @@
     "level": "N2",
     "word": "活発",
     "reading": "かっぱつ",
-    "pos": "名词",
+    "pos": "な形容词",
     "meaning": "活跃，活泼",
     "example": {
       "japanese": "議論が活発に行われた。",
@@ -3055,7 +3056,7 @@
     "word": "気づき",
     "reading": "きづき",
     "pos": "名词",
-    "meaning": "気づき，新的认识",
+    "meaning": "察觉，新的认识",
     "example": {
       "japanese": "研修で多くの気づきがあった。",
       "chinese": "研修中有很多新的认识。"
@@ -3096,8 +3097,8 @@
     "pos": "名词",
     "meaning": "时机",
     "example": {
-      "japanese": "タイミングに出発する。",
-      "chinese": "在时机出发。"
+      "japanese": "返事のタイミングを逃してしまった。",
+      "chinese": "错过了回复的时机。"
     }
   },
   {
@@ -3105,7 +3106,7 @@
     "index": 237,
     "level": "N2",
     "word": "デメリット",
-    "reading": "でめりっと",
+    "reading": "デメリット",
     "pos": "名词",
     "meaning": "弊端，缺点",
     "example": {
@@ -3120,7 +3121,7 @@
     "word": "徐々に",
     "reading": "じょじょに",
     "pos": "副词",
-    "meaning": "徐徐地，循序渐进地",
+    "meaning": "渐渐地",
     "example": {
       "japanese": "日本語が徐々に分かるようになった。",
       "chinese": "日语渐渐能听懂了。"
@@ -3175,8 +3176,8 @@
     "pos": "词组",
     "meaning": "成像；形成印象",
     "example": {
-      "japanese": "レンズの位置をずらすと像を結ぶ。",
-      "chinese": "挪一下镜头位置，影像就聚合成像了。"
+      "japanese": "凸レンズは光を集めて像を結ぶ。",
+      "chinese": "凸透镜聚光后成像。"
     }
   },
   {
@@ -3415,8 +3416,8 @@
     "pos": "动词（五段・自动词）",
     "meaning": "沿着；依照",
     "example": {
-      "japanese": "川に沿う道を歩く。",
-      "chinese": "沿着河边的路走。"
+      "japanese": "説明に沿う形で進める。",
+      "chinese": "按照说明推进。"
     },
     "transitivity": "自动词"
   },
@@ -3468,8 +3469,8 @@
     "pos": "动词（五段・他动词）",
     "meaning": "叠，折叠",
     "example": {
-      "japanese": "使い終わった布団を畳む。",
-      "chinese": "把用完的被子叠好。"
+      "japanese": "朝になったら布団を畳む。",
+      "chinese": "到了早上就把被子叠好。"
     },
     "transitivity": "他动词"
   },
@@ -3622,10 +3623,10 @@
     "id": "n2-vl-0276",
     "index": 276,
     "level": "N2",
-    "word": "大まかな",
-    "reading": "おおまかな",
+    "word": "大まか",
+    "reading": "おおまか",
     "pos": "な形容词",
-    "meaning": "大致的，粗略的",
+    "meaning": "大致，粗略",
     "example": {
       "japanese": "大まかな予定を先に立てる。",
       "chinese": "先订一个大致的计划。"
@@ -3893,8 +3894,8 @@
     "pos": "感叹词",
     "meaning": "咦，奇怪（疑惑）",
     "example": {
-      "japanese": "彼ははてなと考え込んだ。",
-      "chinese": "他疑惑地陷入了沉思。"
+      "japanese": "分からなくて、はてなと首をかしげた。",
+      "chinese": "搞不懂，疑惑地歪了歪头。"
     }
   },
   {
@@ -3920,7 +3921,7 @@
     "meaning": "巡回；环绕",
     "example": {
       "japanese": "各地の神社を巡る。",
-      "chinese": "巡回各地神社。"
+      "chinese": "走访各地的神社。"
     },
     "transitivity": "自动词"
   },
@@ -4097,7 +4098,7 @@
     "meaning": "土，泥土",
     "example": {
       "japanese": "畑の土が乾いている。",
-      "chinese": "田里的土干了。"
+      "chinese": "旱田里的土干了。"
     }
   },
   {
